@@ -1,0 +1,7 @@
+{
+  "timestamp": 1577962262326,
+  "status": 404,
+  "error": "Not Found",
+  "message": "/WEB-INF/jsp/null.jsp",
+  "path": "/test/queryAccount"
+}

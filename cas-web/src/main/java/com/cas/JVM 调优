@@ -1,0 +1,45 @@
+-noverify就是关闭检验bytecode，就是为了提高性能。在使用javaagent时，用这个选项，就可
+-noverify
+//最大堆内存1024MM 初始化堆内存1024M （此值可以设置与-Xmx相同,以避免每次垃圾回收完成后JV
+-server -Xmx1024M -Xms1024M -Xmn512M,
+//整个堆大小=年轻代大小 + 年老代大小 + 持久代大小
+
+//堆栈内存大小256K SurvivorRatio 年轻代和幸存代的比例
+-XX:SurvivorRatio=2 -Xss256k,
+//可以看出添加ExplicitGCInvokesConcurrent选项后，整个Full gc的停机时间(m
+-XX:+ExplicitGCInvokesConcurrent
+//只是用设定的回收阈值(上面指定的70%),如果不指定,JVM仅在第一次使用设定值,后续则自动调整.
+-XX:+UseCMSInitiatingOccupancyOnly
+//CMS收集器（并发收集器）
+-XX:+UseConcMarkSweepGC
+// -XX:+UseParNewGC:设置年轻代为多线程收集。可与CMS收集同时使用。在serial基础上实
+-XX:+UseParNewGC
+//
+-XX:+CMSParallelRemarkEnabled
+// 开启内存空间压缩和整理，防止过多内存碎片
+-XX:+UseCMSCompactAtFullCollection
+//表示多少次Full GC后开始压缩和整理，0表示每次Full GC后立即执行压缩和整理
+-XX:CMSFullGCsBeforeCompaction=0
+
+-XX:+CMSClassUnloadingEnabled
+-XX:LargePageSizeInBytes=128M
+-XX:+UseFastAccessorMethods
+-XX:CMSInitiatingOccupancyFraction=70
+-XX:SoftRefLRUPolicyMSPerMB=0
+-XX:+PrintClassHistogram
+-XX:+PrintGCDetails
+-XX:+PrintGCTimeStamps
+-XX:+PrintHeapAtGC
+-Xloggc:$APP_HOME/logs/gc_$CURRENT_DATE.log -XX:+HeapDu
+-XX:HeapDumpPath=$APP_HOME/temp/
+-XX:OnOutOfMemoryError=$APP_HOME/bin/restart.sh
+-Dcom.sun.management.jmxremote.port=26666
+-Dcom.sun.management.jmxremote.ssl=false
+-Dcom.sun.management.jmxremote.authenticate=false,
+-jar $APP_HOME/app/*.jar,
+--spring.profiles.active=test,
+ >$APP_HOME/logs/startup.log 2>&1 &
+
+
+ //禁用Full Gc
+ -XX:+DisableExplicitGC

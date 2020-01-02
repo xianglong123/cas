@@ -1,0 +1,8 @@
+{
+  "timestamp": 1577952067639,
+  "status": 500,
+  "error": "Internal Server Error",
+  "exception": "org.mybatis.spring.MyBatisSystemException",
+  "message": "nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2",
+  "path": "/queryAccount"
+}

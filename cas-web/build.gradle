@@ -1,0 +1,6 @@
+dependencies {
+    compile project(":cas-service")
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+
+
+}

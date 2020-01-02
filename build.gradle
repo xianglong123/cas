@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+    ext {
+        springBootVersion = '1.5.9.RELEASE'
+        springCloudVersion = 'Edgware.RELEASE'
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'eclipse-wtp'
+    apply plugin: 'idea'
+    apply plugin: 'jacoco'
+
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    }
+
+    dependencyManagement {
+        imports {
+            // 这里可以配置版本信息
+            // 插件org.springframework.boot已经包含了版本管理功能,这个声明可以不要
+            // mavenBom "org.springframework.boot:spring-boot-starter-parent:2.0.4.RELEASE"
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+
+    dependencies {
+        compileOnly("org.springframework.boot:spring-boot-configuration-processor")
+        compileOnly("org.projectlombok:lombok")
+        testCompile("org.projectlombok:lombok")
+        testCompile "org.springframework.boot:spring-boot-starter-test"
+    }
+}
+
+group 'com.cas'
+version '0.0.1-SNAPSHOT'

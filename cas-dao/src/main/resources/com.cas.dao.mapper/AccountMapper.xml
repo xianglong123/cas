@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cas.dao.mapper.AccountMapper">
+
+    <resultMap id="result" type="com.cas.pojo.AccountPo">
+        <id property="id" column="id"/>
+        <result property="userId" column="user_id" typeHandler="com.cas.type.CasTypeHandler"/>
+        <result property="freezeAmount" column="freeze_Amount"/>
+        <result property="balance" column="balance"/>
+        <result property="createTime" column="create_Time"/>
+        <result property="updateTime" column="update_Time"/>
+    </resultMap>
+
+    <sql id="columns">id, user_id, freeze_Amount, balance, create_time, update_time</sql>
+
+    <sql id="dynamicWhere">
+        <where>
+            <if test="@Ognl@isNotEmpty(id)"> AND id = #{id}</if>
+            <if test="@Ognl@isNotEmpty(userId)"> AND user_id = #{userId}</if>
+            <if test="@Ognl@isNotEmpty(freezeAmount)"> AND freeze_Amount = #{freezeAmount}</if>
+            <if test="@Ognl@isNotEmpty(balance)"> AND balance = #{balance}</if>
+            <if test="@Ognl@isNotEmpty(createTime)"> AND create_time = #{createTime}</if>
+            <if test="@Ognl@isNotEmpty()"> AND update_time = #{updateTime}</if>
+        </where>
+    </sql>
+    <select id="queryAccount" resultMap="result">
+        select
+        <include refid="columns"/>
+        from tcc_account.account
+        <where>
+            <if test="@Ognl@isNotEmpty(userId)"> AND user_id = #{userId}</if>
+        </where>
+    </select>
+
+
+
+
+
+</mapper>
+

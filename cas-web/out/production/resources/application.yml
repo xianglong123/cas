@@ -1,0 +1,36 @@
+#配置端口
+server:
+  port: 8081
+  #最外层的路径
+#  context-path: /cas
+spring:
+  profiles:
+    active: dev
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/tcc_account?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+      username: root
+      password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+mybatis:
+  #配置mapper xml文件所在的路径
+  mapper-locations: classpath:com.cas.dao.mapper/*.xml
+  #配置映射类所在的包名
+  type-aliases-package: com.cas.pojo
+#  type-handlers-package: com.cas.type
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    interceptors: com.sso.util.interceptorceptor.MybatisInterceptor
+logging:
+  config: classpath:logback-spring.xml
+
+
+
+
+
+
