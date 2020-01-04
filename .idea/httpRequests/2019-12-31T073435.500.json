@@ -1,8 +1,0 @@
-{
-  "timestamp": 1577792075879,
-  "status": 500,
-  "error": "Internal Server Error",
-  "exception": "org.apache.ibatis.binding.BindingException",
-  "message": "Invalid bound statement (not found): com.cas.dao.mapper.TestMapper.queryCount",
-  "path": "/test"
-}

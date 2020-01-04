@@ -1,8 +1,0 @@
-{
-  "timestamp": 1577775913109,
-  "status": 405,
-  "error": "Method Not Allowed",
-  "exception": "org.springframework.web.HttpRequestMethodNotSupportedException",
-  "message": "Request method 'GET' not supported",
-  "path": "/test"
-}

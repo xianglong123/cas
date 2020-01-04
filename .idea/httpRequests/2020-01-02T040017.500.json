@@ -1,8 +1,0 @@
-{
-  "timestamp": 1577952017235,
-  "status": 500,
-  "error": "Internal Server Error",
-  "exception": "org.mybatis.spring.MyBatisSystemException",
-  "message": "nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression '!@Ognl@isNotEmpty(userId)'. Cause: org.apache.ibatis.ognl.MethodFailedException: Method \"isNotEmpty\" failed for object Ognl [java.lang.ClassNotFoundException: Cannot find class: java.lang.Ognl]",
-  "path": "/queryAccount"
-}

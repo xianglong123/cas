@@ -8,8 +8,8 @@
     <title>文件上传实例</title>
 </head>
 <body>
-<h1>文件上传实例 - 菜鸟教程</h1>
-<form method="post" action="/TomcatTest/UploadServlet" enctype="multipart/form-data">
+<h1>文件上传实例</h1>
+<form method="post" action="/test/uploadhttp" enctype="multipart/form-data">
     选择一个文件:
     <input type="file" name="uploadFile" />
     <br/><br/>

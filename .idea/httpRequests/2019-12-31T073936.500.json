@@ -1,8 +1,0 @@
-{
-  "timestamp": 1577792376442,
-  "status": 500,
-  "error": "Internal Server Error",
-  "exception": "org.mybatis.spring.MyBatisSystemException",
-  "message": "nested exception is org.apache.ibatis.binding.BindingException: Parameter 'id' not found. Available parameters are [userId, param1]",
-  "path": "/queryAccount"
-}
