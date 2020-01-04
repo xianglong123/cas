@@ -130,6 +130,11 @@ public class UploadServiceClient implements UploadService {
         }
     }
 
+    /**
+     * Http 获取文件 先转成MultipartHttpServletRequest 再通过name 获取 核心方法
+     * @param request
+     * @return
+     */
     private static InputStream getUploadInputStream(HttpServletRequest request) {
         MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
         MultipartFile file = multipartHttpServletRequest.getFile("uploadFile");
