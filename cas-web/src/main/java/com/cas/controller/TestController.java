@@ -1,17 +1,30 @@
 package com.cas.controller;
 
 
+import com.cas.pojo.AccountPo;
+import com.cas.pojo.ExcelModel;
+import com.cas.pojo.User;
 import com.cas.service.accountService.AccountService;
+import com.cas.service.inqueryService.InqueryService;
+import com.cas.service.scheduled.DynamicScheduleTask;
 import com.cas.service.testService.TestService;
 import com.cas.service.uploadService.UploadService;
+import com.cas.utils.SpringContextUtils;
 import com.cas.utils.StringUtil;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/test")
@@ -25,6 +38,9 @@ public class TestController {
 
     @Autowired
     private UploadService uploadService;
+
+    @Autowired
+    private InqueryService inqueryService;
 
     /**
      * c测试系统是否可用
@@ -80,7 +96,7 @@ public class TestController {
     /**
      * 上传 Excel 并 通过模版解析
      */
-    @RequestMapping("uploadhttp")
+    @RequestMapping("/uploadhttp")
     @ResponseBody
     public String uploadhttp(HttpServletRequest request) {
         try {
@@ -90,5 +106,61 @@ public class TestController {
         }
         return "ok";
     }
+
+    /**
+     * udi 核心代码
+     * @return
+     */
+    @RequestMapping("/query")
+    @ResponseBody
+    public String query() {
+        StringBuilder sb = new StringBuilder();
+        String str = "select id, user_id, freeze_Amount, balance, create_time, update_time from tcc_account.account where user_id = #{userId}";
+        sb.append("<script>").append(str).append("</script>");
+        Map<String, String> parameter = new HashMap<>();
+        parameter.put("userId", "10000");
+        String id = "queryDate2";
+        List<LinkedHashMap<String, Object>> inquery = inqueryService.inquery(id, str, parameter);
+        System.out.println(inquery);
+        return inquery.toString();
+    }
+
+
+    @RequestMapping("/addObject")
+    @ResponseBody
+    public String addObj() {
+        for (int i = 0; i <= 10; i++) {
+            Map<String, String> map = new HashMap<>();
+            AccountPo accountPo = new AccountPo();
+            User user = new User();
+            ExcelModel excelModel = new ExcelModel();
+        }
+        return "ok";
+    }
+
+    /**
+     * 获取当前运行环境dev|test|prod
+     * @return
+     */
+    @RequestMapping("/getProfiles")
+    @ResponseBody
+    public String getProfiles() {
+        String[] activeProfiles = SpringContextUtils.applicationContext.getEnvironment().getActiveProfiles();
+        System.out.println(activeProfiles);
+        return activeProfiles[0];
+    }
+
+    /**
+     * 重新设置ThreadLocal
+     */
+    @RequestMapping("/setThreadLocal")
+    @ResponseBody
+    private String setThreadLocal(String time) {
+        System.out.println("线程被运行: " + Thread.currentThread().getName());
+        DynamicScheduleTask.map.put("time", time);
+//        DynamicScheduleTask.threadLocal.set(time);
+        return "ok!";
+    }
+
 
 }

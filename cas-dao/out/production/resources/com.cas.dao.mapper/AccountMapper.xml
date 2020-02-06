@@ -24,6 +24,7 @@
             <if test="@Ognl@isNotEmpty()"> AND update_time = #{updateTime}</if>
         </where>
     </sql>
+
     <select id="queryAccount" resultMap="result">
         select
         <include refid="columns"/>

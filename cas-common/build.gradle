@@ -40,4 +40,10 @@ dependencies {
     //easyExcel
     compile("com.alibaba:easyexcel:1.1.1")
 
+    //沙箱
+    compile 'com.cloudbees.util:rhino-sandbox:1.0'
+
+    /*redis*/
+    compile 'org.springframework.boot:spring-boot-starter-data-redis:2.1.2.RELEASE'
+
 }

@@ -1,24 +1,25 @@
-buildscript {
-    repositories {
+buildscript {//为该项目配置构建脚本类路径
+    repositories {//配置该项目的存储库
+        mavenCentral() //本地库支持
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     }
     ext {
         springBootVersion = '1.5.9.RELEASE'
         springCloudVersion = 'Edgware.RELEASE'
     }
-    dependencies {
+    dependencies {// 配置此项目的依赖项
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
 
-subprojects {
+subprojects { //配置该项目的子项目
     apply plugin: 'java'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'eclipse-wtp'
     apply plugin: 'idea'
     apply plugin: 'jacoco'
 
-    repositories {
+    repositories {//配置该项目的存储库
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     }
 

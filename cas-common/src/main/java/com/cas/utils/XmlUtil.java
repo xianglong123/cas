@@ -3,7 +3,9 @@ package com.cas.utils;
 import org.dom4j.*;
 import org.dom4j.dom.DOMDocument;
 import org.dom4j.dom.DOMElement;
+import org.dom4j.io.SAXReader;
 
+import java.io.File;
 import java.util.*;
 
 /**
@@ -117,6 +119,14 @@ public class XmlUtil {
                 }
             }
         }
+    }
+
+    public static void main(String[] args) throws Exception{
+        String res = "<html><add>123</add><bbb>222</bbb></html>";
+
+        Document document = DocumentHelper.parseText(res);
+        System.out.println(document);
+
     }
 
 }

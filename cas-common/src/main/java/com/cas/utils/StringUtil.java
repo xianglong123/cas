@@ -3,6 +3,8 @@ package com.cas.utils;
 import com.google.gson.Gson;
 import org.springframework.util.StringUtils;
 
+import java.util.Arrays;
+
 import static jdk.nashorn.internal.objects.NativeString.trim;
 
 /**
@@ -42,6 +44,15 @@ public class StringUtil extends StringUtils {
             return true;
         str = trim(str);
         return "".equals(str) ? true : false;
+    }
+
+
+    public static void main(String[] args) {
+        byte[] chars = {108, 111, 118, 101};
+        // byte 转 string
+        System.out.println(new String(chars));
+        //string 转 byte
+        System.out.println(Arrays.toString("love".getBytes()));
     }
 
 }

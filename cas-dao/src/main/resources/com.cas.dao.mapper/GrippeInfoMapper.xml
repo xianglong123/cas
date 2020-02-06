@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cas.dao.mapper.GrippeInfoMapper">
+
+    <resultMap id="result" type="com.cas.domain.grippe.GrippeProv">
+        <result property="confirmedCount" column="CONFIRMED_COUNT"/>
+        <result property="curedCount" column="CURED_COUNT"/>
+        <result property="provinceShortName" column="PROVINCE_SHORT_NAME"/>
+        <result property="comment" column="COMMENT"/>
+        <result property="provinceName" column="PROVINCE_NAME"/>
+        <result property="deadCount" column="DEAD_COUNT"/>
+        <result property="suspectedCount" column="SUSPECTED_COUNT"/>
+    </resultMap>
+
+    <sql id="columns">CONFIRMED_COUNT, CURED_COUNT, PROVINCE_SHORT_NAME, COMMENT, PROVINCE_NAME, DEAD_COUNT,SUSPECTED_COUNT </sql>
+
+    <sql id="dynamicWhere">
+        <where>
+            <if test="@Ognl@isNotEmpty(confirmedCount)">AND CONFIRMED_COUNT = #{confirmedCount}</if>
+            <if test="@Ognl@isNotEmpty(curedCount)">AND CURED_COUNT = #{curedCount}</if>
+            <if test="@Ognl@isNotEmpty(provinceShortName)">AND PROVINCE_SHORT_NAME = #{provinceShortName}</if>
+            <if test="@Ognl@isNotEmpty(comment)">AND COMMENT = #{comment}</if>
+            <if test="@Ognl@isNotEmpty(provinceName)">AND PROVINCE_NAME = #{provinceName}</if>
+            <if test="@Ognl@isNotEmpty(deadCount)">AND DEAD_COUNT = #{deadCount}</if>
+            <if test="@Ognl@isNotEmpty(suspectedCount)">AND SUSPECTED_COUNT = #{suspectedCount}</if>
+        </where>
+    </sql>
+
+    <insert id="inertGrippeProvInfo" parameterType="com.cas.domain.grippe.GrippeProv">
+        insert china_grippe_prov_info values
+            (replace(uuid(), '-', ''), #{confirmedCount}, #{curedCount}, #{provinceShortName}, #{comment}, #{provinceName}, #{deadCount}, #{suspectedCount}, sysdate(), sysdate())
+    </insert>
+
+    <insert id="inertGrippeCityInfo" parameterType="com.cas.domain.grippe.GrippeCity">
+        insert china_grippe_city_info values
+            (replace(uuid(), '-', ''), #{confirmedCount}, #{curedCount}, #{cityName}, #{deadCount}, #{suspectedCount}, sysdate(), sysdate(), #{provinceName})
+    </insert>
+
+</mapper>
+

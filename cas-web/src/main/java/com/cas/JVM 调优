@@ -43,3 +43,10 @@
 
  //禁用Full Gc
  -XX:+DisableExplicitGC
+
+
+Linux JVM 查看--https://www.cnblogs.com/yjd_hycf_space/p/7755633.html
+
+
+
+excel函数：  =RIGHT(A3,LEN(A3)-FIND("@",SUBSTITUTE(A3,"\","@",LEN(A3)-LEN(SUBSTITUTE(A3,"\","")))))
