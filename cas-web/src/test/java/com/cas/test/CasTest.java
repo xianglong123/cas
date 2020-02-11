@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * 生成EXCEL 文件
@@ -51,6 +52,28 @@ public class CasTest {
         // 下载EXCEL
         writer.finish();
         log.info("导出完毕");
+    }
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //保存数据list
+        List<Integer> list = new ArrayList<>();
+
+        while(in.hasNextInt()) {
+            int num = in.nextInt();
+            System.out.println("第一次输入" + num);
+
+            for(int i = 0; i < num; i++) {
+                System.out.println("--" + in.nextInt());
+            }
+
+        }
+
+
+
+
     }
 
 }

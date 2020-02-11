@@ -10,7 +10,6 @@ import org.apache.commons.io.FilenameUtils;
 import org.junit.Test;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -139,12 +138,72 @@ public class StringTest {
         map.put("age", "23");
         String json = StringUtil.getGson().toJson(map);
 
-        //根据json字符串转换成jsonObject
+        //第一种 根据json字符串转换成jsonObject
         JsonObject asJsonObject = new JsonParser().parse(json).getAsJsonObject();
-        System.out.println(asJsonObject.get("name2").getAsString());
+        System.out.println(asJsonObject.get("name").getAsString());
+
+        //第二种
+        JSONObject jsonObject = JSONObject.parseObject(json);
+        System.out.println(jsonObject.get("name"));
     }
 
+    /**
+     * Double 自动转换  除法要是有浮点数就会自动将int转换成浮点数
+     */
+    @Test
+    public void test8() {
+        double x=2.0;
+        int y=4;
+        int z=5;
+//        x/=++y;
+        System.out.println(x/y);
+        System.out.println(y/z);
+    }
 
+    /**
+     * 查看String 的内存地址
+     */
+    @Test
+    public void test9() {
+        String name = "aa";
+        System.out.println(name == "aa");
+    }
+
+    /**
+     * 查看int 和 Integer
+     */
+    @Test
+    public void test10() {
+        int i = 0;
+        Integer j = new Integer(0);
+        System.out.println(i==j);
+        System.out.println(j.equals(i));
+    }
+
+    /**
+     * 二进制运算符～
+     */
+    @Test
+    public void test11() {
+        System.out.println(~2);
+        System.out.println(~3);
+        System.out.println(~4);
+    }
+
+    /**
+     * str 行参 和 入参
+     */
+    @Test
+    public void test12() {
+        String str = "hello";
+        System.out.println(str);
+
+
+    }
+
+    private void changeStr(String str) {
+        str = "world";
+    }
 
 
 }
