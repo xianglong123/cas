@@ -37,7 +37,7 @@ public class ScanConfig {
     }
 
     /**
-     * 该方法会得到所有的类，将类的绝对路径写入到classPaths中
+     * 该方法会得到所有的类，将类的绝对路径写入到classPaths中222
      */
     private static void doPath(File file) {
         if(file.isDirectory()) {//文件夹
