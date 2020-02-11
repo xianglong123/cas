@@ -1159,11 +1159,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ClassTest" />
+      <item itemvalue="Application.ScanConfig" />
       <item itemvalue="JUnit.StringTest.test9" />
       <item itemvalue="JUnit.StringTest.test10" />
       <item itemvalue="JUnit.StringTest.test11" />
-      <item itemvalue="Application.ClassTest" />
-      <item itemvalue="Application.ScanConfig" />
     </list>
     <recent_temporary>
       <list>
@@ -1393,6 +1393,11 @@
     <MESSAGE value="+http 获取文件 + 介绍" />
     <MESSAGE value="+测试类" />
     <option name="LAST_COMMIT_MESSAGE" value="+测试类" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="410" height="920" key="Git.Branch.Popup" />
+    <state width="410" height="920" key="Git.Branch.Popup/3584.2240" />
+    <state width="410" height="920" key="Git.Branch.Popup@3584.2240@192dpi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
