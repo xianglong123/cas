@@ -197,12 +197,20 @@ public class StringTest {
     public void test12() {
         String str = "hello";
         System.out.println(str);
-
-
     }
 
-    private void changeStr(String str) {
-        str = "world";
+
+    /**
+     * 判断字符串是不是以836开头
+     */
+    @Test
+    public void test13() {
+        String mno = "83600000000";
+        System.out.println(mno.startsWith("8"));
+        System.out.println(mno.startsWith("83"));
+        System.out.println(mno.startsWith("836"));
+        System.out.println(mno.startsWith("8360"));
+        System.out.println(mno.startsWith("8361"));
     }
 
 
