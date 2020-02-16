@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  * @author: xianglong[xiang_long@suixingpay.com]
  * @date: 16:22 2020-01-28
  * @version: V1.0
- * @review:
+ * @review: 这里存储的是反射所需要的数据
  */
 @Data
 public class Invocation {
@@ -26,6 +26,7 @@ public class Invocation {
 
     //反射方法
     public Object proceed() throws InvocationTargetException, IllegalAccessException {
+        //哪个方法 执行在 (哪个类，哪些参数);
         return method.invoke(target, params);
     }
 

@@ -16,12 +16,12 @@
 
     <sql id="dynamicWhere">
         <where>
-            <if test="@Ognl@isNotEmpty(id)"> AND id = #{id}</if>
-            <if test="@Ognl@isNotEmpty(userId)"> AND user_id = #{userId}</if>
-            <if test="@Ognl@isNotEmpty(freezeAmount)"> AND freeze_Amount = #{freezeAmount}</if>
-            <if test="@Ognl@isNotEmpty(balance)"> AND balance = #{balance}</if>
-            <if test="@Ognl@isNotEmpty(createTime)"> AND create_time = #{createTime}</if>
-            <if test="@Ognl@isNotEmpty()"> AND update_time = #{updateTime}</if>
+            <if test="@Ognl@isNotEmpty(id)">AND id = #{id}</if>
+            <if test="@Ognl@isNotEmpty(userId)">AND user_id = #{userId}</if>
+            <if test="@Ognl@isNotEmpty(freezeAmount)">AND freeze_Amount = #{freezeAmount}</if>
+            <if test="@Ognl@isNotEmpty(balance)">AND balance = #{balance}</if>
+            <if test="@Ognl@isNotEmpty(createTime)">AND create_time = #{createTime}</if>
+            <if test="@Ognl@isNotEmpty()">AND update_time = #{updateTime}</if>
         </where>
     </sql>
 
@@ -30,12 +30,13 @@
         <include refid="columns"/>
         from tcc_account.account
         <where>
-            <if test="@Ognl@isNotEmpty(userId)"> AND user_id = #{userId}</if>
+            <if test="@Ognl@isNotEmpty(userId)">AND user_id = #{userId}</if>
         </where>
     </select>
 
-
-
+    <insert id="add">
+        insert into account values(replace(uuid(), '-', ''), '10002', '10000', '0', sysdate(), sysdate())
+    </insert>
 
 
 </mapper>

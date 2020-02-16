@@ -7,4 +7,6 @@ public interface AccountMapper {
 
     AccountPo queryAccount(@Param("userId") String userId);
 
+    int add();
+
 }

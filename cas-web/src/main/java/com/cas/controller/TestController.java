@@ -7,6 +7,8 @@ import com.cas.pojo.User;
 import com.cas.service.accountService.AccountService;
 import com.cas.service.inqueryService.InqueryService;
 import com.cas.service.scheduled.DynamicScheduleTask;
+import com.cas.service.testService.HelloService;
+import com.cas.service.testService.HelloServiceImpl;
 import com.cas.service.testService.TestService;
 import com.cas.service.uploadService.UploadService;
 import com.cas.utils.SpringContextUtils;
@@ -161,6 +163,29 @@ public class TestController {
 //        DynamicScheduleTask.threadLocal.set(time);
         return "ok!";
     }
+
+    /**
+     * 测试自定义切点MyAspect
+     */
+    @RequestMapping("/myAspect")
+    @ResponseBody
+    private String myAspect() {
+        HelloService helloService = new HelloServiceImpl();
+        helloService.sayHello("xl");
+        return "ok";
+    }
+
+    /**
+     * 测试事务的隔离级别
+     */
+    @RequestMapping("/addAccount")
+    @ResponseBody
+    public String addAccount() {
+        int add = accountService.add();
+        return add + "";
+    }
+
+
 
 
 }

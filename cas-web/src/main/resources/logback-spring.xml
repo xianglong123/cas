@@ -64,9 +64,15 @@
 
 	<!--mybatis sql日志 日志的级别需要是DEBUG-->
 	<!--日志打印的包的范围，及分类日志文件存储 -->
-	<logger name="com.chelizi.cloud.*.dao" level="DEBUG" additivity="false"></logger>
+	<logger name="com.alibaba.dubbo" level="warn">
+		<appender-ref ref="ERROR" />
+		<appender-ref ref="INFO" />
+	</logger>
 
 	<springProfile name="default,dev,test">
+		<logger name="com.cas.dao.mapper" level="TRACE">
+		</logger>
+
 		<logger name="com.cas" level="INFO">
 			<appender-ref ref="INFO" />
 		</logger>

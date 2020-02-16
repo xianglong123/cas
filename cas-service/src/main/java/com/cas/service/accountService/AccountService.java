@@ -6,4 +6,6 @@ public interface AccountService {
 
     AccountPo queryAccount(String userId);
 
+    int add();
+
 }

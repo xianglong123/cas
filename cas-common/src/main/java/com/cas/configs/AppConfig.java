@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 //@ComponentScan(basePackages = {"com.cas.domain"}, excludeFilters = {@ComponentScan.Filter(classes = Merch.class)}) 可以排除调Merch这个类进去ioc spring容器中
 @ComponentScan(basePackages = {"com.cas.domain", "com.cas.service", "com.cas.configs"})
 @Configuration
-public class Appconfig {
+public class AppConfig {
 
 //    通过 @Bean 注入对象
 //    @Bean

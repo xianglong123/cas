@@ -213,5 +213,64 @@ public class StringTest {
         System.out.println(mno.startsWith("8361"));
     }
 
+    /**
+     * 数组转换
+     */
+    @Test
+    public void test14() {
+        int a[ ][ ]={{1,2},{3,4},{5,6}};
+        System.out.println(a[0][0]);
+        System.out.println(a[0][1]);
+        System.out.println(a[1][0]);
+        System.out.println(a[1][1]);
+        System.out.println(a[2][0]);
+        System.out.println(a[2][1]);
+    }
+
+    /**
+     * String的长度是否包含空格
+     */
+    @Test
+    public void test15() {
+        String en = "my name";
+        System.out.println(en.length());
+    }
+
+    /**
+     * 截取字符串
+     */
+    @Test
+    public void test16() {
+        String val = "abcdefg";
+        System.out.println(val.substring(0,6));
+    }
+
+    /**
+     * int 和 String 相加
+     * 结论： int 会被转换成 string
+     */
+    @Test
+    public void test17() {
+        String a = "7";
+        int b = 2;
+        int c = 3;
+        System.out.println(b +  a + c);
+        // 遇到字符串会将前面的公式字符串化，括号里面的不会被字符串化(里面没有字符串提前)
+        System.out.println(b + c + a + (b + b));
+    }
+
+    /**
+     *
+     * s1 指向 常量池
+     * s2 指向 对象，对象里面有常量池
+     */
+    @Test
+    public void test18() {
+        String s1 = "HelloWorld";//redundant
+        String s2 = new String("HelloWorld");
+        System.out.println(s1 == s2);// Reports any use of == or != to test for String equality, instead of an equals() call;
+        System.out.println(s1.equals(s2));
+    }
+
 
 }

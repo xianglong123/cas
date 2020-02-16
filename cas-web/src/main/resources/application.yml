@@ -17,15 +17,20 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+  aop:
+    auto: true
+    proxy-target-class: false
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
-  #配置映射类所在的包名
+  #Mybais 扫描别名包， 和注解@Alias联用
   type-aliases-package: com.cas.pojo
+  #配置typeHandler 的扫描包
 #  type-handlers-package: com.cas.type
 #  configuration:
 #    map-underscore-to-camel-case: true
 #    interceptors: com.sso.util.interceptorceptor.MybatisInterceptor
+# 日志配置
 logging:
   config: classpath:logback-spring.xml
 
