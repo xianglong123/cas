@@ -29,7 +29,9 @@ public class User {
     @Value("#{T(System).currentTimeMillis()}")
     private Long initTime;
 
-    private User() {}
+    private String hight;
+
+    public User() {}
 
     public User(String username, String password) {
         this.username = username;

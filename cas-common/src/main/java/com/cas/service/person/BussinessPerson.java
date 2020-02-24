@@ -68,6 +68,9 @@ public class BussinessPerson implements Person, BeanNameAware, BeanFactoryAware,
         System.out.println("【" + this.getClass().getSimpleName() + "】调用 setApplicationContext");
     }
 
+    /**
+     * @PostConstruct 启动容器的时候会启用
+     */
     @PostConstruct
     public void init() {
         System.out.println("【" + this.getClass().getSimpleName() + "】注解@PostConstruct 定义的自定义初始化方法!!!");

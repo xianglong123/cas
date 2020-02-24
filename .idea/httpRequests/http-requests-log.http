@@ -1,448 +1,450 @@
-POST http://127.0.0.1:8081/test/addAccount
+POST http://127.0.0.1:8081/test/validUser?id=123123&date=2020-02-20&doubleValue=222999999&integer=3000&rang=5000
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-16T045427.200.txt
+<> 2020-02-22T050924.500.json
 
 ###
 
-POST http://127.0.0.1:8081/test/addAccount
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-20&doubleValue=222999999&integer=3000&rang=5000
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-16T044848.200.txt
+<> 2020-02-22T034355.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/addAccount
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-24&doubleValue=222999999&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-16T043953.200.txt
+<> 2020-02-22T034259.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-24&doubleValue=222999999&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-16T114708.200.txt
+<> 2020-02-22T034049.400.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-24&doubleValue=222999999&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-16T114259.200.txt
+<> 2020-02-22T034037.400.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-24&doubleValue=222999999&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-16T114251.200.txt
+<> 2020-02-22T032727.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-24&doubleValue=222&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-15T013612.200.txt
+<> 2020-02-22T032718.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-24&doubleValue=222&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-15T013433.200.txt
+<> 2020-02-22T032618.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=2020-02-21&doubleValue=222&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-14T105331.200.txt
+<> 2020-02-22T032605.400.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=20200221&doubleValue=222&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-14T105223.200.txt
+<> 2020-02-22T032542.400.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+POST http://127.0.0.1:8081/test/valid?id=123123&date=20200221&doubleValue=2220000&integer=30&rang=50
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-14T105020.200.txt
+<> 2020-02-22T032519.400.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+GET http://127.0.0.1:8081/test/converter?username=xl-pass=123-age=23
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-14T104803.200.txt
+<> 2020-02-22T023843.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+GET http://127.0.0.1:8081/test/converter?num=6&username=xl-pass=123-age=23
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-14T104752.200.txt
+<> 2020-02-22T023750.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+GET http://127.0.0.1:8081/test/converter?num=6&username=xl-pass=123-age=23
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-14T104548.200.txt
+<> 2020-02-22T023749.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/myAspect
+GET http://127.0.0.1:8081/test/converter?num=6&username=xl-pass=123-age=23
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-02-14T104252.200.txt
+<> 2020-02-22T023728.200.json
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0/30 * * * ?
+POST http://127.0.0.1:8081/test/publish?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-29T040017.200.txt
+<> 2020-02-22T015449.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0/30 * * * ?
+POST http://127.0.0.1:8081/test/addAccount?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-27T123658.200.txt
+<> 2020-02-18T073449.500.json
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0/30 * * * ?
+POST http://127.0.0.1:8081/test/addAccount?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-27T094148.200.txt
+<> 2020-02-18T073310.500.json
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0/30 * * * ?
+POST http://127.0.0.1:8081/test/addAccount?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T072131.200.txt
+<> 2020-02-18T054050.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0 0/1 * * ?
+POST http://127.0.0.1:8081/test/addAccount?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T103605.200.txt
+<> 2020-02-18T053903.500.json
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0 0/1 * * ?
+POST http://127.0.0.1:8081/test/lua?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T103515.200.txt
+<> 2020-02-18T032244.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0 0/1 * * ?
+POST http://127.0.0.1:8081/test/lua?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T103500.200.txt
+<> 2020-02-18T032239.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0 0/1 * * ?
+POST http://127.0.0.1:8081/test/lua?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T103331.200.txt
+<> 2020-02-18T032214.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0 0/1 * * ?
+POST http://127.0.0.1:8081/test/publish?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
+
+<> 2020-02-18T025934.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0 0/1 * * ?
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T102733.200.txt
+<> 2020-02-18T012746.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0 0 0/1 * * ?
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T101701.200.txt
+<> 2020-02-18T012719.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0/12 * * * * ?
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T101531.200.txt
+<> 2020-02-18T012120.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/setThreadLocal?time=0/12 * * * * ?
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-26T101127.200.txt
+<> 2020-02-18T012119.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/getProfiles?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-20T021943.200.txt
+<> 2020-02-18T012118.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/getProfiles?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-20T021817.200.txt
+<> 2020-02-18T012117.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/getProfiles?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-17T045328.200.txt
+<> 2020-02-18T012116.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/getProfiles?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-17T045253.200.txt
+<> 2020-02-18T012115.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063912.200.txt
+<> 2020-02-18T012114.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063911-5.200.txt
+<> 2020-02-18T012113.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063911-4.200.txt
+<> 2020-02-18T012112-1.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063911-3.200.txt
+<> 2020-02-18T012112.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063911-2.200.txt
+<> 2020-02-18T012109.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063911-1.200.txt
+<> 2020-02-18T012108.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063911.200.txt
+<> 2020-02-18T012107.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063910-5.200.txt
+<> 2020-02-18T012102.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063910-4.200.txt
+<> 2020-02-18T012059.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063910-3.200.txt
+<> 2020-02-18T012056.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/pipeline?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063910-2.200.txt
+<> 2020-02-18T011618.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/multi?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063910-1.200.txt
+<> 2020-02-18T113512.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/multi?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063910.200.txt
+<> 2020-02-18T113426.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/multi?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063909-4.200.txt
+<> 2020-02-18T113319.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/redis?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063909-3.200.txt
+<> 2020-02-18T112114.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/redis?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063909-2.200.txt
+<> 2020-02-18T111952.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/redis?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063909-1.200.txt
+<> 2020-02-18T111757.200.txt
 
 ###
 
-POST http://127.0.0.1:8081/test/addObject?userId=10000
+POST http://127.0.0.1:8081/test/multi?num=6
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2020-01-10T063909.200.txt
+<> 2020-02-18T111218.500.json
 
 ###
 

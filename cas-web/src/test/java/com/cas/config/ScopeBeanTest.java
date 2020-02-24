@@ -1,7 +1,7 @@
 package com.cas.config;
 
 import com.cas.configs.AppConfig;
-import com.cas.configs.ScopeBean;
+import com.cas.components.ScopeBean;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

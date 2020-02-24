@@ -1,4 +1,4 @@
-package com.cas.configs;
+package com.cas.components;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;

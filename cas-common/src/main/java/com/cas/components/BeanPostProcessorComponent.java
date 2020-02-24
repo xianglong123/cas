@@ -1,4 +1,4 @@
-package com.cas.configs;
+package com.cas.components;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  * @version: V1.0
  * @review:
  */
-@Component
-public class BeanPostProcessorExample implements BeanPostProcessor {
+//@Component
+public class BeanPostProcessorComponent implements org.springframework.beans.factory.config.BeanPostProcessor {
 
 
     /**

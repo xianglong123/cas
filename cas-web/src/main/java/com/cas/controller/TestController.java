@@ -1,6 +1,7 @@
 package com.cas.controller;
 
 
+import com.cas.domain.ValidatorPojo;
 import com.cas.pojo.AccountPo;
 import com.cas.pojo.ExcelModel;
 import com.cas.pojo.User;
@@ -13,16 +14,33 @@ import com.cas.service.testService.TestService;
 import com.cas.service.uploadService.UploadService;
 import com.cas.utils.SpringContextUtils;
 import com.cas.utils.StringUtil;
+import com.cas.validator.UserValidator;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.dao.DataAccessException;
+import org.springframework.data.redis.core.RedisOperations;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.SessionCallback;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.ObjectError;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -44,8 +62,12 @@ public class TestController {
     @Autowired
     private InqueryService inqueryService;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     /**
      * c测试系统是否可用
+     *
      * @return
      */
     @PostMapping("/test")
@@ -55,19 +77,21 @@ public class TestController {
 
     /**
      * 获取Account 对象通过userId
+     *
      * @param userId
      * @return
      */
     @RequestMapping(value = "/queryAccount")
     @ResponseBody
     public String queryAccount(String userId) {
-        Gson gson =  StringUtil.getGson();
+        Gson gson = StringUtil.getGson();
         System.out.println(accountService.queryAccount(userId));
         return gson.toJson(accountService.queryAccount(userId));
     }
 
     /**
      * jsp 跳转测试
+     *
      * @return
      */
     @GetMapping("/hello")
@@ -111,6 +135,7 @@ public class TestController {
 
     /**
      * udi 核心代码
+     *
      * @return
      */
     @RequestMapping("/query")
@@ -142,6 +167,7 @@ public class TestController {
 
     /**
      * 获取当前运行环境dev|test|prod
+     *
      * @return
      */
     @RequestMapping("/getProfiles")
@@ -185,7 +211,185 @@ public class TestController {
         return add + "";
     }
 
+    /**
+     * 测试redis
+     */
+    @RequestMapping("/redis")
+    @ResponseBody
+    public String redis(String num) {
+        redisTemplate.opsForValue().set("key" + num, "value" + num);
+        return "ok";
+    }
+
+    /**
+     * 测试redis事务，结合断点测试
+     * redis事务和关系型数据库事务不一样，对于出错的命令redis只是报出错误，而错误后面的命令依旧被特别注意的地方。所以在执行redis事务前，严格地检测数据，以避免这样的事情发生
+     *
+     * @param num
+     * @return
+     */
+    @RequestMapping("/multi")
+    @ResponseBody
+    public String multi(String num) {
+        redisTemplate.opsForValue().set("key1", "value" + num);
+        // 开启事务要手动设置下面这个开启事务
+        redisTemplate.setEnableTransactionSupport(true);
+        List list = (List) new SessionCallback() {
+            @Override
+            public Object execute(RedisOperations ro) throws DataAccessException {
+                // 设置要监控key
+                ro.watch("key1");
+                // 开启事务，在exec命令执行前，全部都只是进入队列
+                ro.multi();
+                ro.opsForValue().set("key2", "value2");
+//                ro.opsForValue().increment("key" + num, 1); // 1
+                // 获取值将为null,因为redis只是把命令放入队列
+                Object value2 = ro.opsForValue().get("key2");
+                System.out.println("命令在队列，所有 value 为null 【" + value2 + "】");
+                ro.opsForValue().set("key3", "value3");
+                Object value3 = ro.opsForValue().get("key3");
+                System.out.println("命令在队列，所有 value 为null 【" + value3 + "】");
+                // 执行 exec 命令，将先判别 key1 是否在监控后被修改过，如果是则不执行事务，否则就执行事务
+                return ro.exec();
+            }
+        }.execute(redisTemplate);
+        System.out.println(list);
+        return "ok";
+    }
 
 
+    /**
+     * 测试redis使用流水线功能
+     * 10万数据读写378毫秒，一秒奖近30万数据读写
+     * 与事务一样，使用流水线的过程中，所有的命令也只是进入队列而没有执行，所以所有的命令返回值都为空
+     *
+     * @return
+     */
+    @RequestMapping("/pipeline")
+    @ResponseBody
+    public String pipeline() {
+        Long start = Instant.now().toEpochMilli();
+        redisTemplate.executePipelined(new SessionCallback() {
+            @Override
+            public Object execute(RedisOperations operations) throws DataAccessException {
+                for (int i = 1; i <= 100000; i++) {
+                    operations.opsForValue().set("pipeline_" + i, "value_" + i);
+                    String value = (String) operations.opsForValue().get("pipeline_" + i);
+                    if (i == 100000) {
+                        System.out.println("命令只是进入队列， 所有值为空【" + value + "】");
+                    }
+                }
+                return null;
+            }
+        });
+        Long end = Instant.now().toEpochMilli();
+        System.out.println("耗时：" + (end - start) + "毫秒。");
+        return "ok";
+    }
+
+    /**
+     * 测试 Redis 消息发送
+     */
+    @RequestMapping("/publish")
+    @ResponseBody
+    public String publish() {
+        redisTemplate.convertAndSend("topicl", "发布订阅测试信息");
+        return "ok";
+    }
+
+    /**
+     * 测试简单的Lua脚本
+     */
+    @RequestMapping("/lua")
+    @ResponseBody
+    public String lua() {
+        DefaultRedisScript<String> rs = new DefaultRedisScript<>();
+        // 设置脚本
+        rs.setScriptText("return 'Hello Redis'");
+        // 定义返回类型。 注意：如果没有这个定义，Spring不会返回结果
+        rs.setResultType(String.class);
+        RedisSerializer<String> stringRedisSerializer = redisTemplate.getStringSerializer();
+        // 执行Lua脚本
+        String str = (String) redisTemplate.execute(rs, stringRedisSerializer, stringRedisSerializer, null);
+        return str;
+    }
+
+    /**
+     * 测试 自定义的类型转换器好不好用
+     * com.cas.components.StringToUserConverter
+     * 测试请求地址：http://127.0.0.1:8081/test/converter?user=xl-pass123-23
+     *
+     * @param user
+     * @return
+     */
+    @GetMapping("/converter")
+    @ResponseBody
+    public com.cas.domain.User converter(com.cas.domain.User user) {
+        return user;
+    }
+
+    /**
+     * 测试 JSR-303 验证
+     */
+    @PostMapping("/valid")
+    @ResponseBody
+    public Map<String, Object> valid(@Valid ValidatorPojo validatorPojo, Errors errors) {
+        Map<String, Object> errMap = new HashMap<>();
+        // 获取错误列表
+        List<ObjectError> oes = errors.getAllErrors();
+        for (ObjectError oe : oes) {
+            if (oe instanceof FieldError) {
+                FieldError fe = (FieldError) oe;
+                errMap.put(fe.getField(), oe.getDefaultMessage());
+            } else {
+                // 非字段错误
+                errMap.put(oe.getObjectName(), oe.getDefaultMessage());
+            }
+        }
+        return errMap;
+    }
+
+    /**
+     * 调用控制器前先执行这个方法
+     *
+     * @param binder
+     */
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        // 绑定验证器
+        binder.setValidator(new UserValidator());
+        // 定义日期参数格式，参数不再需注解@DateTimeFormat, boolean参表示是否允许为空
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"), false));
+    }
+
+    /**
+     * 测试自定义验证器
+     *
+     * 请求：http://127.0.0.1:8081/test/validUser?user=xl-pass123-23&date=2020-02-21
+     * 返回：{"date":1582214400000,"hight":"身高不能为空","user":{"username":"xl","password":"pass123","age":23,"sex":false,"initTime":null,"hight":null}}
+     * @param user
+     * @param errors
+     * @param date
+     * @return 结论：自定义验证器生效，记得一定先@initBinder 绑定验证器
+     */
+    @GetMapping("/validUser")
+    @ResponseBody
+    public Map<String, Object> validUser(@Valid com.cas.domain.User user, Errors errors, Date date) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("user", user);
+        map.put("date", date);
+        // 获取错误列表
+        List<ObjectError> oes = errors.getAllErrors();
+        for (ObjectError oe : oes) {
+            if (oe instanceof FieldError) {
+                FieldError fe = (FieldError) oe;
+                map.put(fe.getField(), fe.getDefaultMessage());
+            } else {
+                // 非字段错误
+                map.put(oe.getObjectName(), oe.getDefaultMessage());
+            }
+        }
+        return map;
+    }
 
 }

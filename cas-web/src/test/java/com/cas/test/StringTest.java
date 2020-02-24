@@ -8,8 +8,10 @@ import com.google.gson.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.junit.Test;
+import org.springframework.web.servlet.HandlerMapping;
 
 import java.io.File;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -87,7 +89,7 @@ public class StringTest {
      */
     @Test
     public void test4() {
-        Map<String, String>  params = new HashMap<>();
+        Map<String, String> params = new HashMap<>();
         params.put("a_key", "a_value");
         params.put("b_key", "b_value");
         params.put("c_key", "c_value");
@@ -152,12 +154,12 @@ public class StringTest {
      */
     @Test
     public void test8() {
-        double x=2.0;
-        int y=4;
-        int z=5;
+        double x = 2.0;
+        int y = 4;
+        int z = 5;
 //        x/=++y;
-        System.out.println(x/y);
-        System.out.println(y/z);
+        System.out.println(x / y);
+        System.out.println(y / z);
     }
 
     /**
@@ -176,7 +178,7 @@ public class StringTest {
     public void test10() {
         int i = 0;
         Integer j = new Integer(0);
-        System.out.println(i==j);
+        System.out.println(i == j);
         System.out.println(j.equals(i));
     }
 
@@ -218,7 +220,7 @@ public class StringTest {
      */
     @Test
     public void test14() {
-        int a[ ][ ]={{1,2},{3,4},{5,6}};
+        int a[][] = {{1, 2}, {3, 4}, {5, 6}};
         System.out.println(a[0][0]);
         System.out.println(a[0][1]);
         System.out.println(a[1][0]);
@@ -237,12 +239,12 @@ public class StringTest {
     }
 
     /**
-     * 截取字符串
+     * 截取字符串,截取不能超过字符串长度上限
      */
     @Test
     public void test16() {
         String val = "abcdefg";
-        System.out.println(val.substring(0,6));
+        System.out.println(val.substring(0, 6));
     }
 
     /**
@@ -254,13 +256,12 @@ public class StringTest {
         String a = "7";
         int b = 2;
         int c = 3;
-        System.out.println(b +  a + c);
+        System.out.println(b + a + c);
         // 遇到字符串会将前面的公式字符串化，括号里面的不会被字符串化(里面没有字符串提前)
         System.out.println(b + c + a + (b + b));
     }
 
     /**
-     *
      * s1 指向 常量池
      * s2 指向 对象，对象里面有常量池
      */
@@ -270,6 +271,47 @@ public class StringTest {
         String s2 = new String("HelloWorld");
         System.out.println(s1 == s2);// Reports any use of == or != to test for String equality, instead of an equals() call;
         System.out.println(s1.equals(s2));
+    }
+
+    /**
+     * 替换字符串中英文括号
+     */
+    @Test
+    public void test19() {
+        String cprRegNmCn = "中国蝗虫技术科技（有限公司）(北京分公司)";
+        String upRegNm = cprRegNmCn.replace("(", "").replace(")", "").replace("（", "").replace("）", "");
+        System.out.println(upRegNm);
+    }
+
+    /**
+     * 测试StringBuilder 的" "是否有效
+     */
+    @Test
+    public void test20() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("asd").append(" ").append("dsa");
+        System.out.println(stringBuilder);
+    }
+
+    /**
+     * 手机号掩码 + 怎么写一个通用的程序运行时间检测？
+     */
+    @Test
+    public void test21() throws InterruptedException {
+        String phoneCard = "15811317734";
+        //程序运行时间开始，精确到毫秒级
+        long startTime = Instant.now().toEpochMilli();
+        //线程休眠200毫秒
+        Thread.sleep(200);
+        System.out.println(phoneCard.substring(0, 3) + "****" + phoneCard.substring(7, 11));
+        long endTime = Instant.now().toEpochMilli();
+        System.out.println("开始时间：" + startTime + "\n结束时间：" + endTime +"\n程序执行时间：" + (endTime - startTime));
+    }
+
+    @Test
+    public void test22() {
+//        HandlerMapping
+        //adapter
     }
 
 
