@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cas.dao.mapper.QueAnsMapper">
+
+    <resultMap id="result" type="com.cas.pojo.QueAnsPo">
+        <id property="uuid" column="uuid"/>
+        <result property="question" column="question"/>
+        <result property="answer" column="answer"/>
+        <result property="keywords" column="keywords"/>
+        <result property="questionUrl" column="question_url"/>
+        <result property="createTime" column="create_Time"/>
+        <result property="uptTime" column="upt_time"/>
+    </resultMap>
+
+    <sql id="columns">uuid, question, answer, keywords, question_url, create_Time, upt_time</sql>
+
+    <sql id="dynamicWhere">
+        <where>
+            <if test="@Ognl@isNotEmpty(uuid)">AND uuid = #{uuid}</if>
+            <if test="@Ognl@isNotEmpty(question)">AND question = #{question}</if>
+            <if test="@Ognl@isNotEmpty(answer)">AND answer = #{answer}</if>
+            <if test="@Ognl@isNotEmpty(keywords)">AND keywords = #{keywords}</if>
+            <if test="@Ognl@isNotEmpty(questionUrl)">AND question_url = #{questionUrl}</if>
+            <if test="@Ognl@isNotEmpty(createTime)">AND create_time = #{createTime}</if>
+            <if test="@Ognl@isNotEmpty(uptTime)">AND upt_time = #{uptTime}</if>
+        </where>
+    </sql>
+
+    <insert id="add">
+        insert into que_ans (uuid, question, answer, keywords, question_url, create_Time) value(
+        replace(uuid(), '-', ''), #{question}, #{answer}, #{keywords}, #{questionUrl}, sysdate())
+    </insert>
+
+
+</mapper>
+

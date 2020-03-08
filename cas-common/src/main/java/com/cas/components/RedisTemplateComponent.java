@@ -23,7 +23,7 @@ import java.util.Map;
  * @version: V1.0
  * @review: 模版 + 订阅监听器绑定处理器 + 自定义缓存管理器
  */
-@Component
+//@Component
 public class RedisTemplateComponent {
 
     @Autowired
@@ -47,6 +47,7 @@ public class RedisTemplateComponent {
     }
 
     // 设置RedisTemplate的序列化器
+    @SuppressWarnings("unchecked")
     private void initRedisTemplate() {
         RedisSerializer stringSerializer = redisTemplate.getStringSerializer();
         redisTemplate.setKeySerializer(stringSerializer);

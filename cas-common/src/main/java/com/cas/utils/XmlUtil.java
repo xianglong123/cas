@@ -1,12 +1,18 @@
 package com.cas.utils;
 
-import org.dom4j.*;
+import org.dom4j.Document;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
+import org.dom4j.Namespace;
+import org.dom4j.QName;
 import org.dom4j.dom.DOMDocument;
 import org.dom4j.dom.DOMElement;
-import org.dom4j.io.SAXReader;
 
-import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author: xianglong
@@ -21,15 +27,15 @@ public class XmlUtil {
     /**
      * map 转 xml
      *
-     * @param map
-     * @return
+     * @param map 参数
+     * @return 返回值
      */
     public static String map2Xml(Map<String, String> map) {
         List<Element> list = new ArrayList<>();
         for (Map.Entry<String, String> e : map.entrySet()) {
             list.add(createElement(e.getKey(), e.getValue()));
         }
-        Document doc = createDocument(list.toArray(new Element[list.size()]));
+        Document doc = createDocument(list.toArray(new Element[0]));
         return doc.asXML();
     }
 
@@ -53,9 +59,9 @@ public class XmlUtil {
     /**
      * xml 转 map
      *
-     * @param xml
-     * @param resMap
-     * @throws Exception
+     * @param xml 参数
+     * @param resMap 参数
+     * @throws Exception  异常
      */
     public static void xml2map(String xml, Map<String, Object> resMap) throws Exception {
         ele2map(DocumentHelper.parseText(xml).getRootElement(), resMap);
@@ -65,8 +71,8 @@ public class XmlUtil {
     /**
      * 核心方法(根据命名空间获取子节点)
      *
-     * @param element
-     * @param resMap
+     * @param element 参数
+     * @param resMap 参数
      */
     //递归算法(注意要有终结条件)
     @SuppressWarnings("unchecked")

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @review:
  */
 //@Component
-public class BeanPostProcessorComponent implements org.springframework.beans.factory.config.BeanPostProcessor {
+public class BeanPostProcessorComponent implements BeanPostProcessor {
 
 
     /**

@@ -1,7 +1,10 @@
 package com.cas.configs;
 
+import com.cas.domain.User;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 /**
  * @author: xianglong[xiang_long@suixingpay.com]
@@ -10,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @review:
  */
 //@ComponentScan(basePackages = {"com.cas.domain"}, excludeFilters = {@ComponentScan.Filter(classes = Merch.class)}) 可以排除调Merch这个类进去ioc spring容器中
-@ComponentScan(basePackages = {"com.cas.domain", "com.cas.service", "com.cas.configs"})
+@ComponentScan(basePackages = {"com.cas.domain", "com.cas.components"}) // 只会扫描带@Component注解的类
 @Configuration
 public class AppConfig {
 

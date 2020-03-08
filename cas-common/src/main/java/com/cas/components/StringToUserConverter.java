@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @author: xianglong[xiang_long@suixingpay.com]
  * @date: 14:29 2020-02-22
  * @version: V1.0
- * @review:
+ * @review: 类型转换器
  */
 @Component
 public class StringToUserConverter implements Converter<String, User> {

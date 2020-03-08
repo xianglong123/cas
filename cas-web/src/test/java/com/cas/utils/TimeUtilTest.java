@@ -240,5 +240,16 @@ public class TimeUtilTest {
         System.out.println("字符串转日期：" +  date2);
     }
 
+    /**
+     * 获取 5 分钟之前的时间格式为：yyyyMMddHHmmss
+     */
+    @Test
+    public void test17() {
+        String s = LocalDateTime.now().minusMinutes(5).format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
+        System.out.println(s);
+
+
+    }
+
 
 }

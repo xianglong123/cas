@@ -33,7 +33,7 @@ public class WenyiServiceTest {
                 builder.append(System.getProperty("line.separator"));
             }
             String result = builder.toString()
-                    .replace("<link rel=\"stylesheet\" type=\"text/css\" href=\"//assets.dxycdn.com/gitrepo/bbs-mobile/dist/p__Pneumonia.async.c192f2a2.css\">", "")
+                    .replace("<link rel=\"stylesheet\" typeHandler=\"text/css\" href=\"//assets.dxycdn.com/gitrepo/bbs-mobile/dist/p__Pneumonia.async.c192f2a2.css\">", "")
                     .replaceAll("<link.*", "")
                     .replaceAll("https:[0-9a-zA-Z/._\\-#]*", "")
                     .replaceAll("http:[0-9a-zA-Z/._\\-#]*", "")

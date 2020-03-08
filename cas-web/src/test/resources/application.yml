@@ -26,7 +26,7 @@ mybatis:
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
   #配置映射类所在的包名
   type-aliases-package: com.cas.pojo
-#  type-handlers-package: com.cas.type
+#  typeHandler-handlers-package: com.cas.typeHandler
 #  configuration:
 #    map-underscore-to-camel-case: true
 #    interceptors: com.sso.util.interceptorceptor.MybatisInterceptor

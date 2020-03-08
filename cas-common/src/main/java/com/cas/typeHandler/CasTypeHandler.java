@@ -1,4 +1,4 @@
-package com.cas.type;
+package com.cas.typeHandler;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;

@@ -11,11 +11,13 @@ import org.junit.Test;
 import org.springframework.web.servlet.HandlerMapping;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.SimpleFormatter;
 
 @Slf4j
 public class StringTest {
@@ -284,7 +286,7 @@ public class StringTest {
     }
 
     /**
-     * 测试StringBuilder 的" "是否有效
+     * 测试StringBuilder 的" "是否有效,结论：空格会被拼接到StringBuilder中
      */
     @Test
     public void test20() {
@@ -308,10 +310,26 @@ public class StringTest {
         System.out.println("开始时间：" + startTime + "\n结束时间：" + endTime +"\n程序执行时间：" + (endTime - startTime));
     }
 
+    /**
+     * StringBuilder 替换指定位置的参数
+     */
     @Test
     public void test22() {
-//        HandlerMapping
-        //adapter
+        String str = "15811317734";
+        StringBuilder stringBuilder = new StringBuilder("15811317734");
+        System.out.println(stringBuilder.replace(3, 7, "****"));
+        System.out.println(new StringBuilder(str).replace(3, 7, "****"));
+    }
+
+    /**
+     * 字符串 转 时间格式
+     */
+    @Test
+    public void test23() throws Exception{
+        String str = "20200203121212";
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
+        System.out.println(dateFormat.parse(dateFormat.format(format.parse(str))));
     }
 
 

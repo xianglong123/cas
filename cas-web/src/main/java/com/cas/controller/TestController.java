@@ -4,18 +4,24 @@ package com.cas.controller;
 import com.cas.domain.ValidatorPojo;
 import com.cas.pojo.AccountPo;
 import com.cas.pojo.ExcelModel;
+import com.cas.pojo.QueAnsPo;
 import com.cas.pojo.User;
 import com.cas.service.accountService.AccountService;
 import com.cas.service.inqueryService.InqueryService;
+import com.cas.service.pdfService.PdfService;
+import com.cas.service.pdfService.PdfView;
+import com.cas.service.questionService.QuestionService;
 import com.cas.service.scheduled.DynamicScheduleTask;
 import com.cas.service.testService.HelloService;
 import com.cas.service.testService.HelloServiceImpl;
 import com.cas.service.testService.TestService;
 import com.cas.service.uploadService.UploadService;
+import com.cas.utils.CookieUtil;
 import com.cas.utils.SpringContextUtils;
 import com.cas.utils.StringUtil;
 import com.cas.validator.UserValidator;
 import com.google.gson.Gson;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.dao.DataAccessException;
@@ -30,22 +36,26 @@ import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.View;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Controller
 @RequestMapping("/test")
 public class TestController {
@@ -64,6 +74,12 @@ public class TestController {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @Autowired
+    private PdfService pdfService;
+
+    @Autowired
+    private QuestionService questionService;
 
     /**
      * c测试系统是否可用
@@ -174,7 +190,7 @@ public class TestController {
     @ResponseBody
     public String getProfiles() {
         String[] activeProfiles = SpringContextUtils.applicationContext.getEnvironment().getActiveProfiles();
-        System.out.println(activeProfiles);
+        System.out.println(Arrays.toString(activeProfiles));
         return activeProfiles[0];
     }
 
@@ -202,7 +218,7 @@ public class TestController {
     }
 
     /**
-     * 测试事务的隔离级别
+     * 测试事务的隔离级别 结论：单个sql本身就是事务，不需要测试，单一sql执行具有ACID
      */
     @RequestMapping("/addAccount")
     @ResponseBody
@@ -354,7 +370,7 @@ public class TestController {
      *
      * @param binder
      */
-    @InitBinder
+//    @InitBinder
     public void initBinder(WebDataBinder binder) {
         // 绑定验证器
         binder.setValidator(new UserValidator());
@@ -364,9 +380,10 @@ public class TestController {
 
     /**
      * 测试自定义验证器
-     *
+     * <p>
      * 请求：http://127.0.0.1:8081/test/validUser?user=xl-pass123-23&date=2020-02-21
      * 返回：{"date":1582214400000,"hight":"身高不能为空","user":{"username":"xl","password":"pass123","age":23,"sex":false,"initTime":null,"hight":null}}
+     *
      * @param user
      * @param errors
      * @param date
@@ -391,5 +408,120 @@ public class TestController {
         }
         return map;
     }
+
+    /**
+     * 测试 pdf 文件
+     *
+     * @return
+     */
+    @GetMapping("/export/pdf")
+    public ModelAndView exportPdf() {
+        log.info("pdf 查询开始......");
+        // 模拟用户信息列表
+        List<com.cas.domain.User> userList = Arrays.asList(new com.cas.domain.User("xl", "123456"), new com.cas.domain.User("xl2", "123456"));
+        // 定义PDF 视图
+        log.info("pdf 视图构建开始......");
+        View view = new PdfView(pdfService.exportService());
+        log.info("pdf 视图构建结束......");
+        ModelAndView mv = new ModelAndView();
+        // 设置视图
+        mv.setView(view);
+        mv.addObject("userList", userList);
+        log.info("pdf 查询结束......");
+        return mv;
+    }
+
+    /**
+     * 添加 问题 至 que_ans表
+     *
+     * @param queAnsPo
+     * @return
+     */
+    @PostMapping("/addQuestion")
+    public String addQuestion(QueAnsPo queAnsPo) {
+        try {
+            questionService.add(queAnsPo);
+        } catch (Exception e) {
+            log.error("数据添加失败", e);
+        }
+        log.info("问题添加成功：" + queAnsPo.getQuestion());
+        return "redirect:questionView";
+    }
+
+    /**
+     * 跳转 至 添加问题页面
+     */
+    @GetMapping("/questionView")
+    public String addQuestionView() {
+        return "question/questionView";
+    }
+
+    /**
+     * 设置cookie 结论：可以设置cookie
+     */
+    @GetMapping("/setCookie")
+    @ResponseBody
+    public String setCookie(HttpServletResponse response, String key, String value) {
+        CookieUtil.set(response, key, value, true);
+        return "ok";
+    }
+
+    /**
+     * 获取cookie 结论：可以获取cookie
+     */
+    @GetMapping("/getCookie")
+    @ResponseBody
+    public String setCookie(HttpServletRequest request, String key) {
+        request.getSession();
+        return CookieUtil.getValue(request, key);
+    }
+
+    /**
+     * 断开 Session 也就是断开浏览器和服务器的响应   结论：无法断开服务器与浏览器的连接
+     */
+    @GetMapping("/delSeesion")
+    @ResponseBody
+    public String delSeesion(HttpServletRequest request) {
+        // 注销所有Session
+        request.getSession().invalidate();
+        return "ok";
+    }
+
+    /**
+     * HttpServletRequest 包含前端传过来的一切，看看都有啥
+     */
+    @GetMapping("/requestInfo")
+    @ResponseBody
+    public String requestInfo(HttpServletRequest request) throws IOException {
+        // 传说流只能取一次，我看是不是真的？
+        log.warn("1  " + request.getInputStream().toString());
+        log.warn("2  " + request.getInputStream().toString());
+        log.info("getRequestURL():{}", request.getRequestURL().toString());
+        log.info("getAuthType():{}", request.getAuthType());
+        log.info("getRemoteHost():{}", request.getRemoteHost());
+        log.info("getLocalPort():{}", request.getLocalPort());
+        log.info("1:{}", request.getRemotePort());
+        log.info("2:{}", request.getServerPort());
+        log.info("3:{}", request.getContextPath());
+
+        log.info("4:{}", request.getHeader("content-typeHandler"));
+        log.info("5:{}", request.getMethod());
+        log.info("6:{}", request.getPathInfo());
+
+        log.info("7:{}", request.getPathTranslated());
+        log.info("8:{}", request.getQueryString());
+        log.info("9:{}", request.getRequestedSessionId());
+
+        log.info("a:{}", request.getRequestURI());
+        log.info("b:{}", request.getProtocol());
+        log.info("c:{}", request.getLocalAddr());
+
+        log.info("d:{}", request.getLocalName());
+        log.info("e:{}", request.getServerName());
+        return "ok";
+    }
+
+
+
 
 }

@@ -1,3 +1,91 @@
+GET http://127.0.0.1:8081/test/getProfiles?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-03-07T104859.200.txt
+
+###
+
+GET http://127.0.0.1:8081/test/validUser?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-03-06T113401.400.json
+
+###
+
+GET http://127.0.0.1:8081/test/requestInfo?question=123123
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-02-26T061435.200.txt
+
+###
+
+GET http://127.0.0.1:8081/test/requestInfo?question=123123
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-02-26T060957.200.txt
+
+###
+
+GET http://127.0.0.1:8081/test/requestInfo?question=123123
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-02-26T060211.200.txt
+
+###
+
+POST http://127.0.0.1:8081/test/addQuestion?question=123123
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://127.0.0.1:8081/test/addQuestion?question=123123
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-02-25T100730.200.html
+
+###
+
+POST http://127.0.0.1:8081/test/addQuestion?question=123123
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-02-24T062937.200.txt
+
+###
+
+POST http://127.0.0.1:8081/test/addQuestion?question=123123
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-02-24T062827.500.json
+
+###
+
+POST http://127.0.0.1:8081/test/addQuestion?question=123123&date=2020-02-20&doubleValue=222999999&integer=3000&rang=5000
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-02-24T062736.500.json
+
+###
+
 POST http://127.0.0.1:8081/test/validUser?id=123123&date=2020-02-20&doubleValue=222999999&integer=3000&rang=5000
 Accept: */*
 Cache-Control: no-cache
@@ -355,96 +443,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 <> 2020-02-18T012102.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012059.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012056.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T011618.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/multi?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T113512.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/multi?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T113426.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/multi?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T113319.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/redis?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T112114.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/redis?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T111952.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/redis?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T111757.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/multi?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T111218.500.json
 
 ###
 
