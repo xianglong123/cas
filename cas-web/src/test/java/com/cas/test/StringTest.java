@@ -5,19 +5,23 @@ import com.cas.pojo.User;
 import com.cas.utils.StringUtil;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.junit.Test;
-import org.springframework.web.servlet.HandlerMapping;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.logging.SimpleFormatter;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 @Slf4j
 public class StringTest {
@@ -307,7 +311,7 @@ public class StringTest {
         Thread.sleep(200);
         System.out.println(phoneCard.substring(0, 3) + "****" + phoneCard.substring(7, 11));
         long endTime = Instant.now().toEpochMilli();
-        System.out.println("开始时间：" + startTime + "\n结束时间：" + endTime +"\n程序执行时间：" + (endTime - startTime));
+        System.out.println("开始时间：" + startTime + "\n结束时间：" + endTime + "\n程序执行时间：" + (endTime - startTime));
     }
 
     /**
@@ -325,12 +329,126 @@ public class StringTest {
      * 字符串 转 时间格式
      */
     @Test
-    public void test23() throws Exception{
+    public void test23() throws Exception {
         String str = "20200203121212";
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
         System.out.println(dateFormat.parse(dateFormat.format(format.parse(str))));
     }
 
+    /**
+     * List 转 json
+     */
+    @Test
+    public void test24() {
+        AdsAssignRuleItem assignRuleItem0 = new AdsAssignRuleItem("11");
+        AdsAssignRuleItem assignRuleItem1 = new AdsAssignRuleItem("11");
+        List<AdsAssignRuleItem> list = new ArrayList<>();
+        AdsAssignRuleItem assignRuleItem2 = new AdsAssignRuleItem("12");
+        AdsAssignRuleItem assignRuleItem3 = new AdsAssignRuleItem("13");
+        AdsAssignRuleItem assignRuleItem4 = new AdsAssignRuleItem("14");
+        list.add(assignRuleItem2);
+        list.add(assignRuleItem3);
+        list.add(assignRuleItem4);
+
+        List<AdsAssignRuleItem> list2 = new ArrayList<>();
+        list2.add(assignRuleItem1);
+        list2.add(assignRuleItem3);
+        list2.add(assignRuleItem4);
+        assignRuleItem0.setAssignRuleItems(list);
+        assignRuleItem1.setAssignRuleItems(list2);
+
+        System.out.println(StringUtil.getGson().toJson(assignRuleItem0));
+
+    }
+
+
+    /**
+     * 模拟父子集
+     */
+    @Data
+    private class AdsAssignRuleItem {
+        // 值
+        private String value;
+        // 值子集
+        private List<AdsAssignRuleItem> assignRuleItems;
+        AdsAssignRuleItem(String value) {
+            this.value = value;
+        }
+    }
+
+    /**
+     * Integer 超过280就不是相等的了
+     */
+    @Test
+    public void test25() {
+        Integer a = 390;
+        Integer b = 390;
+        System.out.println(a==b);
+    }
+
+    /**
+     * 如果在set里面放相同的对象，会去重吗
+     * 结论：内容完全相同就会去重，不完全相同则不会
+     */
+    @Test
+    public void test26() {
+        Set<User> userSet = new HashSet<>();
+        userSet.add(new User("1", "xl"));
+        userSet.add(new User("1", "xl2RR"));
+        System.out.println(userSet);
+    }
+
+    /**
+     * java8 先排序再去重
+     * 结论:可按照排序规则进行去重
+     */
+    @Test
+    public void test27() {
+        List<User> list = new ArrayList<>();
+        list.add(new User("2", "xl3"));
+        list.add(new User("1", "xl2")); //去重
+        list.add(new User("3", "xl"));
+        list.add(new User("1", "xl")); //保留
+
+        ArrayList<User> collect = list.stream()
+                .sorted(Comparator.comparing(User::getName))
+                .collect(Collectors.collectingAndThen(
+                        Collectors.toCollection(() -> new TreeSet<>(Comparator.comparing(User::getUid))),
+                        ArrayList::new));
+
+        System.out.println(collect);
+    }
+
+    /**
+     * java8 distinct()去重
+     * 结论：完全相同就会去重
+     */
+    @Test
+    public void test28() {
+        List<User> list = new ArrayList<>();
+        list.add(new User("2", "xl3"));
+        list.add(new User("1", "xl")); //去重
+        list.add(new User("3", "xl"));
+        list.add(new User("1", "xl")); //保留
+
+        List<User> collect = list.stream().distinct().collect(Collectors.toList());
+        System.out.println(collect);
+    }
+
+    /**
+     * String 删除最后一个字符
+     */
+    @Test
+    public void test29() {
+        String str = "123,456,789,";
+        StringBuilder builder = new StringBuilder(str);
+        System.out.println(builder.deleteCharAt(builder.length() - 1).toString());
+        // 指定偏移量开始插入字符
+        builder.insert(2, "add");
+        // 颠倒字符串
+        builder.reverse();
+
+    }
 
 }

@@ -1,65 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" line="307" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" line="313" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f9a8abe-1708-4006-8ff4-ed6613fb86bf" name="Default Changelist" comment="+redis的事务&#10;+redi监听器-com.cas.components.RedisMessageListener&#10;+模版 + 订阅监听器绑定处理器 + 自定义缓存管理器 - com.cas.components.RedisTemplateComponent&#10;+springMVC 类型转换器 - com.cas.components.StringToUserConverter&#10;+JSR-303限制 - ValidatorPojo&#10;+规则验证器 - UserValidator">
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/logComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/CookieUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/dao/mapper/QueAnsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/enums/AuthStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/enums/ProdTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/QueAnsPo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/QueAnsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-dao/src/main/resources/疫情早期爬虫数据sql构建.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/questionService/QuestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/questionService/QuestionServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/question/questionView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/TestStackOverflowErrorDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/ThreadPoolTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/InitOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69430a86-24c5-466f-a4c9-2323341db4cc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69430a86-24c5-466f-a4c9-2323341db4cc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="7f9a8abe-1708-4006-8ff4-ed6613fb86bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/Ognl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/out/production/classes/Ognl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/type/CasTypeHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/Ognl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/Ognl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/BeanPostProcessorComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/BeanPostProcessorComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/RedisTemplateComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/RedisTemplateComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/ScopeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/ScopeBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/StringToUserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/StringToUserConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/type/CasTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/typeHandler/CasTypeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/type/DateTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/typeHandler/DateTypeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/EasyExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/EasyExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/FormulaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/FormulaUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/SpringContextUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/SpringContextUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/XmlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/XmlUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-dao/out/production/resources/com.cas.dao.mapper/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/out/production/resources/com.cas.dao.mapper/AccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/grippeService/GrippeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/grippeService/GrippeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfView.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/out/production/classes/com/cas/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/out/production/classes/com/cas/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/out/production/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/out/production/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/out/production/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/XmlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/XmlUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/hello.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/AppconfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/AppconfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/BeanPostProcessorExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/BeanPostProcessorExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/service/WenyiServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/service/WenyiServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/ClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/ClassTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -202,96 +155,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/BeanUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/CookieUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/XmlUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/StringUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5612">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3513#3514#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="274">
+              <caret line="447" column="32" selection-start-line="447" selection-start-column="32" selection-end-line="447" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/FormulaUtils.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+            <state relative-caret-position="191">
+              <caret line="272" column="17" selection-start-line="272" selection-start-column="17" selection-end-line="272" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/hello.jsp">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="407">
+              <caret line="959" column="33" selection-start-line="959" selection-start-column="33" selection-end-line="959" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/upload/upload.jsp">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="71" />
+            <state relative-caret-position="4620">
+              <caret line="378" column="87" selection-start-line="378" selection-start-column="79" selection-end-line="378" selection-end-column="87" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+        <entry file="file://$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4559" column="44" selection-start-line="4559" selection-start-column="44" selection-end-line="4559" selection-end-column="44" />
+            <state relative-caret-position="285">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3990">
+              <caret line="280" column="9" selection-start-line="280" selection-start-column="9" selection-end-line="280" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13800">
+              <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69430a86-24c5-466f-a4c9-2323341db4cc/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
@@ -299,8 +239,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/UpmApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+            <state relative-caret-position="435">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -367,13 +307,9 @@
       </map>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response3.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/validator/UserValidator.java" />
         <option value="$PROJECT_DIR$/cas-common/build.gradle" />
         <option value="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfService.java" />
         <option value="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfExportService.java" />
@@ -398,9 +334,6 @@
         <option value="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfServiceClient.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/Test.java" />
         <option value="$PROJECT_DIR$/cas-service/build.gradle" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69430a86-24c5-466f-a4c9-2323341db4cc/console.sql" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/ThreadPoolTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/ScanConfigTest.java" />
@@ -415,7 +348,6 @@
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/StringToUserConverter.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/typeHandler/DateTypeHandler.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/httpUtils/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/SpringContextUtils.java" />
         <option value="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/enums/ProdTypeEnum.java" />
         <option value="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/enums/AuthStatusEnum.java" />
@@ -424,6 +356,11 @@
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/FormulaUtils.java" />
         <option value="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/hello.jsp" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69430a86-24c5-466f-a4c9-2323341db4cc/console.sql" />
+        <option value="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/User.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" />
       </list>
     </option>
   </component>
@@ -436,9 +373,8 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="GkRZvZjo" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1" />
-    <option name="y" value="26" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1792" />
     <option name="height" value="1028" />
   </component>
@@ -458,7 +394,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -514,6 +449,51 @@
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -555,6 +535,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -723,6 +711,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -2161,9 +2150,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringUtil">
-    <configuration name="ClassTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.test.ClassTest" />
+  <component name="RunManager" selected="JUnit.StringTest.test29">
+    <configuration name="StringTest.test25" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
@@ -2171,61 +2159,73 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cas.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
+      <option name="METHOD_NAME" value="test25" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScopeBeanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.config.ScopeBeanTest" />
+    <configuration name="StringTest.test26" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.config.*" />
+          <option name="PATTERN" value="com.cas.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cas.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
+      <option name="METHOD_NAME" value="test26" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.utils.StringUtil" />
-      <module name="cas.cas-common.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cas.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestStackOverflowErrorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.jvm.TestStackOverflowErrorDemo" />
-      <module name="cas.cas-web.test" />
-      <option name="VM_PARAMETERS" value="-Xss512k" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cas.jvm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProxyBeanTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringTest.test27" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.proxy.*" />
+          <option name="PATTERN" value="com.cas.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cas.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.cas.proxy.ProxyBeanTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.cas.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
+      <option name="METHOD_NAME" value="test27" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest.test28" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cas.cas-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cas.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
+      <option name="METHOD_NAME" value="test28" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest.test29" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cas.cas-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cas.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
+      <option name="METHOD_NAME" value="test29" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -2242,20 +2242,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ClassTest" />
-      <item itemvalue="Application.ScopeBeanTest" />
-      <item itemvalue="Application.TestStackOverflowErrorDemo" />
-      <item itemvalue="JUnit.ProxyBeanTest.test" />
+      <item itemvalue="JUnit.StringTest.test25" />
+      <item itemvalue="JUnit.StringTest.test26" />
+      <item itemvalue="JUnit.StringTest.test27" />
+      <item itemvalue="JUnit.StringTest.test28" />
       <item itemvalue="Spring Boot.UpmApplication" />
-      <item itemvalue="Application.StringUtil" />
+      <item itemvalue="JUnit.StringTest.test29" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringUtil" />
-        <item itemvalue="Application.TestStackOverflowErrorDemo" />
-        <item itemvalue="Application.ScopeBeanTest" />
-        <item itemvalue="Application.ClassTest" />
-        <item itemvalue="JUnit.ProxyBeanTest.test" />
+        <item itemvalue="JUnit.StringTest.test29" />
+        <item itemvalue="JUnit.StringTest.test28" />
+        <item itemvalue="JUnit.StringTest.test27" />
+        <item itemvalue="JUnit.StringTest.test26" />
+        <item itemvalue="JUnit.StringTest.test25" />
       </list>
     </recent_temporary>
   </component>
@@ -2328,7 +2328,16 @@
       <workItem from="1583241411409" duration="446000" />
       <workItem from="1583308836309" duration="1992000" />
       <workItem from="1583481762124" duration="615000" />
-      <workItem from="1583487877005" duration="12621000" />
+      <workItem from="1583487877005" duration="15199000" />
+      <workItem from="1583725687504" duration="1001000" />
+      <workItem from="1583839986884" duration="11933000" />
+      <workItem from="1584179568274" duration="2852000" />
+      <workItem from="1584246280174" duration="2019000" />
+      <workItem from="1584410246511" duration="383000" />
+      <workItem from="1584446414161" duration="2710000" />
+      <workItem from="1584499727104" duration="2472000" />
+      <workItem from="1584518837505" duration="2351000" />
+      <workItem from="1584597466680" duration="900000" />
     </task>
     <task id="LOCAL-00001" summary="+ 新作品">
       <created>1577971612690</created>
@@ -2393,43 +2402,50 @@
       <option name="project" value="LOCAL" />
       <updated>1582512358540</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="+ 线程池&#10;+ 时间工具&#10;+ 枚举-策略模式&#10;+ 完善">
+      <created>1583636107663</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583636107663</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringTest_test23 - 2020.03.03 at 17h 19m 59s.xml">
-      <configuration name="StringTest.test23" configurationId="JUnit" />
+    <history-entry file="StringTest_test26 - 2020.03.18 at 10h 52m 16s.xml">
+      <configuration name="StringTest.test26" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test23 - 2020.03.03 at 17h 23m 36s.xml">
-      <configuration name="StringTest.test23" configurationId="JUnit" />
+    <history-entry file="StringTest_test27 - 2020.03.18 at 16h 37m 53s.xml">
+      <configuration name="StringTest.test27" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_time6 - 2020.03.04 at 16h 01m 41s.xml">
-      <configuration name="TimeUtilTest.time6" configurationId="JUnit" />
+    <history-entry file="StringTest_test27 - 2020.03.18 at 16h 38m 39s.xml">
+      <configuration name="StringTest.test27" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_time14 - 2020.03.04 at 16h 02m 45s.xml">
-      <configuration name="TimeUtilTest.time14" configurationId="JUnit" />
+    <history-entry file="StringTest_test27 - 2020.03.18 at 16h 38m 54s.xml">
+      <configuration name="StringTest.test27" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_test17 - 2020.03.04 at 16h 04m 26s.xml">
-      <configuration name="TimeUtilTest.test17" configurationId="JUnit" />
+    <history-entry file="StringTest_test28 - 2020.03.18 at 16h 41m 54s.xml">
+      <configuration name="StringTest.test28" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_test17 - 2020.03.04 at 16h 05m 28s.xml">
-      <configuration name="TimeUtilTest.test17" configurationId="JUnit" />
+    <history-entry file="StringTest_test28 - 2020.03.18 at 16h 42m 11s.xml">
+      <configuration name="StringTest.test28" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_test17 - 2020.03.04 at 16h 06m 30s.xml">
-      <configuration name="TimeUtilTest.test17" configurationId="JUnit" />
+    <history-entry file="StringTest_test28 - 2020.03.18 at 16h 43m 08s.xml">
+      <configuration name="StringTest.test28" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_time15 - 2020.03.06 at 22h 25m 41s.xml">
-      <configuration name="TimeUtilTest.time15" configurationId="JUnit" />
+    <history-entry file="StringTest_test29 - 2020.03.19 at 14h 54m 38s.xml">
+      <configuration name="StringTest.test29" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeUtilTest_time11 - 2020.03.06 at 22h 27m 10s.xml">
-      <configuration name="TimeUtilTest.time11" configurationId="JUnit" />
+    <history-entry file="StringTest_test29 - 2020.03.19 at 14h 55m 28s.xml">
+      <configuration name="StringTest.test29" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProxyBeanTest_test - 2020.03.06 at 22h 52m 00s.xml">
-      <configuration name="ProxyBeanTest.test" configurationId="JUnit" />
+    <history-entry file="StringTest_test29 - 2020.03.19 at 14h 57m 05s.xml">
+      <configuration name="StringTest.test29" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362771000" />
+    <option name="totallyTimeSpent" value="391970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2441,10 +2457,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1792" height="1120" extended-state="0" />
+    <frame x="0" y="23" width="1792" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59081197" visible="true" weight="0.27714285" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.59081197" visible="true" weight="0.28914285" />
       <window_info id="Structure" order="1" sideWeight="0.40918803" side_tool="true" weight="0.30342856" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -2465,11 +2481,11 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32666665" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32871288" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.7029914" />
-      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.49942857" weight="0.3752381" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.70285714" />
+      <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.49942857" visible="true" weight="0.48076922" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" visible="true" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="17" visible="true" weight="0.4090909" />
+      <window_info anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="17" visible="true" weight="0.3352381" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -2478,7 +2494,7 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
       <window_info anchor="right" id="Gradle" order="7" weight="0.3062857" />
-      <window_info anchor="right" id="Database" order="8" weight="0.40528414" />
+      <window_info anchor="right" id="Database" order="8" weight="0.4047619" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.32960597" />
@@ -2536,7 +2552,8 @@
     <MESSAGE value="+测试用例+完善" />
     <MESSAGE value="+redis&#10;+mapper 打印日志&#10;+动态代理，实现 InvocationHandler 的接口 后 代理对象的处理逻辑会 移动到实现接口invoke()中&#10;+事务的7种传播机制和4种隔离 oracle默认读写提交 mysql默认可重复读&#10;+AnnotationConfigApplicationContext 创建springIoc容器 方便快速创建容器&#10;+@Configuration + @Bean springboot方式添加配置，依赖注入Bean&#10;+AOP 切点 切面 织入 简化功能代码，让开发更关注业务代码&#10;+@ComponentScan + @Configuration 扫描注入Bean" />
     <MESSAGE value="+redis的事务&#10;+redi监听器-com.cas.components.RedisMessageListener&#10;+模版 + 订阅监听器绑定处理器 + 自定义缓存管理器 - com.cas.components.RedisTemplateComponent&#10;+springMVC 类型转换器 - com.cas.components.StringToUserConverter&#10;+JSR-303限制 - ValidatorPojo&#10;+规则验证器 - UserValidator" />
-    <option name="LAST_COMMIT_MESSAGE" value="+redis的事务&#10;+redi监听器-com.cas.components.RedisMessageListener&#10;+模版 + 订阅监听器绑定处理器 + 自定义缓存管理器 - com.cas.components.RedisTemplateComponent&#10;+springMVC 类型转换器 - com.cas.components.StringToUserConverter&#10;+JSR-303限制 - ValidatorPojo&#10;+规则验证器 - UserValidator" />
+    <MESSAGE value="+ 线程池&#10;+ 时间工具&#10;+ 枚举-策略模式&#10;+ 完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ 线程池&#10;+ 时间工具&#10;+ 枚举-策略模式&#10;+ 完善" />
   </component>
   <component name="WindowStateProjectService">
     <state width="410" height="920" key="Git.Branch.Popup" />
@@ -2596,7 +2613,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java</url>
-          <line>28</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
@@ -2668,7 +2685,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java</url>
-          <line>117</line>
+          <line>123</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -2680,7 +2697,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java</url>
-          <line>129</line>
+          <line>135</line>
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
@@ -2908,140 +2925,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.13.RELEASE/fc9cf4f489515d429b005ee86ef105a704a94016/spring-core-4.3.13.RELEASE-sources.jar!/org/springframework/core/convert/support/GenericConversionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/StringToUserConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/grippeService/GrippeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/uploadService/UploadServiceClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/ScanConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/domain/invoke/Invocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/intercept/Interceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/intercept/MyInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/proxy/ProxyBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/typeHandler/CasTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/typeHandler/DateTypeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/4969730c661fff76fa7f9d4c7c61545817f5b033/httpclient-4.5.3-sources.jar!/org/apache/http/client/methods/HttpEntityEnclosingRequestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding>
-            <element signature="e#1913#1914#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.8/4b69507bc39c2e0c14798dd91ff4da82ac356f81/httpcore-4.4.8-sources.jar!/org/apache/http/HttpEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.8/4b69507bc39c2e0c14798dd91ff4da82ac356f81/httpcore-4.4.8-sources.jar!/org/apache/http/entity/StringEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="115" column="11" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
-          <folding>
-            <element signature="e#5355#5356#0" expanded="true" />
-            <element signature="e#5450#5451#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/4969730c661fff76fa7f9d4c7c61545817f5b033/httpclient-4.5.3-sources.jar!/org/apache/http/impl/client/BasicResponseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/4969730c661fff76fa7f9d4c7c61545817f5b033/httpclient-4.5.3-sources.jar!/org/apache/http/client/ResponseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.8/4b69507bc39c2e0c14798dd91ff4da82ac356f81/httpcore-4.4.8-sources.jar!/org/apache/http/entity/AbstractHttpEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -3178,13 +3061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cas-dao/src/main/java/com/cas/enums/AuthStatusEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4148">
@@ -3267,11 +3143,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/XmlUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
+        <state relative-caret-position="240">
           <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -3282,55 +3165,176 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/hello.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4559" column="44" selection-start-line="4559" selection-start-column="44" selection-end-line="4559" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/UpmApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+        <state relative-caret-position="720">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/upload/upload.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="71" />
+        <state relative-caret-position="195">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/hello.jsp">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="66990">
+          <caret line="4559" column="44" selection-start-line="4559" selection-start-column="44" selection-end-line="4559" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/StringUtil.java">
+    <entry file="file://$PROJECT_DIR$/cas-common/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/AccountPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/accountService/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/accountService/AccountServiceClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/java/com/cas/dao/mapper/AccountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="88" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5612">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="7740">
+          <caret line="524" selection-start-line="524" selection-end-line="524" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3483#3484#0" expanded="true" />
             <element signature="e#3513#3514#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/ReflectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/TreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="169" column="34" selection-start-line="169" selection-start-column="11" selection-end-line="169" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/SortedSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4620">
+          <caret line="378" column="87" selection-start-line="378" selection-start-column="79" selection-end-line="378" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3990">
+          <caret line="280" column="9" selection-start-line="280" selection-start-column="9" selection-end-line="280" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13800">
+          <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69430a86-24c5-466f-a4c9-2323341db4cc/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/UpmApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="959" column="33" selection-start-line="959" selection-start-column="33" selection-end-line="959" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="272" column="17" selection-start-line="272" selection-start-column="17" selection-end-line="272" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="447" column="32" selection-start-line="447" selection-start-column="32" selection-end-line="447" selection-end-column="32" />
         </state>
       </provider>
     </entry>
