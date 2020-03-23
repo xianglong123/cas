@@ -316,6 +316,7 @@ public class StringTest {
 
     /**
      * StringBuilder 替换指定位置的参数
+     * 结论：字符串从0开始算起，包前不包后替换
      */
     @Test
     public void test22() {
@@ -410,6 +411,9 @@ public class StringTest {
         list.add(new User("1", "xl2")); //去重
         list.add(new User("3", "xl"));
         list.add(new User("1", "xl")); //保留
+
+
+
 
         ArrayList<User> collect = list.stream()
                 .sorted(Comparator.comparing(User::getName))
