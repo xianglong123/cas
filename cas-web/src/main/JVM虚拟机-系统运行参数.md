@@ -5,3 +5,4 @@
     -Xmx20m 堆最大值20m (堆最大值和最小值相等可避免堆自动扩展)
     -XX:+HeapDumpOnOutOfMemoryError  可以让虚拟机出现内存溢出异常的时候Dump出当前的内存堆快照，以便后期分析
     -XX:HeapDumpPath=/Users/xianglong/Desktop/其他/Dump 堆快照转储保存路径
+    -XX:+PrintGCDetails 打印GC日志

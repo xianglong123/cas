@@ -46,6 +46,10 @@ public class StringUtil extends StringUtils {
         return "".equals(str);
     }
 
+    public static boolean isNotEmpty(String str) {
+        return !isEmpty(str);
+    }
+
 
     public static void main(String[] args) {
         byte[] chars = {108, 111, 118, 101};
