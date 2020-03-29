@@ -9,7 +9,6 @@ package com.cas.jvm.内存溢出;
 public class RuntimeConstantPoolInternOOMTest {
 
     public static void main(String[] args) {
-
         String str1 = "java2";
         System.out.println(str1.intern() == str1);
     }

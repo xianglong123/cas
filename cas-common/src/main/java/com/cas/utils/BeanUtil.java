@@ -73,17 +73,32 @@ public class BeanUtil {
 
     /**
      * 比较两个对象差异的属性，并修改目标对象
-     *
-     * @param source 源对象
-     * @param target 目标对象
-     * @param recursive 是否递归处理子对象
-     * @param diffPropUseFullPath 差异属性是否全路径
-     * @param propertyPath 对象当前路径
-     * @param ignoreProperties 不比较的属性
+     * @param source
+     * @param target
+     * @param recursive
+     * @param diffPropUseFullPath
+     * @param ignoreProperties
      * @return
      * @throws Exception
      */
-    public static Map<String, String[]> _copy(Object source, Object target, boolean recursive, boolean diffPropUseFullPath, String propertyPath, String... ignoreProperties) throws Exception {
+    public static Map<String, String[]> copy(Object source, Object target, boolean recursive, boolean diffPropUseFullPath, String... ignoreProperties) throws Exception {
+        return _copy(source, target, recursive, diffPropUseFullPath, "", ignoreProperties);
+    }
+
+
+        /**
+         * 比较两个对象差异的属性，并修改目标对象
+         *
+         * @param source 源对象
+         * @param target 目标对象
+         * @param recursive 是否递归处理子对象
+         * @param diffPropUseFullPath 差异属性是否全路径
+         * @param propertyPath 对象当前路径
+         * @param ignoreProperties 不比较的属性
+         * @return
+         * @throws Exception
+         */
+    private static Map<String, String[]> _copy(Object source, Object target, boolean recursive, boolean diffPropUseFullPath, String propertyPath, String... ignoreProperties) throws Exception {
 
         // 申明差异属性容器
         Map<String, String[]> diffMap = new HashMap<>();

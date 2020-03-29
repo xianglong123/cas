@@ -15,11 +15,10 @@ import java.util.Map;
 public class IntrospectorTest {
 
     public static void main(String[] args) throws  Exception{
-
         User user = new User();
         User user2 = new User();
         user2.setAge(8);
-        Map<String, String[]> diffMap = BeanUtil._copy(user2, user, true, true, "");
+        Map<String, String[]> diffMap = BeanUtil.copy(user2, user, true, true, "");
         System.out.println(StringUtil.getGson().toJson(user));
         System.out.println(StringUtil.getGson().toJson(user2));
         System.out.println(StringUtil.getGson().toJson(diffMap));

@@ -28,6 +28,8 @@ import java.util.Map;
 //@EnableScheduling   // 2.开启定时任务
 public class DynamicScheduleTask implements SchedulingConfigurer{
 
+    private static final int _1MB = 1024 * 1024;
+
     public static ThreadLocal<String> threadLocal = new ThreadLocal<>();
 
     public static Map<String, String> map = new HashMap<>();
@@ -62,10 +64,12 @@ public class DynamicScheduleTask implements SchedulingConfigurer{
 
     //每隔一小时
     private String getCron(){
+        byte[] allocation = new byte[4 * _1MB];
+
         System.out.println("线程号: " + Thread.currentThread().getName() + "  时间计划: " + map.get("time"));
         System.out.println("ThreadLocal 线程号: " + Thread.currentThread().getName() + "   ThreadLocal: " + threadLocal.get());
         if(StringUtil.isEmpty(map.get("time")))
-            return "0/10 * * * * ?";
+            return "0/3 * * * * ?";
         else
             return map.get("time");
     }
