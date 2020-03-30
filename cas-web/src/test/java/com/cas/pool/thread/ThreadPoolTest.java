@@ -23,14 +23,14 @@ public class ThreadPoolTest {
 
         // 创建任务
         Collection<Callable<String>> list = new ArrayList<>();
-        list.add(() -> {
-            System.out.println("线程已执行");
-            return "ok";
-        });
-
+        for (int i = 0; i <= 100; i++) {
+            list.add(() -> {
+                System.out.println("线程已执行" + Thread.currentThread().getName());
+                return "ok";
+            });
+        }
         // 执行线程
         pool.invokeAll(list);
-
         // 关闭线程池
         pool.shutdown();
     }

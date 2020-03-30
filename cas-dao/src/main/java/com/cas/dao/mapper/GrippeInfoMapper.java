@@ -2,6 +2,7 @@ package com.cas.dao.mapper;
 
 import com.cas.domain.grippe.GrippeCity;
 import com.cas.domain.grippe.GrippeProv;
+import org.springframework.stereotype.Service;
 
 /**
  * @author: xianglong[xiang_long@suixingpay.com]
@@ -9,6 +10,7 @@ import com.cas.domain.grippe.GrippeProv;
  * @version: V1.0
  * @review:
  */
+@Service
 public interface GrippeInfoMapper {
 
     int inertGrippeProvInfo(GrippeProv grippeProv);
