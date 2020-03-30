@@ -40,7 +40,7 @@ public class Ognl {
         } else if (o instanceof Boolean) {
             return o == null;
         } else {
-            throw new IllegalArgumentException("Illegal argument type,must be : Map,Collection,Array,String. but was:" + o.getClass());
+            throw new IllegalArgumentException("Illegal argument typeHandler,must be : Map,Collection,Array,String. but was:" + o.getClass());
         }
 
         return false;

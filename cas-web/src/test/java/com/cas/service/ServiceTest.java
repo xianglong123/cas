@@ -1,6 +1,6 @@
 package com.cas.service;
 
-import com.cas.configs.Appconfig;
+import com.cas.configs.AppConfig;
 import com.cas.service.person.BussinessPerson;
 import com.cas.service.person.Person;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ServiceTest {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Appconfig.class);
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         Person person = ctx.getBean(BussinessPerson.class);
         person.service();
         ctx.close();

@@ -27,7 +27,7 @@ public class StringUtil extends StringUtils {
     /**
      * 获取一个Gson实例
      *
-     * @return
+     * @return 返回值
      */
     public static Gson getGson() {
         return gson;
@@ -36,14 +36,18 @@ public class StringUtil extends StringUtils {
     /**
      * description: 判断<code>str</code>是否为空串或<code>null</code>
      *
-     * @param str
+     * @param str 参数
      * @return 若为空串或<code>null</code>返回<code>true</code>,否则返回<code>false</code>
      */
     public static boolean isEmpty(String str) {
         if (null == str)
             return true;
         str = trim(str);
-        return "".equals(str) ? true : false;
+        return "".equals(str);
+    }
+
+    public static boolean isNotEmpty(String str) {
+        return !isEmpty(str);
     }
 
 

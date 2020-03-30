@@ -122,7 +122,8 @@ public class EasyExcelUtil {
     public static <E> List<E> readExcelTiehModel(InputStream inputStream, Class<? extends BaseRowModel> clazz, ExcelTypeEnum excelTypeEnum) {
         //解析每行结果在listener中处理
         ModelExcelListense<E> listense = new ModelExcelListense<>();
-        ExcelReader excelReader = new ExcelReader(inputStream, ExcelTypeEnum.XLSX, null, listense);
+//        ExcelReader excelReader = new ExcelReader(inputStream,null, listense);
+        ExcelReader excelReader = new ExcelReader(inputStream, excelTypeEnum, null, listense);
         //默认只有一列表头
         excelReader.read(new Sheet(1, 1, clazz));
 

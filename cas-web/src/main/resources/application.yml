@@ -17,15 +17,32 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+  aop:
+    auto: true
+    proxy-target-class: false
+  redis:
+    pool:
+      max-idle: 10
+      min-idle: 5
+      max-wait: 2000
+      max-active: 10
+    timeout: 2000
+  cache:
+    cache-names: redisCache
+    type: REDIS
+    redis:
+      time-to-live: 600000
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
-  #配置映射类所在的包名
+  #Mybais 扫描别名包， 和注解@Alias联用
   type-aliases-package: com.cas.pojo
-#  type-handlers-package: com.cas.type
+  #配置typeHandler 的扫描包
+#  typeHandler-handlers-package: com.cas.typeHandler
 #  configuration:
 #    map-underscore-to-camel-case: true
 #    interceptors: com.sso.util.interceptorceptor.MybatisInterceptor
+# 日志配置
 logging:
   config: classpath:logback-spring.xml
 

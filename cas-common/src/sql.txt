@@ -49,3 +49,6 @@ alter table china_grippe_city_info modify column CONFIRMED_COUNT int comment '�
 alter table china_grippe_city_info modify column CURED_COUNT int comment '治愈人数';
 alter table china_grippe_city_info modify column CITY_NAME int comment '市全称';
 alter table china_grippe_city_info modify column DEAD_COUNT int comment '死亡人数';
+
+-- mac 启动 mysql (命令行执行)
+sudo chown -R mysql /usr/local/mysql/data

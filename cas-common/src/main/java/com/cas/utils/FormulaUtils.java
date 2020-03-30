@@ -62,7 +62,7 @@ public class FormulaUtils {
         } catch (Exception e) {
             log.error("执行JavaScript出错! javascript={}, error={}", javascript, e);
         } finally {
-            context.exit();
+            Context.exit();
         }
         return result;
     }

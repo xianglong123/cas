@@ -1,4 +1,4 @@
-package com.cas.configs;
+package com.cas.components;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
@@ -10,10 +10,17 @@ import org.springframework.stereotype.Component;
  * @version: V1.0
  * @review:
  */
-@Component
-public class BeanPostProcessorExample implements BeanPostProcessor {
+//@Component
+public class BeanPostProcessorComponent implements BeanPostProcessor {
 
 
+    /**
+     * 这个方法子啊每一个bean调用 之前 都会执行
+     * @param bean
+     * @param beanName
+     * @return
+     * @throws BeansException
+     */
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         System.out.println("BeanPostProcessor调用" +
@@ -22,10 +29,17 @@ public class BeanPostProcessorExample implements BeanPostProcessor {
         return bean;
     }
 
+    /**
+     * 这个方法子啊每一个bean调用 之后 都会执行
+     * @param bean
+     * @param beanName
+     * @return
+     * @throws BeansException
+     */
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         System.out.println("BeanPostProcessor调用" +
-                "postProcessBeforeInitialization 方法，参数【"
+                "postProcessAfterInitialization 方法，参数【"
                 + bean.getClass().getSimpleName() + "】【" + beanName +"】");
         return bean;
     }

@@ -1,9 +1,9 @@
 package com.cas.service;
 
-import com.cas.intercept.MyInterceptor;
+import com.cas.BaseTest;
 import com.cas.service.testService.HelloService;
 import com.cas.service.testService.HelloServiceImpl;
-import com.cas.utils.ProxyBean;
+import org.junit.Test;
 
 /**
  * @author: xianglong[xiang_long@suixingpay.com]
@@ -11,14 +11,12 @@ import com.cas.utils.ProxyBean;
  * @version: V1.0
  * @review:
  */
-public class HelloServiceTest {
+public class HelloServiceTest extends BaseTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         HelloService helloService = new HelloServiceImpl();
-        HelloService proxy = (HelloService) ProxyBean.getProxyBean(helloService, new MyInterceptor());
-        proxy.sayHello("xl");
-        System.out.println("\n############# is null !!! ##############\n");
-        proxy.sayHello(null);
+        helloService.sayHello("xl");
     }
 
 }

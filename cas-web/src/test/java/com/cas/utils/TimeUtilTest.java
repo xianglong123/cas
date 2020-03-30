@@ -146,6 +146,7 @@ public class TimeUtilTest {
         if (yesterday.isBefore(today)) {
             System.out.println("之前的日期：" + yesterday );
         }
+
     }
 
 
@@ -238,6 +239,47 @@ public class TimeUtilTest {
         //字符串转日期
         LocalDateTime date2 = LocalDateTime.parse(str, formatter1);
         System.out.println("字符串转日期：" +  date2);
+    }
+
+    /**
+     * 获取 5 分钟之前的时间格式为：yyyyMMddHHmmss
+     */
+    @Test
+    public void test17() {
+        String s = LocalDateTime.now().minusMinutes(5).format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
+        System.out.println(s);
+    }
+
+    /**
+     * 时间比较
+     */
+    @Test
+    public void test18() {
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime before = LocalDateTime.now().minusMinutes(2);
+        if(now.isAfter(before)) {
+            System.out.println("true");
+        }
+    }
+
+    /**
+     * 测试 下面这种等于 是否可行
+     * 结论：不可行
+     */
+    @Test
+    public void test19() {
+        if("'1','2'".equals("'1','2'")) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
+
+    @Test
+    public void test20() {
+        int i = 20;
+        Integer j = 10;
+        System.out.println(i-j);
     }
 
 

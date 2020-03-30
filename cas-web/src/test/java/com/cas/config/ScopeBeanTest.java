@@ -1,7 +1,7 @@
 package com.cas.config;
 
-import com.cas.configs.Appconfig;
-import com.cas.configs.ScopeBean;
+import com.cas.configs.AppConfig;
+import com.cas.components.ScopeBean;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -15,7 +15,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ScopeBeanTest {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Appconfig.class);
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         ScopeBean scopeBean1 = ctx.getBean(ScopeBean.class);
         ScopeBean scopeBean2 = ctx.getBean(ScopeBean.class);
         System.out.println(scopeBean1 == scopeBean2);
