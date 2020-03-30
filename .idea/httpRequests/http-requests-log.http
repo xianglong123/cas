@@ -1,3 +1,12 @@
+GET http://127.0.0.1:8081/test/query?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-03-29T052656.200.txt
+
+###
+
 GET http://127.0.0.1:8081/test/getProfiles?question=123123&user=xl-pass123-23&date=2020-02-21
 Accept: */*
 Cache-Control: no-cache
@@ -434,15 +443,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 <> 2020-02-18T012107.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012102.200.txt
 
 ###
 
