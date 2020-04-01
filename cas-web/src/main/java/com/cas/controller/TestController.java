@@ -54,6 +54,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Controller
@@ -73,7 +74,7 @@ public class TestController {
     private InqueryService inqueryService;
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String, String> redisTemplate;
 
     @Autowired
     private PdfService pdfService;
@@ -234,6 +235,23 @@ public class TestController {
     @ResponseBody
     public String redis(String num) {
         redisTemplate.opsForValue().set("key" + num, "value" + num);
+        return "ok";
+    }
+
+    /**
+     * 测试redis
+     * redis事物 解决setIfAbsent和expire非原子操作概率bug
+     *
+     */
+    @RequestMapping("/redisSetIfAbsent")
+    @ResponseBody
+    public String redisSetIfAbsent() {
+        redisTemplate.setEnableTransactionSupport(true);
+        redisTemplate.multi();
+        redisTemplate.opsForValue().setIfAbsent("INCOMPATIBILITY_JOB_QUERY_STATUS_RONGLIAN","");
+        redisTemplate.expire("INCOMPATIBILITY_JOB_QUERY_STATUS_RONGLIAN",15, TimeUnit.SECONDS);
+        List<Object> result = redisTemplate.exec(); // 这里result会返回事务内每一个操作的结果，如果setIfAbsent操作失败后，result[0]会为false。
+        System.out.println(result.get(0));
         return "ok";
     }
 

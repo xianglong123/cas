@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -35,10 +36,10 @@ public class CasTest {
         // 设置标题
         Table table = new Table(1);
         List<List<String>> titles = new ArrayList<>();
-        titles.add(Arrays.asList("用户ID"));
-        titles.add(Arrays.asList("名称"));
-        titles.add(Arrays.asList("年龄"));
-        titles.add(Arrays.asList("生日"));
+        titles.add(Collections.singletonList("用户ID"));
+        titles.add(Collections.singletonList("名称"));
+        titles.add(Collections.singletonList("年龄"));
+        titles.add(Collections.singletonList("生日"));
         table.setHead(titles);
 
         // 查询数据导出即可，比如说一次性总共查询出100条数据
@@ -70,10 +71,6 @@ public class CasTest {
             }
 
         }
-
-
-
-
     }
 
 }

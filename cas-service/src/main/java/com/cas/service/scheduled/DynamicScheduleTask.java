@@ -35,7 +35,7 @@ public class DynamicScheduleTask implements SchedulingConfigurer{
     public static Map<String, String> map = new HashMap<>();
 
     static {
-        map.put("time", "0/10 * * * * ?");
+        map.put("time", "0 */1 * * * ?");
         threadLocal.set("threadLocal is running!!!");
     }
 
@@ -47,7 +47,8 @@ public class DynamicScheduleTask implements SchedulingConfigurer{
 
         taskRegistrar.addTriggerTask(
                 //1.添加任务内容(Runnable)
-                () -> grippeService.collectDate(),
+//                () -> grippeService.collectDate(),
+                () -> System.out.println("时间任务"),
                 //2.设置执行周期(Trigger)
                 triggerContext -> {
                     //2.1 从数据库获取执行周期
@@ -64,8 +65,7 @@ public class DynamicScheduleTask implements SchedulingConfigurer{
 
     //每隔一小时
     private String getCron(){
-        byte[] allocation = new byte[4 * _1MB];
-
+//        byte[] allocation = new byte[4 * _1MB];
         System.out.println("线程号: " + Thread.currentThread().getName() + "  时间计划: " + map.get("time"));
         System.out.println("ThreadLocal 线程号: " + Thread.currentThread().getName() + "   ThreadLocal: " + threadLocal.get());
         if(StringUtil.isEmpty(map.get("time")))

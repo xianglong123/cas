@@ -1,6 +1,7 @@
 package com.cas.test;
 
 import com.alibaba.fastjson.JSONObject;
+import com.cas.pojo.AccountPo;
 import com.cas.pojo.User;
 import com.cas.utils.StringUtil;
 import com.google.gson.JsonObject;
@@ -8,12 +9,14 @@ import com.google.gson.JsonParser;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -454,5 +457,81 @@ public class StringTest {
         builder.reverse();
 
     }
+
+    /**
+     * 实用
+     * List 转 字符串
+     * 例如 List -->  a,b,c,d
+     */
+    @Test
+    public void test30() {
+        List<String> list = Arrays.asList("a", "b", "c", "d");
+        String join = StringUtils.join(list, ",");
+        System.out.println(join);
+    }
+
+    /**
+     * 比较(S+S)和StringBuilder.append()方法效率
+     */
+    @Test
+    public void test31() {
+        // S+S
+        String a = "1";
+        long startTime = System.currentTimeMillis();
+        for(int i = 0; i <= 100000; i++) {
+            a += "1";
+        }
+        long endTime = System.currentTimeMillis();
+        System.out.println("S+S 运行时间: " + (endTime - startTime));
+    }
+
+    /**
+     * 比较(S+S)和StringBuilder.append()方法效率
+     */
+    @Test
+    public void test32() {
+        StringBuilder a=new StringBuilder("1");
+        long startTime=System.currentTimeMillis();
+        for(int i=0;i<1000000;i++){
+            a.append("1");
+        }
+        long endTime=System.currentTimeMillis();
+        System.out.print(endTime-startTime);
+    }
+
+    /**
+     * List<String[]> 内部结构
+     */
+    @Test
+    public void test33() {
+        List<String[]> list = new ArrayList<>();
+        list.add(new String[]{"1","11"});
+        list.add(new String[]{"2","22"});
+        for(String[] strings : list) {
+            System.out.println(strings[0] + " " + strings[1]);
+        }
+    }
+
+    /**
+     * 数组 索引的问题
+     * 结论："/home/app/share/3/4/5" 转换成数组 [0] 是 null
+     */
+    @Test
+    public void test34() {
+        String str = "/home/app/share/3/4/5";
+
+        System.out.println(str.split("/")[1]);
+        System.out.println(str.split("/")[0]);
+        System.out.println(str.split("/")[3]);
+    }
+
+    @Test
+    public void test35() {
+        AccountPo accountPo = new AccountPo();
+        System.out.println(StringUtil.getGson().toJson(accountPo));
+
+
+    }
+
 
 }

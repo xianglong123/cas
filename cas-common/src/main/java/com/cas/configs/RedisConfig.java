@@ -14,12 +14,12 @@ import redis.clients.jedis.JedisPoolConfig;
  * @version: V1.0
  * @review: 依赖注入 RedisTemplate 暂时失效
  */
-//@Configuration
+@Configuration
 public class RedisConfig {
 
     private RedisConnectionFactory redisConnectionFactory = null;
 
-//    @Bean(name = "RedisConnectionFactory")
+    @Bean(name = "RedisConnectionFactory")
     public RedisConnectionFactory initRedisConnectionFactory() {
         if(this.redisConnectionFactory != null) {
             return this.redisConnectionFactory;
@@ -46,7 +46,7 @@ public class RedisConfig {
      * 依赖注入 RedisTemplate
      * @return
      */
-//    @Bean(name = "redisTemplate")
+    @Bean(name = "redisTemplate")
     public RedisTemplate<Object, Object> initRedisTemplate() {
         RedisTemplate<Object, Object> redisTemplate = new RedisTemplate<>();
         // RedisTemplate 会自动初始化 StringRedisSerializer 所以这里直接获取

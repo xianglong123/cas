@@ -1,3 +1,48 @@
+GET http://127.0.0.1:8081/test/redisSetIfAbsent?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-04-01T025052.200.txt
+
+###
+
+GET http://127.0.0.1:8081/test/redisSetIfAbsent?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-03-31T085338.200.txt
+
+###
+
+GET http://127.0.0.1:8081/test/redisSetIfAbsent?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-03-31T085114.200.txt
+
+###
+
+GET http://127.0.0.1:8081/test/redisSetIfAbsent?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-03-31T085109.200.txt
+
+###
+
+GET http://127.0.0.1:8081/test/redisSetIfAbsent?question=123123&user=xl-pass123-23&date=2020-02-21
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-03-31T085104.200.txt
+
+###
+
 GET http://127.0.0.1:8081/test/query?question=123123&user=xl-pass123-23&date=2020-02-21
 Accept: */*
 Cache-Control: no-cache
@@ -398,51 +443,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 <> 2020-02-18T012113.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012112-1.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012112.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012109.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012108.200.txt
-
-###
-
-POST http://127.0.0.1:8081/test/pipeline?num=6
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2020-02-18T012107.200.txt
 
 ###
 
