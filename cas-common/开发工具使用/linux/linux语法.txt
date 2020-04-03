@@ -1,0 +1,19 @@
+1. 查看日志  tail -80f server.log
+2. 分页查看日志  less server.long || more server.log
+3. 分页查看搜索日志  grep "xx" server.log|less
+4. 查看Java进程  ps -ef|grep java
+5. 杀死Java进程 kill -9 进程号
+6. 上传文件 rz
+7. 下载文件 sz
+8. 从本地复制到远程  scp /home/daisy/full.tar.gz root@172.19.2.75:/home/root （然后会提示你输入另外那台172.19.2.75主机的root用户的登录密码，接着就开始copy了），复制目录加参数 -r (递归) 即可
+9. 从远程复制到本地 scp root@/172.19.2.75:/home/root/full.tar.gz /home/daisy/full.tar.gz
+10.查看linux物理cup数 cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+11.查看linux内存数 cat /proc/meminfocat /proc/meminfo
+12. 查看物理 CPU 个数 cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+13. 查看每个物理 CPU 中 core 的个数（即核数）cat /proc/cpuinfo| grep "cpu cores"| uniq
+14. 查看 CPU 信息（型号）cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+15. 查看内存信息  cat /proc/meminfo
+16. 查看逻辑 CPU 的个数 cat /proc/cpuinfo| grep "processor"| wc -l
+17. 解压压缩文件
+
+

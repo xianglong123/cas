@@ -1,0 +1,138 @@
+Ctrl   Shift   Alt
+Ctrl + A 全选
+Ctrl + B 查询当前方法谁调用
+Ctrl + C 复制
+Ctrl + D 复制当前行数
+Ctrl + E 打开最近打开的文件
+Ctrl + F 当前页面查询
+Ctrl + G 跳转行数
+Ctrl + H 查看当前类与父类的继承关系
+Ctrl + I No methods to implement have been found
+Ctrl + J 快捷模型方法<比如循环，线程的创建...>
+Ctrl + K 提交当前改变至git本地仓库
+Ctrl + L 向下查询下一个匹配的字段 和 Ctrl + F 配合使用
+Ctrl + M 移动至光标所在位置
+Ctrl + N 查询类 Class
+Ctrl + O 快捷实现接口方法
+Ctrl + P NULL
+Ctrl + Q NULL
+Ctrl + R 替换
+Ctrl + S NULL
+Ctrl + T 更新当前分支
+Ctrl + U NULL
+Ctrl + V 粘贴
+Ctrl + W 逐层增加选中内容
+Ctrl + X 剪切
+Ctrl + Y 删除当前行
+Ctrl + Z 撤销
+Ctrl + 回车 光标不变，当前行向下移动一行
+
+Ctrl + Shift + A 查询idea功能Action
+Ctrl + Shift + B 可以获取到表情--😘❤😝
+Ctrl + Shift + C NULL
+Ctrl + Shift + D NULL
+Ctrl + Shift + E 查询最近修改文件
+Ctrl + Shift + F 查询文件根据Path
+Ctrl + Shift + G 快捷打开右边小地图
+Ctrl + Shift + H NULL
+Ctrl + Shift + I 对.txt文件可以打开缩略浏览模式
+Ctrl + Shift + J 将下一行合并到当前行
+Ctrl + Shift + K push代码至远端仓库
+Ctrl + Shift + L 向上查询匹配的字段 和 Ctrl + L相反 ，与Ctrl + F配合使用
+Ctrl + Shift + M 在两个对应的括号
+Ctrl + Shift + N 查询文件
+Ctrl + Shift + O 打开翻译界面
+Ctrl + Shift + P NULL
+Ctrl + Shift + Q NULL
+Ctrl + Shift + R 查询集合替换
+Ctrl + Shift + S 快速切换翻译工具
+Ctrl + Shift + T Create New Test
+Ctrl + Shift + U 大小写切换
+Ctrl + Shift + V Choose content to paste (选择内容去粘贴)
+Ctrl + Shift + W NULL
+Ctrl + Shift + X NULL
+Ctrl + Shift + Y NULL
+Ctrl + Shift + Z 撤销
+Ctrl + Shift + 回车  光标向下加一行
+
+Ctrl + Alt + A 截图(前提微信QQTiM打开)
+Ctrl + Alt + B 获取当前光标最近的类
+Ctrl + Alt + C NULL
+Ctrl + Alt + D NULL
+Ctrl + Alt + E NULL
+Ctrl + Alt + F NULL
+Ctrl + Alt + G NULL
+Ctrl + Alt + H 查询当前方法谁调用,jar包中的都可以查询
+Ctrl + Alt + I 光标向下移动一行
+Ctrl + Alt + J NULL
+Ctrl + Alt + K NULL
+Ctrl + Alt + L 代码格式化
+Ctrl + Alt + M NULL
+Ctrl + Alt + N NULL
+Ctrl + Alt + O 去掉没用的声明(import java.lang.string)
+Ctrl + Alt + P NULL
+Ctrl + Alt + Q NULL
+Ctrl + Alt + R NULL
+Ctrl + Alt + S 打开设置
+Ctrl + Alt + T NULL
+Ctrl + Alt + U 查询超类关系
+Ctrl + Alt + V NULL
+Ctrl + Alt + W 微信老板键
+Ctrl + Alt + X NULL
+Ctrl + Alt + Y NULL
+Ctrl + Alt + Z Tim老板键
+
+Alt + A idea截屏
+Alt + B Build快捷键
+Alt + C Code快捷键
+Alt + D 打开当前新界面
+Alt + E Edit快捷键
+Alt + F File快捷键
+Alt + G
+Alt + H Help快捷键
+Alt + I
+Alt + J
+Alt + K
+Alt + L
+Alt + M
+Alt + N Navigate快捷键
+Alt + O
+Alt + P
+Alt + Q
+Alt + R Refactor快捷键
+Alt + S VCS快捷键
+Alt + T Tools快捷键
+Alt + U Run快捷键
+Alt + V View快捷键
+Alt + W Window快捷键
+Alt + X
+Alt + Y
+Alt + Z Analyze快捷键
+
+
+Ctrl + Shift + Alt + A
+Ctrl + Shift + Alt + B
+Ctrl + Shift + Alt + C
+Ctrl + Shift + Alt + D 展示最近的改变以砌砖形式
+Ctrl + Shift + Alt + E
+Ctrl + Shift + Alt + F
+Ctrl + Shift + Alt + G
+Ctrl + Shift + Alt + H 检测等级
+Ctrl + Shift + Alt + I enter inspection name
+Ctrl + Shift + Alt + J 同一单词竖行编辑，牛逼
+Ctrl + Shift + Alt + K
+Ctrl + Shift + Alt + L 格式化
+Ctrl + Shift + Alt + M
+Ctrl + Shift + Alt + N Enter symbol name
+Ctrl + Shift + Alt + O
+Ctrl + Shift + Alt + P
+Ctrl + Shift + Alt + Q
+Ctrl + Shift + Alt + R
+Ctrl + Shift + Alt + S Project Structure
+Ctrl + Shift + Alt + T 当前文件重命名, 替换, 复制, 删除
+Ctrl + Shift + Alt + U
+Ctrl + Shift + Alt + V 粘贴，光标在最前面  Ctrl + V 光标在后面
+Ctrl + Shift + Alt + W
+Ctrl + Shift + Alt + X
+Ctrl + Shift + Alt + Y
+Ctrl + Shift + Alt + Z

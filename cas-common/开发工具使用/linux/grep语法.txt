@@ -1,0 +1,34 @@
+匹配中文：grep -P '[\p{Han}]'
+grep "厦门阿米云二要素人像对比结果" server.* | egrep  "verify_result[^a-z]{4}:[^a-z]{4}1" | grep -oP "description[^a-z]{4}:[^a-z]{4}[\p{Han}]*" | grep -oP '[\p{Han}]*'
+
+cut -d '' -f 10 :以d后面的字符分组，取-f后面的值
+
+[app@ZFRC--ICS-723b64 ~]$ echo 123,456,789 | cut -d ',' -f 1
+123
+[app@ZFRC--ICS-723b64 ~]$ echo 123,456,789 | cut -d ',' -f 2
+456
+[app@ZFRC--ICS-723b64 ~]$ echo 123,456,789 | cut -d ',' -f 3
+789
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

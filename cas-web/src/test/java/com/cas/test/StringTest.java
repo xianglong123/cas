@@ -98,11 +98,11 @@ public class StringTest {
      */
     @Test
     public void test4() {
-        Map<String, String> params = new HashMap<>();
-        params.put("a_key", "a_value");
-        params.put("b_key", "b_value");
-        params.put("c_key", "c_value");
-
+        Map<String, String> params = new HashMap<String, String>(){{
+            put("a_key", "a_value");
+            put("b_key", "b_value");
+            put("c_key", "c_value");
+        }};
         Set<Map.Entry<String, String>> entries = params.entrySet();
         for (Map.Entry<String, String> map : entries) {
             System.out.println(map.getKey());
@@ -389,6 +389,10 @@ public class StringTest {
         Integer a = 390;
         Integer b = 390;
         System.out.println(a==b);
+        // 拆箱之后比较
+        int ai = a;
+        int bi = b;
+        System.out.println(ai == bi);
     }
 
     /**
@@ -519,7 +523,6 @@ public class StringTest {
     @Test
     public void test34() {
         String str = "/home/app/share/3/4/5";
-
         System.out.println(str.split("/")[1]);
         System.out.println(str.split("/")[0]);
         System.out.println(str.split("/")[3]);
@@ -529,8 +532,6 @@ public class StringTest {
     public void test35() {
         AccountPo accountPo = new AccountPo();
         System.out.println(StringUtil.getGson().toJson(accountPo));
-
-
     }
 
 

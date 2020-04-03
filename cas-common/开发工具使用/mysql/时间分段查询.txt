@@ -1,0 +1,6 @@
+关键函数:DATE_FORMAT()
+SELECT CONCAT(LEFT(DATE_FORMAT(send_time, '%y-%m-%d %h:%i'),15),'0') AS time_flag,
+COUNT(*) AS COUNT FROM sms_batch_detail
+WHERE send_time = '20191029'
+GROUP BY time_flag
+ORDER BY time_flag;

@@ -1,0 +1,67 @@
+--Oracle数据库回滚至某一时间
+#################################################################################################################
+select * from bap.t_usa_mec_if as of timestamp to_timestamp('2019-08-28 21:16:38', 'yyyy-mm-dd hh24:mi:ss');    #
+alter table bap.t_usa_mec_if enable row movement;                                                               #
+flashback table bap.t_usa_mec_if to timestamp TO_TIMESTAMP('2019-08-28 21:16:38', 'yyyy-mm-dd hh24:mi:ss');     #
+#################################################################################################################
+
+模板：
+select * from 表名 as of timestamp to_timestamp('2019-08-28 21:16:38', 'yyyy-mm-dd hh24:mi:ss');
+alter table 表名 enable row movement;
+flashback table 表名 to timestamp TO_TIMESTAMP('2019-08-28 21:16:38', 'yyyy-mm-dd hh24:mi:ss');
+
+
+
+--查询某数据库表的占用锁表情况
+select b.owner TABLEOWNER, b.object_name TABLENAME, c.OSUSER LOCKBY,
+c.USERNAME LOGINID, c.sid SID, c.SERIAL# SERIAL from v$locked_object a,dba_objects b, v$session c where b.object_id = a.object_id AND a.SESSION_ID =c.sid;
+
+--杀死某一进程
+alter system kill session 'SID, SERIAL';
+
+
+--查询表的备注
+select * from  dba_tab_comments where owner = 'UMS' and table_name = 'T_BAP_MEC_IF';
+
+--删除某个表的某个字段
+alter table SSP.D_MERCHANT_SAVE drop (TO_PRIVATE_SETTLE_ACC_NO_SM);
+
+--查询某个用户的表的字段和备注
+select * from dba_col_comments where owner = 'UMS' and table_name = 'T_UMS_AREA_OUT';
+
+--删除某个表的某个字段
+ALTER TABLE ADS.T_ADS_MERC_EXTENSION_INFO DROP COLUMN MEC_TYP;
+
+--分组统计
+select (case when mss.t_mss_auth_log.resp_msg = '认证成功' then '认证成功'
+when mss.t_mss_auth_log.resp_msg != '认证成功' then '认证失败'  end)
+ rangs, count(*) rs, 100*round(count(*)/sum(count(*)) over(),4)||'%' percent from MSS.T_MSS_AUTH_LOG
+ where org_code = 'SXF600000000001149_1'and  channel_name = 'fengyuan' and req_date = '20191111'
+ group by case when mss.t_mss_auth_log.resp_msg = '认证成功' then '认证成功'
+when mss.t_mss_auth_log.resp_msg != '认证成功' then '认证失败' end;
+
+
+-- oracle 修改已建表字段顺序
+select     *
+from        all_objects where  object_name = 'T_ADS_ASSIGN_RULE';
+
+select     obj#,col#,name
+from        sys.col$
+where     obj#=309915;
+
+update sys.col$
+set col# = decode(name,
+                  'CODE',
+                  1,
+                  'MESSAGE',
+                  2,
+                  'INFO',
+                  3,
+                  'ORACLE_USER',
+                  4,
+                  'ERROR_DATE',
+                  5)
+where obj# = (select object_id
+              from all_objects a
+              where owner = 'EMPTRAIN'
+                and object_name = upper('SYS_ERROR_LOG'))

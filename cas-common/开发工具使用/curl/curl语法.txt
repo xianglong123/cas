@@ -1,0 +1,9 @@
+Get请求:
+curl -k http://www.baidu.com
+
+
+GET请求：
+curl -k 'https:www.baidu.com?a=b&b=c'
+
+POST请求：
+curl -l -H "Content-type: application/json" -X POST -d '{"rpcId":"","sysId":"","checkCode":"","data":{"blInfo":"","blType":""}}'  http://www.baidu.com

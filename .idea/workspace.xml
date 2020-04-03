@@ -5,15 +5,150 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9a8abe-1708-4006-8ff4-ed6613fb86bf" name="Default Changelist" comment="+ 内省(获取Bean属性的新方法)&#10;+ JVM">
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/串行比并行快吗/ConcurrencyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__bouncycastle_bcmail_jdk14_138.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__bouncycastle_bcprov_jdk14_138.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_druid_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_druid_spring_boot_starter_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_easyexcel_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_fastjson_1_2_61.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_cloudbees_util_rhino_sandbox_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_virtuald_curvesapi_1_04.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_itextpdf_itextpdf_5_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lowagie_itext_2_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_lettuce_lettuce_core_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_24_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_24_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_24_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_4_1_24_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_24_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_24_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_reactor_core_2_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javassist_javassist_3_11_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_44.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ognl_ognl_3_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_compress_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_pool2_2_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_ooxml_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_poi_poi_ooxml_schemas_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_jasper_7_0_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_jasper_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_jdbc_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_juli_8_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jdt_core_compiler_ecj_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jdt_ecj_3_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_validator_5_3_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mozilla_rhino_1_7R4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_16_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_configuration_processor_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_redis_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_redis_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_keyvalue_1_2_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_redis_1_8_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_support_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_oxm_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xhtmlrenderer_core_renderer_R8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/死锁/DeadLockDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/scheduled/DynamicScheduleTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/scheduled/DynamicScheduleTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/out/production/classes/com/cas/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/out/production/classes/com/cas/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/CasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/CasTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/META-INF/cas.cas-common.main.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,37 +190,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cas" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cas" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cas" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tcc_account: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cas" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tcc_account: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="account: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cas" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tcc_account: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="que_ans: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -145,10 +250,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="973">
-              <caret line="284" column="37" selection-start-line="284" selection-start-column="37" selection-end-line="284" selection-end-column="37" />
+            <state relative-caret-position="435">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-269">
+              <caret line="389" column="24" selection-start-line="389" selection-start-column="24" selection-end-line="389" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/死锁/DeadLockDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding>
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/main/JVM虚拟机-系统运行参数.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/TestStackOverflowErrorDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/DirectMemoryOOMTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,80 +317,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/controller/AccountController.java">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存分配/AllocationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/service/AccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/service/impl/AccountServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/entity/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/dao/AccountDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/modules/cas-web/src/main/resources/mapper/AccountDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper2.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3300">
-              <caret line="234" column="44" selection-start-line="234" selection-start-column="44" selection-end-line="234" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18735">
-              <caret line="1324" column="22" selection-start-line="1324" selection-start-column="22" selection-end-line="1324" selection-end-column="22" />
+            <state relative-caret-position="90">
+              <caret line="6" column="72" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -250,7 +340,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ScanConfig</find>
       <find>dispose</find>
       <find>dispose\(</find>
       <find>Dom4j</find>
@@ -280,6 +369,7 @@
       <find>Executors.newFixedThreadPool</find>
       <find>newFixedThreadPool</find>
       <find>redis</find>
+      <find>Map&lt;</find>
     </findStrings>
     <replaceStrings>
       <replace>log.info</replace>
@@ -301,7 +391,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfServiceClient.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/Test.java" />
         <option value="$PROJECT_DIR$/cas-service/build.gradle" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool.java" />
@@ -348,10 +437,11 @@
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/CasTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/串行比并行快吗/ConcurrencyTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/RedisConfig.java" />
         <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" />
         <option value="$PROJECT_DIR$/cas-web/src/main/java/AccountDefault.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/死锁/DeadLockDemo.java" />
       </list>
     </option>
   </component>
@@ -385,7 +475,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,197 +486,6 @@
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="dictionaries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="inspectionProfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="cas-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="cas-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="cas-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="cas-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="cas-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="configs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="com.cas.dao.mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -618,60 +517,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -705,7 +550,7 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -715,7 +560,7 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -723,13 +568,27 @@
               <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+              <item name="内存分配" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
+              <item name="内存溢出" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -750,7 +609,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last.edited.regexp" value="Sample Text" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/question" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cas-common" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -2247,7 +2106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UpmApplication">
+  <component name="RunManager" selected="Application.DeadLockDemo">
     <configuration name="AllocationTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cas.jvm.内存分配.AllocationTest" />
       <module name="cas.cas-web.test" />
@@ -2268,6 +2127,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cas.concurrent.串行比并行快吗.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeadLockDemo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.concurrent.死锁.DeadLockDemo" />
+      <module name="cas.cas-web.test" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.concurrent.死锁.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2345,7 +2218,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTest.test31" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringTest.test25" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
@@ -2355,23 +2228,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.cas.test" />
       <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
-      <option name="METHOD_NAME" value="test31" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringTest.test33" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cas.cas-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cas.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cas.test" />
-      <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
-      <option name="METHOD_NAME" value="test33" />
+      <option name="METHOD_NAME" value="test25" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -2409,6 +2266,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cas.cas-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cas.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.test.StringTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UpmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cas.cas-web.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cas.UpmApplication" />
@@ -2424,19 +2297,20 @@
       <item itemvalue="Application.RuntimeConstantPoolOOMTest" />
       <item itemvalue="Application.TenuringThresholdTest" />
       <item itemvalue="Application.ConcurrencyTest" />
-      <item itemvalue="JUnit.StringTest.test31" />
-      <item itemvalue="JUnit.StringTest.test33" />
       <item itemvalue="JUnit.StringTest.test34" />
       <item itemvalue="JUnit.StringTest.test35" />
+      <item itemvalue="JUnit.StringTest.test4" />
+      <item itemvalue="JUnit.StringTest.test25" />
       <item itemvalue="Spring Boot.UpmApplication" />
+      <item itemvalue="Application.DeadLockDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringTest.test25" />
+        <item itemvalue="JUnit.StringTest.test4" />
         <item itemvalue="JUnit.StringTest.test35" />
         <item itemvalue="Application.ConcurrencyTest" />
         <item itemvalue="JUnit.StringTest.test34" />
-        <item itemvalue="JUnit.StringTest.test33" />
-        <item itemvalue="JUnit.StringTest.test31" />
       </list>
     </recent_temporary>
   </component>
@@ -2528,6 +2402,7 @@
       <workItem from="1585286947232" duration="42000" />
       <workItem from="1585287994681" duration="28623000" />
       <workItem from="1585727196486" duration="1538000" />
+      <workItem from="1585814477100" duration="3259000" />
     </task>
     <task id="LOCAL-00001" summary="+ 新作品">
       <created>1577971612690</created>
@@ -2638,12 +2513,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringTest_test32 - 2020.03.30 at 12h 54m 27s.xml">
-      <configuration name="StringTest.test32" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringTest_test31 - 2020.03.30 at 12h 54m 32s.xml">
-      <configuration name="StringTest.test31" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringTest_test33 - 2020.03.30 at 14h 12m 16s.xml">
       <configuration name="StringTest.test33" configurationId="JUnit" />
     </history-entry>
@@ -2668,9 +2537,15 @@
     <history-entry file="StringTest_test35 - 2020.03.31 at 16h 39m 18s.xml">
       <configuration name="StringTest.test35" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringTest_test4 - 2020.04.02 at 12h 09m 49s.xml">
+      <configuration name="StringTest.test4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringTest_test25 - 2020.04.02 at 12h 11m 24s.xml">
+      <configuration name="StringTest.test25" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224799000" />
+    <option name="totallyTimeSpent" value="230165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2683,8 +2558,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59081197" visible="true" weight="0.25292864" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.59081197" visible="true" weight="0.24068157" />
       <window_info id="Structure" order="1" sideWeight="0.40918803" side_tool="true" weight="0.30342856" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -2706,9 +2582,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32871288" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.7009901" />
-      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.49942857" weight="0.26095238" />
+      <window_info active="true" anchor="bottom" id="Run" order="14" sideWeight="0.49942857" visible="true" weight="0.27029702" />
       <window_info anchor="bottom" id="REST Client" order="15" weight="0.3990476" />
-      <window_info active="true" anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" visible="true" weight="0.41619048" />
+      <window_info anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" weight="0.41619048" />
       <window_info anchor="bottom" id="Database Console" order="17" visible="true" weight="0.3352381" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -3254,20 +3130,6 @@ propertyDescriptors[0].getReadMethod().invoke(clazz);
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/UpmApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/CookieUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/BeanUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -3290,16 +3152,6 @@ propertyDescriptors[0].getReadMethod().invoke(clazz);
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="540">
             <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/JVM虚拟机-系统运行参数.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
           </first_editor>
           <second_editor />
         </state>
@@ -3409,34 +3261,10 @@ propertyDescriptors[0].getReadMethod().invoke(clazz);
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/TestStackOverflowErrorDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/RuntimeConstantPoolInternOOMTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/DirectMemoryOOMTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存分配/AllocationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -3522,23 +3350,10 @@ propertyDescriptors[0].getReadMethod().invoke(clazz);
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7365">
-          <caret line="517" column="7" selection-start-line="517" selection-start-column="7" selection-end-line="517" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3570,9 +3385,7 @@ propertyDescriptors[0].getReadMethod().invoke(clazz);
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/AccountDefault.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/AccountDefault.java" />
     <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="973">
@@ -3583,51 +3396,76 @@ propertyDescriptors[0].getReadMethod().invoke(clazz);
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper2.xml">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/entity/Account.java" />
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper2.xml" />
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/service/AccountService.java" />
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/controller/AccountController.java" />
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/service/impl/AccountServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/dao/AccountDao.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/modules/cas-web/src/main/resources/mapper/AccountDao.xml" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ded3ef01-45b9-479a-9a58-6e2a2712411b/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/service/AccountService.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="435">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/controller/AccountController.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/test/StringTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/service/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="-269">
+          <caret line="389" column="24" selection-start-line="389" selection-start-column="24" selection-end-line="389" selection-end-column="24" />
           <folding>
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/dao/AccountDao.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/TestStackOverflowErrorDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="405">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules/cas-web/src/main/resources/mapper/AccountDao.xml">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/DirectMemoryOOMTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477" />
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存分配/AllocationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/JVM虚拟机-系统运行参数.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/死锁/DeadLockDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

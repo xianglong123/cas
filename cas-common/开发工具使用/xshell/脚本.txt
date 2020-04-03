@@ -1,0 +1,26 @@
+/* xshell调用自动化js脚本 */
+/* 主函数 */
+function Main()
+{
+	xsh.Screen.Send("25");
+	xsh.Screen.Send(String.fromCharCode(13));
+	xsh.Screen.Send("1");
+	xsh.Screen.Send(String.fromCharCode(13));
+	xsh.Screen.Send("sudo su - app");
+	xsh.Screen.Send(String.fromCharCode(13));
+    /* 发送cd 改变到当前目录 */
+    xsh.Screen.Send("cd /home/app/sxpservice/logs");
+    /* 前面输入的是一条命令,还需要下面这一行输入回车 */
+    xsh.Screen.Send(String.fromCharCode(13));
+
+    /* 发送sz 下载文件 */
+    xsh.Screen.Send("ll");
+    /* 前面输入的是一条命令,还需要下面这一行输入回车 */
+    xsh.Screen.Send(String.fromCharCode(13));
+
+    /* 延时等待1s */
+    xsh.Session.Sleep(1000);
+
+    /* 清屏 */
+    //xsh.Screen.Clear();
+}

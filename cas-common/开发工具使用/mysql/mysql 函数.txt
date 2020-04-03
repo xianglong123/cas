@@ -1,0 +1,84 @@
+1.CHAR_LENGTH(s)  返回字符串 s 的字符数
+SELECT CHAR_LENGTH("SSS") AS LENGTH FROM DUAL;//3
+
+2.CHARACTER_LENGTH(s) 返回字符串 s 的字符数
+SELECT CHARACTER_LENGTH("SSS") AS LENGTH FROM DUAL;//3
+
+3.CONCAT(s1,s2...sn) 字符串 s1,s2 等多个字符串合并为一个字符串
+SELECT CONCAT("SSS","BBB","CCC") AS LENGTH FROM DUAL;//SSSBBBCCC
+
+4.CONCAT_WS(x, s1,s2...sn) 同 CONCAT(s1,s2,...) 函数，但是每个字符串之间要加上 x，x 可以是分隔符
+SELECT CONCAT_WS("-","BBB","CCC") AS LENGTH FROM DUAL;//BBB-CCC
+
+5.FIELD(s,s1,s2...) 返回第一个字符串 s 在字符串列表(s1,s2...)中的位置
+SELECT FIELD("BBB","BBB","CCC") AS LENGTH FROM DUAL;//1
+
+6.FIND_IN_SET(s1,s2) 返回在字符串s2中与s1匹配的字符串的位置
+SELECT FIND_IN_SET("BBB","AAA,BBB,CCC")  FROM DUAL;//2
+
+7.FORMAT(x,n)  	函数可以将数字 x 进行格式化 "#,###.##", 将 x 保留到小数点后 n 位，最后一位四舍五入。
+SELECT FORMAT(250500.5634, 2);//250,500.56
+
+8.INSERT(s1,x,len,s2) 字符串 s2 替换 s1 的 x 位置开始长度为 len 的字符串
+SELECT INSERT("google.com", 1, 6, "runnob");//runoob.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
