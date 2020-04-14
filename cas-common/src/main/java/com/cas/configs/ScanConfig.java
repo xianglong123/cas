@@ -18,7 +18,7 @@ public class ScanConfig {
     private static List<String> classPaths = new ArrayList<>();
 
     public void get() throws ClassNotFoundException{
-        //包名/Users/xianglong/IdeaProjects/cas/cas-web/out/test/classes/
+        //包名/Users/xianglong/IdeaProjects/cas/cas-web/out/strTest/classes/
         String basePack = "com.cas";
         //先把包名转换成路径，首先得到项目的classpath
         String classpath = ScanConfig.class.getResource("/").getPath();

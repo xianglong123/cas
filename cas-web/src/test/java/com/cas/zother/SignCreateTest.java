@@ -1,4 +1,4 @@
-package com.cas.test;
+package com.cas.zother;
 
 import java.security.MessageDigest;
 import java.util.Scanner;

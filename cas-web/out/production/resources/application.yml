@@ -1,6 +1,6 @@
 #配置端口
 server:
-  port: 8081
+  port: 8080
   #最外层的路径
 #  context-path: /cas
 spring:
@@ -13,6 +13,7 @@ spring:
       username: root
       password: 123456
       type: com.alibaba.druid.pool.DruidDataSource
+
   mvc:
     view:
       prefix: /WEB-INF/jsp/
@@ -37,11 +38,11 @@ mybatis:
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
   #Mybais 扫描别名包， 和注解@Alias联用
   type-aliases-package: com.cas.pojo
-  #配置typeHandler 的扫描包
+#  配置typeHandler 的扫描包
 #  typeHandler-handlers-package: com.cas.typeHandler
-#  configuration:
-#    map-underscore-to-camel-case: true
-#    interceptors: com.sso.util.interceptorceptor.MybatisInterceptor
+  configuration:
+    map-underscore-to-camel-case: true
+    interceptors: com.sso.util.interceptorceptor.MybatisInterceptor
 # 日志配置
 logging:
   config: classpath:logback-spring.xml

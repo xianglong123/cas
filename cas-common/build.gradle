@@ -59,5 +59,9 @@ dependencies {
     // pdf
     compile 'org.xhtmlrenderer:core-renderer:R8'
     compile 'com.itextpdf:itextpdf:5.5.12'
+    
+    // swagger2
+    compile 'io.springfox:springfox-swagger2:2.2.2'
+    compile 'io.springfox:springfox-swagger-ui:2.2.2'
 
 }

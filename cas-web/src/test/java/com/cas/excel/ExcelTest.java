@@ -1,4 +1,4 @@
-package com.cas.test;
+package com.cas.excel;
 
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.metadata.Sheet;
@@ -21,7 +21,7 @@ import java.util.Scanner;
  * 生成EXCEL 文件
  */
 @Slf4j
-public class CasTest {
+public class ExcelTest {
 
     @Test
     public void writeExcelOneSheetOnceWrite() throws IOException {

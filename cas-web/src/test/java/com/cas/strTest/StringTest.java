@@ -1,7 +1,7 @@
-package com.cas.test;
+package com.cas.strTest;
 
 import com.alibaba.fastjson.JSONObject;
-import com.cas.pojo.AccountPo;
+import com.cas.BaseTest;
 import com.cas.pojo.User;
 import com.cas.utils.StringUtil;
 import com.google.gson.JsonObject;
@@ -22,12 +22,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Slf4j
-public class StringTest {
+public class StringTest{
 
     private static final String url = "/Users/xianglong/Desktop/aa.xlsx";
 
@@ -278,7 +281,7 @@ public class StringTest {
     public void test18() {
         String s1 = "HelloWorld";//redundant
         String s2 = new String("HelloWorld");
-        System.out.println(s1 == s2);// Reports any use of == or != to test for String equality, instead of an equals() call;
+        System.out.println(s1 == s2);// Reports any use of == or != to strTest for String equality, instead of an equals() call;
         System.out.println(s1.equals(s2));
     }
 
@@ -528,10 +531,103 @@ public class StringTest {
         System.out.println(str.split("/")[3]);
     }
 
+    /**
+     * 测试 下面这种等于 是否可行
+     * 结论：不可行
+     */
     @Test
     public void test35() {
-        AccountPo accountPo = new AccountPo();
-        System.out.println(StringUtil.getGson().toJson(accountPo));
+        if("'1','2'".equals("'1','3'")) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
+
+    /**
+     * 自动装箱
+     */
+    @Test
+    public void test36() {
+        int i = 20;
+        Integer j = 10;
+        System.out.println(i-j);
+    }
+
+    /**
+     * 省市区匹配 正则
+     */
+    @Test
+    public void test37() {
+        String[] strings = StringDateUtil.getStrings();
+        for (String cprRegAddr : strings) {
+            String regex1 = "((?<province>[^省]+省|.+自治区))(?<city>[^市]+市|.+自治州)(?<dist>[^县]+?县|.+?区|.+?局)?(?<street>.+)";
+            Matcher m = Pattern.compile(regex1).matcher(cprRegAddr);
+            if (m.matches()) {
+                String provinceNm = m.group("province");
+                String cityNm = m.group("city");
+                String distNm = m.group("dist");
+                String street = m.group("street");
+                log.info("规则一:省市解析成功,省={}, 市={}, 区={}, 街道={}", provinceNm, cityNm, distNm, street);
+                continue;
+            }
+            String regex2 = "(?<city>(?<province>北京|上海|天津|重庆)市?)(?<dist>[^区]+?区)?(?<street>.+)";
+            Matcher m2 = Pattern.compile(regex2).matcher(cprRegAddr);
+
+            if (m2.matches()) {
+                String provinceNm = m2.group("province");
+                String cityNm = provinceNm.concat("市");
+                String distNm = m2.group("dist");
+                String street = m2.group("street");
+                log.info("规则二:省市解析成功,省={}, 市={}, 区={}, 街道={}", provinceNm, cityNm, distNm, street);
+                continue;
+            }
+
+            String regex3 = "(?<city>[^市]+市|.+自治州)(?<dist>[^县]+?县|.+?区|.+?局|.+?镇)?(?<street>.+)?";
+            Matcher m3 = Pattern.compile(regex3).matcher(cprRegAddr);
+            if (m3.matches()) {
+                String cityNm = m3.group("city");
+                String distNm = m3.group("dist");
+                String street = m3.group("street");
+                log.info("规则三:省市解析成功, 市={}, 区={}, 街道={}", cityNm, distNm, street);
+                continue;
+            }
+            log.warn("失败匹配数据：{}", cprRegAddr);
+
+        }
+    }
+
+    /**
+     * 对象Object的9个方法
+     */
+    @Test
+    public void test38() {
+        Object obj = new Object();
+        User user = new User();
+        user.setAge(2);
+        System.out.println(user.hashCode());
+        System.out.println(user.toString());
+        System.out.println(user.getClass().getName() + "@" + Integer.toHexString(user.hashCode()));
+
+    }
+
+    /**
+     * 随机产生两位数
+     */
+    @Test
+    public void test39() {
+        int ends = new Random().nextInt(99);
+        System.out.println(ends);
+    }
+
+    @Test
+    public void test40() {
+        String json = "{\"belieheneOrpName\":\"徐正明\",\"belieheneOrpCrdNo\":\"320111196602194815\",\"belieheneOrpCrdTyp\":\"1\",\"belieheneOrpCrdSttDt\":\"20051111\"," +
+                "\"belieheneOrpCrdExpDt\":\"20251111\",\"belieheneOrpCrdFlg\":\"00\"}";
+        JSONObject jsonObject = JSONObject.parseObject(json);
+        for (Map.Entry<String, Object> entries: jsonObject.entrySet()){
+            System.out.println(entries.getKey() + "  " + entries.getValue());
+        }
     }
 
 

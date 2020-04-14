@@ -1,5 +1,6 @@
 package com.cas.service.scheduled;
 
+import com.cas.service.accountService.AccountService;
 import com.cas.service.grippeService.GrippeService;
 import com.cas.utils.StringUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -25,7 +26,7 @@ import java.util.Map;
 @Component
 @Slf4j
 @Configuration      //1.主要用于标记配置类，兼备Component的效果。这里没有@Configuration是没有问题的
-//@EnableScheduling   // 2.开启定时任务
+@EnableScheduling   // 2.开启定时任务
 public class DynamicScheduleTask implements SchedulingConfigurer{
 
     private static final int _1MB = 1024 * 1024;
@@ -35,12 +36,15 @@ public class DynamicScheduleTask implements SchedulingConfigurer{
     public static Map<String, String> map = new HashMap<>();
 
     static {
-        map.put("time", "0 */1 * * * ?");
+        map.put("time", "*/10 * * * * ?");
         threadLocal.set("threadLocal is running!!!");
     }
 
     @Autowired
     private GrippeService grippeService;
+
+    @Autowired
+    private AccountService accountService;
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar taskRegistrar){
@@ -48,7 +52,7 @@ public class DynamicScheduleTask implements SchedulingConfigurer{
         taskRegistrar.addTriggerTask(
                 //1.添加任务内容(Runnable)
 //                () -> grippeService.collectDate(),
-                () -> System.out.println("时间任务"),
+                () -> accountService.pushAutoId(),
                 //2.设置执行周期(Trigger)
                 triggerContext -> {
                     //2.1 从数据库获取执行周期

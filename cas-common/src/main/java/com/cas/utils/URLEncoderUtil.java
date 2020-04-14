@@ -10,6 +10,10 @@ import java.net.URLDecoder;
  */
 public class URLEncoderUtil {
 
+    public static void main(String[] args) throws Exception{
+        getUrlDecod("%D7%F0%BE%B4%B5%C4%B9%DC%BC%D2%C4%FA%BA%C3%A3%AC%F6%CE%C1%AA%C3%CB%CA%D5%D2%E6572.46%D4%AA%A3%AC%D2%D1%B7%A2%B7%C5%B5%BD%C4%FA%CE%B2%BA%C55841%BF%A8%C9%CF%A3%AC%C7%EB%D7%A2%D2%E2%B2%E9%CA%D5%A3%A1");
+    }
+
     /**
      * 就互联网传送中文格式转码
      */

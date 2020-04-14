@@ -262,25 +262,5 @@ public class TimeUtilTest {
         }
     }
 
-    /**
-     * 测试 下面这种等于 是否可行
-     * 结论：不可行
-     */
-    @Test
-    public void test19() {
-        if("'1','2'".equals("'1','2'")) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
-    }
-
-    @Test
-    public void test20() {
-        int i = 20;
-        Integer j = 10;
-        System.out.println(i-j);
-    }
-
 
 }

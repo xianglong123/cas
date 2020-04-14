@@ -13,6 +13,10 @@
       <module name="cas.cas-dao.test" target="1.8" />
       <module name="cas.cas-service.main" target="1.8" />
       <module name="cas.cas-service.test" target="1.8" />
+      <module name="cas.cas-string.main" target="1.8" />
+      <module name="cas.cas-string.test" target="1.8" />
+      <module name="cas.cas-strTest.main" target="1.8" />
+      <module name="cas.cas-strTest.test" target="1.8" />
       <module name="cas.cas-test.main" target="1.8" />
       <module name="cas.cas-test.test" target="1.8" />
       <module name="cas.cas-web.main" target="1.8" />

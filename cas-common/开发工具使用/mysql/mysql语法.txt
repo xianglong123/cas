@@ -1,3 +1,0 @@
-1.删除数据表 DROP TABLE sms_black_list_linshi;
-
-2.

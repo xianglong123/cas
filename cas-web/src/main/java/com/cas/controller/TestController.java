@@ -21,6 +21,7 @@ import com.cas.utils.SpringContextUtils;
 import com.cas.utils.StringUtil;
 import com.cas.validator.UserValidator;
 import com.google.gson.Gson;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -116,6 +117,12 @@ public class TestController {
         return "hello";
     }
 
+    @GetMapping("/queryAutoId")
+    public String queryAutoId(HttpServletRequest request) {
+        accountService.queryAutoId(request);
+        return "";
+    }
+
     /**
      * Excel 本地导出 case
      */
@@ -183,7 +190,7 @@ public class TestController {
     }
 
     /**
-     * 获取当前运行环境dev|test|prod
+     * 获取当前运行环境dev|strTest|prod
      *
      * @return
      */
@@ -508,6 +515,7 @@ public class TestController {
     /**
      * HttpServletRequest 包含前端传过来的一切，看看都有啥
      */
+    @ApiOperation(value = "请求request所包含参数")
     @GetMapping("/requestInfo")
     @ResponseBody
     public String requestInfo(HttpServletRequest request) throws IOException {

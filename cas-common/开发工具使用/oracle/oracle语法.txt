@@ -64,4 +64,12 @@ set col# = decode(name,
 where obj# = (select object_id
               from all_objects a
               where owner = 'EMPTRAIN'
-                and object_name = upper('SYS_ERROR_LOG'))
+                and object_name = upper('SYS_ERROR_LOG'));
+
+
+
+
+
+
+
+

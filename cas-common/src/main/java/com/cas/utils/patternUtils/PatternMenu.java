@@ -4,7 +4,11 @@ package com.cas.utils.patternUtils;
  * @author: xianglong
  * @date: 2019/9/22 15:06
  * @version: V1.0
- * @review: xiang_long
+ * @review: 正则枚举
+ * 除了.*?这种匹配方式,非贪婪式匹配还包括：
+ * .+?　　　　匹配一次
+ * .??　　　　不匹配
+ * .{m,n}?   匹配m次
  */
 public enum PatternMenu {
     PATTERN_NUMBER("数字","^[0-9]*$"),

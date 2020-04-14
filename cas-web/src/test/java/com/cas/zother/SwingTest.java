@@ -1,4 +1,4 @@
-package com.cas.test;
+package com.cas.zother;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
