@@ -26,7 +26,7 @@ import java.util.Map;
 @Component
 @Slf4j
 @Configuration      //1.主要用于标记配置类，兼备Component的效果。这里没有@Configuration是没有问题的
-@EnableScheduling   // 2.开启定时任务
+//@EnableScheduling   // 2.开启定时任务
 public class DynamicScheduleTask implements SchedulingConfigurer{
 
     private static final int _1MB = 1024 * 1024;

@@ -8,7 +8,7 @@ import java.util.Date;
 @Data
 public class AccountPo {
 
-    private int id;
+    private String id;
     //用户id
     private String userId;
     //用户余额

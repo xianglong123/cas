@@ -1,4 +1,4 @@
-package com.cas.pojo;
+package com.cas.pojo.excel;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;

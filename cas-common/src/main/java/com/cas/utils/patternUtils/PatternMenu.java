@@ -11,6 +11,8 @@ package com.cas.utils.patternUtils;
  * .{m,n}?   匹配m次
  */
 public enum PatternMenu {
+    PATTERN_CHINA("中文", "[\\u4e00-\\u9fa5]"),
+    PATTERN_GREAP_CHINA("grep匹配中文", "[\\u4e00-\\u9fa5]"),
     PATTERN_NUMBER("数字","^[0-9]*$"),
     PATTERN_ZERO("零和非零开头的数字","^(0|[1-9][0-9]*)$"),
     PATTERN_NO_ZERO_HEAD("非零开头的最多带两位小数的数字","^([1-9][0-9]*)+(.[0-9]{1,2})?$"),

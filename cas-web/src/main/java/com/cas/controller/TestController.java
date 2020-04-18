@@ -2,10 +2,7 @@ package com.cas.controller;
 
 
 import com.cas.domain.ValidatorPojo;
-import com.cas.pojo.AccountPo;
-import com.cas.pojo.ExcelModel;
 import com.cas.pojo.QueAnsPo;
-import com.cas.pojo.User;
 import com.cas.service.accountService.AccountService;
 import com.cas.service.inqueryService.InqueryService;
 import com.cas.service.pdfService.PdfService;
@@ -21,7 +18,13 @@ import com.cas.utils.SpringContextUtils;
 import com.cas.utils.StringUtil;
 import com.cas.validator.UserValidator;
 import com.google.gson.Gson;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -39,7 +42,9 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
 
@@ -57,9 +62,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+@Api(value = "API - 测试controller")
 @Slf4j
 @Controller
 @RequestMapping("/test")
+@ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Successful — 请求已完成"),
+        @ApiResponse(code = 400, message = "请求中有语法问题，或不能满足请求"),
+        @ApiResponse(code = 401, message = "未授权客户机访问数据"),
+        @ApiResponse(code = 404, message = "服务器找不到给定的资源；文档不存在"),
+        @ApiResponse(code = 500, message = "服务器不能完成请求")}
+)
 public class TestController {
 
     @Autowired
@@ -88,6 +101,7 @@ public class TestController {
      *
      * @return
      */
+    @ApiOperation(value = "c测试系统是否可用")
     @PostMapping("/test")
     public String testApplication() {
         return testService.queryCount() + "";
@@ -99,7 +113,19 @@ public class TestController {
      * @param userId
      * @return
      */
-    @RequestMapping(value = "/queryAccount")
+    @ApiOperation(value = "获取Account 对象通过userId")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userId", value = "用户id,可选值：10001 ,10002, 10003", required = false,
+                    dataType = "string", paramType = "query", defaultValue = "10001")
+    })
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Successful — 请求已完成"),
+            @ApiResponse(code = 400, message = "请求中有语法问题，或不能满足请求"),
+            @ApiResponse(code = 401, message = "未授权客户机访问数据"),
+            @ApiResponse(code = 404, message = "服务器找不到给定的资源；文档不存在"),
+            @ApiResponse(code = 500, message = "服务器不能完成请求")}
+    )
+    @GetMapping(value = "/queryAccount")
     @ResponseBody
     public String queryAccount(String userId) {
         Gson gson = StringUtil.getGson();
@@ -112,20 +138,24 @@ public class TestController {
      *
      * @return
      */
+    @ApiOperation(value = "跳转hello页面")
     @GetMapping("/hello")
     public String hello() {
         return "hello";
     }
 
+    @ApiOperation(value = "测试反向ajax的请求，直接请求没有效果")
     @GetMapping("/queryAutoId")
+    @ResponseBody
     public String queryAutoId(HttpServletRequest request) {
         accountService.queryAutoId(request);
-        return "";
+        return "请求完成";
     }
 
     /**
      * Excel 本地导出 case
      */
+    @ApiOperation(value = "Excel 本地导出 跳转测试页面")
     @GetMapping("/upload")
     public String upload() {
         return "upload/upload";
@@ -134,6 +164,7 @@ public class TestController {
     /**
      * Excel 远程下载
      */
+    @ApiOperation(value = "Excel 远程下载")
     @GetMapping("/export")
     public void export(HttpServletResponse response) {
         try {
@@ -146,7 +177,8 @@ public class TestController {
     /**
      * 上传 Excel 并 通过模版解析
      */
-    @RequestMapping("/uploadhttp")
+    @ApiOperation(value = "上传 Excel 并 通过模版解析")
+    @PostMapping(value = "/uploadhttp", headers = "content-type=multipart/form-data")
     @ResponseBody
     public String uploadhttp(HttpServletRequest request) {
         try {
@@ -162,7 +194,8 @@ public class TestController {
      *
      * @return
      */
-    @RequestMapping("/query")
+    @ApiOperation(value = "udi 核心代码")
+    @PostMapping("/query")
     @ResponseBody
     public String query() {
         StringBuilder sb = new StringBuilder();
@@ -177,24 +210,13 @@ public class TestController {
     }
 
 
-    @RequestMapping("/addObject")
-    @ResponseBody
-    public String addObj() {
-        for (int i = 0; i <= 10; i++) {
-            Map<String, String> map = new HashMap<>();
-            AccountPo accountPo = new AccountPo();
-            User user = new User();
-            ExcelModel excelModel = new ExcelModel();
-        }
-        return "ok";
-    }
-
     /**
      * 获取当前运行环境dev|strTest|prod
      *
      * @return
      */
-    @RequestMapping("/getProfiles")
+    @ApiOperation(value = "获取当前运行环境dev|strTest|prod")
+    @PostMapping("/getProfiles")
     @ResponseBody
     public String getProfiles() {
         String[] activeProfiles = SpringContextUtils.applicationContext.getEnvironment().getActiveProfiles();
@@ -205,7 +227,8 @@ public class TestController {
     /**
      * 重新设置ThreadLocal
      */
-    @RequestMapping("/setThreadLocal")
+    @ApiOperation(value = "重新设置ThreadLocal")
+    @PostMapping("/setThreadLocal")
     @ResponseBody
     private String setThreadLocal(String time) {
         System.out.println("线程被运行: " + Thread.currentThread().getName());
@@ -217,7 +240,7 @@ public class TestController {
     /**
      * 测试自定义切点MyAspect
      */
-    @RequestMapping("/myAspect")
+    @PostMapping("/myAspect")
     @ResponseBody
     private String myAspect() {
         HelloService helloService = new HelloServiceImpl();
@@ -228,7 +251,7 @@ public class TestController {
     /**
      * 测试事务的隔离级别 结论：单个sql本身就是事务，不需要测试，单一sql执行具有ACID
      */
-    @RequestMapping("/addAccount")
+    @PostMapping("/addAccount")
     @ResponseBody
     public String addAccount() {
         int add = accountService.add();
@@ -238,7 +261,8 @@ public class TestController {
     /**
      * 测试redis
      */
-    @RequestMapping("/redis")
+    @ApiOperation(value = "测试redis")
+    @PostMapping("/redis")
     @ResponseBody
     public String redis(String num) {
         redisTemplate.opsForValue().set("key" + num, "value" + num);
@@ -250,7 +274,8 @@ public class TestController {
      * redis事物 解决setIfAbsent和expire非原子操作概率bug
      *
      */
-    @RequestMapping("/redisSetIfAbsent")
+    @ApiOperation(value = "redis事物 解决setIfAbsent和expire非原子操作概率bug, 会有些许延迟，不严谨")
+    @PostMapping("/redisSetIfAbsent")
     @ResponseBody
     public String redisSetIfAbsent() {
         redisTemplate.setEnableTransactionSupport(true);
@@ -269,7 +294,7 @@ public class TestController {
      * @param num
      * @return
      */
-    @RequestMapping("/multi")
+    @PostMapping("/multi")
     @ResponseBody
     public String multi(String num) {
         redisTemplate.opsForValue().set("key1", "value" + num);
@@ -306,7 +331,7 @@ public class TestController {
      *
      * @return
      */
-    @RequestMapping("/pipeline")
+    @PostMapping("/pipeline")
     @ResponseBody
     public String pipeline() {
         Long start = Instant.now().toEpochMilli();
@@ -331,7 +356,7 @@ public class TestController {
     /**
      * 测试 Redis 消息发送
      */
-    @RequestMapping("/publish")
+    @PostMapping("/publish")
     @ResponseBody
     public String publish() {
         redisTemplate.convertAndSend("topicl", "发布订阅测试信息");
@@ -341,7 +366,7 @@ public class TestController {
     /**
      * 测试简单的Lua脚本
      */
-    @RequestMapping("/lua")
+    @PostMapping("/lua")
     @ResponseBody
     public String lua() {
         DefaultRedisScript<String> rs = new DefaultRedisScript<>();
@@ -547,9 +572,57 @@ public class TestController {
         return "ok";
     }
 
+    /**
+     * 查看HTTP码
+     */
+    @ApiOperation(value = "查看HTTP码")
+    @GetMapping("/queryHttpCode")
+    @ResponseBody
+    public String queryHttpCode() {
+        return
+                "1**---信息，服务器收到请求，需要请求者继续执行操作\n\n"
+                        + "2** 成功，操作被成功接收并处理\n"
+                        + "200===确定，客服端请求成功\n"
+                        + "201===已创建\n"
+                        + "202===已接受\n"
+                        + "203===非权威性信息\n"
+                        + "204===无内容\n"
+                        + "205===重置内容\n"
+                        + "206===部分内容\n\n"
+
+                        + "3**---重定向，需要进一步的操作以完成请求\n"
+                        + "3xx===重定向\n"
+                        + "302===对象已移动\n"
+                        + "304===未修改\n\n"
+
+                        + "4**---客户端错误，请求包含语法错误或无法完成请求\n"
+                        + "403===禁止访问\n"
+                        + "404===无法找到文件\n"
+                        + "405===资源被静止\n"
+                        + "406===无法接受\n"
+                        + "407===要求代理身份验证\n"
+                        + "410===永远不可用\n"
+                        + "411===访问被拒绝\n"
+                        + "412===先决条件失败\n"
+                        + "414===请求uri太长\n\n"
+
+                        + "5**---服务器错误，服务器在处理请求的过程中发生了错误\n"
+                        + "500===内部服务器错误\n"
+                        + "501===未实现\n"
+                        + "502===网关错误\n"
+
+                        + "HTTP码博客地址===https://blog.csdn.net/angelo_gs/article/details/88943169\n";
+    }
+
+
+
 
 
 
 
 
 }
+
+
+
+

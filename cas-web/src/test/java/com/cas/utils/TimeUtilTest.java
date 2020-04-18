@@ -2,6 +2,7 @@ package com.cas.utils;
 
 import org.junit.Test;
 
+import java.text.SimpleDateFormat;
 import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -15,6 +16,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.Date;
 
 /**
  * @author: xianglong[xiang_long@suixingpay.com]
@@ -260,6 +262,16 @@ public class TimeUtilTest {
         if(now.isAfter(before)) {
             System.out.println("true");
         }
+    }
+
+    /**
+     * String 转 LocalDate  再格式化成yyyyMMdd
+     */
+    @Test
+    public void test19() {
+        LocalDateTime beginDateTime = LocalDateTime.parse("2022-06-21 00:00:00.0", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.0"));
+        String yyyyMMdd = beginDateTime.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+        System.out.println(yyyyMMdd);
     }
 
 

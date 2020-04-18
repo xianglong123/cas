@@ -4,7 +4,8 @@ import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.metadata.Sheet;
 import com.alibaba.excel.metadata.Table;
 import com.alibaba.excel.support.ExcelTypeEnum;
-import com.cas.pojo.ExcelModel;
+import com.cas.pojo.excel.Auth;
+import com.cas.utils.ChinaDaAsDataEncoder;
 import com.cas.utils.EasyExcelUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,9 +16,11 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -123,10 +126,31 @@ public class UploadServiceClient implements UploadService {
     @Override
     public void readExcelhttp(HttpServletRequest request) throws Exception {
         InputStream inputStream = getUploadInputStream(request);
-        List<ExcelModel> objectList = EasyExcelUtil.readExcelTiehModel(inputStream, ExcelModel.class, ExcelTypeEnum.XLSX);
-        for (ExcelModel excelModel : objectList) {
-            System.out.println(excelModel);
+        List<Auth> objectList = EasyExcelUtil.readExcelTiehModel(inputStream, Auth.class, ExcelTypeEnum.XLSX);
+        StringBuilder stringBuilder = new StringBuilder();
+        FileWriter writer = null;
+        for (Auth excelModel : objectList) {
+            try {
+            String china = ChinaDaAsDataEncoder.encode(excelModel.getIdCard(), "V1");
+            String urlEnc = URLEncoder.encode(china, "UTF-8");
+            System.out.println(excelModel.getName() + "\t" + china + "\t" + urlEnc);
+            stringBuilder.append(excelModel.getName() + "\t" + china + "\t" + urlEnc + "\n");
+            } catch (Exception e) {
+                continue;
+            }
         }
+
+        // 以txt文件格式保存到桌面 【适合一次性写入】
+        try {
+            writer = new FileWriter("/Users/xianglong/Desktop/a.txt");
+            writer.write(stringBuilder.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            writer.flush();
+            writer.close();
+        }
+
     }
 
     /**

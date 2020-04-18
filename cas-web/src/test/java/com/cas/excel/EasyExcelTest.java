@@ -1,7 +1,7 @@
 package com.cas.excel;
 
 import com.alibaba.excel.support.ExcelTypeEnum;
-import com.cas.pojo.ExcelModel;
+import com.cas.pojo.excel.ExcelModel;
 import com.cas.utils.EasyExcelUtil;
 
 import java.io.*;
