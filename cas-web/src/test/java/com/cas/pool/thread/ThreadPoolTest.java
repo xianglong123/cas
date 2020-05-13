@@ -20,7 +20,6 @@ public class ThreadPoolTest {
     public static void main(String[] args) throws InterruptedException {
         // 初始化线程池
         ThreadPoolExecutor pool = (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
-
         // 创建任务
         Collection<Callable<String>> list = new ArrayList<>();
         for (int i = 0; i <= 100; i++) {

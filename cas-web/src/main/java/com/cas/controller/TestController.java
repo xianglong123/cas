@@ -8,10 +8,12 @@ import com.cas.service.inqueryService.InqueryService;
 import com.cas.service.pdfService.PdfService;
 import com.cas.service.pdfService.PdfView;
 import com.cas.service.questionService.QuestionService;
+import com.cas.service.redisService.Redis2Service;
 import com.cas.service.scheduled.DynamicScheduleTask;
 import com.cas.service.testService.HelloService;
 import com.cas.service.testService.HelloServiceImpl;
 import com.cas.service.testService.TestService;
+import com.cas.service.threadPoolService.ThreadService;
 import com.cas.service.uploadService.UploadService;
 import com.cas.utils.CookieUtil;
 import com.cas.utils.SpringContextUtils;
@@ -22,7 +24,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
@@ -42,9 +43,7 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
 
@@ -95,6 +94,12 @@ public class TestController {
 
     @Autowired
     private QuestionService questionService;
+
+    @Autowired
+    private Redis2Service redis2Service;
+
+    @Autowired
+    private ThreadService threadService;
 
     /**
      * c测试系统是否可用
@@ -614,8 +619,24 @@ public class TestController {
                         + "HTTP码博客地址===https://blog.csdn.net/angelo_gs/article/details/88943169\n";
     }
 
+    /**
+     * 测试redis的lua脚本
+     */
+    @ResponseBody
+    @RequestMapping("/getOk")
+    public String getOk() {
+        return redis2Service.getOk();
+    }
 
 
+    /**
+     * 测试线程池的复用
+     */
+    @ResponseBody
+    @RequestMapping("/thread")
+    public String threadPoolTest() {
+        return threadService.execute();
+    }
 
 
 

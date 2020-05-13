@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyAspect {
 
-    @Pointcut("execution(* com.cas.service.testService..*(..))")
+    @Pointcut("execution(* com.cas.service.accountService..*(..))")
     public void pointCut() {}
 
     @Before("pointCut()")

@@ -22,6 +22,8 @@ SELECT FORMAT(250500.5634, 2);//250,500.56
 8.INSERT(s1,x,len,s2) 字符串 s2 替换 s1 的 x 位置开始长度为 len 的字符串
 SELECT INSERT("google.com", 1, 6, "runnob");//runoob.com
 
+9.这是放到第一位，如果要把name放到id之后呢？这样写就可以了（first 换成 after即可
+alter table student modify name varchar(10) after id
 
 
 

@@ -1,6 +1,6 @@
 #配置端口
 server:
-  port: 8080
+  port: 8081
   #最外层的路径
 #  context-path: /cas
 spring:
@@ -39,13 +39,16 @@ mybatis:
   #Mybais 扫描别名包， 和注解@Alias联用
   type-aliases-package: com.cas.pojo
 #  配置typeHandler 的扫描包
-#  typeHandler-handlers-package: com.cas.typeHandler
+  typeHandler-handlers-package: com.cas.typeHandler
   configuration:
     map-underscore-to-camel-case: true
     interceptors: com.sso.util.interceptorceptor.MybatisInterceptor
 # 日志配置
 logging:
   config: classpath:logback-spring.xml
+redisson:
+  address: redis://127.0.0.1:6379
+  password:
 
 
 

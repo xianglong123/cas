@@ -28,7 +28,11 @@ redis 内部使用文件事件处理器`file event handler`,这个文件事件�
 多个 socket 可能会并发产生不同的操作，每个操作对应不同的文件事件，但是 IO 多路复用程序会监听多个 socket, 会将 socket 产生的事件放入队列中排队，事件分派器每次从队列中取出一个事件，把该事件交给对应的事件处理器进行处理。
 
 
-
+### mac 连接远程redis 
+    redis-cli -h 127.0.0.1
+    创建值: set key value[...]
+    获得值: get key
+    查询有效时间: ttl key
 
 
 

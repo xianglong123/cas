@@ -6,6 +6,7 @@ import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CachePut;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -43,6 +44,9 @@ public class AccountServiceClient implements AccountService {
     @Autowired
     private AccountMapper accountMapper;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     @Override
     public AccountPo queryAccount(String userId) {
         return accountMapper.queryAccount(userId);
@@ -55,8 +59,13 @@ public class AccountServiceClient implements AccountService {
      */
     @Override
     @CachePut(value = "redisCache", key = "'redis_user_1'")
-    @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
+//    @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
+    @Transactional
     public int add() {
+        redisTemplate.opsForValue().set("xianlgong", "");
+        if(redisTemplate.opsForValue().setIfAbsent("a", "")) {
+            log.info("ok");
+        }
         return accountMapper.add();
     }
 

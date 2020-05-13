@@ -64,4 +64,10 @@ dependencies {
     compile 'io.springfox:springfox-swagger2:2.7.0'
     compile 'io.springfox:springfox-swagger-ui:2.7.0'
 
+    // 查看java对象头
+    compile 'org.openjdk.jol:jol-core:0.9'
+    
+    // redis 分布式
+    compile 'org.redisson:redisson:3.12.5'
+
 }

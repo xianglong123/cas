@@ -1,16 +1,19 @@
 package com.cas.strTest;
 
 import com.alibaba.fastjson.JSONObject;
-import com.cas.BaseTest;
+import com.cas.domain.sms.SmsBatch;
+import com.cas.domain.sms.SmsBatchDetail;
 import com.cas.pojo.User;
 import com.cas.utils.StringUtil;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
+import org.openjdk.jol.info.ClassLayout;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -18,12 +21,15 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -33,6 +39,7 @@ import java.util.stream.Collectors;
 public class StringTest{
 
     private static final String url = "/Users/xianglong/Desktop/aa.xlsx";
+
 
     public static void main(String[] args) {
         String name = "img/a.png";
@@ -620,6 +627,9 @@ public class StringTest{
         System.out.println(ends);
     }
 
+    /**
+     * 遍历json
+     */
     @Test
     public void test40() {
         String json = "{\"belieheneOrpName\":\"徐正明\",\"belieheneOrpCrdNo\":\"320111196602194815\",\"belieheneOrpCrdTyp\":\"1\",\"belieheneOrpCrdSttDt\":\"20051111\"," +
@@ -630,5 +640,115 @@ public class StringTest{
         }
     }
 
+
+    /**
+     * 查看java对象头
+     */
+    @Test
+    public void test41() {
+        User user = new User("123", "向龙", 24, new Date());
+        System.out.println(user.hashCode());
+        System.out.println(ClassLayout.parseInstance(user).toPrintable());
+    }
+
+    /**
+     * List迭代器，优点[可运用于所有类型的遍历]
+     * Arrays.asList() 不支持remove, 抛异常
+     */
+    @Test
+    public void test42() {
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        Iterator<String> iterator = list.iterator();
+        // 很显然迭代器有优点也有缺点，推荐还是加强for循环
+        while (iterator.hasNext()) {
+            iterator.next();
+                iterator.remove();
+        }
+        System.out.println(list);
+    }
+
+    /**
+     * 方便查看equals重写
+     */
+    @Test
+    public void test43() {
+        String str = "法人身份证12正面";
+        System.out.println(str.equals(str));
+        Integer a = 1;
+        System.out.println(a.equals(1));
+        User user = new User();
+        System.out.println(user.equals(new User()));
+    }
+
+    /**
+     * java 中的 Math.round(-1.5) 等于多少？
+     */
+    @Test
+    public void test44() {
+        System.out.println(Math.round(-1.6));
+    }
+
+    /**
+     * 变量替换
+     */
+    @Test
+    public void test45() {
+        Map<String, List<String>> contentVariablesMap = null;
+        Set<String> contentVariablesMapKeySet = null;
+
+        SmsBatch batch = new SmsBatch();
+        batch.setKeys("15811317734,15023437718");
+        batch.setContentVariables("{var1:[向龙,xianglong],var2:[100,200]}");
+        batch.setContent("您好var1: 欠款 var2元");
+        contentVariablesMap = StringUtil.getGson().fromJson(batch.getContentVariables(), new TypeToken<Map<String, List<String>>>() {
+        }.getType());
+
+
+        contentVariablesMapKeySet = contentVariablesMap.keySet();
+
+        String[] keys = batch.getKeys().split(",");
+        for (int i = 0; i < keys.length; i++) {
+            SmsBatchDetail detail = new SmsBatchDetail(batch.getContent());
+            for (String vk : contentVariablesMapKeySet) {
+                detail.setContent(detail.getContent().replaceAll(vk, contentVariablesMap.get(vk).get(i)));
+            }
+            System.out.println(detail.getContent());
+        }
+    }
+
+    /**
+     * treeMap简单方法使用
+     * 以下是java.util.TreeMap.lastKey()方法的声明。
+     * lastKey() 方法用于返回当前在此映射的最后一个(最高)键。
+     */
+    @Test
+    public void test46() {
+        TreeMap<Integer, String> treeMap = new TreeMap<>();
+        treeMap.put(2, "two");
+        treeMap.put(1, "one");
+        treeMap.put(5, "five");
+        treeMap.put(3, "three");
+        treeMap.put(7, "seven");
+        treeMap.put(6, "six");
+        System.out.println("lastKey():-> " + treeMap.lastKey());
+        System.out.println("firstKey():-> " + treeMap.firstKey());
+    }
+
+    /**
+     * breakPoint condition 断点函数测试
+     * 适用场景：对循环测试需要测试某个固定条件时候可用
+     */
+    @Test
+    public void test47() {
+        String[] strs = {"1", "2", "3", "4", "5"};
+        for (String str : strs) {
+            System.out.println(str);
+        }
+
+
+    }
 
 }

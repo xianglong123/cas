@@ -131,10 +131,17 @@ public class UploadServiceClient implements UploadService {
         FileWriter writer = null;
         for (Auth excelModel : objectList) {
             try {
-            String china = ChinaDaAsDataEncoder.encode(excelModel.getIdCard(), "V1");
-            String urlEnc = URLEncoder.encode(china, "UTF-8");
-            System.out.println(excelModel.getName() + "\t" + china + "\t" + urlEnc);
-            stringBuilder.append(excelModel.getName() + "\t" + china + "\t" + urlEnc + "\n");
+                String china = ChinaDaAsDataEncoder.encode(excelModel.getIdCard(), "V1");
+                String urlEnc = URLEncoder.encode(china, "UTF-8");
+                //####################### 字符流输出第一种方式 ##########################
+                // 以txt文件格式保存到桌面 【适合循环追加写入】
+                FileOutputStream fos = new FileOutputStream("/Users/xianglong/Desktop/b.txt", true);
+                //true表示在文件末尾追加
+                fos.write((excelModel.getName() + "\t" + china + "\t" + urlEnc + "\n").getBytes());
+                fos.close();
+                //##################################################################
+
+                stringBuilder.append(excelModel.getName() + "\t" + china + "\t" + urlEnc + "\n");
             } catch (Exception e) {
                 continue;
             }
@@ -150,6 +157,9 @@ public class UploadServiceClient implements UploadService {
             writer.flush();
             writer.close();
         }
+
+
+
 
     }
 
