@@ -4,6 +4,7 @@ package com.cas.controller;
 import com.cas.domain.ValidatorPojo;
 import com.cas.pojo.QueAnsPo;
 import com.cas.service.accountService.AccountService;
+import com.cas.service.countDownLatchService.CountDownLatchService;
 import com.cas.service.inqueryService.InqueryService;
 import com.cas.service.pdfService.PdfService;
 import com.cas.service.pdfService.PdfView;
@@ -18,6 +19,7 @@ import com.cas.service.uploadService.UploadService;
 import com.cas.utils.CookieUtil;
 import com.cas.utils.SpringContextUtils;
 import com.cas.utils.StringUtil;
+import com.cas.utils.ThreadPoolUtil;
 import com.cas.validator.UserValidator;
 import com.google.gson.Gson;
 import io.swagger.annotations.Api;
@@ -53,12 +55,14 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 @Api(value = "API - 测试controller")
@@ -100,6 +104,9 @@ public class TestController {
 
     @Autowired
     private ThreadService threadService;
+
+    @Autowired
+    private CountDownLatchService countDownLatchService;
 
     /**
      * c测试系统是否可用
@@ -638,7 +645,41 @@ public class TestController {
         return threadService.execute();
     }
 
+    @ApiOperation(value = "线程池任务完成")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "value", value = "以英文,分割数据", required = false,
+                    dataType = "string", paramType = "query", defaultValue = "5,6,7,2")
+    })
+    @GetMapping("/countDown")
+    @ResponseBody
+    public String countDown(String value) {
+        String[] split = value.split(",");
+        List<Integer> va = new ArrayList<>();
+        Arrays.asList(split).forEach(a -> va.add(Integer.valueOf(a)));
+        return countDownLatchService.subNum(va.toArray(new Integer[0]));
+    }
 
+
+    @ApiOperation(value = "线程池任务超时中断")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "value", value = "以英文,分割数据", required = false,
+                    dataType = "string", paramType = "query", defaultValue = "5,6,7,2")
+    })
+    @GetMapping("/poolFutureTask")
+    @ResponseBody
+    public String poolFutureTask(String value) throws ExecutionException, InterruptedException {
+        String[] split = value.split(",");
+        List<Integer> va = new ArrayList<>();
+        Arrays.asList(split).forEach(a -> va.add(Integer.valueOf(a)));
+        return countDownLatchService.process(va.toArray(new Integer[0]));
+    }
+
+    @GetMapping("/shutdown")
+    @ResponseBody
+    public String shutdown() {
+        ThreadPoolUtil.shutdown();
+        return "线程已shutdown";
+    }
 
 
 

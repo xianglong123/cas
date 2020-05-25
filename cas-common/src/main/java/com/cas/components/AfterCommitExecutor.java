@@ -1,5 +1,6 @@
 package com.cas.components;
 
+import com.cas.utils.ThreadPoolUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionSynchronizationAdapter;
@@ -8,8 +9,6 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * @author: xianglong[xiang_long@suixingpay.com]
@@ -20,9 +19,7 @@ import java.util.concurrent.Executors;
 @Slf4j
 @Component
 public class AfterCommitExecutor extends TransactionSynchronizationAdapter implements Executor {
-    private static final ThreadLocal<List<Runnable>> RUNNABLES = new ThreadLocal<List<Runnable>>();
-    private ExecutorService threadPool = Executors.newFixedThreadPool(5);
-
+    private static final ThreadLocal<List<Runnable>> RUNNABLES = new ThreadLocal<>();
 
     @Override
     public void execute(Runnable command) {
@@ -50,7 +47,7 @@ public class AfterCommitExecutor extends TransactionSynchronizationAdapter imple
             Runnable runnable = threadRunnables.get(i);
             log.info("Executing runnable {}", runnable);
             try {
-                threadPool.execute(runnable);
+                ThreadPoolUtil.execute(runnable);
             } catch (RuntimeException e) {
                 log.error("Failed to execute runnable " + runnable, e);
             }

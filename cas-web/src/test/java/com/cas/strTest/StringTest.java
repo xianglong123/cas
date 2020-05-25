@@ -747,7 +747,31 @@ public class StringTest{
         for (String str : strs) {
             System.out.println(str);
         }
+    }
 
+    /**
+     * 加载因子越大节省内存但查找效率低，加载因子越小耗内存但查找效率高，系统默认加载因子为0.75，一般情况下我们是无需修改的。
+     */
+    @Test
+    public void test48() {
+        Set<String> set = new HashSet<>(100,2);
+        System.out.println();
+    }
+
+    /**
+     * for(;;) 和 while(1) 死循环 跳出方法
+     * for(;;) 底层命令更简单
+     */
+    @Test
+    public void test49() throws InterruptedException {
+        Integer i = 1;
+        for(;;) {
+            Thread.sleep(500);
+            System.out.println(i++);
+            if(i == 5) {
+                break;
+            }
+        }
 
     }
 

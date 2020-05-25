@@ -33,6 +33,12 @@ public class RedissonAutoConfiguration {
         Config config = new Config();
         // 2秒一次寻访
         config.setLockWatchdogTimeout(45000);
+        /*
+        *
+        * String[] strings = redisModel.getSentinel().getNodes().split(",");
+        List<String> addressList = new ArrayList<>();
+        Arrays.asList(strings).forEach(address -> addressList.add("redis://" + address));
+        * */
         SingleServerConfig serverConfig = config.useSingleServer()
 
                 .setAddress(redissonProperties.getAddress())

@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -62,11 +63,11 @@ public class AccountServiceClient implements AccountService {
 //    @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
     @Transactional
     public int add() {
-        redisTemplate.opsForValue().set("xianlgong", "");
-        if(redisTemplate.opsForValue().setIfAbsent("a", "")) {
-            log.info("ok");
-        }
-        return accountMapper.add();
+        int add = accountMapper.add();
+        int add2 = accountMapper.add();
+        List<AccountPo> poList = accountMapper.query();
+        log.info(poList.size() + "##################");
+        return add;
     }
 
     @Override

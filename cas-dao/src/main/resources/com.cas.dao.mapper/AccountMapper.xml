@@ -33,6 +33,9 @@
             <if test="@Ognl@isNotEmpty(userId)">AND user_id = #{userId}</if>
         </where>
     </select>
+    <select id="query" resultType="com.cas.pojo.AccountPo">
+        select <include refid="columns"/> from tcc_account.account
+    </select>
 
     <insert id="add">
         insert into account values(replace(uuid(), '-', ''), '10002', '10000', '0', sysdate(), sysdate())

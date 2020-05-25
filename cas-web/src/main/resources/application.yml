@@ -19,8 +19,7 @@ spring:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
   aop:
-    auto: true
-    proxy-target-class: false
+    proxy-target-class: true
   redis:
     pool:
       max-idle: 10
