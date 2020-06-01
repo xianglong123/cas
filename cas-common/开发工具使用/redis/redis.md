@@ -34,6 +34,11 @@ redis 内部使用文件事件处理器`file event handler`,这个文件事件�
     获得值: get key
     查询有效时间: ttl key
 
+### redis官网翻译博客，讲解红锁
+    https://www.cnblogs.com/rgcLOVEyaya/p/RGC_LOVE_YAYA_1003days.html
+    
+### redisson 官网
+    https://github.com/redisson/redisson/wiki/%E7%9B%AE%E5%BD%95
 
 
 

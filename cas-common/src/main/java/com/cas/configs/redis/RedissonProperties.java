@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Configuration;
  * @review:
  */
 @Data
-@Configuration
-@ConfigurationProperties(prefix = "redisson")
+//@Configuration
+//@ConfigurationProperties(prefix = "redisson")
 public class RedissonProperties {
 
     private int timeout = 3000;

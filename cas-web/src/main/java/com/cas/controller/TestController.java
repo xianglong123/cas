@@ -29,6 +29,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.dao.DataAccessException;
@@ -55,6 +56,8 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -62,6 +65,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
@@ -107,6 +111,9 @@ public class TestController {
 
     @Autowired
     private CountDownLatchService countDownLatchService;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     /**
      * c测试系统是否可用
@@ -394,7 +401,7 @@ public class TestController {
 
     /**
      * 测试 自定义的类型转换器好不好用
-     * com.cas.components.StringToUserConverter
+     * com.cas.components.converter.StringToUserConverter
      * 测试请求地址：http://127.0.0.1:8081/test/converter?user=xl-pass123-23
      *
      * @param user
@@ -674,6 +681,7 @@ public class TestController {
         return countDownLatchService.process(va.toArray(new Integer[0]));
     }
 
+    @ApiOperation(value = "终止线程池，此线程池已废，只能重启或者重新new")
     @GetMapping("/shutdown")
     @ResponseBody
     public String shutdown() {
@@ -681,7 +689,66 @@ public class TestController {
         return "线程已shutdown";
     }
 
+    @ApiOperation(value = "测试直连模式下的mq")
+    @GetMapping("/sendDirectMessage")
+    @ResponseBody
+    public String sendDirectMessage() {
+        String messageId = String.valueOf(UUID.randomUUID());
+        String messageData = "test message!";
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        Map<String,Object> map=new HashMap<>();
+        map.put("messageId",messageId);
+        map.put("messageData",messageData);
+        map.put("createTime",createTime);
+        //将消息携带绑定键值：TestDirectRouting 发送到交换机TestDirectExchange
+        rabbitTemplate.convertAndSend("TestDirectExchange", "TestDirectRouting", map);
+        return "ok";
+    }
 
+    @ApiOperation(value = "测试topic模式下的mq")
+    @GetMapping("/sendTopicMessage1")
+    @ResponseBody
+    public String sendTopicMessage1() {
+        String messageId = String.valueOf(UUID.randomUUID());
+        String messageData = "message: M A N ";
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        Map<String, Object> manMap = new HashMap<>();
+        manMap.put("messageId", messageId);
+        manMap.put("messageData", messageData);
+        manMap.put("createTime", createTime);
+        rabbitTemplate.convertAndSend("topicExchange", "topic.man", manMap);
+        return "ok";
+    }
+
+    @ApiOperation(value = "测试topic模式下的mq")
+    @GetMapping("/sendTopicMessage2")
+    @ResponseBody
+    public String sendTopicMessage2() {
+        String messageId = String.valueOf(UUID.randomUUID());
+        String messageData = "message: woman is all ";
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        Map<String, Object> womanMap = new HashMap<>();
+        womanMap.put("messageId", messageId);
+        womanMap.put("messageData", messageData);
+        womanMap.put("createTime", createTime);
+        rabbitTemplate.convertAndSend("topicExchange", "topic.woman", womanMap);
+        return "ok";
+    }
+
+    @ApiOperation(value = "测试Fanout模式下的mq")
+    @GetMapping("/sendFanoutMessage")
+    @ResponseBody
+    public String sendFanoutMessage() {
+        String messageId = String.valueOf(UUID.randomUUID());
+        String messageData = "message: testFanoutMessage ";
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        Map<String, Object> map = new HashMap<>();
+        map.put("messageId", messageId);
+        map.put("messageData", messageData);
+        map.put("createTime", createTime);
+        rabbitTemplate.convertAndSend("fanoutExchange", null, map);
+        return "ok";
+    }
 
 }
 

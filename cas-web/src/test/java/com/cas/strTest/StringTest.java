@@ -16,6 +16,8 @@ import org.junit.Test;
 import org.openjdk.jol.info.ClassLayout;
 
 import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -772,6 +774,30 @@ public class StringTest{
                 break;
             }
         }
+    }
+
+    /**
+     * String 偏移量
+     */
+    @Test
+    public void test50() {
+        char[] chars = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
+        byte[] bytes = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
+        String str = new String(chars, 3, 2);
+        str.getChars(0,1, chars, 3);
+        System.out.println(str);
+
+        String str2 = new String(bytes, 3, 2, Charset.defaultCharset());
+        System.out.println(str2.codePointCount(0,2));
+    }
+
+    /**
+     * 字符转大小写
+     */
+    @Test
+    public void test51() {
+        String str = "ABCdefGhiJK";
+        System.out.println(str.toUpperCase());
 
     }
 

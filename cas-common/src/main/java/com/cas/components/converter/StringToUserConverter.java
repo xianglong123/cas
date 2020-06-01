@@ -1,4 +1,4 @@
-package com.cas.components;
+package com.cas.components.converter;
 
 import com.cas.domain.User;
 import org.springframework.core.convert.converter.Converter;

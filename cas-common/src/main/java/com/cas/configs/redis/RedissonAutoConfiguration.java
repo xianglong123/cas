@@ -19,9 +19,9 @@ import org.springframework.context.annotation.Configuration;
  * @version: V1.0
  * @review:
  */
-@Configuration
-@ConditionalOnClass(Config.class)
-@EnableConfigurationProperties(RedissonProperties.class)
+//@Configuration
+//@ConditionalOnClass(Config.class)
+//@EnableConfigurationProperties(RedissonProperties.class)
 public class RedissonAutoConfiguration {
 
     @Autowired

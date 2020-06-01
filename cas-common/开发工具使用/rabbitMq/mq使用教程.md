@@ -1,0 +1,8 @@
+### mq使用教程
+    https://blog.csdn.net/qq_35387940/article/details/100514134
+    
+### 停止mq
+    sudo rabbitmqctl stop
+
+### 启动mq服务
+    sudo rabbitmq-server 

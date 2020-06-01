@@ -1,6 +1,9 @@
 #配置端口
 server:
   port: 8081
+  jsp-servlet:
+    init-parameters:
+      development: true
   #最外层的路径
 #  context-path: /cas
 spring:
@@ -32,6 +35,18 @@ spring:
     type: REDIS
     redis:
       time-to-live: 600000
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #虚拟host 可以不设置,使用server默认host
+#    virtual-host: xlHost
+    #消息确认配置项
+    #确认消息已发送到交换机(Exchange)
+    publisher-confirms: true
+    #确认消息已发送到队列(Queue)
+    publisher-returns: true
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
@@ -45,9 +60,6 @@ mybatis:
 # 日志配置
 logging:
   config: classpath:logback-spring.xml
-redisson:
-  address: redis://127.0.0.1:6379
-  password:
 
 
 

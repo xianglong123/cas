@@ -70,4 +70,7 @@ dependencies {
     // redis 分布式
     compile 'org.redisson:redisson:3.12.5'
 
+    // rabbitMq
+    compile 'org.springframework.boot:spring-boot-starter-amqp'
+
 }
