@@ -21,3 +21,9 @@
 
 ## 杀死sql进程
     alter system kill session 'SID, SERIAL';
+    
+## oracle查看执行计划
+    explain plan for select * from  ads.t_ads_merc_settle;
+    SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY('PLAN_TABLE'));
+    
+    执行一个，再执行一个

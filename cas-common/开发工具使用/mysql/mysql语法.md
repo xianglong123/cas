@@ -69,3 +69,6 @@
     　　　　eg2: 更新蜀国所有英雄攻击力 * 2
     
     　　　　　　update sanguo set attack=attack*2 where country='蜀国';
+
+### mysql执行计划
+    explain select * from sms_batch where batch_id = '123'

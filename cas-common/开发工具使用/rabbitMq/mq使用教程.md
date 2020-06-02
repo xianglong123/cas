@@ -6,3 +6,6 @@
 
 ### 启动mq服务
     sudo rabbitmq-server 
+    
+### 后台运行
+    sudo rabbitmq-server -detached

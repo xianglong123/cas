@@ -73,4 +73,10 @@ dependencies {
     // rabbitMq
     compile 'org.springframework.boot:spring-boot-starter-amqp'
 
+    // zookeeper
+    compile ('org.apache.zookeeper:zookeeper:3.4.12') {
+        exclude group:'org.slf4j'
+        exclude group:'log4j'
+    }
+
 }
