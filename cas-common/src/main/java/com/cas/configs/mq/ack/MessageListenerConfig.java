@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.servlet.Servlet;
+
 /**
  * @Author : JCccc
  * @CreateTime : 2019/9/4

@@ -22,13 +22,18 @@ import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
@@ -798,7 +803,74 @@ public class StringTest{
     public void test51() {
         String str = "ABCdefGhiJK";
         System.out.println(str.toUpperCase());
+        Integer i = 3;
+        System.out.println(i.equals(3));
+        System.out.println(Math.ceil(2.8));
+        StringBuffer stringBuffer = new StringBuffer("22");
+        stringBuffer.append("222");
+
+        StringBuilder stringBuilder = new StringBuilder("33");
+        stringBuilder.append("33");
+        List<String> strings = new ArrayList<>();
+        Map<String, String> map = new Hashtable<>();
+        Map<String, String> map1 = new HashMap<>();
+        Map<String, String> map2 = new TreeMap<>();
+        map.containsKey("s");
+        map1.containsKey("");
+        map1.put(null,"");
+        map2.put("a", "av");
+        map2.put("b", "av");
+        map2.put("c", "av");
+        List<String> list = new ArrayList<>();
+        Object[] objects = list.toArray();
+    }
+
+    /**
+     * 面试用例：List迭代器
+     */
+    @Test
+    public void test52() {
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("d");
+        ListIterator<String> stringListIterator = list.listIterator();
+        while (stringListIterator.hasNext()) {
+            System.out.println(stringListIterator.next());
+        }
+
+        while(stringListIterator.hasPrevious()) {
+            System.out.println(stringListIterator.previous());
+        }
+    }
+
+    /**
+     * 不新创建对象，直接给引用地址，修改引用地址的值也会更改调引用地址的对象。
+     */
+    @Test
+    public void test53() {
+        User user = new User("xl", "123");
+        User user1 = user;
+        user.setName("456");
+        user.setAge(67);
+        System.out.println(user);
+        System.out.println(user1);
+    }
+
+    /**
+     * 双端队列
+     */
+    @Test
+    public void test54() {
+        List<String> list = new LinkedList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        Queue<String> queue = new LinkedList<>();
 
     }
+
+
 
 }

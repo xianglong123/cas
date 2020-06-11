@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+
 /**
  * @author: xianglong[xiang_long@suixingpay.com]
  * @date: 14:21 2020-01-20
@@ -12,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Data
-public class User {
+public class User implements Serializable {
 
     @Value("#{merch.username?.toUpperCase() + '312312312'}")
     private String username;
