@@ -35,7 +35,9 @@ public class BinaryTree {
     public void preOrder(BinaryTreeNode btn) {
         BinaryTreeNode root = btn;
         if (root != null) {
-
+            printNode(root);
+            preOrder(root.leftNode);
+            preOrder(root.rightNode);
         }
     }
 

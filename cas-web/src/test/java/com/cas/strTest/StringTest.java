@@ -14,6 +14,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.openjdk.jol.info.ClassLayout;
+import org.redisson.misc.Hash;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -36,6 +37,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
+import java.util.Stack;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.regex.Matcher;
@@ -871,6 +873,51 @@ public class StringTest{
 
     }
 
+    /**
+     * 研究hashMap通过key计算hash值确定index
+     */
+    @Test
+    public void test55() {
+//        Object key = "xl";
+//        int h = key.hashCode();
+//        System.out.println(h);
+//        System.out.println(h >>> 16);
+//        System.out.println(h ^ (h >>> 16));
+//        System.out.println(3828^1);
+//        System.out.println(Integer.toBinaryString(3828));
+        Map<String, String> map = new HashMap<>();
+        Map<String, String> map2 = new Hashtable<>();
+        map.put("1", "1v");
+        map.put("2", "2v");
+        map.put("3", "1v");
+        map.put("4", "1v");
+        map.put("5", "1v");
+        map.get("5");
+    }
+
+    /**
+     * 看看catch中return了，finally怎么处理
+     */
+    @Test
+    public void test56() {
+        System.out.println(cat());
+    }
+
+    private int cat() {
+        int a =10;
+        try {
+            int b = a/0;
+            a = 20;
+        } catch (Exception e) {
+            a = 30;
+            return a;
+        } finally {
+            a = 40;
+            System.out.println(a + "......");
+        }
+        System.out.println("------");
+        return a;
+    }
 
 
 }

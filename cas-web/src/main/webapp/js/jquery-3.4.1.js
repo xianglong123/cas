@@ -2605,7 +2605,7 @@ compile = Sizzle.compile = function( selector, match /* Internal Use Only */ ) {
 		cached = compilerCache[ selector + " " ];
 
 	if ( !cached ) {
-		// Generate a function of recursive functions that can be used to check each element
+		// Generate a function of norecursive functions that can be used to check each element
 		if ( !match ) {
 			match = tokenize( selector );
 		}

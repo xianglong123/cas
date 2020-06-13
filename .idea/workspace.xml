@@ -1,46 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java" line="331" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java" line="333" mnemonic="4" />
     <bookmark url="file://$PROJECT_DIR$/../ors/sds-core/src/main/resources/com/suixingpay/sms/orm/ssp/mapper/DMerchantSaveMapper.xml" description="&lt;select id=&quot;getTaskEntrustInfoList&quot; parameterType=..." line="1343" />
     <bookmark url="file://$PROJECT_DIR$/../ors/sds-core/src/main/java/com/suixingpay/sms/service/adsQrMerc/impl/AdsQrMercServiceImpl.java" description="Map&lt;String, Object&gt; respMap = new HashMap&lt;String, ..." line="213" />
     <bookmark url="file://$PROJECT_DIR$/../ors/sds-core/src/main/resources/com/suixingpay/sms/orm/ssp/mapper/DMerchantSaveMapper.xml" description="&lt;insert id=&quot;saveTaskEntrustInfo&quot; parameterType=&quot;co..." line="1413" />
     <bookmark url="file://$PROJECT_DIR$/../icp-notice/icp-notice-admin/src/main/java/com/suixingpay/icp/notice/admin/controller/smsservice/SmsServiceBatchDetailController.java" description="String endTime = smsBatchResult.getEndCreateTime()..." line="773" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f9a8abe-1708-4006-8ff4-ed6613fb86bf" name="Default Changelist" comment="+ mq 订阅，主题，路由模式&#10;+ mq手动确认&#10;+ 结构稍稍优化">
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/MyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/clone/CloneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinearList/IList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinearList/Psvm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinearList/SqList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinkedList/Linked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinkedList/Psvm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/UnboundedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/linked/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/linked/LinkedListStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/sortQueue/SortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/LeetCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.test.iml" afterDir="false" />
+    <list default="true" id="7f9a8abe-1708-4006-8ff4-ed6613fb86bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/heap/BinaryHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/Psvm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/TreeReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/ack/MessageListenerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/ack/MessageListenerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-web/src/main/webapp/js/jquery-3.4.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/webapp/js/jquery-3.4.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -189,14 +164,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastQueue.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="375">
+              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
               <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#19327#19328#0" expanded="true" />
+                <element signature="e#19410#19411#0" expanded="true" />
+                <element signature="e#23630#23631#0" expanded="true" />
+                <element signature="e#23684#23685#0" expanded="true" />
+                <element signature="e#24331#24332#0" expanded="true" />
+                <element signature="e#24396#24397#0" expanded="true" />
+                <element signature="e#66928#66929#0" expanded="true" />
+                <element signature="e#66985#66986#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/heap/BinaryHeap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+              <folding>
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1543#1544#0" expanded="true" />
+                <element signature="e#1576#1577#0" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#1658#1659#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Comparable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -204,94 +213,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="865" column="47" lean-forward="true" selection-start-line="865" selection-start-column="47" selection-end-line="865" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTreeNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="241">
+              <caret line="887" column="40" selection-start-line="887" selection-start-column="40" selection-end-line="887" selection-end-column="40" />
               <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#23824#23825#0" expanded="true" />
+                <element signature="e#23865#23866#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Deque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Queue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="178" column="26" lean-forward="true" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinkedList/Linked.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="66" column="32" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/sortQueue/SortedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastListQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="262">
+              <caret line="1260" column="18" selection-start-line="1260" selection-start-column="18" selection-end-line="1260" selection-end-column="18" />
               <folding>
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#7926#7927#0" expanded="true" />
+                <element signature="e#7957#7958#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Vector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="623" column="16" selection-start-line="623" selection-start-column="16" selection-end-line="623" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -311,8 +278,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(..)\1+</find>
-      <find>typehan</find>
       <find>1\d{10}</find>
       <find>4</find>
       <find>CasTypeHandler</find>
@@ -341,6 +306,8 @@
       <find>insert</find>
       <find>\d,</find>
       <find>FirstLastList</find>
+      <find>(n - 1) &amp; hash</find>
+      <find>TreeNode</find>
     </findStrings>
     <replaceStrings>
       <replace>log.info</replace>
@@ -370,12 +337,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/redis/RedissonProperties.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/DirectRabbitConfig.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/DirectReceiver.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/topic/TopicManReceiver.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/topic/TopicTotalReceiver.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/topic/TopicRabbitConfig.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/direct/DirectRabbitConfig.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/fanout/FanoutRabbitConfig.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/fanout/FanoutReceiverA.java" />
@@ -418,9 +379,15 @@
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastListQueue.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/sortQueue/SortedList.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastQueue.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTreeNode.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/recursive/TreeReader.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/recursive/TreeNode.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/recursive/Psvm.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/Psvm.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/TreeReader.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/heap/BinaryHeap.java" />
       </list>
     </option>
   </component>
@@ -469,36 +436,6 @@
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -549,8 +486,37 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="dataStructrue" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="strTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2439,7 +2405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinaryTree">
+  <component name="RunManager" selected="Application.BinaryHeap">
     <configuration name="AllocationTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cas.jvm.内存分配.AllocationTest" />
       <module name="cas.cas-web.test" />
@@ -2447,6 +2413,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cas.jvm.内存分配.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.dataStructrue.heap.BinaryHeap" />
+      <module name="cas.cas-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.dataStructrue.heap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2495,19 +2474,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstLastListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.dataStructrue.queue.doubleSideQueue.FirstLastListQueue" />
-      <module name="cas.cas-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cas.dataStructrue.queue.doubleSideQueue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HeapOOMTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cas.jvm.内存溢出.HeapOOMTest" />
       <module name="cas.cas-web.test" />
@@ -2515,19 +2481,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cas.jvm.内存分配.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.dataStructrue.Stack.linked.LinkedListStack" />
-      <module name="cas.cas-web.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cas.dataStructrue.Stack.linked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2549,12 +2502,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Queue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.dataStructrue.queue.Queue" />
+    <configuration name="Psvm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.dataStructrue.tree.norecursive.Psvm" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.dataStructrue.queue.*" />
+          <option name="PATTERN" value="com.cas.dataStructrue.tree.norecursive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2604,15 +2557,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnboundedStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.dataStructrue.Stack.UnboundedStack" />
+    <configuration name="StringTest.test55" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.dataStructrue.Stack.linked.*" />
+          <option name="PATTERN" value="com.cas.strTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cas.strTest" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.strTest.StringTest" />
+      <option name="METHOD_NAME" value="test55" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest.test56" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cas.cas-web.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cas.strTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cas.strTest" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.strTest.StringTest" />
+      <option name="METHOD_NAME" value="test56" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -2636,19 +2608,19 @@
       <item itemvalue="Application.DeadLockDemo" />
       <item itemvalue="Application.QueueAddUpTest" />
       <item itemvalue="Spring Boot.UpmApplication" />
-      <item itemvalue="Application.UnboundedStack" />
-      <item itemvalue="Application.LinkedListStack" />
-      <item itemvalue="Application.Queue" />
-      <item itemvalue="Application.FirstLastListQueue" />
       <item itemvalue="Application.BinaryTree" />
+      <item itemvalue="Application.Psvm" />
+      <item itemvalue="JUnit.StringTest.test55" />
+      <item itemvalue="JUnit.StringTest.test56" />
+      <item itemvalue="Application.BinaryHeap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryHeap" />
+        <item itemvalue="JUnit.StringTest.test56" />
+        <item itemvalue="JUnit.StringTest.test55" />
+        <item itemvalue="Application.Psvm" />
         <item itemvalue="Application.BinaryTree" />
-        <item itemvalue="Application.FirstLastListQueue" />
-        <item itemvalue="Application.Queue" />
-        <item itemvalue="Application.LinkedListStack" />
-        <item itemvalue="Application.UnboundedStack" />
       </list>
     </recent_temporary>
   </component>
@@ -2762,7 +2734,7 @@
       <workItem from="1590131729384" duration="32790000" />
       <workItem from="1590802835230" duration="17594000" />
       <workItem from="1591090859472" duration="1565000" />
-      <workItem from="1591165327064" duration="35345000" />
+      <workItem from="1591165327064" duration="48802000" />
     </task>
     <task id="LOCAL-00001" summary="+ 新作品">
       <created>1577971612690</created>
@@ -2918,43 +2890,50 @@
       <option name="project" value="LOCAL" />
       <updated>1591093011239</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="+ 数据结构链表，栈，队列实现">
+      <created>1591887897007</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1591887897007</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringTest_test50 - 2020.05.26 at 14h 26m 08s.xml">
-      <configuration name="StringTest.test50" configurationId="JUnit" />
+    <history-entry file="StringTest_test55 - 2020.06.12 at 11h 40m 19s.xml">
+      <configuration name="StringTest.test55" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test50 - 2020.05.26 at 14h 28m 29s.xml">
-      <configuration name="StringTest.test50" configurationId="JUnit" />
+    <history-entry file="StringTest_test55 - 2020.06.12 at 11h 41m 18s.xml">
+      <configuration name="StringTest.test55" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test50 - 2020.05.26 at 14h 28m 36s.xml">
-      <configuration name="StringTest.test50" configurationId="JUnit" />
+    <history-entry file="StringTest_test55 - 2020.06.12 at 11h 43m 56s.xml">
+      <configuration name="StringTest.test55" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test50 - 2020.05.26 at 14h 43m 23s.xml">
-      <configuration name="StringTest.test50" configurationId="JUnit" />
+    <history-entry file="StringTest_test55 - 2020.06.12 at 11h 46m 23s.xml">
+      <configuration name="StringTest.test55" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test51 - 2020.06.08 at 14h 47m 12s.xml">
-      <configuration name="StringTest.test51" configurationId="JUnit" />
+    <history-entry file="StringTest_test55 - 2020.06.12 at 12h 02m 17s.xml">
+      <configuration name="StringTest.test55" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test51 - 2020.06.08 at 16h 24m 36s.xml">
-      <configuration name="StringTest.test51" configurationId="JUnit" />
+    <history-entry file="StringTest_test55 - 2020.06.12 at 12h 09m 56s.xml">
+      <configuration name="StringTest.test55" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test51 - 2020.06.08 at 16h 24m 52s.xml">
-      <configuration name="StringTest.test51" configurationId="JUnit" />
+    <history-entry file="StringTest_test55 - 2020.06.12 at 12h 57m 05s.xml">
+      <configuration name="StringTest.test55" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test52 - 2020.06.08 at 16h 54m 50s.xml">
-      <configuration name="StringTest.test52" configurationId="JUnit" />
+    <history-entry file="StringTest_test56 - 2020.06.12 at 14h 17m 30s.xml">
+      <configuration name="StringTest.test56" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test53 - 2020.06.10 at 22h 09m 12s.xml">
-      <configuration name="StringTest.test53" configurationId="JUnit" />
+    <history-entry file="StringTest_test56 - 2020.06.12 at 14h 18m 32s.xml">
+      <configuration name="StringTest.test56" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test53 - 2020.06.10 at 22h 10m 34s.xml">
-      <configuration name="StringTest.test53" configurationId="JUnit" />
+    <history-entry file="StringTest_test56 - 2020.06.12 at 14h 19m 01s.xml">
+      <configuration name="StringTest.test56" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="577617000" />
+    <option name="totallyTimeSpent" value="591074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2969,8 +2948,8 @@
     <frame x="682" y="0" width="1110" height="1120" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.07704918" visible="true" weight="0.27808988" />
-      <window_info id="Structure" order="1" sideWeight="0.9229508" side_tool="true" weight="0.30742857" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.23934427" visible="true" weight="0.27808988" />
+      <window_info id="Structure" order="1" sideWeight="0.76065576" side_tool="true" weight="0.16971429" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -3085,7 +3064,8 @@
     <MESSAGE value="+ 线程池超时中断，解决方案不理想" />
     <MESSAGE value="+ mq 订阅，主题，路由模式&#10;+ mq手动确认&#10;+ 结构稍稍优化" />
     <MESSAGE value="+ zk &#10;+ mq &#10;+ mysql&#10;+ oracle" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ zk &#10;+ mq &#10;+ mysql&#10;+ oracle" />
+    <MESSAGE value="+ 数据结构链表，栈，队列实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ 数据结构链表，栈，队列实现" />
   </component>
   <component name="WindowStateProjectService">
     <state width="410" height="920" key="Git.Branch.Popup" />
@@ -3098,166 +3078,31 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/countDownLatchService/CountDownLatchServiceClient.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java</url>
+          <line>894</line>
           <properties />
-          <option name="timeStamp" value="185" />
+          <option name="timeStamp" value="247" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/futureTask/PoolFutureTaskTest.java</url>
-          <line>35</line>
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/HashMap.java</url>
+          <line>556</line>
           <properties />
-          <option name="timeStamp" value="186" />
+          <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/ThreadPoolUtil.java</url>
-          <line>34</line>
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/HashMap.java</url>
+          <line>568</line>
           <properties />
-          <option name="timeStamp" value="187" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/countDownLatchService/CountDownLatchServiceClient.java</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="189" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/countDownLatchService/CountDownLatchServiceClient.java</url>
-          <line>83</line>
-          <properties />
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/countDownLatchService/CountDownLatchServiceClient.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="191" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/ack/MessageListenerConfig.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="195" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/ack/MessageListenerConfig.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/LeetCode.java</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="197" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinkedList/Linked.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/Stack.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="205" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/Stack.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="206" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/Stack.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/UnboundedStack.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="208" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/linked/LinkedListStack.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="209" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/linked/LinkedList.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="210" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/linked/LinkedList.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="211" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="212" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="215" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="217" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="219" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastListQueue.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="220" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastListQueue.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="221" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastQueue.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="222" />
+          <option name="timeStamp" value="251" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="map.put(&quot;user&quot;, user)" />
+        <watch expression="hash(key)" />
+        <watch expression="n" />
+        <watch expression="tab.length" />
       </configuration>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="synchronizations.get() != null" />
@@ -3357,127 +3202,6 @@ System.out.println(&quot;向龙&quot;);</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1082">
-          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="2832" column="22" selection-start-line="2832" selection-start-column="22" selection-end-line="2832" selection-end-column="22" />
-          <folding>
-            <element signature="e#4677#4678#0" expanded="true" />
-            <element signature="e#4714#4715#0" expanded="true" />
-            <element signature="e#5687#5688#0" expanded="true" />
-            <element signature="e#5750#5751#0" expanded="true" />
-            <element signature="e#13098#13099#0" expanded="true" />
-            <element signature="e#13150#13151#0" expanded="true" />
-            <element signature="e#18781#18782#0" expanded="true" />
-            <element signature="e#18834#18835#0" expanded="true" />
-            <element signature="e#21961#21962#0" expanded="true" />
-            <element signature="e#22041#22042#0" expanded="true" />
-            <element signature="e#22786#22787#0" expanded="true" />
-            <element signature="e#22821#22822#0" expanded="true" />
-            <element signature="e#23072#23073#0" expanded="true" />
-            <element signature="e#23112#23113#0" expanded="true" />
-            <element signature="e#36393#36394#0" expanded="true" />
-            <element signature="e#36459#36460#0" expanded="true" />
-            <element signature="e#38369#38370#0" expanded="true" />
-            <element signature="e#38423#38424#0" expanded="true" />
-            <element signature="e#47538#47539#0" expanded="true" />
-            <element signature="e#47602#47603#0" expanded="true" />
-            <element signature="e#111196#111197#0" expanded="true" />
-            <element signature="e#111251#111252#0" expanded="true" />
-            <element signature="e#123115#123116#0" expanded="true" />
-            <element signature="e#123156#123157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="972" column="19" selection-start-line="972" selection-start-column="19" selection-end-line="972" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="421" column="4" selection-start-line="421" selection-start-column="4" selection-end-line="421" selection-end-column="4" />
-          <folding>
-            <element signature="e#16338#16339#0" expanded="true" />
-            <element signature="e#16420#16421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="443" column="33" selection-start-line="443" selection-start-column="33" selection-end-line="443" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="269" column="17" selection-start-line="269" selection-start-column="17" selection-end-line="269" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="134" column="25" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringDateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/list/AbstractLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="326" column="19" selection-start-line="326" selection-start-column="19" selection-end-line="326" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="135" column="22" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -3489,13 +3213,6 @@ System.out.println(&quot;向龙&quot;);</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -3699,13 +3416,6 @@ System.out.println(&quot;向龙&quot;);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -3766,24 +3476,10 @@ System.out.println(&quot;向龙&quot;);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="178" column="26" lean-forward="true" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="865" column="47" lean-forward="true" selection-start-line="865" selection-start-column="47" selection-end-line="865" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -3804,8 +3500,158 @@ System.out.println(&quot;向龙&quot;);</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+        <state relative-caret-position="-577">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="180" column="12" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/Psvm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/TreeReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="1087" column="14" selection-start-line="1087" selection-start-column="14" selection-end-line="1087" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="294" column="29" selection-start-line="294" selection-start-column="29" selection-end-line="294" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/ExpiringCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/UnixFileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="623" column="16" selection-start-line="623" selection-start-column="16" selection-end-line="623" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="1260" column="18" selection-start-line="1260" selection-start-column="18" selection-end-line="1260" selection-end-column="18" />
+          <folding>
+            <element signature="e#7926#7927#0" expanded="true" />
+            <element signature="e#7957#7958#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="887" column="40" selection-start-line="887" selection-start-column="40" selection-end-line="887" selection-end-column="40" />
+          <folding>
+            <element signature="e#23824#23825#0" expanded="true" />
+            <element signature="e#23865#23866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+          <folding>
+            <element signature="e#19327#19328#0" expanded="true" />
+            <element signature="e#19410#19411#0" expanded="true" />
+            <element signature="e#23630#23631#0" expanded="true" />
+            <element signature="e#23684#23685#0" expanded="true" />
+            <element signature="e#24331#24332#0" expanded="true" />
+            <element signature="e#24396#24397#0" expanded="true" />
+            <element signature="e#66928#66929#0" expanded="true" />
+            <element signature="e#66985#66986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/heap/BinaryHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
