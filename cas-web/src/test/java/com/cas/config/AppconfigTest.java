@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 14:24 2020-01-20
  * @version: V1.0
  * @review: 使用AnnotationConfigApplicationContext可以实现基于Java的配置类加载Spring的应用上下文。避免使用application.xml进行配置。相比XML配置，更加便捷。

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 10:55 2020-05-25
  * @version: V1.0
  * @review: 线程池 + futureTask + CountDownLatch实现中断超时任务

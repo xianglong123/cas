@@ -1,7 +1,7 @@
 package com.cas.concurrent.死锁;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 22:20 2020-04-02
  * @version: V1.0
  * @review: -XX:+PrintGCDetails

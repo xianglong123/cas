@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 17:47 2020-02-24
  * @version: V1.0
  * @review:

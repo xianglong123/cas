@@ -1,7 +1,7 @@
 package com.cas.dataStructrue.heap;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 19:48 2020-06-12
  * @version: V1.0
  * @review: 堆的实现

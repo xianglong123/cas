@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 17:54 2020-01-20
  * @version: V1.0
  * @review: @Scope 可以定义这个Bean 在容器中是单例还是原型

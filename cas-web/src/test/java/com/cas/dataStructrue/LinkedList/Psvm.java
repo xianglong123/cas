@@ -1,7 +1,7 @@
 package com.cas.dataStructrue.LinkedList;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 19:50 2020-06-10
  * @version: V1.0
  * @review:

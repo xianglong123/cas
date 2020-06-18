@@ -16,7 +16,7 @@ import java.awt.RenderingHints;
 import java.awt.Toolkit;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 20:44 2020-02-11
  * @version: V1.0
  * @review:

@@ -3,7 +3,7 @@ package com.cas.dataStructrue.Stack;
 import java.util.Arrays;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 00:04 2020-06-11
  * @version: V1.0
  * @review: 优点：无长度限制  缺点：长度自动扩张，数据大的时候会慢

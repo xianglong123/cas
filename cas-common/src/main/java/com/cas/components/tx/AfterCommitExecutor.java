@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 10:43 2020-05-13
  * @version: V1.0
  * @review:

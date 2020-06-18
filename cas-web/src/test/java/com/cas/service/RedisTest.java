@@ -10,7 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  * @author: xianglong
  * @date: 2019/12/6 15:21
  * @version: V1.0
- * @review: xiang_long@suixingpay.com
+ * @review: 1391086179@qq.com
  */
 @Slf4j
 public class RedisTest extends BaseTest {

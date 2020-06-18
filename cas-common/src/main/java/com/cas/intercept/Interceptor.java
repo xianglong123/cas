@@ -6,7 +6,7 @@ import com.cas.domain.invoke.Invocation;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 16:13 2020-01-28
  * @version: V1.0
  * @review:

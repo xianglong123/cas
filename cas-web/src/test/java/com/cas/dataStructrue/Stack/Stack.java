@@ -1,7 +1,7 @@
 package com.cas.dataStructrue.Stack;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 23:35 2020-06-10
  * @version: V1.0
  * @review: 栈数组实现1：优点：入栈和出栈速度快，缺点：长度有限

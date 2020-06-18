@@ -3,7 +3,7 @@ package com.cas.enums;
 import java.util.function.Function;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 22:02 2020-03-01
  * @version: V1.0
  * @review: 枚举实现策略模式

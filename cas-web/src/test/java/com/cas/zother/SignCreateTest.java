@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 import java.util.Scanner;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 14:37 2020-02-12
  * @version: V1.0
  * @review:

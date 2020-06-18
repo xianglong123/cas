@@ -3,7 +3,7 @@ package com.cas.dataStructrue.LinkedList;
 import lombok.Data;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 18:16 2020-06-10
  * @version: V1.0
  * @review: 链表结构实现

@@ -3,7 +3,7 @@ package com.cas.dataStructrue.queue;
 import lombok.Data;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 16:39 2020-06-11
  * @version: V1.0
  * @review: 数组实现队列 队列长度有限，但是考虑到平时一般都有使用有届队列

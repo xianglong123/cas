@@ -3,7 +3,7 @@ package com.cas.domain.grippe;
 import lombok.Data;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 10:13 2020-01-24
  * @version: V1.0
  * @review: 流感数据

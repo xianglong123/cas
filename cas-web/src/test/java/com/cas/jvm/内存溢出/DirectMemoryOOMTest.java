@@ -5,7 +5,7 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 22:05 2020-03-21
  * @version: V1.0
  * @review: VM Args: -Xmx20M -XX:MaxDirectMemorySize=10M 测试直接内存溢出情况

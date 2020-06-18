@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.io.Serializable;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 14:21 2020-01-20
  * @version: V1.0
  * @review:

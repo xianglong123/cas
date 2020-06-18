@@ -4,7 +4,7 @@ import com.cas.utils.ThreadPoolUtil;
 import org.springframework.stereotype.Service;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 16:37 2020-05-11
  * @version: V1.0
  * @review: 线程池复用

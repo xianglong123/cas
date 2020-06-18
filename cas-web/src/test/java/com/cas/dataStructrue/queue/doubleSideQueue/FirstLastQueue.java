@@ -1,7 +1,7 @@
 package com.cas.dataStructrue.queue.doubleSideQueue;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 17:18 2020-06-11
  * @version: V1.0
  * @review: 双端链实现队列

@@ -3,6 +3,7 @@ package com.cas.strTest;
 import com.alibaba.fastjson.JSONObject;
 import com.cas.domain.sms.SmsBatch;
 import com.cas.domain.sms.SmsBatchDetail;
+import com.cas.intercept.Interceptor;
 import com.cas.pojo.User;
 import com.cas.utils.StringUtil;
 import com.google.gson.JsonObject;
@@ -401,17 +402,20 @@ public class StringTest{
     }
 
     /**
-     * Integer 超过280就不是相等的了
+     * Integer 超过127就不是相等的了
      */
     @Test
     public void test25() {
-        Integer a = 390;
-        Integer b = 390;
+        Integer a = 128;
+        Integer b = 128;
+        // 如果Integer值在-128 -- 127之间会复用缓存中的值
         System.out.println(a==b);
+        Integer c = Integer.valueOf(23);
         // 拆箱之后比较
         int ai = a;
         int bi = b;
         System.out.println(ai == bi);
+        System.out.println(Integer.MAX_VALUE);
     }
 
     /**
@@ -897,6 +901,7 @@ public class StringTest{
 
     /**
      * 看看catch中return了，finally怎么处理
+     * 结论：会在catch的return之前执行finally
      */
     @Test
     public void test56() {
@@ -914,9 +919,18 @@ public class StringTest{
         } finally {
             a = 40;
             System.out.println(a + "......");
+            return 50;
         }
-        System.out.println("------");
-        return a;
+    }
+
+    /**
+     * Arrays.fill 将数组中的元素替换成val
+     */
+    @Test
+    public void test57() {
+        int[] a = {1, 3, 5};
+        Arrays.fill(a, 7);
+        System.out.println(a);
     }
 
 

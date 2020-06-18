@@ -7,7 +7,7 @@ import com.cas.utils.StringUtil;
 import java.util.Map;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 14:48 2020-03-27
  * @version: V1.0
  * @review: 比较两对象的差异

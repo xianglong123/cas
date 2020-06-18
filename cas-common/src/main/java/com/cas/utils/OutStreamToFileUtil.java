@@ -1,7 +1,7 @@
 package com.cas.utils;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 10:00 2020-04-18
  * @version: V1.0
  * @review: 字符流导出至文件工具

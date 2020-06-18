@@ -1,11 +1,11 @@
-package com.cas.interview;
+package com.cas.interview.其他;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 21:53 2020-02-09
  * @version: V1.0
  * @review:

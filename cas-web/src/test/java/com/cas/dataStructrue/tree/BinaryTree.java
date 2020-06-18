@@ -1,7 +1,7 @@
 package com.cas.dataStructrue.tree;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 19:59 2020-06-11
  * @version: V1.0
  * @review:

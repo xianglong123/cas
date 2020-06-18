@@ -3,7 +3,7 @@ package com.cas.concurrent.串行比并行快吗;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 08:42 2020-03-31
  * @version: V1.0
  * @review:

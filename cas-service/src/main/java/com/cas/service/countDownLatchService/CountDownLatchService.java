@@ -3,7 +3,7 @@ package com.cas.service.countDownLatchService;
 import java.util.concurrent.ExecutionException;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 20:29 2020-05-21
  * @version: V1.0
  * @review:

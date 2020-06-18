@@ -9,7 +9,7 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 19:33 2020-02-16
  * @version: V1.0
  * @review: 依赖注入 RedisTemplate 暂时失效

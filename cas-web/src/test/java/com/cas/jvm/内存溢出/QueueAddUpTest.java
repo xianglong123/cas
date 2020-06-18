@@ -6,7 +6,7 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 19:31 2020-03-21
  * @version: V1.0
  * @review: VM args: -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError  无限向队列添加数据

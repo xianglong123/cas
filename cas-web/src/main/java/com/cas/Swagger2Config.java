@@ -22,7 +22,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 19:46 2020-04-09
  * @version: V1.0
  * @review:

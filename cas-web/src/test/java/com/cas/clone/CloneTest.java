@@ -4,7 +4,7 @@ import com.cas.domain.User;
 import com.cas.utils.MyUtil;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 18:37 2020-06-09
  * @version: V1.0
  * @review: 通过序列化和反序列化实现深度克隆

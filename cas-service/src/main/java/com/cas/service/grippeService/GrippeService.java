@@ -18,7 +18,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 12:47 2020-01-24
  * @version: V1.0
  * @review: 疫情开始数据爬虫

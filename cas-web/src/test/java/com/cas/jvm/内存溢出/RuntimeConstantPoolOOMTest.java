@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 21:18 2020-03-21
  * @version: V1.0
  * @review: VM Args: -XX:PermSize=6M -XX:MaxPermSize=6M  测试运行时常量池在哪个区域

@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 15:03 2020-02-22
  * @version: V1.0
  * @review: 这里列举了大部分可以用到的JSR-303限制，需要@valid 打开验证开关

@@ -5,7 +5,7 @@ import org.springframework.data.redis.connection.MessageListener;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 13:55 2020-02-18
  * @version: V1.0
  * @review: redis 监听处理器

@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import java.util.UUID;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 10:14 2020-02-25
  * @version: V1.0
  * @review: 日志输入uuid,具体使用查看logback-spring.xml 中的 %X{trace_uuid}

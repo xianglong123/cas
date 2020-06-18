@@ -1,7 +1,7 @@
 package com.cas.jvm.内存分配;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 09:58 2020-03-28
  * @version: V1.0
  * @review: VM参数：-verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8

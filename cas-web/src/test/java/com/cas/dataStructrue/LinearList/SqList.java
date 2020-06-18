@@ -1,7 +1,7 @@
 package com.cas.dataStructrue.LinearList;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 14:53 2020-06-10
  * @version: V1.0
  * @review: 顺序表，底层数组，保存地址连续

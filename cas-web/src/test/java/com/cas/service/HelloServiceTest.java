@@ -6,7 +6,7 @@ import com.cas.service.testService.HelloServiceImpl;
 import org.junit.Test;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 17:27 2020-01-28
  * @version: V1.0
  * @review:

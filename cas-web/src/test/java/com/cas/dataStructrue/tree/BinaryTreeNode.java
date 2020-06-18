@@ -3,7 +3,7 @@ package com.cas.dataStructrue.tree;
 import lombok.Data;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 19:55 2020-06-11
  * @version: V1.0
  * @review: 二叉树结点结构

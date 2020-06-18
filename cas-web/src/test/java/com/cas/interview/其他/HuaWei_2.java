@@ -1,9 +1,9 @@
-package com.cas.interview;
+package com.cas.interview.其他;
 
 import java.util.Scanner;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 20:40 2020-02-09
  * @version: V1.0
  * @review: 完美诠释什么叫标记算法：将需要的数据变向的标记出来，再做筛选

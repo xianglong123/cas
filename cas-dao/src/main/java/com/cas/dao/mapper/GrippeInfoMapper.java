@@ -5,7 +5,7 @@ import com.cas.domain.grippe.GrippeProv;
 import org.springframework.stereotype.Service;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 10:56 2020-01-24
  * @version: V1.0
  * @review:

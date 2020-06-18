@@ -3,7 +3,7 @@ package com.cas.dataStructrue.Stack.linked;
 import java.util.Arrays;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 12:26 2020-06-11
  * @version: V1.0
  * @review: 栈单链表实现：没有长度限制，并且出栈和入栈速度都很快

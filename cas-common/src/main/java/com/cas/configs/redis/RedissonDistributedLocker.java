@@ -7,7 +7,7 @@ import org.redisson.api.RedissonClient;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 13:12 2020-05-11
  * @version: V1.0
  * @review: redis接口实现类

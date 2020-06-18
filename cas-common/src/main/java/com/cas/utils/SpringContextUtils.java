@@ -7,7 +7,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 16:40 2020-01-17
  * @version: V1.0
  * @review: 实现 ApplicationContextAware 即可以使用所有容器中的 Bean

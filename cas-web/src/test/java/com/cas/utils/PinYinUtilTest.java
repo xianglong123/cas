@@ -1,7 +1,7 @@
 //package com.cas.utils;
 //
 ///**
-// * @author: xianglong[xiang_long@suixingpay.com]
+// * @author: xianglong[1391086179@qq.com]
 // * @date: 17:26 2020-02-13
 // * @version: V1.0
 // * @review:

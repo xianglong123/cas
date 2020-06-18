@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 10:41 2020-02-18
  * @version: V1.0
  * @review: 模版 + 订阅监听器绑定处理器 + 自定义缓存管理器

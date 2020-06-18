@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 18:05 2020-03-06
  * @version: V1.0
  * @review: 线程池简单例子

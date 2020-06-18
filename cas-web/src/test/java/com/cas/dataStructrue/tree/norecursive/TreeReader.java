@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
- * @author: xianglong[xiang_long@suixingpay.com]
+ * @author: xianglong[1391086179@qq.com]
  * @date: 23:19 2020-06-11
  * @version: V1.0
  * @review: 树的遍历 非递归实现
