@@ -5,3 +5,16 @@ case 案例
 
 条件：需要java环境 gradle
 版本：springboot-1.5.9（慢慢更新至2.x）
+
+
+技术栈包括：
+基础数据结构
+leetCode算法
+设计模式
+rabbitMq三种模式实战代码，可通过swagger2直接运行
+redis 哨兵模式实战代码
+线程池 实战
+
+
+再总结，先不说了。。。。
+
