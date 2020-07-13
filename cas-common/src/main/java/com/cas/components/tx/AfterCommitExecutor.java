@@ -1,6 +1,6 @@
 package com.cas.components.tx;
 
-import com.cas.utils.ThreadPoolUtil;
+import com.cas.owner.utils.ThreadPoolUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionSynchronizationAdapter;
@@ -14,7 +14,7 @@ import java.util.concurrent.Executor;
  * @author: xianglong[1391086179@qq.com]
  * @date: 10:43 2020-05-13
  * @version: V1.0
- * @review:
+ * @review: 事务提交框架
  */
 @Slf4j
 @Component

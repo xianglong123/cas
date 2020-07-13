@@ -11,12 +11,44 @@ spring:
     active: dev
   datasource:
     druid:
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/tcc_account?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
-      username: root
-      password: 123456
-      type: com.alibaba.druid.pool.DruidDataSource
-
+      query:
+        url: jdbc:mysql://localhost:3306/tcc_account?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat,wall
+        initialSize: 50
+        minIdle: 50
+        maxActive: 500
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        maxEvictableIdleTimeMillis:  3000000 # 因为公司防火墙长连接保持最长时间为1小时；此参数一定要结合实际情况进行配置。
+        validationQuery: select 1 from dual
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        validationQueryTimeout: 15
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+      write:
+        url: jdbc:mysql://localhost:3306/tcc_account?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat,wall
+        initialSize: 50
+        minIdle: 50
+        maxActive: 500
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        maxEvictableIdleTimeMillis:  3000000 # 因为公司防火墙长连接保持最长时间为1小时；此参数一定要结合实际情况进行配置。
+        validationQuery: select 1 from dual
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        validationQueryTimeout: 15
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
   mvc:
     view:
       prefix: /WEB-INF/jsp/
@@ -35,18 +67,27 @@ spring:
     type: REDIS
     redis:
       time-to-live: 600000
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
-    #虚拟host 可以不设置,使用server默认host
-#    virtual-host: xlHost
-    #消息确认配置项
-    #确认消息已发送到交换机(Exchange)
-    publisher-confirms: true
-    #确认消息已发送到队列(Queue)
-    publisher-returns: true
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+#    #虚拟host 可以不设置,使用server默认host
+##    virtual-host: xlHost
+#    #消息确认配置项
+#    #确认消息已发送到交换机(Exchange)
+#    publisher-confirms: true
+#    #确认消息已发送到队列(Queue)
+#    publisher-returns: true
+  data:
+    mongodb:
+      # 集群配置：mongodb://user:pwd@ip1:port1,ip2:port2/database
+#      uri: mongodb://test:test@localhost:27017/test
+      database: Test
+      host: 127.0.0.1
+      username: test
+      password: test
+      port: 27017
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
@@ -60,6 +101,7 @@ mybatis:
 # 日志配置
 logging:
   config: classpath:logback-spring.xml
+
 
 
 

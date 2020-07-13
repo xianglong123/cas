@@ -16,10 +16,10 @@ import java.io.Serializable;
 @Data
 public class User implements Serializable {
 
-    @Value("#{merch.username?.toUpperCase() + '312312312'}")
+//    @Value("#{merch.username?.toUpperCase() + '312312312'}")
     private String username;
 
-    @Value("123")
+//    @Value("123")
     private String password;
 
     @Value("#{1+2}")

@@ -1,25 +1,27 @@
 package com.cas.controller;
 
 
+import com.cas.domain.User;
 import com.cas.domain.ValidatorPojo;
 import com.cas.pojo.QueAnsPo;
-import com.cas.service.accountService.AccountService;
-import com.cas.service.countDownLatchService.CountDownLatchService;
-import com.cas.service.inqueryService.InqueryService;
-import com.cas.service.pdfService.PdfService;
-import com.cas.service.pdfService.PdfView;
-import com.cas.service.questionService.QuestionService;
-import com.cas.service.redisService.Redis2Service;
-import com.cas.service.scheduled.DynamicScheduleTask;
-import com.cas.service.testService.HelloService;
-import com.cas.service.testService.HelloServiceImpl;
-import com.cas.service.testService.TestService;
-import com.cas.service.threadPoolService.ThreadService;
-import com.cas.service.uploadService.UploadService;
-import com.cas.utils.CookieUtil;
-import com.cas.utils.SpringContextUtils;
-import com.cas.utils.StringUtil;
-import com.cas.utils.ThreadPoolUtil;
+import com.cas.owner.service.accountService.AccountService;
+import com.cas.owner.service.countDownLatchService.CountDownLatchService;
+import com.cas.owner.service.inqueryService.InqueryService;
+import com.cas.owner.service.mongodService.UserRepository;
+import com.cas.owner.service.pdfService.PdfService;
+import com.cas.owner.service.pdfService.PdfView;
+import com.cas.owner.service.questionService.QuestionService;
+import com.cas.owner.service.redisService.Redis2Service;
+import com.cas.owner.service.scheduled.DynamicScheduleTask;
+import com.cas.owner.service.testService.HelloService;
+import com.cas.owner.service.testService.HelloServiceImpl;
+import com.cas.owner.service.testService.TestService;
+import com.cas.owner.service.threadPoolService.ThreadService;
+import com.cas.owner.service.uploadService.UploadService;
+import com.cas.owner.utils.CookieUtil;
+import com.cas.owner.utils.SpringContextUtils;
+import com.cas.owner.utils.StringUtil;
+import com.cas.owner.utils.ThreadPoolUtil;
 import com.cas.validator.UserValidator;
 import com.google.gson.Gson;
 import io.swagger.annotations.Api;
@@ -114,6 +116,9 @@ public class TestController {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private UserRepository userRepository;
 
     /**
      * c测试系统是否可用
@@ -748,6 +753,19 @@ public class TestController {
         map.put("createTime", createTime);
         rabbitTemplate.convertAndSend("fanoutExchange", null, map);
         return "ok";
+    }
+
+    @ApiOperation(value = "测试Fanout模式下的mq")
+    @GetMapping("/mongodb")
+    @ResponseBody
+    public String mongodb() {
+        User user = new User();
+        user.setUsername("xl");
+        user.setPassword("123456");
+        user.setHight("180");
+        userRepository.saveUser(user);
+        log.info("mongodb 查询数据: [{}]", userRepository.findUserByUserName("xl"));
+        return "mongodb插入完毕";
     }
 
 }

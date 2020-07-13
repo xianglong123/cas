@@ -32,6 +32,7 @@
         <where>
             <if test="@Ognl@isNotEmpty(userId)">AND user_id = #{userId}</if>
         </where>
+        limit 1
     </select>
     <select id="query" resultType="com.cas.pojo.AccountPo">
         select <include refid="columns"/> from tcc_account.account

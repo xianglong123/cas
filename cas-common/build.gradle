@@ -78,5 +78,8 @@ dependencies {
         exclude group:'org.slf4j'
         exclude group:'log4j'
     }
+    
+    // mongodb 使用
+    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
 }
