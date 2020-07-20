@@ -1,9 +1,11 @@
 package com.cas.owner.utils;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.poi.ss.formula.functions.T;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -33,6 +35,13 @@ public class ThreadPoolUtil {
             poolExecutor = new ThreadPoolExecutor(5, 5, 30L, TimeUnit.SECONDS, new ArrayBlockingQueue<>(12), new ThreadPoolExecutor.DiscardPolicy());
         }
         poolExecutor.execute(commond);
+    }
+
+    public static Future<?> submit(Runnable commond, T t) {
+        if (poolExecutor == null) {
+            poolExecutor = new ThreadPoolExecutor(5, 5, 30L, TimeUnit.SECONDS, new ArrayBlockingQueue<>(12), new ThreadPoolExecutor.DiscardPolicy());
+        }
+        return poolExecutor.submit(commond);
     }
 
     /**

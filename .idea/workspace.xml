@@ -9,284 +9,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f9a8abe-1708-4006-8ff4-ed6613fb86bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlJdbcTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscationManage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicDataSourceGlobal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicDataSourceHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/读写分离.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/mongodb/mongod增删改查.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/myatis/mybatis技术博客.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/mongodService/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/mongodService/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/tsController/TxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_1342.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/背包/leetCode_416.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/背包/leetCode_494.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/区间合并/leetCode_56.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/区间合并/leetCode_57.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/Words.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/人命币转换.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/在字符串中找出连续最长的数字串.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/字符统计.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/整数对最小和.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/最小公倍数.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/最长上升子序列.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/求解立方根.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/等差数列.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/自守数.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/表示数字.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/记负均正.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/连续字符串分组.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/华为笔试练习题/颠倒字符串.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/双指针/leetCode_16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/双指针/字节跳动_2019_万万没想到之抓捕孔连顺.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/回溯/huawei_2016_解数独.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/回溯/leetCode_36.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/回溯/leetCode_37.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/字符/huawei_2016_字符集合.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/字符/leetCode_1108.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/字符/leetCode_58.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/字符/字节跳动_2019_万万没想到之聪明的编辑.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/快慢指针/leetCode_141.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/快慢指针/leetCode_142.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/快慢指针/leetCode_202.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/快慢指针/leetCode_876.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1281.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1295.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1313.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1365.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1486.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_67.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_771.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_LCP_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/线程/ali_Thread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/链表/huawei_2016_删数.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/链表/leetCode_0203.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/io/IoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/Lock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/ThreadPoolTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/AQSdemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/LockDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/XlLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/futureTask/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/futureTask/XlFutureTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/readWriteLock/AQSdemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/readWriteLock/ReadWriteLock1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ConcuurentHashMap1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ReentrantLock1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/DelayQueueDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/PriorityQueueDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/SynchronousQueueDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/扑克牌丢失问题.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/nio/buffer/BufferDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/udp/Client_test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/udp/Server_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/test/AQSTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/test/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/countDownLatch/CountDownLachDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/cyclicBarrier/CyclicBarrierDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/cyclicBarrier/线程栅栏.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/semaphore/SemaphoreDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/Ognl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/out/production/classes/Ognl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/BeanUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/DESUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/Encoding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/MapUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/ReflectionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/SpringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/StringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/TimeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/URLEncoderUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/UniCodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/XmlUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/ZipUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/httpUtils/HttpClientUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/httpUtils/HttpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/patternUtils/PatternMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/out/production/classes/com/cas/utils/patternUtils/PatternUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/Ognl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/Ognl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/AfterCommitExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/AfterCommitExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/redis/RedissonAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/redis/RedissonAutoConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/proxy/ProxyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/proxy/ProxyBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/service/animal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/service/animal/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/service/animal/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/service/animal/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/service/animal/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/service/animal/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/service/person/BussinessPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/service/person/BussinessPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/service/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/service/person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/BeanUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/BeanUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/ChinaDaAsDataEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ChinaDaAsDataEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/CookieUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/CookieUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/DESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/DESUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/EasyExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/EasyExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/Encoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/Encoding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/FormulaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/FormulaUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/MapUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/MapUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/MyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/MyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/OutStreamToFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/OutStreamToFileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/RedissLockUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/RedissLockUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/ReflectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ReflectionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/SpringContextUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/SpringContextUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/SpringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/SpringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/ThreadPoolUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ThreadPoolUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/TimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/TimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/URLEncoderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/URLEncoderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/UniCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/UniCodeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/XmlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/XmlUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/ZipUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ZipUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/httpUtils/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/httpUtils/HttpClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/httpUtils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/httpUtils/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/patternUtils/PatternMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/patternUtils/PatternMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/patternUtils/PatternUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/patternUtils/PatternUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/zz_teach.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/zz_teach.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-dao/out/production/resources/com.cas.dao.mapper/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/out/production/resources/com.cas.dao.mapper/AccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/out/production/classes/com/cas/service/accountService/AccountService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/out/production/classes/com/cas/service/accountService/AccountServiceClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/out/production/classes/com/cas/service/testService/TestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/out/production/classes/com/cas/service/testService/TestServiceClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/accountService/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/accountService/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/accountService/AccountServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/accountService/AccountServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/aspect/MyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/aspect/MyAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/countDownLatchService/CountDownLatchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/countDownLatchService/CountDownLatchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/countDownLatchService/CountDownLatchServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/countDownLatchService/CountDownLatchServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/grippeService/GrippeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/grippeService/GrippeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/inqueryService/InqueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/inqueryService/InqueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/inqueryService/InqueryServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/inqueryService/InqueryServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfExportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/pdfService/PdfExportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/pdfService/PdfService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/pdfService/PdfServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/pdfService/PdfView.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/pdfService/PdfView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/questionService/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/questionService/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/questionService/QuestionServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/questionService/QuestionServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/redisService/Redis2Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/redisService/Redis2Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/scheduled/DynamicScheduleTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/scheduled/DynamicScheduleTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/testService/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/testService/HelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/testService/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/testService/HelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/testService/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/testService/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/testService/TestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/testService/TestServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/threadPoolService/ThreadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/threadPoolService/ThreadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/uploadService/UploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/uploadService/UploadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/uploadService/UploadServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-service/src/main/java/com/cas/owner/service/uploadService/UploadServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/out/production/classes/com/cas/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/out/production/classes/com/cas/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/ScanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/ScanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ThreadPoolUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ThreadPoolUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-dao/out/production/classes/com/cas/pojo/AccountPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/out/production/classes/com/cas/pojo/AccountPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/AccountPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/AccountPo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-web/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/out/production/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/clone/CloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/clone/CloneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/串行比并行快吗/ConcurrencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/concurrent/串行比并行快吗/ConcurrencyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/concurrent/死锁/DeadLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/concurrent/死锁/DeadLockDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/AppconfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/config/AppconfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/BeanPostProcessorExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/config/BeanPostProcessorExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/RedisConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/config/RedisConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/ScanConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/config/ScanConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/config/ScopeBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/config/ScopeBeanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinearList/IList.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/LinearList/IList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinearList/Psvm.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/LinearList/Psvm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinearList/SqList.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/LinearList/SqList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinkedList/Linked.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/LinkedList/Linked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/LinkedList/Psvm.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/LinkedList/Psvm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/Stack/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/UnboundedStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/Stack/UnboundedStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/linked/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/Stack/linked/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/Stack/linked/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/Stack/linked/LinkedListStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/heap/BinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/heap/BinaryHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/queue/doubleSideQueue/FirstLastListQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/doubleSideQueue/FirstLastQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/queue/doubleSideQueue/FirstLastQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/queue/sortQueue/SortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/queue/sortQueue/SortedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/tree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/BinaryTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/tree/BinaryTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/Psvm.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/tree/norecursive/Psvm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/tree/norecursive/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/dataStructrue/tree/norecursive/TreeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/dataStructrue/tree/norecursive/TreeReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/excel/EasyExcelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/excel/EasyExcelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/excel/ExcelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/excel/ExcelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/http/HttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/http/HttpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_120.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_120.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_198.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_198.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_300.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_300.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_322.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_322.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_53.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_53.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_64.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/dp/leetCode_70.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/dp/leetCode_70.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/二分查找/leetCode_35.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/二分查找/leetCode_35.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/二维数组/leetCode_54.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/二维数组/leetCode_54.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/二维数组/leetCode_59.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/二维数组/leetCode_59.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/其他/AiQiYi_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/其他/AiQiYi_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/其他/HuaWei_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/其他/HuaWei_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/其他/HuaWei_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/其他/HuaWei_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/其他/HuaWei_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/其他/HuaWei_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/其他/LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/其他/LeetCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/其他/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/其他/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/其他/骤死性评估.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/其他/骤死性评估.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_1014.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1014.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_1431.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1431.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_1470.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1470.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_1480.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1480.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_167.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_167.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_49.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_49.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_88.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_88.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/数组/leetCode_twoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_twoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/Solution3.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/Solution4.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/Solution5.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/leetCode438.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/leetCode438.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/leetCode76.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/leetCode76.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/滑动模块/leetCode_242.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/leetCode_242.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/链表/leetCode_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/链表/leetCode_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/interview/链表/leetCode_21.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/链表/leetCode_21.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/TestStackOverflowErrorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/TestStackOverflowErrorDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存分配/AllocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存分配/AllocationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存分配/PretenureSizeThresholdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存分配/PretenureSizeThresholdTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存分配/TenuringThresholdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存分配/TenuringThresholdTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/DirectMemoryOOMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存溢出/DirectMemoryOOMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/HeapOOMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存溢出/HeapOOMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/QueueAddUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存溢出/QueueAddUpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/RuntimeConstantPoolInternOOMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存溢出/RuntimeConstantPoolInternOOMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/jvm/内存溢出/RuntimeConstantPoolOOMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/jvm/内存溢出/RuntimeConstantPoolOOMTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/nowcoder/设计模式 - 命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/nowcoder/设计模式 - 命令.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/ThreadPool2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/ThreadPool2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/ThreadPoolTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/futureTask/FutureTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/futureTask/FutureTaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/futureTask/PoolFutureTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/futureTask/PoolFutureTaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/proxy/ProxyBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/proxy/ProxyBeanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/service/HelloServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/service/HelloServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/service/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/service/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/service/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/service/WenyiServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/service/WenyiServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/service/aspect/MyAspectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/service/aspect/MyAspectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/PatternTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/PatternTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringDateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringDateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/PinYinUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/utils/PinYinUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/utils/TimeUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/utils/TimeUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/zother/ClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/zother/ClassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/zother/InitOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/zother/InitOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/zother/SignCreateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/zother/SignCreateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/zother/SwingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/zother/SwingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/zother/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/zother/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/内省/IntrospectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/内省/IntrospectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution4.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringDateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringDateUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -434,55 +178,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_3.java">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/zk/ZooKeeperProSync.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/futureTask/XlFutureTask.java">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/BeanPostProcessorComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/logComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/RedisMessageListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/RedisTemplateComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-661">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/ScopeBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/ScanConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9405">
-              <caret line="665" column="17" selection-start-line="665" selection-start-column="17" selection-end-line="665" selection-end-column="17" />
-              <folding>
-                <element signature="e#4308#4309#0" expanded="true" />
-                <element signature="e#4360#4361#0" expanded="true" />
-                <element signature="e#12158#12159#0" expanded="true" />
-                <element signature="e#12189#12190#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/DelayQueueDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="1530">
+              <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -491,19 +244,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_2.java">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/AfterCommitExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlJdbcTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1815">
-              <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+            <state relative-caret-position="165">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscationManage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -524,19 +286,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>127.0.0.1:6379</find>
-      <find>&amp;</find>
-      <find>InvocationHandler</find>
-      <find>insert</find>
-      <find>\d,</find>
-      <find>FirstLastList</find>
-      <find>(n - 1) &amp; hash</find>
-      <find>TreeNode</find>
-      <find>xiang_long@suixingpay.com</find>
-      <find>*</find>
-      <find>integercache</find>
-      <find>10</find>
-      <find>1000000007</find>
       <find>Scanner in</find>
       <find>%.1f</find>
       <find>#.0</find>
@@ -554,6 +303,19 @@
       <find>init(</find>
       <find>new</find>
       <find>zk</find>
+      <find>newFixedThreadPool</find>
+      <find>utils</find>
+      <find>最长</find>
+      <find>最长连续</find>
+      <find>getInputStream</find>
+      <find>File</find>
+      <find>路径</find>
+      <find>ScanConfig.class</find>
+      <find>countdo</find>
+      <find>有问题单例类</find>
+      <find>PinYinUtilTest</find>
+      <find>reflectiond</find>
+      <find>queue</find>
     </findStrings>
     <replaceStrings>
       <replace>log.info</replace>
@@ -572,6 +334,9 @@
       <replace>1391086179@qq.com</replace>
       <replace>FirstLastQueue</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -584,31 +349,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/utils/ThreadPoolUtil.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/MybatisConfig.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicDataSourceGlobal.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicDataSourceHolder.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicDataSource.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/DynamicPlugin.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/rwdb/读写分离.md" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/futureTask/PoolFutureTaskTest.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/algorithm/线程/ali_Thread.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69430a86-24c5-466f-a4c9-2323341db4cc/console.sql" />
-        <option value="$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/strTest/demo.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/Lock.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/pool/thread/ThreadPoolTest.java" />
-        <option value="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/accountService/AccountService.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/AfterCommitExecutor.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscationManage.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/tsController/tsController.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranslation.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java" />
-        <option value="$PROJECT_DIR$/cas-service/src/main/java/com/cas/service/accountService/AccountServiceClient.java" />
         <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/tsController/txController.java" />
         <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/tsController/TxController.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscation.java" />
@@ -635,6 +375,31 @@
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/SynchronousQueueDemo.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/PriorityQueueDemo.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/DelayQueueDemo.java" />
+        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ThreadPoolUtil.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/countDownLatch/CountDownLachDemo.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/countDownLatch/aa.txt" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/countDownLatch/aa.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/cyclicBarrier/线程栅栏.md" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/cyclicBarrier/CyclicBarrierDemo.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/semaphore/SemaphoreDemo.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/test/AQSTest.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/test/Main.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringDateUtil.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/滑动模块/Solution4.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/Main.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/Main.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/扑克牌丢失问题.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/RedissLockUtil.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/Client.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/Server_Test.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Client.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/udp/Client_test.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/udp/Server_Test.java" />
+        <option value="$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/AccountPo.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/nio/buffer/BufferDemo.java" />
+        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java" />
+        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/ScanConfig.java" />
       </list>
     </option>
   </component>
@@ -647,11 +412,9 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="GkRZvZjo" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="964" />
-    <option name="y" value="162" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1792" />
+    <option name="height" value="1120" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -680,25 +443,25 @@
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -706,7 +469,176 @@
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="direct" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="fanout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="tx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="tx" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="zk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -715,28 +647,37 @@
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="tsController" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -744,66 +685,107 @@
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-dao" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cas.dao.mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="question" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -832,6 +814,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/common" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -2691,13 +2674,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DelayQueueDemo">
-    <configuration name="ConcuurentHashMap1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.wykt.java高级开发.lock.reentrantLock.ConcuurentHashMap1" />
+  <component name="RunManager" selected="Application.BufferDemo">
+    <configuration name="BufferDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.socker.nio.buffer.BufferDemo" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.wykt.java高级开发.lock.reentrantLock.*" />
+          <option name="PATTERN" value="com.cas.owner.socker.nio.buffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2705,12 +2688,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DelayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.wykt.java高级开发.queue.DelayQueueDemo" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.socker.tcp.Client" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.wykt.java高级开发.queue.*" />
+          <option name="PATTERN" value="com.cas.owner.socker.tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2718,12 +2701,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.wykt.java高级开发.lock.futureTask.Main" />
+    <configuration name="Client_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.socker.udp.Client_test" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.wykt.java高级开发.lock.futureTask.*" />
+          <option name="PATTERN" value="com.cas.owner.socker.udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2731,12 +2714,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.wykt.java高级开发.queue.PriorityQueueDemo" />
+    <configuration name="Server_Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.socker.udp.Server_Test" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.wykt.java高级开发.queue.*" />
+          <option name="PATTERN" value="com.cas.owner.socker.udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2744,15 +2727,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronousQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.wykt.java高级开发.queue.SynchronousQueueDemo" />
+    <configuration name="ScanConfigTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.wykt.java高级开发.queue.*" />
+          <option name="PATTERN" value="com.cas.owner.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cas.owner.config" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.config.ScanConfigTest" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -2767,20 +2753,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ConcuurentHashMap1" />
-      <item itemvalue="Application.SynchronousQueueDemo" />
-      <item itemvalue="Application.PriorityQueueDemo" />
-      <item itemvalue="Application.DelayQueueDemo" />
       <item itemvalue="Spring Boot.UpmApplication" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server_Test (1)" />
+      <item itemvalue="Application.Client_test" />
+      <item itemvalue="JUnit.ScanConfigTest.get" />
+      <item itemvalue="Application.BufferDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DelayQueueDemo" />
-        <item itemvalue="Application.PriorityQueueDemo" />
-        <item itemvalue="Application.SynchronousQueueDemo" />
-        <item itemvalue="Application.ConcuurentHashMap1" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.BufferDemo" />
+        <item itemvalue="JUnit.ScanConfigTest.get" />
+        <item itemvalue="Application.Client_test" />
+        <item itemvalue="Application.Server_Test (1)" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -2902,7 +2888,7 @@
       <workItem from="1594171047480" duration="34299000" />
       <workItem from="1594486844384" duration="12635000" />
       <workItem from="1594604422318" duration="8776000" />
-      <workItem from="1594625512166" duration="683000" />
+      <workItem from="1594625512166" duration="50729000" />
     </task>
     <task id="LOCAL-00001" summary="+ 新作品">
       <created>1577971612690</created>
@@ -3079,43 +3065,50 @@
       <option name="project" value="LOCAL" />
       <updated>1592452675889</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="线程 + 队列">
+      <created>1594629722490</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1594629722490</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Words_test - 2020.06.26 at 13h 43m 04s.xml">
-      <configuration name="Words.test" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 26m 47s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test58 - 2020.06.28 at 11h 52m 57s.xml">
-      <configuration name="StringTest.test58" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 27m 44s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test58 - 2020.06.28 at 11h 53m 03s.xml">
-      <configuration name="StringTest.test58" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 29m 07s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test58 - 2020.06.28 at 11h 54m 32s.xml">
-      <configuration name="StringTest.test58" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 30m 40s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test58 - 2020.06.28 at 11h 56m 26s.xml">
-      <configuration name="StringTest.test58" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 35m 21s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test58 - 2020.06.28 at 11h 58m 10s.xml">
-      <configuration name="StringTest.test58" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 42m 16s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test59 - 2020.07.12 at 10h 21m 35s.xml">
-      <configuration name="StringTest.test59" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 47m 56s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test59 - 2020.07.12 at 10h 21m 54s.xml">
-      <configuration name="StringTest.test59" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 17h 53m 34s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test59 - 2020.07.12 at 10h 22m 31s.xml">
-      <configuration name="StringTest.test59" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 18h 09m 45s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringTest_test59 - 2020.07.12 at 10h 22m 44s.xml">
-      <configuration name="StringTest.test59" configurationId="JUnit" />
+    <history-entry file="ScanConfigTest_get - 2020.07.19 at 18h 36m 20s.xml">
+      <configuration name="ScanConfigTest.get" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="847608000" />
+    <option name="totallyTimeSpent" value="897654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3127,14 +3120,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="964" y="162" width="1750" height="980" extended-state="0" />
+    <frame x="0" y="0" width="1792" height="1120" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7200647" visible="true" weight="0.29215458" />
-      <window_info id="Structure" order="1" sideWeight="0.27993527" side_tool="true" weight="0.29215458" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.40797547" visible="true" weight="0.18171428" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Structure" order="5" sideWeight="0.59202456" side_tool="true" weight="0.1697811" />
       <window_info id="Favorites" order="6" sideWeight="0.22190475" side_tool="true" weight="0.44457144" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -3147,13 +3141,13 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49942857" weight="0.4707207" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005714" side_tool="true" weight="0.39809525" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.4448198" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.44444445" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32799146" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.85714287" />
-      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.49942857" weight="0.30405405" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.31306306" />
+      <window_info anchor="bottom" id="Run" order="14" sideWeight="0.49942857" visible="true" weight="0.2704762" />
       <window_info active="true" anchor="bottom" id="REST Client" order="15" visible="true" weight="0.43714285" />
-      <window_info anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" weight="0.40653154" />
+      <window_info anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" weight="0.4059829" />
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.38" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -3292,7 +3286,8 @@
     <MESSAGE value="+ 数据结构链表，栈，队列实现" />
     <MESSAGE value="+ 堆&#10;+ 二叉树实现 先序遍历，中序遍历，后序遍历，广度优先遍历" />
     <MESSAGE value="+ 修改邮箱&#10;+ 算法30+" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ 修改邮箱&#10;+ 算法30+" />
+    <MESSAGE value="线程 + 队列" />
+    <option name="LAST_COMMIT_MESSAGE" value="线程 + 队列" />
   </component>
   <component name="WindowStateProjectService">
     <state width="410" height="920" key="Git.Branch.Popup" />
@@ -3309,30 +3304,6 @@
           <line>134</line>
           <properties />
           <option name="timeStamp" value="420" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="421" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="422" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="423" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="424" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_2.java</url>
@@ -3364,11 +3335,104 @@
           <properties />
           <option name="timeStamp" value="431" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/扑克牌丢失问题.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/扑克牌丢失问题.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="440" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="442" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="443" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="444" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="445" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="446" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="449" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/InputStream.java</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/InputStream.java</url>
+          <line>161</line>
+          <properties />
+          <option name="timeStamp" value="451" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="452" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="453" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="454" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/tcp/Server_Test.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="455" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/ScanConfig.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="tab[i]" />
+        <watch expression="field.getClass()" />
+        <watch expression="list.get(i + 1)" />
+        <watch expression="list.get(i)" />
       </configuration>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="mongoTemplate.findOne(query, User.class)" />
@@ -3388,47 +3452,52 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>(str.length() / 8) * 8 + (str.length() % 8 == 0 ? 0 : 8)</expression-string>
+        <expression-string>method.</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((Integer) array[end]).value - ((Integer) array[first]).value</expression-string>
+        <expression-string>method.sharedToGenericString()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>array[end]</expression-string>
+        <expression-string>method.synthesizeAllParams()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>array[end] - 2</expression-string>
+        <expression-string>method.toString()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>scanner.nextLine()</expression-string>
+        <expression-string>method.getGenericInfo()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>scanner.next()</expression-string>
+        <expression-string>clz.reflectionData</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>s.substring()</expression-string>
+        <expression-string>method</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>s</expression-string>
+        <expression-string>method.getAnnotations()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>s.substring(9, 0);</expression-string>
+        <expression-string>method.getGenericParameterTypes()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getDeclaredAnnotations()[0]</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -3470,462 +3539,330 @@ System.out.println(&quot;向龙&quot;);</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78650f4fc6c0a6b13b4b6b093e82cdba/Message/MessageTemp/9b8528c7af1cac5d7658233acfbba3f7/OpenData/搜索单例违规操作.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/service/HelloServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="357" column="21" selection-start-line="357" selection-start-column="21" selection-end-line="357" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
-          <folding>
-            <element signature="e#4725#4726#0" expanded="true" />
-            <element signature="e#4793#4794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/LongAdder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="90" column="23" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
-          <folding>
-            <element signature="e#2695#2696#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/Striped64.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-758">
-          <caret line="213" column="15" selection-start-line="213" selection-start-column="15" selection-end-line="213" selection-end-column="15" />
-          <folding>
-            <element signature="e#6222#6223#0" expanded="true" />
-            <element signature="e#6292#6293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/sa-jdi.jar!/sun/jvm/hotspot/oops/ObjectHeap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/sa-jdi.jar!/sun/jvm/hotspot/runtime/ObjectMonitor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="231" column="9" selection-start-line="231" selection-start-column="9" selection-end-line="231" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="233" column="25" lean-forward="true" selection-start-line="233" selection-start-column="25" selection-end-line="233" selection-end-column="25" />
-          <folding>
-            <element signature="e#7116#7117#0" expanded="true" />
-            <element signature="e#7150#7151#0" expanded="true" />
-            <element signature="e#12210#12211#0" expanded="true" />
-            <element signature="e#12258#12259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ReentrantLock1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-          <folding>
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/LockDemo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/XlLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/AQSdemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/readWriteLock/AQSdemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="352" column="30" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/readWriteLock/ReadWriteLock1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="1511" column="25" selection-start-line="1511" selection-start-column="25" selection-end-line="1511" selection-end-column="25" />
-          <folding>
-            <element signature="e#22675#22676#0" expanded="true" />
-            <element signature="e#22703#22704#0" expanded="true" />
-            <element signature="e#41392#41393#0" expanded="true" />
-            <element signature="e#41449#41450#0" expanded="true" />
-            <element signature="e#44444#44445#0" expanded="true" />
-            <element signature="e#44501#44502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8326">
-          <caret line="879" column="30" lean-forward="true" selection-start-line="879" selection-start-column="30" selection-end-line="879" selection-end-column="30" />
-          <folding>
-            <element signature="e#26141#26142#0" expanded="true" />
-            <element signature="e#26195#26196#0" expanded="true" />
-            <element signature="e#26818#26819#0" expanded="true" />
-            <element signature="e#26858#26859#0" expanded="true" />
-            <element signature="e#27298#27299#0" expanded="true" />
-            <element signature="e#27343#27344#0" expanded="true" />
-            <element signature="e#33536#33537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/RunnableFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/Callable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="957" selection-start-line="957" selection-end-line="957" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/FutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="257" column="17" selection-start-line="257" selection-start-column="17" selection-end-line="257" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/futureTask/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="e#315#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/LockSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14070">
-          <caret line="1020" column="22" selection-start-line="1020" selection-start-column="22" selection-end-line="1020" selection-end-column="22" />
-          <folding>
-            <element signature="e#44347#44348#0" expanded="true" />
-            <element signature="e#44395#44396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ConcuurentHashMap1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11250">
-          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4140">
-          <caret line="325" column="42" selection-start-line="325" selection-start-column="42" selection-end-line="325" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/zk/ZooKeeperProSync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/SynchronousQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/SynchronousQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="665" column="66" lean-forward="true" selection-start-line="665" selection-start-column="66" selection-end-line="665" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/DelayQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="187" column="41" lean-forward="true" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
-          <folding>
-            <element signature="e#4069#4070#0" expanded="true" />
-            <element signature="e#4100#4101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="220" column="16" selection-start-line="220" selection-start-column="16" selection-end-line="220" selection-end-column="16" />
-          <folding>
-            <element signature="e#8508#8509#0" expanded="true" />
-            <element signature="e#8555#8556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar!/java/util/concurrent/TimeUnit.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-447">
-          <folding>
-            <element signature="e#0#8418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/Delayed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/BlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="198" column="12" selection-start-line="198" selection-start-column="12" selection-end-line="198" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7079">
-          <caret line="1604" column="16" selection-start-line="1604" selection-start-column="16" selection-end-line="1604" selection-end-column="16" />
-          <folding>
-            <element signature="e#32187#32188#0" expanded="true" />
-            <element signature="e#32243#32244#0" expanded="true" />
-            <element signature="e#68539#68540#0" expanded="true" />
-            <element signature="e#68571#68572#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="333" column="24" lean-forward="true" selection-start-line="333" selection-start-column="24" selection-end-line="333" selection-end-column="24" />
-          <folding>
-            <element signature="e#23406#23407#0" expanded="true" />
-            <element signature="e#23455#23456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/PriorityQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/futureTask/XlFutureTask.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/thread/countDownLatch/CountDownLachDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78650f4fc6c0a6b13b4b6b093e82cdba/Message/MessageTemp/9b8528c7af1cac5d7658233acfbba3f7/File/tool/src/main/java/com/rootnet/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9405">
-          <caret line="665" column="17" selection-start-line="665" selection-start-column="17" selection-end-line="665" selection-end-column="17" />
-          <folding>
-            <element signature="e#4308#4309#0" expanded="true" />
-            <element signature="e#4360#4361#0" expanded="true" />
-            <element signature="e#12158#12159#0" expanded="true" />
-            <element signature="e#12189#12190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/DelayQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_2.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/ThreadPool2Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/futureTask/PoolFutureTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        <state relative-caret-position="165">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/futureTask/FutureTaskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/thread/ThreadPoolTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/ThreadPoolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/utils/PinYinUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/java/com/cas/pojo/AccountPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/ref/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/ref/SoftReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="2483" column="73" selection-start-line="2483" selection-start-column="73" selection-end-line="2483" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/reflect/Executable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="567" column="36" selection-start-line="567" selection-start-column="36" selection-end-line="567" selection-end-column="36" />
+          <folding>
+            <element signature="e#18598#18599#0" expanded="true" />
+            <element signature="e#18657#18658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="621" column="29" lean-forward="true" selection-start-line="621" selection-start-column="29" selection-end-line="621" selection-end-column="29" />
+          <folding>
+            <element signature="e#5713#5714#0" expanded="true" />
+            <element signature="e#5740#5741#0" expanded="true" />
+            <element signature="e#18980#18981#0" expanded="true" />
+            <element signature="e#19022#19023#0" expanded="true" />
+            <element signature="e#22529#22530#0" expanded="true" />
+            <element signature="e#22588#22589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/test/AQSTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#235#375#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/78650f4fc6c0a6b13b4b6b093e82cdba/Message/MessageTemp/9b8528c7af1cac5d7658233acfbba3f7/OpenData/哈哈.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="261" column="22" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/socker/nio/buffer/BufferDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/common/head.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/question/questionView.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/upload/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/hello.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/AccountMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/GrippeInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/QueAnsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-dao/src/main/resources/com.cas.dao.mapper/TestMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/converter/StringToUserConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/direct/DirectReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/fanout/FanoutReceiverA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/fanout/FanoutReceiverB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/fanout/FanoutReceiverC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/topic/TopicManReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/mq/topic/TopicTotalReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/aop/XlTxAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/AfterCommitExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlJdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/tx/XlTranscationManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/zk/ZooKeeperProSync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/BeanPostProcessorComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/logComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/RedisMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/RedisTemplateComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-661">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/ScopeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/ScanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

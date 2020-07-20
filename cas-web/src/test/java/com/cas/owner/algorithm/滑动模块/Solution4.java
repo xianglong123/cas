@@ -9,7 +9,7 @@ import java.util.Set;
 class Solution4 {
     public static int lengthOfLongestSubstring(String s) {
         // 哈希集合，记录每个字符是否出现过
-        Set<Character> occ = new HashSet<Character>();
+        Set<Character> occ = new HashSet<>();
         int n = s.length();
         // 右指针，初始值为 -1，相当于我们在字符串的左边界的左侧，还没有开始移动
         int rk = -1, ans = 0;

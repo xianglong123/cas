@@ -8,6 +8,8 @@ import java.util.Date;
 @Data
 public class AccountPo {
 
+    private static AccountPo accountPo = null;
+
     private String id;
     //用户id
     private String userId;
@@ -19,5 +21,12 @@ public class AccountPo {
     private Date createTime;
     //更新时间
     private Date updateTime;
+
+    public synchronized static AccountPo getInstance() {
+        if (accountPo == null) {
+            accountPo = new AccountPo();
+        }
+        return accountPo;
+    }
 
 }

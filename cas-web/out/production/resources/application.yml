@@ -67,13 +67,13 @@ spring:
     type: REDIS
     redis:
       time-to-live: 600000
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 5672
-#    username: guest
-#    password: guest
-#    #虚拟host 可以不设置,使用server默认host
-##    virtual-host: xlHost
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #虚拟host 可以不设置,使用server默认host
+    virtual-host: xlHost
 #    #消息确认配置项
 #    #确认消息已发送到交换机(Exchange)
 #    publisher-confirms: true
