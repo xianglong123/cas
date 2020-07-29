@@ -9,3 +9,6 @@
     
 ### 后台运行
     sudo rabbitmq-server -detached
+    
+## mq 集群部署
+    https://www.cnblogs.com/vipstone/p/9362388.html

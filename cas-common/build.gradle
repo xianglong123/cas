@@ -80,6 +80,6 @@ dependencies {
     }
     
     // mongodb 使用
-    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
+//    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
 }

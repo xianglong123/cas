@@ -1,3 +1,151 @@
+POST http://127.0.0.1:8081/www/getName2?age=1243242342
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-07-29T092428.200.txt
+
+###
+
+POST http://127.0.0.1:8081/www/getName2?age=12
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-07-29T092420.200.txt
+
+###
+
+POST http://127.0.0.1:8081/www/getName?age=12
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2020-07-29T092410.405.json
+
+###
+
+GET http://127.0.0.1:8081/www/getName
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091758.200.txt
+
+###
+
+GET http://127.0.0.1:8081/www/getMap
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091545.200.json
+
+###
+
+GET http://127.0.0.1:8081/www/getMap
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091451-1.404.json
+
+###
+
+GET http://127.0.0.1:8081/www/getMap
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091451.404.json
+
+###
+
+GET http://127.0.0.1:8081/www/getMap
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091450.404.json
+
+###
+
+GET http://127.0.0.1:8081/www/getMap
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091449.404.json
+
+###
+
+GET http://127.0.0.1:8081/www/getMap
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091427.404.json
+
+###
+
+GET http://127.0.0.1:8081/www/getMap
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T091357.404.json
+
+###
+
+GET http://127.0.0.1:8081/www/getName
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T085602.404.json
+
+###
+
+GET http://127.0.0.1:8081/www/getName
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T085005.200.txt
+
+###
+
+POST http://127.0.0.1:8081/www/getName
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-07-29T084955.405.json
+
+###
+
 POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
 Accept: */*
 Cache-Control: no-cache
@@ -389,160 +537,6 @@ Content-Type: application/json
 {"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
 
 <> 2020-05-19T054607.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T054606.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T054605-1.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T054605.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T054516.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T052621.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T050609.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T045232.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T045104.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T045058.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T045052.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T045027.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T041736.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T041730.200.json
-
-###
-
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
-
-<> 2020-05-19T041702.200.json
 
 ###
 

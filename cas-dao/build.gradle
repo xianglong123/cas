@@ -1,3 +1,10 @@
+apply from : 'version.gradle'
 dependencies {
         compile project(":cas-common")
 }
+
+task printStringClass {
+        println("App 版本是：${versionName}, 版本号：${versionCode}")
+}
+
+

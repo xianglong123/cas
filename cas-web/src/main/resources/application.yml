@@ -69,25 +69,25 @@ spring:
       time-to-live: 600000
   rabbitmq:
     host: 127.0.0.1
-    port: 5672
+    port: 5674
     username: guest
     password: guest
     #虚拟host 可以不设置,使用server默认host
-    virtual-host: xlHost
+#    virtual-host:
 #    #消息确认配置项
 #    #确认消息已发送到交换机(Exchange)
 #    publisher-confirms: true
-#    #确认消息已发送到队列(Queue)
+    #确认消息已发送到队列(Queue)
 #    publisher-returns: true
-  data:
-    mongodb:
-      # 集群配置：mongodb://user:pwd@ip1:port1,ip2:port2/database
-#      uri: mongodb://test:test@localhost:27017/test
-      database: Test
-      host: 127.0.0.1
-      username: test
-      password: test
-      port: 27017
+#  data:
+#    mongodb:
+#      # 集群配置：mongodb://user:pwd@ip1:port1,ip2:port2/database
+##      uri: mongodb://test:test@localhost:27017/test
+#      database: Test
+#      host: 127.0.0.1
+#      username: test
+#      password: test
+#      port: 27017
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml

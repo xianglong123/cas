@@ -12,6 +12,14 @@ buildscript {//为该项目配置构建脚本类路径
     }
 }
 
+allprojects {
+    tasks.create('hello') {
+        doLast {
+            task -> print "project name is $task.project.name\n"
+        }
+    }
+}
+
 subprojects { //配置该项目的子项目
     apply plugin: 'java'
     apply plugin: 'org.springframework.boot'

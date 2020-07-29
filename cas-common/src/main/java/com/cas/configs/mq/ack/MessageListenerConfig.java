@@ -14,7 +14,7 @@ import javax.servlet.Servlet;
  * @CreateTime : 2019/9/4
  * @Description :
  **/
-@Configuration
+//@Configuration
 public class MessageListenerConfig {
 
     @Autowired
