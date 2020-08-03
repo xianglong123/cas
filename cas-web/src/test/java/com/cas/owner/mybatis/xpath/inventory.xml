@@ -1,0 +1,23 @@
+<inventory>
+    <book year="2000">
+        <title>Snow CraSH</title>
+        <author>Neal Stephenson</author>
+        <publisher>Spectra</publisher>
+        <isbn>0553380958</isbn>
+        <price>14.95</price>
+    </book>
+    <book year="2005">
+        <title>Burning Tower</title>
+        <author>Larry Niven</author>
+        <publisher>Jerry Pournelle</publisher>
+        <isbn>0123123</isbn>
+        <price>12.44</price>
+    </book>
+    <book year="1995">
+        <title>a</title>
+        <author>b</author>
+        <publisher>c</publisher>
+        <isbn>123</isbn>
+        <price>123</price>
+    </book>
+</inventory>
