@@ -139,8 +139,7 @@ public class TestController {
      */
     @ApiOperation(value = "获取Account 对象通过userId")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "userId", value = "用户id,可选值：10001 ,10002, 10003", required = false,
-                    dataType = "string", paramType = "query", defaultValue = "10001")
+            @ApiImplicitParam(name = "userId", value = "用户id,可选值：10001 ,10002, 10003", required = false, dataType = "string", paramType = "query", defaultValue = "10001")
     })
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Successful — 请求已完成"),

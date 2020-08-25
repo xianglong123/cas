@@ -1,0 +1,42 @@
+<if test="id != null">
+#{id,jdbcType=}
+</if>
+<if test="instanceName != null">
+#{instanceName,jdbcType=}
+</if>
+<if test="mqSize != null">
+#{mqSize,jdbcType=}
+</if>
+<if test="memorySize != null">
+#{memorySize,jdbcType=}
+</if>
+<if test="instanceType != null">
+#{instanceType,jdbcType=}
+</if>
+<if test="memoryType != null">
+#{memoryType,jdbcType=}
+</if>
+<if test="mqVersion != null">
+#{mqVersion,jdbcType=}
+</if>
+<if test="status != null">
+#{status,jdbcType=}
+</if>
+<if test="tenantName != null">
+#{tenantName,jdbcType=}
+</if>
+<if test="desc != null">
+#{desc,jdbcType=}
+</if>
+<if test="operator != null">
+#{operator,jdbcType=}
+</if>
+<if test="cteTm != null">
+#{cteTm,jdbcType=}
+</if>
+<if test="uptTm != null">
+#{uptTm,jdbcType=}
+</if>
+<if test="auditor != null">
+#{auditor,jdbcType=}
+</if>
