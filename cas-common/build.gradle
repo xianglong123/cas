@@ -46,7 +46,7 @@ dependencies {
     /*redis*/
     compile 'org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE'
     compile 'redis.clients:jedis'
-    
+
     /*中文转拼音*/
 //    compile 'net.sourceforge:pinyin4j:2.5.0'
 
@@ -59,14 +59,14 @@ dependencies {
     // pdf
     compile 'org.xhtmlrenderer:core-renderer:R8'
     compile 'com.itextpdf:itextpdf:5.5.12'
-    
+
     // swagger2
     compile 'io.springfox:springfox-swagger2:2.7.0'
     compile 'io.springfox:springfox-swagger-ui:2.7.0'
 
     // 查看java对象头
     compile 'org.openjdk.jol:jol-core:0.9'
-    
+
     // redis 分布式
     compile 'org.redisson:redisson:3.12.5'
 
@@ -78,8 +78,11 @@ dependencies {
         exclude group:'org.slf4j'
         exclude group:'log4j'
     }
-    
+
     // mongodb 使用
     compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
+    // fabric8
+    compile 'io.fabric8:kubernetes-client:4.10.3'
 
 }

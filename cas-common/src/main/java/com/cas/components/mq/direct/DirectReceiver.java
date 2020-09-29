@@ -8,13 +8,13 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Slf4j
-@Component
-@RabbitListener(queues = "TestDirectQueue")//监听的队列名称 TestDirectQueue
+//@Component
+//@RabbitListener(queues = "TestDirectQueue")//监听的队列名称 TestDirectQueue
 public class DirectReceiver {
- 
+
     @RabbitHandler
     public void process(Map testMessage) {
         log.info("DirectReceiver消费者收到消息  : " + testMessage.toString());
     }
- 
+
 }

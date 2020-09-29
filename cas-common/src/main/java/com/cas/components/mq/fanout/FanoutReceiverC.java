@@ -13,13 +13,13 @@ import java.util.Map;
  * @Description :
  **/
 @Slf4j
-@Component
-@RabbitListener(queues = "fanout.C")
+//@Component
+//@RabbitListener(queues = "fanout.C")
 public class FanoutReceiverC {
- 
+
     @RabbitHandler
     public void process(Map testMessage) {
         log.info("FanoutReceiverC消费者收到消息  : " +testMessage.toString());
     }
- 
+
 }

@@ -14,7 +14,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * @version: V1.0
  * @review: 依赖注入 RedisTemplate 暂时失效
  */
-@Configuration
+//@Configuration
 public class RedisConfig {
 
     private RedisConnectionFactory redisConnectionFactory = null;

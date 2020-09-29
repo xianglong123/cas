@@ -55,6 +55,7 @@ spring:
       suffix: .jsp
   aop:
     proxy-target-class: true
+
   redis:
     pool:
       max-idle: 10
@@ -70,24 +71,24 @@ spring:
   rabbitmq:
     host: 127.0.0.1
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
     #虚拟host 可以不设置,使用server默认host
-    virtual-host: xlHost
-#    #消息确认配置项
-#    #确认消息已发送到交换机(Exchange)
-#    publisher-confirms: true
-#    #确认消息已发送到队列(Queue)
-#    publisher-returns: true
-  data:
-    mongodb:
-      # 集群配置：mongodb://user:pwd@ip1:port1,ip2:port2/database
-#      uri: mongodb://test:test@localhost:27017/test
-      database: Test
-      host: 127.0.0.1
-      username: test
-      password: test
-      port: 27017
+    virtual-host: home
+    #消息确认配置项
+    #确认消息已发送到交换机(Exchange)
+    publisher-confirms: true
+    #确认消息已发送到队列(Queue)
+    publisher-returns: true
+#  data:
+#    mongodb:
+#      # 集群配置：mongodb://user:pwd@ip1:port1,ip2:port2/database
+##      uri: mongodb://test:test@localhost:27017/test
+#      database: Test
+#      host: 127.0.0.1
+#      username: test
+#      password: test
+#      port: 27017
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
@@ -101,6 +102,13 @@ mybatis:
 # 日志配置
 logging:
   config: classpath:logback-spring.xml
+# k8s 配置
+k8s:
+  url: https://192.168.56.101:6443
+  client-crt: classpath:k8s/apiserver-kubelet-client.crt
+  client-key: classpath:k8s/apiserver-kubelet-client.key
+  ca-crt: classpath:k8s/ca.crt
+
 
 
 

@@ -411,7 +411,9 @@ public class StringTest{
         int ai = a;
         int bi = b;
         System.out.println(ai == bi);
-        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MAX_VALUE + 1);
+        System.out.println(2^16);
+
     }
 
     /**
@@ -956,5 +958,22 @@ public class StringTest{
         System.out.println(16 >> 3);
 
     }
+
+    /**
+     * 字符串
+     */
+    @Test
+    public void test60() {
+        String a1 = "abcdef";
+        final String a2 = "def";
+        String a3 = "abc" + a2;
+        String a4 = "abc" + "def";
+        System.out.println(a1 == a3);
+        System.out.println(a1 == a4);
+    }
+
+
+
+
 
 }

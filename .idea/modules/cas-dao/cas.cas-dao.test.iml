@@ -51,6 +51,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-amqp:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.zookeeper:zookeeper:3.4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-mongodb:1.5.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-client:4.10.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: com.jayway.jsonpath:json-path:2.2.0" level="project" />
@@ -124,6 +125,30 @@
     <orderEntry type="library" name="Gradle: io.netty:netty:3.10.6.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver:3.4.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-mongodb:1.10.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-core:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-rbac:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-admissionregistration:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-apps:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-autoscaling:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-apiextensions:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-batch:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-certificates:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-coordination:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-discovery:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-events:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-extensions:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-networking:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-metrics:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-policy:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-scheduling:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-settings:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-storageclass:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:openshift-model:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:logging-interceptor:3.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.10" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:zjsonpatch:0.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.mifmif:generex:1.0.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.2.1" level="project" />
     <orderEntry type="library" name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" level="project" />
@@ -161,6 +186,10 @@
     <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver-core:3.4.3" level="project" />
     <orderEntry type="library" name="Gradle: org.mongodb:bson:3.4.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-commons:1.13.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-model-common:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.13.0" level="project" />
+    <orderEntry type="library" name="Gradle: dk.brics.automaton:automaton:1.11-8" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.1.11" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.25" level="project" />

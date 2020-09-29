@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @version: V1.0
  * @review: redis 监听处理器
  */
-@Component
+//@Component
 public class RedisMessageListener implements MessageListener {
 
     @Override

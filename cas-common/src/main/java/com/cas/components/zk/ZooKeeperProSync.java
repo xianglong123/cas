@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * @author
  *
  */
-@Component
+//@Component
 public class ZooKeeperProSync implements Watcher {
 
     private static Stat stat = new Stat();

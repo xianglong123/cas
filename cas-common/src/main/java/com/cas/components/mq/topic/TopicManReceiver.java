@@ -5,15 +5,15 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 import java.util.Map;
- 
+
 /**
  * @Author : xl
  * @CreateTime : 2020/5/31
  * @Description :
  **/
 @Slf4j
-@Component
-@RabbitListener(queues = "topic.man")
+//@Component
+//@RabbitListener(queues = "topic.man")
 public class TopicManReceiver {
     @RabbitHandler
     public void process(Map testMessage) {

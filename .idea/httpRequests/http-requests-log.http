@@ -1,548 +1,546 @@
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-29T045435.200.json
+<> 2020-09-22T054216.200.txt
 
 ###
 
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-29T045426.200.json
+<> 2020-09-22T054035.200.txt
 
 ###
 
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-29T043718.200.json
+<> 2020-09-22T053828.200.txt
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T091952.200.json
+<> 2020-09-22T051826.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T091548.200.json
+<> 2020-09-22T051550.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T091348.200.json
+<> 2020-09-22T050413.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T091254.200.json
+<> 2020-09-22T045743.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T091210.200.json
+<> 2020-09-22T045354.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T090844.200.json
+<> 2020-09-22T045116.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T090707.200.json
+<> 2020-09-22T042705.200.txt
 
 ###
 
-POST http://127.0.0.1:8087/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-28T100513.200.json
+<> 2020-09-22T042528.500.json
 
 ###
 
-POST http://172.16.173.171:8087/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-09-22T040108.200.txt
 
 ###
 
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
-
-<> 2020-05-20T084607.200.json
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
 ###
 
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
-
-<> 2020-05-20T075902.200.json
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
 ###
 
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T075116.200.json
+<> 2020-09-22T035647.500.json
 
 ###
 
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T065543.200.json
+<> 2020-09-22T034735.500.json
 
 ###
 
-POST http://172.16.173.171:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T062520.200.json
+<> 2020-09-22T034622.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T025143.200.json
+<> 2020-09-22T034135.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T025039.200.json
+<> 2020-09-22T034058.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T024857.200.json
+<> 2020-09-22T032932.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T024818.200.json
+<> 2020-09-22T032824.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317734","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T024620.200.json
+<> 2020-09-22T032521.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T024559.200.json
+<> 2020-09-22T031645.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T024542.200.json
+<> 2020-09-22T031534.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T024527.200.json
+<> 2020-09-22T031055.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"验证码:123133"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T024155.200.json
+<> 2020-09-22T030926.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T023736.200.json
+<> 2020-09-22T025810.500.json
 
 ###
 
-POST http://127.0.0.1:8080/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-20T023521.200.json
+<> 2020-09-22T025300.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054622.200.json
+<> 2020-09-22T025005.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054613.200.json
+<> 2020-09-22T024604.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054612.200.json
+<> 2020-09-22T024456.500.html
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054611.200.json
+<> 2020-09-22T023820.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054610-1.200.json
+<> 2020-09-22T023710.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054610.200.json
+<> 2020-09-22T023058.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054608.200.json
+<> 2020-09-22T022904.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054607.200.json
+<> 2020-09-22T022450.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054606.200.json
+<> 2020-09-22T020753.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054605-1.200.json
+<> 2020-09-22T092444.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054605.200.json
+<> 2020-09-22T092408.500.json
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T054516.200.json
+<> 2020-09-21T104243.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T052621.200.json
+<> 2020-09-21T104236.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T050609.200.json
+<> 2020-09-21T104234.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T045232.200.json
+<> 2020-09-21T104233.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T045104.200.json
+<> 2020-09-21T104232.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T045058.200.json
+<> 2020-09-21T103638-1.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T045052.200.json
+<> 2020-09-21T103638.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T045027.200.json
+<> 2020-09-21T103637.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T041736.200.json
+<> 2020-09-21T103636.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T041730.200.json
+<> 2020-09-21T103635.200.txt
 
 ###
 
-POST http://127.0.0.1:8086/smsService/sms/batchSendSmsWithJson
+GET http://localhost:8081/test/sendDirectMessage
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"typeCd":"0016","keyType":"0","keys":"15811317735","content":"我2们都是短信制造者"}
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
-<> 2020-05-19T041702.200.json
+<> 2020-09-21T103634.200.txt
 
 ###
 
