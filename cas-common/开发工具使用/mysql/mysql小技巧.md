@@ -17,3 +17,6 @@
      Alter table sms_send_detail partition by range(to_days(start_time))(
          partition P737941 values less than (737941) engine = innoDB
          );
+         
+### mysql聚集索引和非聚集索引
+    https://www.cnblogs.com/s-b-b/p/8334593.html
