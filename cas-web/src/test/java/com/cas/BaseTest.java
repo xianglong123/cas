@@ -1,6 +1,10 @@
 package com.cas;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.reflection.Reflector;
+import org.apache.ibatis.reflection.TypeParameterResolver;
+import org.apache.ibatis.reflection.property.PropertyCopier;
+import org.apache.ibatis.type.TypeHandlerRegistry;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;

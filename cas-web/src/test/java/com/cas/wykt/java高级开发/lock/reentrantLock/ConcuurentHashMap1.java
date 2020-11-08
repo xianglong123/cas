@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
  * @author: xianglong[1391086179@qq.com]
  * @date: 12:38 2020-07-12
  * @version: V1.0
- * @review:
+ * @review: ConcuurentHashMap讲解： https://www.jianshu.com/p/865c813f2726
  */
 public class ConcuurentHashMap1 {
 

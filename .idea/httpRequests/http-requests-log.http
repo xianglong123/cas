@@ -1,3 +1,91 @@
+GET http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T030954.200.txt
+
+###
+
+GET http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T030952.200.txt
+
+###
+
+GET http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T030943.200.txt
+
+###
+
+GET http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T030206.200.txt
+
+###
+
+GET http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T025919.500.json
+
+###
+
+POST http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T025858.405.json
+
+###
+
+POST http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T025234.405.json
+
+###
+
+GET http://localhost:8081/test/sendTopicMessage1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-10-14T025148.500.json
+
+###
+
 GET http://localhost:8081/k8s/addMqCluster
 Accept: */*
 Cache-Control: no-cache
@@ -453,94 +541,6 @@ Content-Type: application/json
 {"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
 <> 2020-09-21T104234.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T104233.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T104232.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T103638-1.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T103638.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T103637.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T103636.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T103635.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T103634.200.txt
 
 ###
 

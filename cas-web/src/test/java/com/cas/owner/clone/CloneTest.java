@@ -3,6 +3,9 @@ package com.cas.owner.clone;
 import com.cas.domain.User;
 import com.cas.owner.utils.MyUtil;
 
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @author: xianglong[1391086179@qq.com]
  * @date: 18:37 2020-06-09
@@ -18,6 +21,5 @@ public class CloneTest {
         System.out.println(user);
         System.out.println(user1);
     }
-
 }
 

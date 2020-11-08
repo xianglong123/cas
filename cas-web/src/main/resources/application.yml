@@ -69,10 +69,10 @@ spring:
     redis:
       time-to-live: 600000
   rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: admin
-    password: admin
+    host: 192.168.56.101
+    port: 30001
+    username: K9yYvqTagvXkJctZHRiSHDnhCgt9SV-8
+    password: CZOs6wkqC0qxSnNC938Qwo4Zq91Z2SH6
     #虚拟host 可以不设置,使用server默认host
     virtual-host: home
     #消息确认配置项
