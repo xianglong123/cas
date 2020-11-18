@@ -972,6 +972,14 @@ public class StringTest{
         System.out.println(a1 == a4);
     }
 
+    /**
+     * 转义空格 /t
+     *
+     */
+    @Test
+    public void test61() {
+        System.out.println("i" + "\t" + "love" + "\t" + "you");
+    }
 
 
 

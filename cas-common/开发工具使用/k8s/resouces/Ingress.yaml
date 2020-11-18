@@ -1,0 +1,53 @@
+apiVersion: extensions/v1beta1
+# <string>指定api资源版本,格式group/version
+kind: Ingress
+# <string>指定资源类别
+metadata:
+# <Object>指定元数据,内嵌字段
+  name: Ingress-demo
+  # <string>指定资源名称
+  namespace: default
+  # <string>指定名称空间,默认为default
+  labels: 
+  # <map[string]string>指定标签格式为k:v,可以多个,每行一个
+    app: rs-myapp
+  annotations:  
+  # 通过注释来定义使用什么模式的ingress controller的方式
+  kubernetes.io/ingress.class: "nginx"
+spec:
+# <Object>指定期望状态
+# backend或rules至少定义一种
+  backend:
+  # <Object>默认的后端用于服务那些没有匹配到任何规则的请求
+  # 用于指定一个全局默认的后端
+    serviceName: myapp 
+    # <string> -required-指定用于生成配置的后端service名称
+    servicePort: 80
+    # <string> -required-指定用于生成配置的后端service端口
+  rules:
+  # <[]Object>指定调度规则调用的对象
+  - host: myapp.jc.com
+    # <string>指定虚拟主机进行调度,如果是虚拟主机,此项目写虚拟主机名
+    # 不支持ip地址与端口格式
+    # 空白表示通配所有主机名
+    http:
+    # <Object>指定http路径进行分发
+      paths:
+      # <[]Object> -required-指定路径执行调度
+      - path: /testpath
+      # <string>定位路径,如果不赋值代表根 /
+        backend:
+        # <Object> -required- 指定关联后端pod
+          serviceName: myapp
+          # <string> -required-指定用于生成配置的后端service名称
+          servicePort: 80
+          # <string> -required-指定用于生成配置的后端service端口
+  tls:
+  # <[]Object>指定https配置,膜前仅支持443端口
+  - hosts:
+    # <[]string>指定主机域名
+    - myapp.jc.com
+    secretName: tomcat-ingress-secret
+    # <string> secret资源对象名称,需要使用secret来新建
+
+

@@ -1,3 +1,261 @@
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T111946.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T100047.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T100016.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095724.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095129-2.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095129-1.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095129.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095128-4.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095128-3.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095128-2.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095128-1.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095128.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095127-1.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095127.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T095000.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094951.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094911.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094846.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094652-1.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094652.200.txt
+
+###
+
+GET http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094557.200.txt
+
+###
+
+GET http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094541.200.txt
+
+###
+
+GET http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094540.200.txt
+
+###
+
+GET http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094539-1.200.txt
+
+###
+
+GET http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094539.200.txt
+
+###
+
+GET http://localhost:6668
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T094421.200.txt
+
+###
+
 GET http://localhost:8081/test/sendTopicMessage1
 Accept: */*
 Cache-Control: no-cache
@@ -255,292 +513,6 @@ Content-Type: application/json
 {"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
 <> 2020-09-22T034735.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T034622.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T034135.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T034058.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T032932.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T032824.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T032521.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T031645.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T031534.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T031055.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T030926.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T025810.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T025300.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T025005.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T024604.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T024456.500.html
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T023820.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T023710.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T023058.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T022904.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T022450.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T020753.500.json
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T092444.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T092408.500.json
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T104243.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T104236.200.txt
-
-###
-
-GET http://localhost:8081/test/sendDirectMessage
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-21T104234.200.txt
 
 ###
 

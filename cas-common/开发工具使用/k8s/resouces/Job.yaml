@@ -1,0 +1,46 @@
+apiVersion: batch/v1
+# <string>指定api资源版本,格式group/version
+kind: Job
+# <string>指定资源类别
+metadata:
+  name: job-multi
+  # <Object>指定元数据,内嵌字段
+  namespace: test
+  # <string>指定名称空间,默认为default
+  annotations:  
+  # 资源注解<map[string]string>,与label不同的地方在于,他不能用于选择资源对象,
+  # 仅用于为对象提供"元数据"格式如下:
+    jc.com/created-by: "cluster admin"
+spec:
+# <Object>指定期望状态
+  completions: 5
+  # <integer> 总任务数,即一个job里面要运行多少个任务
+  parallelism: 2
+  # <integer> 并行度属性,即每次并行进行多少个任务
+  activeDeadlineSeconds: 200
+  # <integer> 用于为其指定最大活动时间长度,超出此时间的将被终止
+  backoffLimit: 5
+  # <integer> 作业标记为失败状态之前的重试次数，默认6
+  # 例如配置失败次重试次数为5，且超出100s仍未运行完成，那么就被终止
+  template:
+  # <Object> -required-定义job模版
+    metadata:
+    # <Object>指定元数据,内嵌字段
+      labels:
+      # <map[string]string>指定标签格式为k:v,可以多个,每行一个
+        app: myjob
+    spec:
+    # <Object>定义模版的spec,基本与pod资源相同
+      containers:
+      # <[]Object> -required-指定容器对象资源,可以设置多个每个-name配置段设置一个
+      - name: myjob
+      # <string>指定容器名称
+        image: alpine
+        # <string>指定镜像资源
+        command: ["/bin/sh",  "-c", "sleep 30"]
+        # <[]string> 执行命令返回成功则表示容器执行成功,否则返回执行失败
+      restartPolicy: Never
+      # 执行失败时的重启策略
+      # Never表示在pod出现故障时创建新的pod，且故障pod不会消失。
+      # Always表示失败直接重启,默认
+      # OnFailure表示在pod出现故障时其内部重启容器，而不是创建pod

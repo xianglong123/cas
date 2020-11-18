@@ -2,34 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f9a8abe-1708-4006-8ff4-ed6613fb86bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/docker/docker.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/docker/docker特殊命令.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/image/left_join.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/java/java四大作用域.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/java/接口幂等性.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/nginx/nginx.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/bio/BIOServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/ByteBufferTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/FileChannel01Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/FileChannel02Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/FileChannel03Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/IntBufferTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/MappedByteBufferTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/ScatteringAndGatheringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/shell/ShellTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69430a86-24c5-466f-a4c9-2323341db4cc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69430a86-24c5-466f-a4c9-2323341db4cc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/Cronjob.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/DaemonSet.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/Deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/HorizontalPodAutoscaler_v1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/HorizontalPodAutoscaler_v2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/Ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/Job.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/NetworkPolicy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/PersistentVolume.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/PersistentVolumeClaim.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/ReplicaSet.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/Service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/pod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/linux/linux.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/mysql/mysql 遇到的问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/bootstrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/channel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/channel2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/channelHandler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/channelHandler2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/channelHandler_with_children_method.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/channelPipeline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/future.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/netty核心组件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/pipeline调用链.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/netty/selector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-common/开发工具使用/vsftp/vsftp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestHttpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/groupchat/GroupChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/groupchat/GroupChatServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-common/cas.cas-common.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-core/cas.cas-core.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-dao/cas.cas-dao.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-service/cas.cas-service.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-test/cas.cas-test.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/cas-web/cas.cas-web.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/k8s教程.md" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/开发工具使用/k8s/k8s教程.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cas-common/开发工具使用/myatis/mybatis技术博客.md" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/开发工具使用/myatis/mybatis技术博客.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-common/开发工具使用/mysql/mysql小技巧.md" beforeDir="false" afterPath="$PROJECT_DIR$/cas-common/开发工具使用/mysql/mysql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/out/production/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/clone/CloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/clone/CloneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ConcuurentHashMap1.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ConcuurentHashMap1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -177,10 +205,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOClient.java">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="404">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,59 +230,77 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOServer.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="973">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-631">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/curl/curl语法.txt">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/441fe8e405d63c3bf3642006a34e3744e91c6d16/netty-all-4.1.20.Final.jar!/io/netty/channel/ChannelInitializer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/docker/docker.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2295">
-                <caret line="153" selection-start-line="153" selection-end-line="153" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/docker/docker特殊命令.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="76" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="165">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/k8s/k8s教程.md">
+        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/netty/netty核心组件.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="540">
-                <caret line="36" column="124" selection-start-line="36" selection-start-column="124" selection-end-line="36" selection-end-column="124" />
+              <first_editor relative-caret-position="330">
+                <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestHttpServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/linux/linux.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/linux/grep语法.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/linux/linux语法.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/log/log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204" />
           </provider>
         </entry>
       </file>
@@ -254,20 +313,13 @@
         <option value="HTML File" />
         <option value="Jsp File" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>apiextensions.k8s.io</find>
-      <find>====&gt;</find>
-      <find>.filter</find>
-      <find>Locks</find>
-      <find>DeploymentCon</find>
-      <find>StatefulSetHandler</find>
-      <find>StatefulsetSpec</find>
       <find>Controller</find>
       <find>ReplicationController</find>
       <find>127</find>
@@ -291,6 +343,13 @@
       <find>log.info</find>
       <find>final</find>
       <find>Socket</find>
+      <find>replace</find>
+      <find>1024</find>
+      <find>uuid</find>
+      <find>toString</find>
+      <find>toString(</find>
+      <find>It works!</find>
+      <find>left_jo</find>
     </findStrings>
     <replaceStrings>
       <replace>log.info</replace>
@@ -329,26 +388,12 @@
       </map>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response55.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/configs/mq/ack/MyAckReceiver.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/RabbitMqCluster.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/action/deployment/impl/MyDeploymentAddedHandler.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/main/resources/crd/rabbitmq.com_rabbitmqcluster.yaml" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/RabbitmqCluster.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/RabbitMqCrd.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/mq/RabbitMqCrd.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/controller/RabbitMqInit.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/main/resources/crd/rabbitmq_com_rabbitmqcluster.yaml" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/DoneableRabbitMqCluster.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/RabbitMqClusterList.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/RabbitMqCluster.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/RabbitMqClusterStatus.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/RabbitMqClusterSpec.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/RabbitMqClusterServiceSpec.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/RabbitmqClusterPersistenceSpec.java" />
-        <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/k8s/deploymentcontroller/crd/cluster/RabbitmqClusterConfigurationSpec.java" />
         <option value="$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/tsController/K8sController.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/proxy/ProxyBean.java" />
         <option value="$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/cglib/UserDaoImpl.java" />
@@ -365,7 +410,6 @@
         <option value="$PROJECT_DIR$/cas-common/开发工具使用/nginx/nginx.md" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/shell/ShellTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ConcuurentHashMap1.java" />
-        <option value="$PROJECT_DIR$/cas-common/开发工具使用/myatis/mybatis技术博客.md" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/bio/BIOServer.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/IntBufferTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/FileChannelTest.java" />
@@ -379,10 +423,28 @@
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/ScatteringAndGatheringTest2.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/ScatteringAndGatheringTest.java" />
         <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOClient.java" />
-        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOServer.java" />
         <option value="$PROJECT_DIR$/cas-common/开发工具使用/docker/docker.md" />
         <option value="$PROJECT_DIR$/cas-common/开发工具使用/docker/docker特殊命令.md" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOServer.java" />
+        <option value="$PROJECT_DIR$/cas-common/开发工具使用/vsftp/vsftp.md" />
+        <option value="$PROJECT_DIR$/cas-common/开发工具使用/linux/linux.md" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/groupchat/GroupChatServer.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/groupchat/GroupChatClient.java" />
+        <option value="$PROJECT_DIR$/cas-common/build.gradle" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServerHandler.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyClientHandler.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyClient.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyCpuNum.java" />
         <option value="$PROJECT_DIR$/cas-common/开发工具使用/k8s/k8s教程.md" />
+        <option value="$PROJECT_DIR$/cas-common/开发工具使用/mysql/mysql 遇到的问题.md" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringTest.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestServer.java" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestServerInitializer.java" />
+        <option value="$PROJECT_DIR$/cas-common/开发工具使用/myatis/mybatis技术博客.md" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServer.java" />
+        <option value="$PROJECT_DIR$/cas-common/开发工具使用/netty/netty.md" />
+        <option value="$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestHttpServerHandler.java" />
+        <option value="$PROJECT_DIR$/cas-common/开发工具使用/netty/netty核心组件.md" />
       </list>
     </option>
   </component>
@@ -395,10 +457,11 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="GkRZvZjo" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="862" />
-    <option name="width" value="930" />
-    <option name="height" value="1120" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="944" />
+    <option name="y" value="23" />
+    <option name="width" value="848" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -432,6 +495,46 @@
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cas" type="462c0819:PsiDirectoryNode" />
+              <item name="owner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="开发工具使用" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -439,21 +542,28 @@
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="开发工具使用" type="462c0819:PsiDirectoryNode" />
-              <item name="curl" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="开发工具使用" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="linux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
               <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="开发工具使用" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="cas-common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="开发工具使用" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -552,7 +662,7 @@
               <item name="cas" type="462c0819:PsiDirectoryNode" />
               <item name="owner" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="buffer" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -563,7 +673,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
               <item name="owner" type="462c0819:PsiDirectoryNode" />
-              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -573,7 +684,10 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
+              <item name="owner" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -583,8 +697,10 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="owner" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
@@ -594,91 +710,30 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="owner" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="buffer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
-              <item name="futureTask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
-              <item name="readWriteLock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
-              <item name="reentrantLock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cas" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cas-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cas" type="462c0819:PsiDirectoryNode" />
-              <item name="java高级开发" type="462c0819:PsiDirectoryNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="GO_FMT" value="true" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -696,7 +751,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last.edited.regexp" value="四川省成都市德川县什么街道" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cas-common/开发工具使用/netty" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -705,10 +760,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.cas.owner.netty.io.netty.simple" />
       <recent name="com.cas.k8s.deploymentcontroller.action.deployment.impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -725,11 +781,11 @@
       <recent name="com.cas" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cas-common/开发工具使用/netty" />
+      <recent name="$PROJECT_DIR$/cas-common/开发工具使用/k8s/resouces" />
       <recent name="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/common" />
       <recent name="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/js" />
       <recent name="$PROJECT_DIR$/cas-common" />
-      <recent name="$PROJECT_DIR$/cas-web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/cas-web/src/main/webapp/WEB-INF/jsp/question" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cas.owner.netty.io.nio.buffer" />
@@ -745,6 +801,94 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:6668" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="userId" />
+                <option name="value" value="10001" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;typeCd&quot;:&quot;0020&quot;,&quot;keyType&quot;:&quot;0&quot;,&quot;keys&quot;:&quot;15811317734&quot;,&quot;content&quot;:&quot;TEST_YC_SMS_OK&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:6668" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="userId" />
+                <option name="value" value="10001" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;typeCd&quot;:&quot;0020&quot;,&quot;keyType&quot;:&quot;0&quot;,&quot;keys&quot;:&quot;15811317734&quot;,&quot;content&quot;:&quot;TEST_YC_SMS_OK&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:6668" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="userId" />
+                <option name="value" value="10001" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;typeCd&quot;:&quot;0020&quot;,&quot;keyType&quot;:&quot;0&quot;,&quot;keys&quot;:&quot;15811317734&quot;,&quot;content&quot;:&quot;TEST_YC_SMS_OK&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:8081" />
@@ -2321,150 +2465,6 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://127.0.0.1:8081" />
-          <option name="urlPath" value="/test/addQuestion" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="question" />
-                <option name="value" value="123123" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="date" />
-                <option name="value" value="2020-02-20" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="doubleValue" />
-                <option name="value" value="222999999" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="integer" />
-                <option name="value" value="3000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="rang" />
-                <option name="value" value="5000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://127.0.0.1:8081" />
-          <option name="urlPath" value="/test/validUser" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="id" />
-                <option name="value" value="123123" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="date" />
-                <option name="value" value="2020-02-20" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="doubleValue" />
-                <option name="value" value="222999999" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="integer" />
-                <option name="value" value="3000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="rang" />
-                <option name="value" value="5000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://127.0.0.1:8081" />
-          <option name="urlPath" value="/test/valid" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="id" />
-                <option name="value" value="123123" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="date" />
-                <option name="value" value="2020-02-20" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="doubleValue" />
-                <option name="value" value="222999999" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="integer" />
-                <option name="value" value="3000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="rang" />
-                <option name="value" value="5000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -2480,13 +2480,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NIOServer">
-    <configuration name="ByteBufferTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.nio.buffer.ByteBufferTest" />
+  <component name="RunManager" selected="Application.TestServer">
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.netty.simple.NettyClient" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.owner.netty.io.nio.buffer.*" />
+          <option name="PATTERN" value="com.cas.owner.netty.io.netty.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2494,12 +2494,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MappedByteBufferTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.nio.buffer.MappedByteBufferTest" />
+    <configuration name="NettyCpuNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.netty.simple.NettyCpuNum" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.owner.netty.io.nio.buffer.*" />
+          <option name="PATTERN" value="com.cas.owner.netty.io.netty.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2507,12 +2507,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.nio.buffer.NIOClient" />
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.netty.simple.NettyServer" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.owner.netty.io.nio.buffer.*" />
+          <option name="PATTERN" value="com.cas.owner.netty.io.netty.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2520,12 +2520,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.nio.buffer.NIOServer" />
+    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.netty.http.TestServer" />
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.owner.netty.io.nio.buffer.*" />
+          <option name="PATTERN" value="com.cas.owner.netty.io.netty.http.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2533,15 +2533,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScatteringAndGatheringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cas.owner.netty.io.nio.buffer.ScatteringAndGatheringTest" />
+    <configuration name="StringTest.test61" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cas.cas-web.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cas.owner.netty.io.nio.buffer.*" />
+          <option name="PATTERN" value="com.cas.owner.strTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.cas.owner.strTest" />
+      <option name="MAIN_CLASS_NAME" value="com.cas.owner.strTest.StringTest" />
+      <option name="METHOD_NAME" value="test61" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -2556,20 +2559,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ByteBufferTest" />
-      <item itemvalue="Application.MappedByteBufferTest" />
-      <item itemvalue="Application.ScatteringAndGatheringTest" />
-      <item itemvalue="Application.NIOServer" />
-      <item itemvalue="Application.NIOClient" />
+      <item itemvalue="Application.NettyServer" />
+      <item itemvalue="Application.NettyClient" />
+      <item itemvalue="Application.NettyCpuNum" />
+      <item itemvalue="JUnit.StringTest.test61" />
       <item itemvalue="Spring Boot.UpmApplication" />
+      <item itemvalue="Application.TestServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NIOClient" />
-        <item itemvalue="Application.NIOServer" />
-        <item itemvalue="Application.ScatteringAndGatheringTest" />
-        <item itemvalue="Application.MappedByteBufferTest" />
-        <item itemvalue="Application.ByteBufferTest" />
+        <item itemvalue="Application.TestServer" />
+        <item itemvalue="Application.NettyServer" />
+        <item itemvalue="JUnit.StringTest.test61" />
+        <item itemvalue="Application.NettyClient" />
+        <item itemvalue="Application.NettyCpuNum" />
       </list>
     </recent_temporary>
   </component>
@@ -2743,7 +2746,15 @@
       <workItem from="1603941698028" duration="1316000" />
       <workItem from="1603972196262" duration="4705000" />
       <workItem from="1604051576133" duration="10239000" />
-      <workItem from="1604566853081" duration="1446000" />
+      <workItem from="1604566853081" duration="1866000" />
+      <workItem from="1604896196393" duration="223000" />
+      <workItem from="1604972397406" duration="4107000" />
+      <workItem from="1604991310443" duration="8195000" />
+      <workItem from="1605142756124" duration="7730000" />
+      <workItem from="1605240377959" duration="1441000" />
+      <workItem from="1605252080692" duration="765000" />
+      <workItem from="1605339735552" duration="1014000" />
+      <workItem from="1605520679519" duration="9359000" />
     </task>
     <task id="LOCAL-00001" summary="+ 新作品">
       <created>1577971612690</created>
@@ -2955,16 +2966,17 @@
       <option name="project" value="LOCAL" />
       <updated>1601383479980</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="+ 一些实用的命令">
+      <created>1604841122381</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1604841122381</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringTest_test60 - 2020.09.14 at 19h 56m 38s.xml">
-      <configuration name="StringTest.test60" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringTest_test60 - 2020.09.14 at 20h 06m 23s.xml">
-      <configuration name="StringTest.test60" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringTest_test60 - 2020.09.14 at 20h 06m 55s.xml">
       <configuration name="StringTest.test60" configurationId="JUnit" />
     </history-entry>
@@ -2989,9 +3001,15 @@
     <history-entry file="ShellTest_test - 2020.10.26 at 17h 27m 47s.xml">
       <configuration name="ShellTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringTest_test61 - 2020.11.16 at 09h 57m 46s.xml">
+      <configuration name="StringTest.test61" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringTest_test61 - 2020.11.16 at 09h 58m 00s.xml">
+      <configuration name="StringTest.test61" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1095215000" />
+    <option name="totallyTimeSpent" value="1128469000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3003,16 +3021,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1792" height="1120" extended-state="0" />
+    <frame x="1064" y="0" width="728" height="1120" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.40797547" weight="0.9257143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.40630797" visible="true" weight="0.50728863" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.59202456" side_tool="true" weight="0.1697811" />
-      <window_info id="Favorites" order="6" sideWeight="0.22190475" side_tool="true" weight="0.44457144" />
+      <window_info id="Structure" order="5" sideWeight="0.593692" side_tool="true" weight="0.94745225" />
+      <window_info id="Favorites" order="6" sideWeight="0.5933333" side_tool="true" weight="0.94745225" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3257143" />
@@ -3027,14 +3045,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32799146" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.8295238" />
-      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.49942857" weight="0.42380953" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.49942857" visible="true" weight="0.42380953" />
       <window_info anchor="bottom" id="REST Client" order="14" weight="0.32666665" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.49942857" weight="0.17904761" />
-      <window_info anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" weight="0.48666668" />
+      <window_info anchor="bottom" id="Debug" order="16" sideWeight="0.49946752" weight="0.5447619" />
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.38" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.32628572" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.5685131" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -3147,7 +3165,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="easyExcel 通过模版解析Excel 内存消耗控制在kB级别 需要po类和注解去控制一个Excel &#10;easyExcelUtil 中的方法就够了！！！" />
     <MESSAGE value="+http 获取文件 + 介绍" />
     <MESSAGE value="+测试类" />
     <MESSAGE value="+测试用例+完善" />
@@ -3172,7 +3189,8 @@
     <MESSAGE value="XPath的用法，全局搜索 -- &quot;Xpath&quot;" />
     <MESSAGE value="++ ..." />
     <MESSAGE value="+ k8s &#10;+ cglib 基于AMS继承子类覆盖方法实现代理 jdk代理需要实现接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ k8s &#10;+ cglib 基于AMS继承子类覆盖方法实现代理 jdk代理需要实现接口" />
+    <MESSAGE value="+ 一些实用的命令" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ 一些实用的命令" />
   </component>
   <component name="WindowStateProjectService">
     <state width="410" height="920" key="Git.Branch.Popup" />
@@ -3226,6 +3244,24 @@
           <properties />
           <option name="timeStamp" value="506" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/groupchat/GroupChatServer.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="507" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServer.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyClientHandler.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -3238,6 +3274,9 @@
         <watch expression="createCluster()" />
         <watch expression="propName.toUpperCase(Locale.ENGLISH)" />
       </configuration>
+      <configuration name="Application">
+        <watch expression="selector.keys()" />
+      </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
@@ -3247,6 +3286,17 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>((DefaultChannelHandlerContext) ctx).pipeline</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>io.netty.channel.DefaultChannelHandlerContext</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ctx.channel()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>selector.selectedKeys()</expression-string>
         <language-id>JAVA</language-id>
@@ -3280,16 +3330,6 @@ keyIterator.hasNext();</expression-string>
       </expression>
       <expression>
         <expression-string>client.customResource(crdContext).list();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>createCluster();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>createCluster()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -3338,257 +3378,10 @@ System.out.println(&quot;向龙&quot;);</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.4.6/bdf12283a2374b67a2411355947cd726bef6e800/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/property/PropertyTokenizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.4.6/bdf12283a2374b67a2411355947cd726bef6e800/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/TypeParameterResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="716" selection-start-line="716" selection-end-line="716" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/shell/ShellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/reentrantLock/ConcuurentHashMap1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/components/logComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/myatis/mybatis技术博客.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3810">
-          <caret line="303" column="32" selection-start-line="303" selection-start-column="32" selection-end-line="303" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/nginx/nginx.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="855">
-            <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/io/IoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/bio/BIOServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/javaws.jar!/com/sun/javaws/security/JavaWebStartSecurity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2835">
-          <caret line="214" column="16" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4380">
-          <caret line="332" column="34" selection-start-line="332" selection-start-column="34" selection-end-line="332" selection-end-column="34" />
-          <folding>
-            <element signature="e#11566#11567#0" expanded="true" />
-            <element signature="e#11597#11598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/net/AbstractPlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="245" column="34" selection-start-line="245" selection-start-column="34" selection-end-line="245" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/net/PlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/net/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7185">
-          <caret line="512" column="9" selection-start-line="512" selection-start-column="9" selection-end-line="512" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/IntBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="262" column="16" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/Buffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="400" column="25" selection-start-line="400" selection-start-column="25" selection-end-line="400" selection-end-column="25" />
-          <folding>
-            <element signature="e#12489#12490#0" expanded="true" />
-            <element signature="e#12528#12529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/ByteBufferAsIntBufferB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="109" column="15" selection-start-line="109" selection-start-column="15" selection-end-line="109" selection-end-column="15" />
-          <folding>
-            <element signature="e#2349#2350#0" expanded="true" />
-            <element signature="e#2408#2409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://69430a86-24c5-466f-a4c9-2323341db4cc/schema/tcc_account/table/account" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69430a86-24c5-466f-a4c9-2323341db4cc/console_3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="101" selection-start-column="101" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/Closeable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/FileChannel01Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/FileChannel03Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
+        <state relative-caret-position="80">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/FileChannel02Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="79" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/io/RandomAccessFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="123" column="10" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/MappedByteBufferTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3602,82 +3395,89 @@ System.out.println(&quot;向龙&quot;);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/ByteBufferTest.java">
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/MappedByteBufferTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/ScatteringAndGatheringTest2.java" />
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/ScatteringAndGatheringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/net/SocketAddress.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/channels/spi/SelectorProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="163" column="47" lean-forward="true" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/ch/SelectorProviderImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/channels/Selector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="226" column="44" selection-start-line="226" selection-start-column="44" selection-end-line="226" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/channels/SelectableChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="276" column="30" selection-start-line="276" selection-start-column="30" selection-end-line="276" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/channels/SelectionKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="266" column="28" selection-start-line="266" selection-start-column="28" selection-end-line="266" selection-end-column="28" />
+          <folding>
+            <element signature="e#13176#13177#0" expanded="true" />
+            <element signature="e#13228#13229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/ch/SelectorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/channels/spi/AbstractSelectionKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/net/ServerSocket.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/ch/SelectionKeyImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="327" column="29" selection-start-line="327" selection-start-column="29" selection-end-line="327" selection-end-column="29" />
+        <state relative-caret-position="90">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/lock/demo/Java_1_2_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/wykt/java高级开发/queue/DelayQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/channels/SocketChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="309" column="28" selection-start-line="309" selection-start-column="28" selection-end-line="309" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="1011" selection-start-line="1011" selection-end-line="1011" />
-          <folding>
-            <element signature="e#32334#32335#0" expanded="true" />
-            <element signature="e#32385#32386#0" expanded="true" />
-            <element signature="e#44347#44348#0" expanded="true" />
-            <element signature="e#44395#44396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="331" column="29" selection-start-line="331" selection-start-column="29" selection-end-line="331" selection-end-column="29" />
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/vsftp/vsftp.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="450">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3685,48 +3485,334 @@ System.out.println(&quot;向龙&quot;);</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOServer.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/nio/channels/spi/AbstractInterruptibleChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="973">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="341">
+          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+          <folding>
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4315#4316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/groupchat/GroupChatServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/curl/curl语法.txt">
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="255">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/docker/docker.md">
+    <entry file="file://$PROJECT_DIR$/cas-common/src/main/java/com/cas/owner/utils/RedissLockUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/main/java/com/cas/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="590" column="49" selection-start-line="590" selection-start-column="49" selection-end-line="590" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/groupchat/GroupChatClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyCpuNum.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/channel/nio/NioEventLoopGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+          <folding>
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#2461#2462#0" expanded="true" />
+            <element signature="e#2530#2531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/channel/MultithreadEventLoopGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="79" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="79" />
+          <folding>
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/mysql/mysql.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2295">
-            <caret line="153" selection-start-line="153" selection-end-line="153" />
+          <first_editor relative-caret-position="435">
+            <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/docker/docker特殊命令.md">
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/mysql/mysql 遇到的问题.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
-            <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="76" />
+            <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="71" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3135">
+          <caret line="234" column="27" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="27" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/strTest/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="979" column="10" selection-start-line="979" selection-start-column="10" selection-end-line="979" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/algorithm/数组/leetCode_1480.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" selection-start-line="11" selection-start-column="8" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/curl/curl语法.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/k8s/k8s教程.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="36" column="124" selection-start-line="36" selection-start-column="124" selection-end-line="36" selection-end-column="124" />
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="76" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="76" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/nio/buffer/NIOServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/channel/ChannelFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="173" column="18" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/util/concurrent/GenericFutureListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/channel/ChannelFutureListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding>
+            <element signature="e#1689#1852#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#2076#2296#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestServerInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/image/left_join.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/myatis/mybatis技术博客.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#955#1243#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/linux/linux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/linux/grep语法.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/linux/linux语法.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/log/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/441fe8e405d63c3bf3642006a34e3744e91c6d16/netty-all-4.1.20.Final.jar!/io/netty/channel/ChannelInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.20.Final/353afdd643a79261d6ea78eb0aa12a6c5acfbfc1/netty-all-4.1.20.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-631">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/simple/NettyServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-web/src/test/java/com/cas/owner/netty/io/netty/http/TestHttpServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cas-common/开发工具使用/netty/netty核心组件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
@@ -3794,12 +3880,11 @@ System.out.println(&quot;向龙&quot;);</expression-string>
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cas-web|cas</last-edited>
+          <last-edited>cas</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -3819,6 +3904,7 @@ System.out.println(&quot;向龙&quot;);</expression-string>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: bouncycastle:bcmail-jdk14:138</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

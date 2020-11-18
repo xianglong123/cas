@@ -1,0 +1,42 @@
+apiVersion: autoscaling/v2beta1
+# <string>指定api资源版本,格式group/version
+# autoscaling/v1   只支持 cpu指标
+# autoscaling/v2beta1  最迟多个指标
+kind: HorizontalPodAutoscaler
+# <string>指定资源类别
+metadata:
+# <Object>指定元数据,内嵌字段
+  name: hpa-demo
+  # <string>指定资源名称
+  namespace: default
+  # <string>指定名称空间,默认为default
+spec:
+# <Object>指定期望状态
+  maxReplicas: 6
+  # <integer> -required-指定最大副本数
+  minReplicas: 1
+  # <integer> 最小副本数
+  metrics:
+  #指定基于什么资源评估
+  - type: Resource
+    resource:
+      name: cpu
+      targetAverageUtilization: 55
+  - type: Resource
+    resource:
+      name: memory
+      targetAverageValue: 50Mi
+  - type: Pods
+    Pods:
+      metricName: http_requests
+      targetAverageValue: 800m
+  scaleTargetRef:
+  # <Object> -required-指定基于什么资源指标进行扩展
+    apiVersion: apps/v1
+    # <string> 需要进行扩展的资源版本
+    kind: Deployment
+    # <string> -required- 资源类型
+    # https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
+    name: myapp
+    # <string> -required- 资源名称
+    # http://kubernetes.io/docs/user-guide/identifiers#names

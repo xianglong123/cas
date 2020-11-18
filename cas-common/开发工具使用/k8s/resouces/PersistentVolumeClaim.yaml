@@ -1,0 +1,54 @@
+apiVersion: v1
+# <string>指定api资源版本,格式group/version
+kind: PersistentVolumeClaim
+# <string>指定资源类别
+metadata:
+# <Object>指定元数据,内嵌字段
+  name: pvc-demo
+  # <string>指定资源名称
+  namespace: default
+  # <string>指定名称空间,默认为default
+  labels:
+  # <map[string]string>指定标签格式为k:v,可以多个,每行一个
+    app: rs-myapp
+  annotations:  
+  # 通过注释来定义使用什么模式的ingress controller的方式
+  kubernetes.io/ingress.class: "nginx"
+spec:
+# <Object>指定期望状态
+  accessModes: ["ReadWriteMany","ReadWriteOnce"]
+  # <[]string>访问模型,不同存储卷支持不同模式,具体参照下面网址
+  # 访问模型,ReadWriteOnce    单路读写(RWO)
+  # ReadOnlyMany    多路只读(ROX)
+  # ReadWriteMany    多路读写操作(RWX) 
+  # https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+  resources:
+  # <Object> 条件资源要求,绑定的空间至少多少
+    limits:
+    # <map[string]string>绑定空间大小条件要求最大不能超过的大小
+    # https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+      storage: 5Gi
+      #1024单位 E, P, T, G, M, K, m    
+      #1000单位 Ei, Pi, Ti, Gi, Mi, Ki
+    requests:
+    # <map[string]string> 绑定空间大小条件要求,最小要满足的容量大小
+    # https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+      storage: 2Gi
+      #1024单位 E, P, T, G, M, K, m    
+      #1000单位 Ei, Pi, Ti, Gi, Mi, Ki
+  selector:
+  # <Object> 标签选择器,匹配pv的标签来选定绑定存储卷,二选一
+    matchLabels:
+    # <map[string]string> 支持给定多个键值对,格式如下
+      app: myapp
+      release: canary
+    matchExpressions:
+    # <[]Object>基于给的表达式来定义使用标签选择器,格式如下
+      - {key: tier, operator: In, values: [cache]}
+      # 支持一下操作符:
+      # In,    NotIn:    字段的值必须非空列表
+      # Exists, NotExists:    字段的值必须未空列表
+  volumeMode: Filesystem
+  # <string> 后端存储卷模式,根据类型来选择绑定存储卷的,目前测试阶段
+  volumeName: myapp
+  # <string> 此选项直接精确绑定到某个pv存储卷上面

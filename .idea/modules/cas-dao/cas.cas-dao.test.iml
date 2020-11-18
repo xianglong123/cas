@@ -52,6 +52,7 @@
     <orderEntry type="library" name="Gradle: org.apache.zookeeper:zookeeper:3.4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-mongodb:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: io.fabric8:kubernetes-client:4.10.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-all:4.1.20.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: com.jayway.jsonpath:json-path:2.2.0" level="project" />

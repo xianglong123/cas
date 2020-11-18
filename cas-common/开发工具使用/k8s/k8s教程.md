@@ -35,3 +35,7 @@
     kubectl delete -f crd.yaml 
     customresourcedefinition.apiextensions.k8s.io "crontabs.stable.example.com" deleted
     Error from server (NotFound): error when deleting "crd.yaml": crontabs.stable.example.com "my-new-cron-object" not found
+
+
+### mysql 通过K8s 访问无法输入中文
+    通过docker 进入，用这个命令 docker exec -it 28bb35a4538e env LANG=C.UTF-8 /bin/bash

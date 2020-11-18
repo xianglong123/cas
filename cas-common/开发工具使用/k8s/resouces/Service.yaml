@@ -1,0 +1,65 @@
+apiVersion: v1
+# <string>指定api资源版本,格式group/version
+kind: Service
+# <string>指定资源类别
+metadata:
+# <Object>指定元数据,内嵌字段
+  name: Service-demo
+  # <string>指定资源名称
+  namespace: default
+  # <string>指定名称空间,默认为default
+  labels:
+  # <map[string]string>指定标签格式为k:v,可以多个,每行一个
+    app: rs-myapp
+  annotations:  
+  # 资源注解<map[string]string>,与label不同的地方在于,他不能用于选择资源对象,
+  # 仅用于为对象提供"元数据"格式如下:
+    jc.com/created-by: "cluster admin"
+spec:
+# <Object>指定期望状态
+  ports:
+  # <[]Object>指定绑定的端口与容器的关系,可以多个
+  - name: redis
+  # <string>端口名称
+    nodePort: 32768
+    # <integer>节点端口,提供节点集群外部访问,此项只有type为NodePort时才有用
+    # 设置的时候不要使用30000-32767,此范围是系统自动分配的范围
+    # 在不指定的指定的时候会自动分配
+    port: 80
+    # <integer> -required-指定service对外提供服务的端口
+    targetPort: 80
+    # <string>容器端口
+    protocol: TCP
+    # <string>端口协议 UDP TCP STCP默认TCP
+  selector:
+  # <map[string]string>通过选择器选择关联到哪些资源上
+  # 定义格式为k:v
+    app: redis
+    role: logstor
+  clusterIP: 10.96.0.14
+  # <string>一般为动态ip地址,如果配置成固定就不能修改了
+  # 当此值设置为None时,即是无头service,无头服务解析如下:
+  # 访问一个服务一般是通过集群内dns解析service_name对应的service_ip地址
+  # 若将service_ip去掉,直接将service_name解析到后端的pod_ip就是无头服务
+  # 后端有多少个pod就,service_name就会解析到多少个pod_ip
+  type: ClusterIP
+  # <string>指定service的类型,一般如下几种
+  # ExternalName:把集群外的服务引入到内部直接使用
+  # ClusterIP:用于集群内通信(默认),不支持外部流量访问
+  # NodePort:接入集群外流量,当类型执行为NodePort时,
+  # 将在所有node节点上为指定服务打开<NodeIP>:NodePort访问方式,
+  # 在不指定端口的情况下,系统会自动从30000-32767范围里分配一个端口
+  # LoadBalancer:将k8s部署在云环境上,LBaaS,软负载均衡
+  externalName: www.baidu.com
+  # <string>外部服务名称,如果上面的type使用到externalName
+  # 此项生效,写入dns能解析的服务名
+  sessionAffinity: None
+  # <string> 指定会话保持,两个选项
+  # ClientIP 基于ipvs规则调度,同一个客户端ip地址始终调度到同一后端pod
+  # None 默认选项,随机调度
+  sessionAffinityConfig:
+  # <Object>会话保持配置
+    clientIP:
+    # sessionAffinity使用clientIP下的配置项
+      timeoutSeconds: 10800
+      # <integer>配置会话保持时长,默认10800s

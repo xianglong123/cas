@@ -1,0 +1,109 @@
+apiVersion: v1
+# <string>指定api资源版本,格式group/version
+kind: PersistentVolume
+# <string>指定资源类别
+metadata:
+# <Object>指定元数据,内嵌字段
+  name: pv-demo
+  # <string>指定资源名称
+  labels:
+  # <map[string]string>指定标签格式为k:v,可以多个,每行一个
+    app: rs-myapp
+  annotations:  
+  # 通过注释来定义使用什么模式的ingress controller的方式
+  kubernetes.io/ingress.class: "nginx"
+spec:
+# <Object>指定期望状态
+  persistentVolumeReclaimPolicy:
+  # <string> pv空间被释放时的处理机制
+  # Retain 默认,保持不动,有管理员手动回收
+  # Recycle 空间回收,即删除存储卷目录下的所有文件,NFS和hostPath支持
+  # Delete 删除存储卷,AWS GCE EBS Cinder等部分云支持
+  mountOptions: ["ro", "soft"]
+  # <[]string> 挂载选项组成的列表,如 ro soft hard等
+  hostPath:
+  # <Object> hostPath类型,宿主机路径,把宿主机目录挂到pod,pod删除后数据不删除
+    path: /data/pod/volume1
+    # <string> -required-指定宿主路径
+    type: DirectoryOrCreate
+    # <string> 类型用于影响path的属性
+    # DirectoryOrCreate    挂载一个已存在的目录,若不存在就创建
+    # Directory    必须实现存在,不存在就报错
+    # FileOrCreate    挂载一个文件不存在就创建
+    # File    必须是一个文件,没有就报错
+    # Socket    必须是一个Socket文件
+    # CharDevice    必须是个字符类的文件
+    # BlockDevice    必须是块类型的文件
+    # https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+  nfs:
+  # <Object> nfs类型,定义使用nfs,当一个卷来用,如果多目录需要写多个
+  # nfs共享存储需要预先部署,例如nfs服务器共享/data/volumes
+  # 会自动挂载到nfs服务器的共享目录
+    path: /data/volumes
+    # <string> -required- nfs共享路径
+    server: 192.168.16.210
+     # <string> -required-服务器地址
+    readOnly: false
+    # <boolean>是否设置成只读,默认false
+  accessModes: ["ReadWriteMany","ReadWriteOnce"]
+  # <[]string>访问模型,不同存储卷支持不同模式,具体参照下面网址
+  # 访问模型,ReadWriteOnce    单路读写(RWO)
+  # ReadOnlyMany    多路只读(ROX)
+  # ReadWriteMany    多路读写操作(RWX) 
+  # https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+  volumeMode: Filesystem
+  # <string> 后端存储卷模式,根据类型来选择绑定存储卷的,目前测试阶段
+  capacity:
+  # <map[string]string> 输出的存储空间大小
+  # https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
+    storage: 2Gi
+    #1024单位 E, P, T, G, M, K, m    
+    #1000单位 Ei, Pi, Ti, Gi, Mi, Ki
+  rbd:
+  # <Object> rbd类型,
+  #创建ceph分布式存储卷,需要在每个节点上安装ceph软件包
+    monitors:
+    # <[]string> -required- ceph存储监视器,逗号分隔
+    - '192.168.16.200:6789'
+    - '192.168.16.201:6789'
+    - '192.168.16.202:6789'
+    image: redis
+    # <string> -required- image的名称
+    pool: kube
+    # <string> rados存储池名称,默认为RBD
+    user: admin
+    # <string> rados用户名,默认admin
+    keyring :
+    # <string> 认证时使用的keyring文件路径,默认/etc/ceph/keyring
+    secretRef:
+    # <Object> 认证时使用的保存有相应认证信息的secret对象
+    # 会覆盖有keyring字段提供的密钥信息
+      name: ceph-secret
+      # <string> 对象名称
+    readOnly: false
+    # <boolean>是否只读,默认false
+    fsType: ext4
+    # <string> 要挂载卷的文件系统类型
+    # 文件类型必须是节点操作系统支持的文件系统类型
+    # 例如 ext4 xfs ntfs等,默认ext4
+  glusterfs:
+  # <Object> glusterfs类型,使用glusterfs集群
+  # 需要在各节点上部署glusterfs和glusterfs-fuse
+  # 支持动态供给机制,需要部署heketi用户请求存储管理接口
+    endpoints: glusterfs-endpoints
+    # <string> -required- endpoints资源名称,endpoints预先配置好
+    # 用于提供gluster集群的节点信息作为访问入口
+    path: kube-redis
+    # <string> -required- 用到的gfs集群的卷路径
+    readOnly: false
+    # <boolean> 是否只读,默认false
+  cinder:
+  # <Object> cinder类型
+    volumeID: e2b8d2f7-wece-90dl-a505-4acf607a90bc 
+    # <string> -required- 用于表示cinder的存储卷标识符
+    readOnly: false
+    # <boolean>是否只读,默认false
+    fsType: ext4
+    # <string> 要挂载卷的文件系统类型
+    # 文件类型必须是节点操作系统支持的文件系统类型
+    # 例如 ext4 xfs ntfs等,默认ext4

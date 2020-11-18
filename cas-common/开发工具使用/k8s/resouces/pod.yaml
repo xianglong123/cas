@@ -1,0 +1,602 @@
+apiVersion: v1
+# <string>指定api资源版本,格式group/version
+kind: Pod
+# <string>指定资源类别
+metadata:
+# <Object>指定元数据,内嵌字段
+  name: pod-demo
+  # <string>指定资源名称
+  namespace: default
+  # <string>指定名称空间,默认为default
+  labels:
+  # <map[string]string>指定标签格式为k:v,可以多个,每行一个
+    app: myapp
+  annotations:  
+  # 资源注解<map[string]string>,与label不同的地方在于,他不能用于选择资源对象,
+  # 仅用于为对象提供"元数据"格式如下:
+    jc.com/created-by: "cluster admin"
+spec:
+# <Object>指定期望状态
+  affinity:
+  # <Object> 配置选择器亲和性
+    nodeAffinity:
+    # <Object> 节点亲和性
+      preferredDuringSchedulingIgnoredDuringExecution:
+      # <[]Object> 尽量满足的亲和定义,软亲和性   
+      - preference:
+        # <Object> 尽量满足倾向性
+          matchExpressions:
+          # <[]Object> 基于给的表达式来定义使用标签选择器,格式如下
+            - {key: tier, operator: In, values: ["cache"]} 
+          matchFields:
+        # <[]Object> 节点字段选择器
+          - key: zone
+          # <string> -required-检查标签的key
+            operator: in
+            # <string> -required- 等值操作符选择
+            values:
+            # <[]string> 给定值
+            - foo
+            - bar
+        weight: 60
+        # <integer> -required- 定义倾向性权重,多个preference时进行对比            
+      requiredDuringSchedulingIgnoredDuringExecution:
+      # <Object> 必须满足的亲和定义,硬亲和性
+        nodeSelectorTerms:
+        # <[]Object> -required-节点选择器
+        - matchExpressions:
+          # <[]Object>基于给的表达式来定义使用标签选择器,格式如下
+          # 比较常用
+            - {key: tier, operator: In, values: ["cache"]} 
+        - matchFields:
+        # <[]Object> 节点字段选择器
+          - key: zone
+          # <string> -required-检查标签的key
+            operator: in
+            # <string> -required- 等值操作符选择
+            values:
+            # <[]string> 给定值
+            - foo
+            - bar
+    podAffinity:
+    # <Object> pod亲和性
+      preferredDuringSchedulingIgnoredDuringExecution:
+      # <[]Object> 尽量满足的亲和定义,软亲和性   
+      - podAffinityTerm:
+      # <Object> -required-pod尽量满足
+        topologyKey: kubernetes.io/hostname
+      # <string> -required- 位置拓扑键,指定与什么位置亲和
+        namespaces: xxxx
+      # <[]string> 指定下面设置的pod是哪一个名称空间中的
+      # 如果不指定默认为当前创建 pod的名称空间中
+        labelSelector:
+      # <Object> 标签选择器,选定跟哪一组pod亲和
+          matchFields:
+        # <[]Object> 节点字段选择器
+          - key: zone
+          # <string> -required-检查标签的key
+            operator: in
+            # <string> -required- 等值操作符选择
+            values:
+            # <[]string> 给定值
+            - foo
+            - bar     
+          matchLabels:
+          # <map[string]string> 支持给定多个键值对,格式如下
+            app: myapp
+            release: canary   
+        weight: 60
+      requiredDuringSchedulingIgnoredDuringExecution:
+      # <[]Object> 必须满足的亲和定义,硬亲和性
+      - topologyKey: kubernetes.io/hostname
+      # <string> -required- 位置拓扑键,指定与什么位置亲和
+        namespaces: xxxx
+      # <[]string> 指定下面设置的pod是哪一个名称空间中的
+      # 如果不指定默认为当前创建 pod的名称空间中
+        labelSelector:
+      # <Object> 标签选择器,选定跟哪一组pod亲和
+          matchFields:
+        # <[]Object> 节点字段选择器
+          - key: zone
+          # <string> -required-检查标签的key
+            operator: in
+            # <string> -required- 等值操作符选择
+            values:
+            # <[]string> 给定值
+            - foo
+            - bar     
+          matchLabels:
+          # <map[string]string> 支持给定多个键值对,格式如下
+            app: myapp
+            release: canary   
+    podAntiAffinity:
+    # <Object> pod反亲和性,不能符合下面指定的条件
+      preferredDuringSchedulingIgnoredDuringExecution:
+      # <[]Object> 尽量满足的亲和定义,软亲和性
+      - podAffinityTerm:
+      # <Object> -required-pod尽量满足
+        topologyKey: kubernetes.io/hostname
+      # <string> -required- 位置拓扑键,指定与什么位置亲和
+        namespaces: xxxx
+      # <[]string> 指定下面设置的pod是哪一个名称空间中的
+      # 如果不指定默认为当前创建 pod的名称空间中
+        labelSelector:
+      # <Object> 标签选择器,选定跟哪一组pod亲和
+          matchFields:
+        # <[]Object> 节点字段选择器
+          - key: zone
+          # <string> -required-检查标签的key
+            operator: in
+            # <string> -required- 等值操作符选择
+            values:
+            # <[]string> 给定值
+            - foo
+            - bar     
+          matchLabels:
+          # <map[string]string> 支持给定多个键值对,格式如下
+            app: myapp
+            release: canary   
+        weight: 60      
+      requiredDuringSchedulingIgnoredDuringExecution:
+      # <[]Object> 必须满足的亲和定义,硬亲和性
+      - topologyKey: kubernetes.io/hostname
+      # <string> -required- 位置拓扑键,指定与什么位置亲和
+        namespaces: xxxx
+      # <[]string> 指定下面设置的pod是哪一个名称空间中的
+      # 如果不指定默认为当前创建 pod的名称空间中
+        labelSelector:
+      # <Object> 标签选择器,选定跟哪一组pod亲和
+          matchFields:
+        # <[]Object> 节点字段选择器
+          - key: zone
+          # <string> -required-检查标签的key
+            operator: in
+            # <string> -required- 等值操作符选择
+            values:
+            # <[]string> 给定值
+            - foo
+            - bar     
+          matchLabels:
+          # <map[string]string> 支持给定多个键值对,格式如下
+            app: myapp
+            release: canary  
+  tolerations:
+  # <[]Object> 污点容忍度设置,当匹配到污点时按照effect执行容忍操作
+  # 如果节点上有污点,而pod没设置容忍则不会调度到节点上
+  - effect: NoShedule
+  # <string> 定义对Pod排斥效果,设置容忍操作 
+  # NoShedule:仅影响调度过程,对现存的Pod对象不产生影响    
+  # NoExecute:既影响调度过程,也影响现在的Pod对象
+  # 不容忍的Pod对象将被驱逐
+  # PreferNoSchedule:NoShedule优先
+    key: "node-type"
+    # <string> 键
+    operator: "Exists"
+    # <string>比较操作符
+    value: "xxx"
+    # <string> 值
+    tolerationSeconds: 3
+    # <integer> 等多久后被驱逐,默认为0s,马上被驱逐
+  serviceAccountName: jcadmin
+  # <string> 指定pod连接apiserver时使用的帐号,需要在外面预先创建
+  # 也可以用于连接私有的镜像仓库
+  hostNetwork: false
+  # <boolean>是否使用HOST主机网络名称空间,默认不使用
+  hostIPC: false
+  # <boolean> 是否共享IPC名称空间
+  hostPID: false
+  # <boolean>是否共享host主机的PID名称空间
+  hostname: xxxx
+  # <string> 如果pod定义了hostname属性则检查节点hostname是否匹配
+  restartPolicy: Always
+  # <string> 定义的容器重启策略
+  # Always(挂了必须重启)
+  # OnFailure(只有状态为错误时重启)
+  # Never(从不重启),默认Always
+  # 重启逻辑为每重启一次加10秒间隔时间,第一重启立即重启,第二次10s后,第三次20s
+  nodeSelector:
+  # <map[string]string>节点选择器,用于根据标签选择pod运行在哪个节点上,标签选择格式如下
+  # 支持两种标签选择器( matchLabels与matchExpressions)
+    disktype: ssd
+  nodeName: t1.wft.com
+  # <string>直接节点标签选择器,直接决定pods运行在哪个节点上
+  containers:
+  # <[]Object> -required-指定容器对象资源,可以设置多个每个-name配置段设置一个
+  - name: myapp
+  # <string>指定容器名称
+    resources:
+    # <Object> 资源请求与限制指标,两个指标需要同时使用
+    # cpu限制中,1颗虚拟CPU=1000个millicoresCPU
+    # 因此,500m的cpu等0.5CPU
+    # 1000进制内存计量单位:E、P、T、G、M、K、
+    # 1024进制内存计量单位:Ei、Pi、Ti、Gi、Mi、Ki、
+    # https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+      limits: 
+      # <map[string]string>指定pod资源最低需求
+        cpu: "200m"
+        memory: "64Mi"
+      requests:
+      # <map[string]string>指定pod资源限制最大限制
+        cpu: "200m"
+        memory: "64Mi"
+    image: ikubernetes/myapp:v1
+    # <string>指定镜像资源
+    imagePullPolicy: Always
+    # <string>镜像获取策略,Always(不论有没有总是去仓库), Never(本地有就用,没有就等待)
+    # IfNotPresent(如果本地存在就使用,没有就下载),如果标签是latest的默认值为Always
+    # 否则默认值为IfNotPresent,一旦创建不可以更改。
+    env:
+    # <[]Object> 定义容器环境变量的两种写法
+    # 可以使用kv方式定义,可以定义多个
+    - name: REDIS_HOST 
+    # <string> -required- kv写法,name对应容器来面变量名称
+    # 每个变量一个name
+    # 此字段也可以是容器里面服务配置文件里面的变量名称
+    # 里面定义叫什么这里就要写什么
+      value: redis.default.svc.cluster.local
+      #<string> 变量的值
+    - name: REDIS_HOST 
+    # <string> -required- 引用其他资源写法,name对应容器来面变量名称 
+    # 每个变量一个name  
+    # 此字段也可以是容器里面服务配置文件里面的变量名称
+    # 里面定义叫什么这里就要写什么 
+      valueFrom:
+      # <Object> 引用其他对象数据给变量赋值,此段为赋值部分
+        configMapKeyRef:
+        # <Object>引用configmap的键值,configmap需要实现创建好
+          name: nginx-config
+          # <string> 需要引用configmap资源的名称
+          key: nginx_port
+          # <string> -required- 需要在资源对象里面引用的key 
+          optional: flase
+          # <boolean> 当找不定义引用的key是否忽略报错
+        fieldRef:
+        # <Object>引用当前pod的字段,支持如下
+          fieldPath: spec.nodeName
+          # <string> -required-
+          # spec.nodeName 节点名称
+          # status.hostIP 节点ip地址
+          # status.podIP pod对象的ip地址
+          # metadata.name pod对象名称
+          # metadata.namespace pod对象名称空间
+          # metadata.labels['KEY']  pod对象标签中指定键的值
+          # metadata.annotations['KEY'] pod对象标签中指定键的值
+          # metadata.uid pod对象的uid
+          # spec.serviceAccountName pod对象使用的serviceAccountName资源名称
+        resourceFieldRef:
+        # <Object> 引用资源需求与限制的数据
+        secretKeyRef:
+        # <Object> 引用secret对象资源的数据
+          name: mysql-root-password
+          # <string> 引用的configmap资源名称
+          key: password
+          # <string> -required- 引用的key
+    envFrom:
+    # <[]Object> 同时将多个configmap里面的所有键值导入
+    - prefix: HTCFG_
+    # <string> 避免多个configmap引用的键冲突,在每个键前使用前缀
+      configMapRef: 
+      # <Object>引用configmap的键值,configmap需要实现创建好
+      name: nginx-config
+      # <string> 需要引用configmap资源的名称
+      optional: flase
+      # <boolean> 当找不定义引用的key是否忽略报错      
+    lifecycle:
+    # <Object>生命周期钩子
+      postStart:
+      # <Object>容器启动后需要执行的工作,如果执行失败会按照重启策略重启容器
+        exec: 
+        # <Object>执行探针,执行的自定义命令必须是容器存在的
+          command: ["/bin/sh","-c","mkdir -p /data/web/html; echo 'home page' >> /data/web/html/index.html"]
+          # <[]string> 执行命令返回成功则表示容器执行成功,否则返回执行失败
+        httpGet:
+        # <Object>http探测,返回200,300,301表示OK,其他表示不OK
+          host: 192.168.0.100
+          # <string>指定地址,默认为pod的ip地址
+          path: /index.html 
+          # <string>指定uri
+          port: 80
+          # <string> -required-指定端口,或者service名称
+          # 如果使用名称则需要在容器暴露时设置好才能被调用
+          scheme: HTTP
+          # <string>建立连接使用的协议,只可以是HTTP与HTTPS,默认为HTTP
+          httpHeaders:  
+          # <[]Object>自定义的请求报文首部格式后如下
+            name: test
+            # <string> -required-
+            value: test
+            # <string> -required-
+        tcpSocket:
+        # <Object>tcp探针
+          host: 192.168.0.100
+          # <string> 哪个主机,默认为pod的ip地址
+          port: 80
+          # <string> -required-哪个端口 
+      preStop:
+      # <Object>容器终止前需要执行完的工作,执行完才会终止容器
+        exec: 
+        # <Object>执行探针,执行的自定义命令必须是容器存在的
+          command: ["/bin/sh","-c","mkdir -p /data/web/html; echo 'home page' >> /data/web/html/index.html"]
+          # <[]string> 执行命令返回成功则表示容器执行成功,否则返回执行失败
+        httpGet:
+        # <Object>http探测,返回200,300,301表示OK,其他表示不OK
+          host: 192.168.0.100
+          # <string>指定地址,默认为pod的ip地址
+          path: /index.html 
+          # <string>指定uri
+          port: 80
+          # <string> -required-指定端口,或者service名称
+          # 如果使用名称则需要在容器暴露时设置好才能被调用
+          scheme: HTTP
+          # <string>建立连接使用的协议,只可以是HTTP与HTTPS,默认为HTTP
+          httpHeaders:  
+          # <[]Object>自定义的请求报文首部格式后如下
+            name: test
+            # <string> -required-
+            value: test
+            # <string> -required-
+        tcpSocket:
+        # <Object>tcp探针
+          host: 192.168.0.100
+          # <string> 哪个主机,默认为pod的ip地址
+          port: 80
+          # <string> -required-哪个端口 
+    readinessProbe:
+    # <Object>指定exec|httpGet|tcpSocket其中一种探针用于探测容器中的服务是否能提供服务(就绪性探测)
+    # 用于判断容器中的服务就绪后的容器才加入service,如果没有设置默认10s加入service
+      exec: 
+      # <Object>执行探针,执行的自定义命令必须是容器存在的
+        command: ["test","-e","/tmp/healthy"]       
+        # <[]string> 执行命令返回"0"成功则表示容器执行成功,其他返回均表示失败 
+      httpGet:
+      # <Object>http探测,返回200,300,301表示OK,其他表示不OK
+        host: 192.168.0.100
+        # <string>指定地址,默认为pod的ip地址
+        path: /index.html 
+        # <string>指定uri
+        port: 80
+        # <string> -required-指定端口,或者service名称
+        # 如果使用名称则需要在容器暴露时设置好才能被调用
+        scheme: HTTP
+        # <string>建立连接使用的协议,只可以是HTTP与HTTPS,默认为HTTP
+        httpHeaders:  
+        # <[]Object>自定义的请求报文首部格式后如下
+          name: test
+          # <string> -required-
+          value: test
+          # <string> -required-
+      tcpSocket:
+      # <Object>tcp探针
+        host: 192.168.0.100
+        # <string> 哪个主机,默认为pod的ip地址
+        port: 80
+        # <string> -required-哪个端口 
+      failureThreshold: 3
+      # <integer>探测失败容忍次数,默认为3,最小值为1
+      periodSeconds: 10
+      # <integer>每次探测间隔时间,默认10s
+      timeoutSeconds:
+      # <integer>每次探测超时时间,默认1s
+      initialDelaySeconds: 5
+      # <integer>容器启动后多久开始探测,默认0s
+      successThreshold: 1
+      # <integer>当处于失败状态时,检测成功几次才算成功,默认为1
+    livenessProbe:
+    # <Object>,指定exec|httpGet|tcpSocket其中一种探测容器是否存活,(存活性探测)
+    # 用于检查容器,是否健康
+      exec: 
+      # <Object>执行探针,执行的自定义命令必须是容器存在的
+        command: ["test","-e","/tmp/healthy"]       
+        # <[]string> 执行命令返回"0"成功则表示容器执行成功,其他返回均表示失败
+      httpGet:
+      # <Object>http探测,返回200,300,301表示OK,其他表示不OK
+        host: 192.168.0.100
+        # <string>指定地址,默认为pod的ip地址
+        path: /index.html 
+        # <string>指定uri
+        port: 80
+        # <string> -required-指定端口,或者service名称
+        # 如果使用名称则需要在容器暴露时设置好才能被调用
+        scheme: HTTP
+        # <string>建立连接使用的协议,只可以是HTTP与HTTPS,默认为HTTP
+        httpHeaders:  
+        # <[]Object>自定义的请求报文首部格式后如下
+          name: test
+          # <string> -required-
+          value: test
+          # <string> -required-
+      tcpSocket:
+      # <Object>tcp探针
+        host: 192.168.0.100
+        # <string> 哪个主机,默认为pod的ip地址
+        port: 80
+        # <string> -required-哪个端口 
+      failureThreshold: 3
+      # <integer>探测失败容忍次数,默认为3,最小值为1
+      periodSeconds: 10
+      # <integer>每次探测间隔时间,默认10s
+      timeoutSeconds: 1
+      # <integer>每次探测超时时间,默认1s
+      initialDelaySeconds: 5
+      # <integer>容器启动后多久开始探测,默认0s
+      successThreshold: 1
+      # <integer>当处于失败状态时,检测成功几次才算成功,默认为1
+    ports:
+    # <[]Object>端口名称,端口号列表,协议,地址,主要是信息性的显示暴露
+    # 即如果容器本身是暴露端口的，此处就算不指定暴露端口也会被暴露出去，此处与docker的-p不一样
+    # 可以设置多个每个-name配置段设置一个
+    - name: http
+    # <string>指定端口名称
+      containerPort: 80 
+      # <integer> -required-指定容器暴露的端口
+      hostIP: 0.0.0.0
+      # <string>指定节点地址,由于pod创建在集群里头是动态的,所以无法确定节点地址.该字段一般指定0.0.0.0
+      hostPort: 80
+      # <integer>指定端口,将宿主机的80端口转发至containerPort定义端口
+      protocol: TCP
+      # <string>指定协议,默认TCP
+    command: 
+    - "/bin/sh"
+    - "-c"
+    - "sleep 7200"  
+    # <[]string>用来覆盖容器启动命令,类似docker的Entrypoint,且代码不会运行在shell中
+    # 如果要运行在shell中必须指明命令
+    # 如果没有提供command且镜像里面提供了Entrypoint,则运行容器的Entrypoint
+    args: ["-c", "while true; do echo hello; sleep 10;done"]
+    # <[]string>容器没有定义CMD时,作为参数传递给容器的Entrypoint
+    # 容器本身定义了CMD时,则覆盖容器里面的CMD所定义的内容接将args指定作为参数传给Entrypoint
+    # 变量引用格式$(VAR_NAME),如果不想被引用$$(VAR_NAME)
+    # command与args详细关系如下:
+    # https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+    # 如果没有定义command也没有定义args,则默认使用docker镜像中的Entrypoint与Cmd
+    # 如果只提供command但没有提供args,则只运行command,镜像中的Entrypoint与Cmd被忽略
+    # 如果只提供args但没定义command,则使用镜像中的Entrypoint做命令,把args当参数传入,忽略镜像中的Cmd
+    # 如果提供了command与args,就表示完全自定义参数,镜像中的Entrypoint与Cmd被忽略
+    volumeMounts:
+    # <[]Object>指定挂载存储资源配置,可以挂载多个,每个name定义一个
+    - name: testvolumes
+    # <string> -required- 下面定义好要挂载卷资源的名称
+      mountPath: /data/web/html 
+      # <string> -required- 挂载在容器的对应路径
+      readOnly: false
+      # <boolean>是否要只读挂载,默认为false
+      subPath: test
+      # <string>挂载卷时使用的子路径
+      # 即在mountPath指定的路径下使用一个子路径作为其挂载点
+  imagePullSecrets:
+  # <[]Object> 引用外面定义好的仓库secrets对象
+    name: local-registry
+    # <string> 仓库secrets对象名称
+  volumes:
+  # <[]Object>定义存储资源类型,可以定义多个卷,每个name对应一个类型
+  - name: testvolumes
+  # <string> -required-定义存储资源名称,对应下面的类型,每次定义选其一
+    configMap:
+    # <Object> configMap类型,用于统一存明文放配置文件的资源,再以特殊存储卷的方式挂载
+      name: nginx-config
+      # <string> 定义需要应用的configmap资源名称,configmap资源需要先定义好
+      items:
+      # <[]Object> 用于当configmap是以目录来定义的
+      # 而目录里面有多个文件
+      # 当要导出指定的文件作为key时使用
+      # 每个-key配置块导入一个文件
+      - key: myserver.conf
+      # 键名
+        path: myserver.conf
+        # <string> -required- 挂载到容器时候的文件名
+        mode: 0644
+        # <integer> 权限
+    secret:
+    # <Object> secret类型,除了secretName配置几乎configmap相同
+      secretName: nginx-ssl
+      # <string> 指定secretName资源名称
+    emptyDir: 
+    # <Object> emptyDir类型,在node上启动一个pod并在本地分配一个存储卷,一旦pod删除存储卷也被删除,
+    # 一般用作临时目录或者缓存使用,此存储卷是可以宿主机的内存空间
+      medium:
+      # <string>媒介类型,磁盘或者memory,如果为""空,默认为磁盘
+      sizeLimit:
+      # <string>空间上限
+    gitRepo:
+    # <Object> gitRepo类型,在创建容器的时候往远程仓库拉一次数据
+    # 但拉下来以后新的变动数据不会像仓库提交
+    # 使用的机器必须要安装git
+    # k8s在1.12时已经废弃
+      repository: https://gitee.com/76439984/shell.git
+      # <string> -required- 仓库地址
+      revision: master
+      # <string> 特定revision的提交hash码
+      directory: .
+      # <string> .表示直接将仓库复制到卷目录中
+    nfs:
+    # <Object> nfs类型,定义使用nfs,当一个卷来用,如果多目录需要写多个
+    # nfs共享存储需要预先部署,例如nfs服务器共享/data/volumes
+    # 会自动挂载到nfs服务器的共享目录
+      path: /data/volumes
+      # <string> -required- nfs共享路径
+      server: 192.168.16.210
+       # <string> -required-服务器地址
+      readOnly: false
+      # <boolean>是否设置成只读,默认false
+    hostPath:
+    # <Object> hostPath类型,宿主机路径,把宿主机目录挂到pod,pod删除后数据不删除
+      path: /data/pod/volume1
+      # <string> -required-指定宿主路径
+      type: DirectoryOrCreate
+      # <string> 类型用于影响path的属性
+      # DirectoryOrCreate    挂载一个已存在的目录,若不存在就创建
+      # 创建的权限为0755 属主kubelet
+      # Directory    必须实现存在,不存在就报错
+      # FileOrCreate    挂载一个文件不存在就创建,0644 属主kubelet
+      # File    必须是一个文件,没有就报错
+      # Socket    必须是一个Socket文件
+      # CharDevice    必须是个字符类的文件
+      # BlockDevice    必须是块类型的文件
+      # https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+    persistentVolumeClaim:
+    # <Object> pvc类型,用来挂载已经定义好的pvc
+      claimName: xxx
+      # <string> -required-调用的pvc资源名称
+      readOnly: false
+      # <boolean>是否只读模式,默认false
+    rbd:
+    # <Object> rbd类型,
+    #创建ceph分布式存储卷,需要在每个节点上安装ceph软件包
+      monitors:
+      # <[]string> -required- ceph存储监视器,逗号分隔
+      - '192.168.16.200:6789'
+      - '192.168.16.201:6789'
+      - '192.168.16.202:6789'
+      image: redis
+      # <string> -required- image的名称
+      pool: kube
+      # <string> rados存储池名称,默认为RBD
+      user: admin
+      # <string> rados用户名,默认admin
+      keyring :
+      # <string> 认证时使用的keyring文件路径,默认/etc/ceph/keyring
+      secretRef:
+      # <Object> 认证时使用的保存有相应认证信息的secret对象
+      # 会覆盖有keyring字段提供的密钥信息
+        name: ceph-secret
+        # <string> 对象名称
+      readOnly: false
+      # <boolean>是否只读,默认false
+      fsType: ext4
+      # <string> 要挂载卷的文件系统类型
+      # 文件类型必须是节点操作系统支持的文件系统类型
+      # 例如 ext4 xfs ntfs等,默认ext4
+    glusterfs:
+    # <Object> glusterfs类型,使用glusterfs集群
+    # 需要在各节点上部署glusterfs和glusterfs-fuse
+    # 支持动态供给机制,需要部署heketi用户请求存储管理接口
+      endpoints: glusterfs-endpoints
+      # <string> -required- endpoints资源名称,endpoints预先配置好
+      # 用于提供gluster集群的节点信息作为访问入口
+      path: kube-redis
+      # <string> -required- 用到的gfs集群的卷路径
+      readOnly: false
+      # <boolean> 是否只读,默认false
+    cinder:
+    # <Object> cinder类型
+      volumeID: e2b8d2f7-wece-90dl-a505-4acf607a90bc 
+      # <string> -required- 用于表示cinder的存储卷标识符
+      readOnly: false
+      # <boolean>是否只读,默认false
+      fsType: ext4
+      # <string> 要挂载卷的文件系统类型
+      # 文件类型必须是节点操作系统支持的文件系统类型
+      # 例如 ext4 xfs ntfs等,默认ext4
+
+
+
+
+
+
+
+
+
+
+
+
+
