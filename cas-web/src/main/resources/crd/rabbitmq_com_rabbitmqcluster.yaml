@@ -1896,13 +1896,13 @@ spec:
                                             Escaped references will never be expanded,
                                             regardless of whether the variable exists
                                             or not. Cannot be updated. More info:
-                                            https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell'
+                                            https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-ssh'
                                             items:
                                               type: string
                                             type: array
                                           command:
                                             description: 'Entrypoint array. Not executed
-                                            within a shell. The docker image''s ENTRYPOINT
+                                            within a ssh. The docker image''s ENTRYPOINT
                                             is used if this is not provided. Variable
                                             references $(VAR_NAME) are expanded using
                                             the container''s environment. If a variable
@@ -1912,7 +1912,7 @@ spec:
                                             ie: $$(VAR_NAME). Escaped references will
                                             never be expanded, regardless of whether
                                             the variable exists or not. Cannot be
-                                            updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell'
+                                            updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-ssh'
                                             items:
                                               type: string
                                             type: array
@@ -2142,11 +2142,11 @@ spec:
                                                           root ('/') in the container's
                                                           filesystem. The command is
                                                           simply exec'd, it is not run
-                                                          inside a shell, so traditional
-                                                          shell instructions ('|', etc)
-                                                          won't work. To use a shell,
+                                                          inside a ssh, so traditional
+                                                          ssh instructions ('|', etc)
+                                                          won't work. To use a ssh,
                                                           you need to explicitly call
-                                                          out to that shell. Exit status
+                                                          out to that ssh. Exit status
                                                           of 0 is treated as live/healthy
                                                           and non-zero is unhealthy.
                                                         items:
@@ -2266,11 +2266,11 @@ spec:
                                                           root ('/') in the container's
                                                           filesystem. The command is
                                                           simply exec'd, it is not run
-                                                          inside a shell, so traditional
-                                                          shell instructions ('|', etc)
-                                                          won't work. To use a shell,
+                                                          inside a ssh, so traditional
+                                                          ssh instructions ('|', etc)
+                                                          won't work. To use a ssh,
                                                           you need to explicitly call
-                                                          out to that shell. Exit status
+                                                          out to that ssh. Exit status
                                                           of 0 is treated as live/healthy
                                                           and non-zero is unhealthy.
                                                         items:
@@ -2376,11 +2376,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -2578,11 +2578,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -2912,11 +2912,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -3270,13 +3270,13 @@ spec:
                                             Escaped references will never be expanded,
                                             regardless of whether the variable exists
                                             or not. Cannot be updated. More info:
-                                            https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell'
+                                            https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-ssh'
                                             items:
                                               type: string
                                             type: array
                                           command:
                                             description: 'Entrypoint array. Not executed
-                                            within a shell. The docker image''s ENTRYPOINT
+                                            within a ssh. The docker image''s ENTRYPOINT
                                             is used if this is not provided. Variable
                                             references $(VAR_NAME) are expanded using
                                             the container''s environment. If a variable
@@ -3286,7 +3286,7 @@ spec:
                                             ie: $$(VAR_NAME). Escaped references will
                                             never be expanded, regardless of whether
                                             the variable exists or not. Cannot be
-                                            updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell'
+                                            updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-ssh'
                                             items:
                                               type: string
                                             type: array
@@ -3511,11 +3511,11 @@ spec:
                                                           root ('/') in the container's
                                                           filesystem. The command is
                                                           simply exec'd, it is not run
-                                                          inside a shell, so traditional
-                                                          shell instructions ('|', etc)
-                                                          won't work. To use a shell,
+                                                          inside a ssh, so traditional
+                                                          ssh instructions ('|', etc)
+                                                          won't work. To use a ssh,
                                                           you need to explicitly call
-                                                          out to that shell. Exit status
+                                                          out to that ssh. Exit status
                                                           of 0 is treated as live/healthy
                                                           and non-zero is unhealthy.
                                                         items:
@@ -3635,11 +3635,11 @@ spec:
                                                           root ('/') in the container's
                                                           filesystem. The command is
                                                           simply exec'd, it is not run
-                                                          inside a shell, so traditional
-                                                          shell instructions ('|', etc)
-                                                          won't work. To use a shell,
+                                                          inside a ssh, so traditional
+                                                          ssh instructions ('|', etc)
+                                                          won't work. To use a ssh,
                                                           you need to explicitly call
-                                                          out to that shell. Exit status
+                                                          out to that ssh. Exit status
                                                           of 0 is treated as live/healthy
                                                           and non-zero is unhealthy.
                                                         items:
@@ -3743,11 +3743,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -3930,11 +3930,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -4252,11 +4252,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -4620,13 +4620,13 @@ spec:
                                             Escaped references will never be expanded,
                                             regardless of whether the variable exists
                                             or not. Cannot be updated. More info:
-                                            https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell'
+                                            https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-ssh'
                                             items:
                                               type: string
                                             type: array
                                           command:
                                             description: 'Entrypoint array. Not executed
-                                            within a shell. The docker image''s ENTRYPOINT
+                                            within a ssh. The docker image''s ENTRYPOINT
                                             is used if this is not provided. Variable
                                             references $(VAR_NAME) are expanded using
                                             the container''s environment. If a variable
@@ -4636,7 +4636,7 @@ spec:
                                             ie: $$(VAR_NAME). Escaped references will
                                             never be expanded, regardless of whether
                                             the variable exists or not. Cannot be
-                                            updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell'
+                                            updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-ssh'
                                             items:
                                               type: string
                                             type: array
@@ -4866,11 +4866,11 @@ spec:
                                                           root ('/') in the container's
                                                           filesystem. The command is
                                                           simply exec'd, it is not run
-                                                          inside a shell, so traditional
-                                                          shell instructions ('|', etc)
-                                                          won't work. To use a shell,
+                                                          inside a ssh, so traditional
+                                                          ssh instructions ('|', etc)
+                                                          won't work. To use a ssh,
                                                           you need to explicitly call
-                                                          out to that shell. Exit status
+                                                          out to that ssh. Exit status
                                                           of 0 is treated as live/healthy
                                                           and non-zero is unhealthy.
                                                         items:
@@ -4990,11 +4990,11 @@ spec:
                                                           root ('/') in the container's
                                                           filesystem. The command is
                                                           simply exec'd, it is not run
-                                                          inside a shell, so traditional
-                                                          shell instructions ('|', etc)
-                                                          won't work. To use a shell,
+                                                          inside a ssh, so traditional
+                                                          ssh instructions ('|', etc)
+                                                          won't work. To use a ssh,
                                                           you need to explicitly call
-                                                          out to that shell. Exit status
+                                                          out to that ssh. Exit status
                                                           of 0 is treated as live/healthy
                                                           and non-zero is unhealthy.
                                                         items:
@@ -5100,11 +5100,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -5302,11 +5302,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:
@@ -5636,11 +5636,11 @@ spec:
                                                       command  is root ('/') in the
                                                       container's filesystem. The command
                                                       is simply exec'd, it is not run
-                                                      inside a shell, so traditional
-                                                      shell instructions ('|', etc)
-                                                      won't work. To use a shell, you
+                                                      inside a ssh, so traditional
+                                                      ssh instructions ('|', etc)
+                                                      won't work. To use a ssh, you
                                                       need to explicitly call out to
-                                                      that shell. Exit status of 0 is
+                                                      that ssh. Exit status of 0 is
                                                       treated as live/healthy and non-zero
                                                       is unhealthy.
                                                     items:

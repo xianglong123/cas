@@ -3,6 +3,24 @@ Accept: */*
 
 {"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
 
+<> 2020-11-18T114243.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
+<> 2020-11-18T113208.200.txt
+
+###
+
+POST http://localhost:6668
+Accept: */*
+
+{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
+
 <> 2020-11-18T111946.200.txt
 
 ###
@@ -491,28 +509,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 {"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T035647.500.json
-
-###
-
-GET http://localhost:8081/k8s/addMqCluster
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"typeCd":"0020","keyType":"0","keys":"15811317734","content":"TEST_YC_SMS_OK"}
-
-<> 2020-09-22T034735.500.json
 
 ###
 

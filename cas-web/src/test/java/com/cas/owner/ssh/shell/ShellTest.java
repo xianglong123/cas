@@ -1,4 +1,4 @@
-package com.cas.owner.shell;
+package com.cas.owner.ssh.shell;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,9 +14,8 @@ import java.io.InputStreamReader;
 public class ShellTest {
 
     public static void main(String[] args) throws IOException {
-        Process exec = Runtime.getRuntime().exec("ls -l /");
+        Process exec = Runtime.getRuntime().exec("tail -f /Users/xianglong/Desktop/test.log");
         printStream(exec.getInputStream());
-        printStream(exec.getErrorStream());
     }
 
     private static void printStream(InputStream inputStream) {
@@ -25,13 +24,20 @@ public class ShellTest {
             return;
         }
         String line = "";
-        try (BufferedReader input = new BufferedReader(new InputStreamReader(inputStream))) {
+        BufferedReader input = null;
+        try {
+            input = new BufferedReader(new InputStreamReader(inputStream));
             while ((line = input.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException e1) {
             System.out.println("输出流失败" + e1);
             e1.printStackTrace();
+        }
+        try {
+            input.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

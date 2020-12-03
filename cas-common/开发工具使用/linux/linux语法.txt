@@ -17,3 +17,12 @@
 17. 解压压缩文件
 
 
+防火墙开放ftp服务
+
+firewall-cmd --permanent --add-service=ftp
+重启防火墙：
+
+firewall-cmd --reload
+查看防火墙：
+
+firewall-cmd --list-all

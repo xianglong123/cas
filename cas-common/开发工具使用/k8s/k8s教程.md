@@ -38,4 +38,4 @@
 
 
 ### mysql 通过K8s 访问无法输入中文
-    通过docker 进入，用这个命令 docker exec -it 28bb35a4538e env LANG=C.UTF-8 /bin/bash
+    通过docker 进入，用这个命令 docker exec -it c08629496e59 env LANG=C.UTF-8 /bin/bash

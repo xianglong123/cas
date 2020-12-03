@@ -88,4 +88,11 @@ dependencies {
     // netty
     compile 'io.netty:netty-all:4.1.20.Final'
 
+    // websocket
+    compile 'org.springframework:spring-websocket'
+
+    // ssh 连接远程客户端
+    compile 'ch.ethz.ganymed:ganymed-ssh2:262'
+
+
 }

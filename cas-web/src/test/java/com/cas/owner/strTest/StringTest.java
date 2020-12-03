@@ -981,6 +981,39 @@ public class StringTest{
         System.out.println("i" + "\t" + "love" + "\t" + "you");
     }
 
+    /**
+     * List转json
+     */
+    @Test
+    public void test62() {
+        Map<String, List<UnixDO>> map = new HashMap<>();
+        List<UnixDO> MQ_host_Info = Arrays.asList(new UnixDO("192.168.56.104", "k8s-node2"), new UnixDO("192.168.56.105", "k8s-node1"));
+        map.put("MQ_host_Info", MQ_host_Info);
+        String s = JSONObject.toJSONString(map);
+        System.out.println(s);
+
+    }
+
+    @Data
+    class UnixDO {
+        private String ipadd;
+        private String hostname;
+
+        public UnixDO(String ipadd, String hostname) {
+            this.ipadd = ipadd;
+            this.hostname = hostname;
+        }
+    }
+
+    @Test
+    public void test63() {
+        String str = "192.168.56.104,192.168.56.105,";
+        String[] split = str.split(",");
+        for (String s : split) {
+            System.out.println("----");
+            System.out.println(s);
+        }
+    }
 
 
 

@@ -555,7 +555,7 @@ spec:
       # 但拉下来以后新的变动数据不会像仓库提交
       # 使用的机器必须要安装git
       # k8s在1.12时已经废弃
-        repository: https://gitee.com/76439984/shell.git
+        repository: https://gitee.com/76439984/ssh.git
         # <string> -required- 仓库地址
         revision: master
         # <string> 特定revision的提交hash码

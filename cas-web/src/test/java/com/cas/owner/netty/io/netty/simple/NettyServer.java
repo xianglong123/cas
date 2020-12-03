@@ -16,7 +16,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * @version: V1.0
  * @review:
  */
-public class NettyServer implements NettyServer2 {
+public class NettyServer {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -27,7 +27,7 @@ public class NettyServer implements NettyServer2 {
         // 3. 两个都是无限循环
         // 4. boosGroup 和 workGroup 含有的子线程（NioEventLoop）的个数
         // 默认实际 cpu * 2  sout(NettyRuntime.availableProcessors())
-        EventLoopGroup bossGroup = new NioEventLoopGroup();
+        EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workGroup = new NioEventLoopGroup();
         try {
             // 创建服务器端的启动对象，配置参数

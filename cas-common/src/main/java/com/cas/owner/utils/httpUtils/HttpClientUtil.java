@@ -1,5 +1,6 @@
 package com.cas.owner.utils.httpUtils;
 
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.Charsets;
 import org.apache.http.HttpEntity;
@@ -38,6 +39,7 @@ public class HttpClientUtil {
     public static String postJSON(String path, String json) throws Exception {
         HttpEntity entity = new StringEntity(json, Charsets.UTF_8);
         return postRequest(path, "application/json", entity);
+
     }
 
     //发送post请求
