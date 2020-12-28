@@ -3,14 +3,12 @@ package com.cas.controller;
 
 import com.cas.domain.User;
 import com.cas.domain.ValidatorPojo;
-import com.cas.pojo.QueAnsPo;
 import com.cas.owner.service.accountService.AccountService;
 import com.cas.owner.service.countDownLatchService.CountDownLatchService;
 import com.cas.owner.service.inqueryService.InqueryService;
 import com.cas.owner.service.mongodService.UserRepository;
 import com.cas.owner.service.pdfService.PdfService;
 import com.cas.owner.service.pdfService.PdfView;
-import com.cas.owner.service.questionService.QuestionService;
 import com.cas.owner.service.redisService.Redis2Service;
 import com.cas.owner.service.scheduled.DynamicScheduleTask;
 import com.cas.owner.service.testService.HelloService;
@@ -101,9 +99,6 @@ public class TestController {
 
     @Autowired
     private PdfService pdfService;
-
-    @Autowired
-    private QuestionService questionService;
 
     @Autowired
     private Redis2Service redis2Service;
@@ -502,23 +497,6 @@ public class TestController {
         mv.addObject("userList", userList);
         log.info("pdf 查询结束......");
         return mv;
-    }
-
-    /**
-     * 添加 问题 至 que_ans表
-     *
-     * @param queAnsPo
-     * @return
-     */
-    @PostMapping("/addQuestion")
-    public String addQuestion(QueAnsPo queAnsPo) {
-        try {
-            questionService.add(queAnsPo);
-        } catch (Exception e) {
-            log.error("数据添加失败", e);
-        }
-        log.info("问题添加成功：" + queAnsPo.getQuestion());
-        return "redirect:questionView";
     }
 
     /**

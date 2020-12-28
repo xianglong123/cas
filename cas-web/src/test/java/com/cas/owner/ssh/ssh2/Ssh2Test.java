@@ -32,8 +32,6 @@ public class Ssh2Test {
             session.close();
 
         }
-
-
     }
 
 

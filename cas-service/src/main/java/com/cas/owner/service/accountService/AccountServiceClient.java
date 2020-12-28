@@ -35,21 +35,8 @@ public class AccountServiceClient implements AccountService {
 
     private static final Queue<AsyncContext> CONNECTIONS = new ConcurrentLinkedQueue<>();
 
-
-    @Autowired
-    private DataSource dataSource;
-
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
-
     @Autowired
     private XlJdbcTemplate xlJdbcTemplate;
-
-    @Autowired
-    private DataSourceTransactionManager dataSourceTransactionManager;
-
-    @Autowired
-    private TransactionDefinition transactionDefinition;
 
     private static Map<String, Integer> autoMap = new HashMap<String, Integer>(){{
         put("num", 1);
@@ -63,9 +50,6 @@ public class AccountServiceClient implements AccountService {
     @Autowired
     private AccountMapper accountMapper;
 
-    @Autowired
-    private RedisTemplate redisTemplate;
-
     @Override
     public AccountPo queryAccount(String userId) {
         return accountMapper.queryAccount(userId);
@@ -78,7 +62,6 @@ public class AccountServiceClient implements AccountService {
      */
     @Override
     @CachePut(value = "redisCache", key = "'redis_user_1'")
-//    @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
     @Transactional
     public int add() {
         int add = accountMapper.add();

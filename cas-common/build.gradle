@@ -94,5 +94,10 @@ dependencies {
     // ssh 连接远程客户端
     compile 'ch.ethz.ganymed:ganymed-ssh2:262'
 
+    // ssh
+    compile 'com.jcraft:jsch:0.1.54'
+
+    // 视频流解析
+    compile 'xuggle:xuggle-xuggler:5.2'
 
 }

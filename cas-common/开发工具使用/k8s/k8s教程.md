@@ -10,6 +10,9 @@
 ### 强制删除pod
     k delete po admin-rabbitmq-server-0 -n admin-mq --force --grace-period=0
     
+### 强制删除不好用，一直处于 Terminating 状态使用下面的代码
+    k patch [pv/pvc] [pvName/pvcName]  -p '{"metadata":{"finalizers":null}}' -n mid-redis
+    
 ### 切换命名空间
     kubens [namespace]
     
@@ -38,4 +41,17 @@
 
 
 ### mysql 通过K8s 访问无法输入中文
-    通过docker 进入，用这个命令 docker exec -it c08629496e59 env LANG=C.UTF-8 /bin/bash
+    通过docker 进入，用这个命令 docker exec -it 8f0404a74e4f env LANG=C.UTF-8 /bin/bash
+    
+### 删除k8s的节点污点
+    kubectl taint node cloud04  node.kubernetes.io/unreachable
+    kubectl taint node cloud04 key1=value1:NoSchedule
+    kubectl taint nodes cloud03 node.kubernetes.io/unreachable:NoExecute-
+    kubectl taint node node1 key1=value1
+    node.kubernetes.io/unreachable:NoExecute
+    node.kubernetes.io/unreachable:NoSchedule
+    node.kubernetes.io/unreachable:NoExecute
+    node.kubernetes.io/unreachable:NoSchedule
+    
+    核心语句：kubectl taint nodes cloud03 node.kubernetes.io/unreachable:NoSchedule-
+    备注：在污点的后面加个'-'就可以了

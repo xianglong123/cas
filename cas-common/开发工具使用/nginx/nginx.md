@@ -56,3 +56,51 @@
 
 ## work的工作模式
     woker是真正工作的，采用喂狗式，就是挣抢工作来完成这种模式进行工作
+    
+## 查看nginx的版本号
+    nginx -v
+
+##  启动nginx
+    nginx
+
+## 启动nginx 
+    nginnx -s stop
+
+## 重新加载配置
+    nginx -s reload
+    
+## nginx 的配置文件
+    find / -name nginx.conf
+    nginx配置有三个部分组成:
+    第一部分 全局块
+    从配置文件开始到events 块之间的内容，只要会设置一些影响Nginx服务器整体运行的配置指令
+    比如 worker_processes 1; worker_processes值越大，可以支持的并发处理量也越多
+    
+    第二部分 events块
+    worker_connection 1024 ； 支持最大连接数
+    
+    第三部分 http块
+    Nginx 服务器配置中最频繁的部分
+    http块内也可以包括 http全局块，server块
+
+    ip_hash:每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题
+    upstream backserver {
+        ip_hash;
+        server 192.168.0.14:88;
+        server 192.168.0.15:80;
+    }
+    
+    fair:按后端服务器的响应时间来分配请求，响应时间短的优先分配
+    upstream backserver {
+        server server1;
+        server server2;
+        fair;
+    }
+    
+    url_hash:按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。
+    upstream backserver {
+        server squid1:3128;
+        server squid2:3128;
+        hash $request_uri;
+        hash_method crc32;
+    }123456

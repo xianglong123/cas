@@ -1,6 +1,6 @@
 #配置端口
 server:
-  port: 8081
+  port: 9000
   jsp-servlet:
     init-parameters:
       development: true

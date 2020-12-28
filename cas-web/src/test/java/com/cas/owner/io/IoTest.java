@@ -31,7 +31,6 @@ public class IoTest {
             ois = new ObjectInputStream(new FileInputStream("/Users/xianglong/Desktop/user.txt"));
             User user1 = (User) ois.readObject();
             User user2 = (User) ois.readObject();
-            String str = "xianglong";
             bis = new ByteArrayOutputStream(10);
             bis.write(12);
             byte[] bytes = bis.toByteArray();

@@ -13,7 +13,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
-import org.openjdk.jol.info.ClassLayout;
 
 import java.io.File;
 import java.nio.charset.Charset;
@@ -36,7 +35,6 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
-import java.util.concurrent.FutureTask;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -659,7 +657,7 @@ public class StringTest{
     public void test41() {
         User user = new User("123", "向龙", 24, new Date());
         System.out.println(user.hashCode());
-        System.out.println(ClassLayout.parseInstance(user).toPrintable());
+//        System.out.println(ClassLayout.parseInstance(user).toPrintable());
     }
 
     /**
@@ -871,6 +869,7 @@ public class StringTest{
         list.add("a");
         list.add("b");
         list.add("c");
+
         Queue<String> queue = new LinkedList<>();
 
     }
@@ -994,17 +993,27 @@ public class StringTest{
 
     }
 
+    @Test
+    public void test62_1() {
+        String str = "{\"uid\":\"129\",\"name\":\"aa\"}";
+        User user1 = JSONObject.parseObject(str, User.class);
+        System.out.println(user1.getName());
+    }
+
     @Data
     class UnixDO {
-        private String ipadd;
+        private String ip;
         private String hostname;
 
-        public UnixDO(String ipadd, String hostname) {
-            this.ipadd = ipadd;
+        public UnixDO(String ip, String hostname) {
+            this.ip = ip;
             this.hostname = hostname;
         }
     }
 
+    /**
+     * 字符串转数组遍历
+     */
     @Test
     public void test63() {
         String str = "192.168.56.104,192.168.56.105,";
@@ -1015,6 +1024,13 @@ public class StringTest{
         }
     }
 
-
+    /**
+     * 将逗号编程空格
+     */
+    @Test
+    public void test64() {
+        String str = "192.168.56.104,192.168.56.105,";
+        System.out.println(str.replace(",", "\t"));
+    }
 
 }

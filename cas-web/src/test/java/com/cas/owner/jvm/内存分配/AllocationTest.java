@@ -15,6 +15,9 @@ public class AllocationTest {
         allocation2 = new byte[2 * _1MB];
         allocation3 = new byte[2 * _1MB];
         allocation4 = new byte[4 * _1MB];
+        for (String str : args) {
+            System.out.println(str);
+        }
     }
 
 }

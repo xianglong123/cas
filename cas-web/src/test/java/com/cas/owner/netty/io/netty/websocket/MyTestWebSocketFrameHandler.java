@@ -43,9 +43,7 @@ public class MyTestWebSocketFrameHandler extends SimpleChannelInboundHandler<Tex
                 e.printStackTrace();
             }
         } catch (Exception e) {
-
         }
-
     }
 
 
