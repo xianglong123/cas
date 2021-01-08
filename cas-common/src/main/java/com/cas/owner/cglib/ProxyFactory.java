@@ -1,4 +1,4 @@
-package com.cas.owner.cglib;
+package com.cas.cglib;
 
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;

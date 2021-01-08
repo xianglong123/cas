@@ -1,4 +1,4 @@
-package com.cas.owner.cglib;
+package com.cas.cglib;
 
 //目标对象
 public class UserDaoImpl {

@@ -2,24 +2,16 @@ package com.cas.controller;
 
 
 import com.cas.domain.ValidatorPojo;
-import com.cas.owner.service.accountService.AccountService;
-import com.cas.owner.service.countDownLatchService.CountDownLatchService;
-import com.cas.owner.service.inqueryService.InqueryService;
-import com.cas.owner.service.pdfService.PdfService;
-import com.cas.owner.service.pdfService.PdfView;
-import com.cas.owner.service.redisService.Redis2Service;
-import com.cas.owner.service.scheduled.DynamicScheduleTask;
-import com.cas.owner.service.testService.HelloService;
-import com.cas.owner.service.testService.HelloServiceImpl;
-import com.cas.owner.service.testService.TestService;
-import com.cas.owner.service.threadPoolService.ThreadService;
-import com.cas.owner.service.uploadService.UploadService;
-import com.cas.owner.utils.CookieUtil;
-import com.cas.owner.utils.SpringContextUtils;
-import com.cas.owner.utils.StringUtil;
-import com.cas.owner.utils.ThreadPoolUtil;
+import com.cas.service.syncService.SyncService;
+import com.cas.service.inqueryService.InqueryService;
+import com.cas.service.pdfService.PdfService;
+import com.cas.service.pdfService.PdfView;
+import com.cas.service.scheduled.DynamicScheduleTask;
+import com.cas.service.uploadService.UploadService;
+import com.cas.utils.CookieUtil;
+import com.cas.utils.SpringContextUtils;
+import com.cas.utils.ThreadPoolUtil;
 import com.cas.validator.UserValidator;
-import com.google.gson.Gson;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -46,7 +38,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -55,7 +46,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
 
 @Api(value = "API - 测试controller")
 @Slf4j
@@ -71,12 +61,6 @@ import java.util.concurrent.TimeUnit;
 public class TestController {
 
     @Autowired
-    private TestService testService;
-
-    @Autowired
-    private AccountService accountService;
-
-    @Autowired
     private UploadService uploadService;
 
     @Autowired
@@ -86,49 +70,7 @@ public class TestController {
     private PdfService pdfService;
 
     @Autowired
-    private Redis2Service redis2Service;
-
-    @Autowired
-    private ThreadService threadService;
-
-    @Autowired
-    private CountDownLatchService countDownLatchService;
-
-    /**
-     * c测试系统是否可用
-     *
-     * @return
-     */
-    @ApiOperation(value = "c测试系统是否可用")
-    @PostMapping("/test")
-    public String testApplication() {
-        return testService.queryCount() + "";
-    }
-
-    /**
-     * 获取Account 对象通过userId
-     *
-     * @param userId
-     * @return
-     */
-    @ApiOperation(value = "获取Account 对象通过userId")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "userId", value = "用户id,可选值：10001 ,10002, 10003", required = false, dataType = "string", paramType = "query", defaultValue = "10001")
-    })
-    @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Successful — 请求已完成"),
-            @ApiResponse(code = 400, message = "请求中有语法问题，或不能满足请求"),
-            @ApiResponse(code = 401, message = "未授权客户机访问数据"),
-            @ApiResponse(code = 404, message = "服务器找不到给定的资源；文档不存在"),
-            @ApiResponse(code = 500, message = "服务器不能完成请求")}
-    )
-    @GetMapping(value = "/queryAccount")
-    @ResponseBody
-    public String queryAccount(String userId) {
-        Gson gson = StringUtil.getGson();
-        System.out.println(accountService.queryAccount(userId));
-        return gson.toJson(accountService.queryAccount(userId));
-    }
+    private SyncService countDownLatchService;
 
     /**
      * jsp 跳转测试
@@ -139,14 +81,6 @@ public class TestController {
     @GetMapping("/hello")
     public String hello() {
         return "hello";
-    }
-
-    @ApiOperation(value = "测试反向ajax的请求，直接请求没有效果")
-    @GetMapping("/queryAutoId")
-    @ResponseBody
-    public String queryAutoId(HttpServletRequest request) {
-        accountService.queryAutoId(request);
-        return "请求完成";
     }
 
     /**
@@ -232,27 +166,6 @@ public class TestController {
         DynamicScheduleTask.map.put("time", time);
 //        DynamicScheduleTask.threadLocal.set(time);
         return "ok!";
-    }
-
-    /**
-     * 测试自定义切点MyAspect
-     */
-    @PostMapping("/myAspect")
-    @ResponseBody
-    private String myAspect() {
-        HelloService helloService = new HelloServiceImpl();
-        helloService.sayHello("xl");
-        return "ok";
-    }
-
-    /**
-     * 测试事务的隔离级别 结论：单个sql本身就是事务，不需要测试，单一sql执行具有ACID
-     */
-    @PostMapping("/addAccount")
-    @ResponseBody
-    public String addAccount() {
-        int add = accountService.add();
-        return add + "";
     }
 
     /**
@@ -470,25 +383,6 @@ public class TestController {
                         + "502===网关错误\n"
 
                         + "HTTP码博客地址===https://blog.csdn.net/angelo_gs/article/details/88943169\n";
-    }
-
-    /**
-     * 测试redis的lua脚本
-     */
-    @ResponseBody
-    @RequestMapping("/getOk")
-    public String getOk() {
-        return redis2Service.getOk();
-    }
-
-
-    /**
-     * 测试线程池的复用
-     */
-    @ResponseBody
-    @RequestMapping("/thread")
-    public String threadPoolTest() {
-        return threadService.execute();
     }
 
     @ApiOperation(value = "线程池任务完成")

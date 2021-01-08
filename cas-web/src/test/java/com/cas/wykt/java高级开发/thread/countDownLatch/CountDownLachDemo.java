@@ -1,6 +1,6 @@
 package com.cas.wykt.java高级开发.thread.countDownLatch;
 
-import com.cas.owner.utils.ThreadPoolUtil;
+import com.cas.utils.ThreadPoolUtil;
 
 import java.util.ArrayList;
 import java.util.concurrent.CountDownLatch;

@@ -55,18 +55,6 @@ spring:
       suffix: .jsp
   aop:
     proxy-target-class: true
-#  redis:
-#    pool:
-#      max-idle: 10
-#      min-idle: 5
-#      max-wait: 2000
-#      max-active: 10
-#    timeout: 2000
-#  cache:
-#    cache-names: redisCache
-#    type: REDIS
-#    redis:
-#      time-to-live: 600000
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml
