@@ -1,4 +1,4 @@
-package com.cas.service.webssh.constant;
+package com.cas.components.beanAware.webssh.constant;
 
 
 import java.util.HashMap;

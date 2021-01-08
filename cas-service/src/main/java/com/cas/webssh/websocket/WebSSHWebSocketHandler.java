@@ -1,7 +1,7 @@
-package com.cas.service.webssh.websocket;
+package com.cas.components.beanAware.webssh.websocket;
 
-import com.cas.service.webssh.constant.ConstantPool;
-import com.cas.service.webssh.service.WebSSHService;
+import com.cas.components.beanAware.webssh.constant.ConstantPool;
+import com.cas.components.beanAware.webssh.service.WebSSHService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

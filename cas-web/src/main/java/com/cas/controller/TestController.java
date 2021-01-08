@@ -2,16 +2,16 @@ package com.cas.controller;
 
 
 import com.cas.domain.ValidatorPojo;
-import com.cas.service.syncService.SyncService;
-import com.cas.service.inqueryService.InqueryService;
-import com.cas.service.pdfService.PdfService;
-import com.cas.service.pdfService.PdfView;
-import com.cas.service.scheduled.DynamicScheduleTask;
-import com.cas.service.uploadService.UploadService;
+import com.cas.components.beanAware.syncService.SyncService;
+import com.cas.components.beanAware.pdfService.PdfService;
+import com.cas.components.beanAware.pdfService.PdfView;
+import com.cas.components.beanAware.scheduled.DynamicScheduleTask;
+import com.cas.components.beanAware.udiService.UdiService;
+import com.cas.components.beanAware.uploadService.UploadService;
 import com.cas.utils.CookieUtil;
 import com.cas.utils.SpringContextUtils;
 import com.cas.utils.ThreadPoolUtil;
-import com.cas.validator.UserValidator;
+import com.cas.components.validator.UserValidator;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -64,7 +64,7 @@ public class TestController {
     private UploadService uploadService;
 
     @Autowired
-    private InqueryService inqueryService;
+    private UdiService udiService;
 
     @Autowired
     private PdfService pdfService;
@@ -135,7 +135,7 @@ public class TestController {
         Map<String, String> parameter = new HashMap<>();
         parameter.put("userId", "10000");
         String id = "queryDate2";
-        List<LinkedHashMap<String, Object>> inquery = inqueryService.inquery(id, str, parameter);
+        List<LinkedHashMap<String, Object>> inquery = udiService.inquery(id, str, parameter);
         System.out.println(inquery);
         return inquery.toString();
     }

@@ -1,9 +1,9 @@
-package com.cas.service.webssh.util;
+package com.cas.components.beanAware.webssh.util;
 
 import ch.qos.logback.core.util.FileSize;
-import com.cas.service.webssh.pojo.FileDTO;
-import com.cas.service.webssh.pojo.SFTPConnectInfo;
-import com.cas.service.webssh.pojo.SFTPData;
+import com.cas.components.beanAware.webssh.pojo.FileDTO;
+import com.cas.components.beanAware.webssh.pojo.SFTPConnectInfo;
+import com.cas.components.beanAware.webssh.pojo.SFTPData;
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSch;

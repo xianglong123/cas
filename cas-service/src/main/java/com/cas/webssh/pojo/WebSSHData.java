@@ -1,4 +1,4 @@
-package com.cas.service.webssh.pojo;
+package com.cas.components.beanAware.webssh.pojo;
 
 /**
 * @Description: webssh数据传输

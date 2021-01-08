@@ -1,7 +1,7 @@
-package com.cas.service.webssh.config;
+package com.cas.components.beanAware.webssh.config;
 
-import com.cas.service.webssh.constant.BaseEnums;
-import com.cas.service.webssh.pojo.Result;
+import com.cas.components.beanAware.webssh.constant.BaseEnums;
+import com.cas.components.beanAware.webssh.pojo.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;

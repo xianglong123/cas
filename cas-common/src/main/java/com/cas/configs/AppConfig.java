@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @author: xianglong[1391086179@qq.com]
  * @date: 14:20 2020-01-20
  * @version: V1.0
- * @review:
+ * @review: 扫描
  */
 //@ComponentScan(basePackages = {"com.cas.domain"}, excludeFilters = {@ComponentScan.Filter(classes = Merch.class)}) 可以排除调Merch这个类进去ioc spring容器中
 @ComponentScan(basePackages = {"com.cas.domain", "com.cas.components"}) // 只会扫描带@Component注解的类

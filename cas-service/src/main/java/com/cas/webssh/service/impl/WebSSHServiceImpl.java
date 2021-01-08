@@ -1,9 +1,9 @@
-package com.cas.service.webssh.service.impl;
+package com.cas.components.beanAware.webssh.service.impl;
 
-import com.cas.service.webssh.constant.ConstantPool;
-import com.cas.service.webssh.pojo.SSHConnectInfo;
-import com.cas.service.webssh.pojo.WebSSHData;
-import com.cas.service.webssh.service.WebSSHService;
+import com.cas.components.beanAware.webssh.constant.ConstantPool;
+import com.cas.components.beanAware.webssh.pojo.SSHConnectInfo;
+import com.cas.components.beanAware.webssh.pojo.WebSSHData;
+import com.cas.components.beanAware.webssh.service.WebSSHService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.JSch;

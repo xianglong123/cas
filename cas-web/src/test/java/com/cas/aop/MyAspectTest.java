@@ -1,8 +1,8 @@
-package com.cas.service.aspect;
+package com.cas.components.beanAware.aspect;
 
 import com.cas.BaseTest;
-import com.cas.service.testService.HelloService;
-import com.cas.service.testService.HelloServiceImpl;
+import com.cas.components.beanAware.testService.HelloService;
+import com.cas.components.beanAware.testService.ProxyServiceImpl;
 import org.junit.Test;
 
 /**
@@ -18,7 +18,7 @@ public class MyAspectTest extends BaseTest {
      */
     @Test
     public void test() {
-        HelloService helloService = new HelloServiceImpl();
+        HelloService helloService = new ProxyServiceImpl();
         helloService.sayHello("xl");
     }
 

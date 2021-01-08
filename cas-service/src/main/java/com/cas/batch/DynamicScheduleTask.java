@@ -1,6 +1,6 @@
-package com.cas.service.scheduled;
+package com.cas.components.beanAware.scheduled;
 
-import com.cas.service.grippeService.GrippeService;
+import com.cas.components.beanAware.grippeService.GrippeService;
 import com.cas.utils.StringUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

@@ -1,6 +1,6 @@
-package com.cas.service.webssh.interceptor;
+package com.cas.components.beanAware.webssh.interceptor;
 
-import com.cas.service.webssh.constant.ConstantPool;
+import com.cas.components.beanAware.webssh.constant.ConstantPool;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.http.server.ServletServerHttpRequest;

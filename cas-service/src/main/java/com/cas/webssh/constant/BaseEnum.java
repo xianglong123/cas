@@ -1,4 +1,4 @@
-package com.cas.service.webssh.constant;
+package com.cas.components.beanAware.webssh.constant;
 
 /**
  * 基础枚举类

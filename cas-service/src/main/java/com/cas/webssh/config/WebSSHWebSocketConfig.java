@@ -1,7 +1,7 @@
-package com.cas.service.webssh.config;
+package com.cas.components.beanAware.webssh.config;
 
-import com.cas.service.webssh.interceptor.WebSocketInterceptor;
-import com.cas.service.webssh.websocket.WebSSHWebSocketHandler;
+import com.cas.components.beanAware.webssh.interceptor.WebSocketInterceptor;
+import com.cas.components.beanAware.webssh.websocket.WebSSHWebSocketHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;

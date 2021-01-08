@@ -1,4 +1,4 @@
-package com.cas.service.webssh.service;
+package com.cas.components.beanAware.webssh.service;
 
 import org.springframework.web.socket.WebSocketSession;
 

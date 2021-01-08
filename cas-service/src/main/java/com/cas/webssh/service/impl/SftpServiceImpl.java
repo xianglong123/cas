@@ -1,10 +1,10 @@
-package com.cas.service.webssh.service.impl;
+package com.cas.components.beanAware.webssh.service.impl;
 
-import com.cas.service.webssh.pojo.FileDTO;
-import com.cas.service.webssh.pojo.SFTPConnectInfo;
-import com.cas.service.webssh.pojo.SFTPData;
-import com.cas.service.webssh.service.SftpService;
-import com.cas.service.webssh.util.SFTPUtil;
+import com.cas.components.beanAware.webssh.pojo.FileDTO;
+import com.cas.components.beanAware.webssh.pojo.SFTPConnectInfo;
+import com.cas.components.beanAware.webssh.pojo.SFTPData;
+import com.cas.components.beanAware.webssh.service.SftpService;
+import com.cas.components.beanAware.webssh.util.SFTPUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

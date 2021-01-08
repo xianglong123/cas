@@ -1,9 +1,9 @@
-package com.cas.service.webssh.controller;
+package com.cas.components.beanAware.webssh.controller;
 
-import com.cas.service.webssh.pojo.FileDTO;
-import com.cas.service.webssh.pojo.Result;
-import com.cas.service.webssh.pojo.SFTPData;
-import com.cas.service.webssh.service.SftpService;
+import com.cas.components.beanAware.webssh.pojo.FileDTO;
+import com.cas.components.beanAware.webssh.pojo.Result;
+import com.cas.components.beanAware.webssh.pojo.SFTPData;
+import com.cas.components.beanAware.webssh.service.SftpService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;

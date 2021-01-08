@@ -1,7 +1,7 @@
-package com.cas.service.webssh.service;
+package com.cas.components.beanAware.webssh.service;
 
-import com.cas.service.webssh.pojo.FileDTO;
-import com.cas.service.webssh.pojo.SFTPData;
+import com.cas.components.beanAware.webssh.pojo.FileDTO;
+import com.cas.components.beanAware.webssh.pojo.SFTPData;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpSession;

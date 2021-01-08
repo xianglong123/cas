@@ -1,12 +1,10 @@
-package com.cas.service.aspect;
+package com.cas.aop;
 
 import com.cas.components.tx.AfterCommitExecutor;
-import com.cas.service.threadPoolService.ThreadService;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  * @author: xianglong[1391086179@qq.com]
@@ -21,10 +19,7 @@ public class MyAspect {
     @Autowired
     private AfterCommitExecutor afterCommitExecutor;
 
-    @Autowired
-    private ThreadService threadService;
-
-    @Pointcut("execution(* com.cas.service..*(..))")
+    @Pointcut("execution(* com.cas.components.beanAware..*(..))")
     public void pointCut() {}
 
 //    @Before("pointCut()")
@@ -51,7 +46,6 @@ public class MyAspect {
         afterCommitExecutor.execute(() -> {
             try {
                 System.out.println("执行线程号-:" + Thread.currentThread().getName());
-                threadService.execute();
                 Thread.sleep(4000);
             } catch (InterruptedException e) {
 

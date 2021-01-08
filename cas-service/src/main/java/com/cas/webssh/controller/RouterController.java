@@ -1,4 +1,4 @@
-package com.cas.service.webssh.controller;
+package com.cas.components.beanAware.webssh.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
