@@ -7,6 +7,7 @@ import java.util.function.Function;
  * @date: 22:02 2020-03-01
  * @version: V1.0
  * @review: 枚举实现策略模式
+ *
  */
 public enum AuthStatusEnum {
     PROD_TYPE_O1(ProdTypeEnum.PROD_TYPE_01, OperateImpl.TYPE_01),
@@ -151,7 +152,7 @@ public enum AuthStatusEnum {
     }
 
     /**
-     * 
+     *
      */
     private enum ProdType02Enum {
         _02_STATUS_00("00", StatusEnum.AUDIT_NO),
@@ -185,7 +186,7 @@ public enum AuthStatusEnum {
     }
 
     /**
-     * 
+     *
      */
     private enum ProdType03Enum {
         _03_STATUS_00("00", StatusEnum.AUDIT_NO),
@@ -219,7 +220,7 @@ public enum AuthStatusEnum {
     }
 
     /**
-     *  
+     *
      */
     private enum ProdType04Enum {
         _04_STATUS_01("01", StatusEnum.AUDIT_NO),
@@ -254,7 +255,7 @@ public enum AuthStatusEnum {
 
     /**
      *
-     * 
+     *
      */
     private enum ProdType05Enum {
         _05_STATUS_01("01", StatusEnum.AUDIT_NO),
@@ -395,7 +396,7 @@ public enum AuthStatusEnum {
 
     /**
      *
-     * 
+     *
      */
     private enum ProdType09Enum {
         _09_STATUS_01("01", StatusEnum.AUDIT_NO),
@@ -432,7 +433,7 @@ public enum AuthStatusEnum {
 
     /**
      *
-     * 
+     *
      */
     private enum ProdType10Enum {
         _10_STATUS_01("01", StatusEnum.AUDIT_NO),
@@ -470,7 +471,7 @@ public enum AuthStatusEnum {
 
     /**
      *
-     * 
+     *
      */
     private enum ProdType11Enum {
         _11_STATUS_01("01", StatusEnum.AUDIT_NO),

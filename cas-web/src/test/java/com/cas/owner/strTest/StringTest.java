@@ -5,6 +5,10 @@ import com.cas.domain.sms.SmsBatch;
 import com.cas.domain.sms.SmsBatchDetail;
 import com.cas.pojo.User;
 import com.cas.owner.utils.StringUtil;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
@@ -15,6 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
@@ -89,7 +94,6 @@ public class StringTest{
      */
     private static void throwException() {
         Object o = null;
-
         try {
             o.getClass();
         } catch (Exception e) {
@@ -609,7 +613,6 @@ public class StringTest{
                 continue;
             }
             log.warn("失败匹配数据：{}", cprRegAddr);
-
         }
     }
 
@@ -618,7 +621,6 @@ public class StringTest{
      */
     @Test
     public void test38() {
-        Object obj = new Object();
         User user = new User();
         user.setAge(2);
         System.out.println(user.hashCode());
@@ -1031,6 +1033,24 @@ public class StringTest{
     public void test64() {
         String str = "192.168.56.104,192.168.56.105,";
         System.out.println(str.replace(",", "\t"));
+    }
+
+    /**
+     * list 包含
+     */
+    @Test
+    public void test65() {
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        Object[] objects = Arrays.copyOf(list.toArray(), list.size());
+        List<Object> objects1 = Arrays.asList(objects);
+
+
+        System.out.println(objects1);
+
+        System.out.println(list.contains("a"));
+        System.out.println(list.contains("c"));
     }
 
 }

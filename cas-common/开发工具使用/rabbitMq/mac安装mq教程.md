@@ -24,13 +24,10 @@
     rabbitmqctl stop_app&&rabbitmqctl reset&&rabbitmqctl start_app
     
     rpm -Uvh /usr/local/devtoos/erlang-22.3.4.11-1.el7.x86_64.rpm
+
     
     
-    echo MMPCZEXMVKDMYOQUPNPA > /var/lib/rabbitmq/.erlang.cookie
-    echo MMPCZEXMVKDMYOQUPNPA > /app/rabbitmq/.erlang.cookie
-    
-    
-    rabbitmqctl join_cluster rabbit@midtest01
+    rabbitmqctl join_cluster rabbit@node21
     
     
     rm -rf /var/log/rabbitmq/* && rm -rf /var/lib/rabbitmq/*&&service rabbitmq-server start

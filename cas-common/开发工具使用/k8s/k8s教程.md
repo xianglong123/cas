@@ -42,6 +42,7 @@
 
 ### mysql 通过K8s 访问无法输入中文
     通过docker 进入，用这个命令 docker exec -it 8f0404a74e4f env LANG=C.UTF-8 /bin/bash
+    通过docker 进入，用这个命令 docker exec -it c8a84b33f0e3 env LANG=C.UTF-8 /bin/bash
     
 ### 删除k8s的节点污点
     kubectl taint node cloud04  node.kubernetes.io/unreachable
@@ -55,3 +56,6 @@
     
     核心语句：kubectl taint nodes cloud03 node.kubernetes.io/unreachable:NoSchedule-
     备注：在污点的后面加个'-'就可以了
+
+### k8s客户端操作
+    https://www.jianshu.com/p/e0ce65c96509

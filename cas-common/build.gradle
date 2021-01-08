@@ -43,18 +43,11 @@ dependencies {
     //沙箱
     compile 'com.cloudbees.util:rhino-sandbox:1.0'
 
-    /*redis*/
-    compile 'org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE'
-    compile 'redis.clients:jedis'
-
     /*中文转拼音*/
 //    compile 'net.sourceforge:pinyin4j:2.5.0'
 
     //Aop
     compile 'org.springframework.boot:spring-boot-starter-aop'
-
-    // MongoDB
-//    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
     // pdf
     compile 'org.xhtmlrenderer:core-renderer:R8'
@@ -67,20 +60,11 @@ dependencies {
     // 查看java对象头
     compile 'org.openjdk.jol:jol-core:0.9'
 
-    // redis 分布式
-    compile 'org.redisson:redisson:3.12.5'
-
-    // rabbitMq
-    compile 'org.springframework.boot:spring-boot-starter-amqp'
-
     // zookeeper
     compile ('org.apache.zookeeper:zookeeper:3.4.12') {
         exclude group:'org.slf4j'
         exclude group:'log4j'
     }
-
-    // mongodb 使用
-    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
     // fabric8
     compile 'io.fabric8:kubernetes-client:4.10.3'
@@ -99,5 +83,18 @@ dependencies {
 
     // 视频流解析
     compile 'xuggle:xuggle-xuggler:5.2'
+
+    // mongodb 使用
+    //    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
+    // rabbitMq
+    //    compile 'org.springframework.boot:spring-boot-starter-amqp'
+
+    // redis
+    //    compile 'org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE'
+    //    compile 'redis.clients:jedis'
+
+    // redis 分布式
+    //    compile 'org.redisson:redisson:3.12.5'
 
 }

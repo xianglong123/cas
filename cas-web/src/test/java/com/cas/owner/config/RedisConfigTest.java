@@ -1,6 +1,5 @@
 package com.cas.owner.config;
 
-import com.cas.configs.RedisConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.dao.DataAccessException;

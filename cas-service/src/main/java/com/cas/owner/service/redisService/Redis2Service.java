@@ -1,6 +1,5 @@
 package com.cas.owner.service.redisService;
 
-import com.cas.owner.utils.RedissLockUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

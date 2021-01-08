@@ -55,40 +55,18 @@ spring:
       suffix: .jsp
   aop:
     proxy-target-class: true
-
-  redis:
-    pool:
-      max-idle: 10
-      min-idle: 5
-      max-wait: 2000
-      max-active: 10
-    timeout: 2000
-  cache:
-    cache-names: redisCache
-    type: REDIS
-    redis:
-      time-to-live: 600000
-  rabbitmq:
-    host: 192.168.56.101
-    port: 30001
-    username: K9yYvqTagvXkJctZHRiSHDnhCgt9SV-8
-    password: CZOs6wkqC0qxSnNC938Qwo4Zq91Z2SH6
-    #虚拟host 可以不设置,使用server默认host
-    virtual-host: home
-    #消息确认配置项
-    #确认消息已发送到交换机(Exchange)
-    publisher-confirms: true
-    #确认消息已发送到队列(Queue)
-    publisher-returns: true
-#  data:
-#    mongodb:
-#      # 集群配置：mongodb://user:pwd@ip1:port1,ip2:port2/database
-##      uri: mongodb://test:test@localhost:27017/test
-#      database: Test
-#      host: 127.0.0.1
-#      username: test
-#      password: test
-#      port: 27017
+#  redis:
+#    pool:
+#      max-idle: 10
+#      min-idle: 5
+#      max-wait: 2000
+#      max-active: 10
+#    timeout: 2000
+#  cache:
+#    cache-names: redisCache
+#    type: REDIS
+#    redis:
+#      time-to-live: 600000
 mybatis:
   #配置mapper xml文件所在的路径
   mapper-locations: classpath:com.cas.dao.mapper/*.xml

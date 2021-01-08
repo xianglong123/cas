@@ -26,6 +26,15 @@
     基础支持层：
     反射模块，类型转换，日志模块，资源加载，解析器模块，
     数据源模块，事务管理模块，缓存模块，Binding模块
+
+### 修改mysql的表/字段字符集
+    show create table mq_conf;
+    alter table mq_conf  default character set utf8;
+    alter table mq_conf change remake remake varchar(512) charset utf8;
     
     
+    alter table mq_conf_dict  default character set utf8;
+    alter table mq_conf_dict change value value varchar(512) charset utf8;
+    alter table mq_conf_dict change operator operator varchar(512) charset utf8;
+    alter table mq_conf_dict change rel_val rel_val varchar(512) charset utf8;
     

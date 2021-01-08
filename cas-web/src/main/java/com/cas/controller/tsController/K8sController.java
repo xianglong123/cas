@@ -78,8 +78,6 @@ public class K8sController {
         MixedOperation<RabbitMqCluster, RabbitMqClusterList, DoneableRabbitMqCluster, Resource<RabbitMqCluster, DoneableRabbitMqCluster>> mqclient = client
                 .customResources(crdContext, RabbitMqCluster.class, RabbitMqClusterList.class, DoneableRabbitMqCluster.class);
         RabbitMqCluster cluster = createCluster();
-        // TODO 创建之前先判断是否存在，暂时先省略
-        // TODO PV不是operator创建，这边提供
         mqclient.inNamespace("default").create(cluster);
         return "ok";
     }
