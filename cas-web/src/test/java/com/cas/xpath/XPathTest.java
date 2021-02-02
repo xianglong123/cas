@@ -1,4 +1,4 @@
-package com.cas.mybatis.xpath;
+package com.cas.xpath;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;

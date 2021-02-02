@@ -1,4 +1,4 @@
-package com.cas.components.beanAware.scheduled;
+package com.cas.batch;
 
 import com.cas.components.beanAware.grippeService.GrippeService;
 import com.cas.utils.StringUtil;
@@ -27,6 +27,9 @@ import java.util.Map;
 //@EnableScheduling   // 2.开启定时任务
 public class DynamicScheduleTask implements SchedulingConfigurer{
 
+    @Autowired
+    private GrippeService grippeService;
+
     private static final int _1MB = 1024 * 1024;
 
     public static ThreadLocal<String> threadLocal = new ThreadLocal<>();
@@ -37,9 +40,6 @@ public class DynamicScheduleTask implements SchedulingConfigurer{
         map.put("time", "*/10 * * * * ?");
         threadLocal.set("threadLocal is running!!!");
     }
-
-    @Autowired
-    private GrippeService grippeService;
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar taskRegistrar){

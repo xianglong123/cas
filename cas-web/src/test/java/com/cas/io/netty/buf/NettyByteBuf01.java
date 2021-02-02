@@ -1,4 +1,4 @@
-package com.cas.netty.io.netty.buf;
+package com.cas.io.netty.buf;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

@@ -1,4 +1,4 @@
-package com.cas.netty.io.nio.buffer.groupchat;
+package com.cas.io.nio.buffer.groupchat;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

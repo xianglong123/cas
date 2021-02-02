@@ -1,4 +1,4 @@
-package com.cas.netty.io.netty.http;
+package com.cas.io.netty.http;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

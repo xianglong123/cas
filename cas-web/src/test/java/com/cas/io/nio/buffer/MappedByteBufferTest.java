@@ -1,4 +1,4 @@
-package com.cas.netty.io.nio.buffer;
+package com.cas.io.nio.buffer;
 
 import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;

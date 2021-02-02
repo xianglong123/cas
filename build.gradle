@@ -1,43 +1,61 @@
-buildscript {//为该项目配置构建脚本类路径
-    repositories {//配置该项目的存储库
-        mavenCentral() //本地库支持
-        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+plugins {
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE' // 依赖管理
+    id 'java'
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
+        mavenLocal()
+        mavenCentral()
     }
+
     ext {
-        springBootVersion = '1.5.9.RELEASE'
-        springCloudVersion = 'Edgware.RELEASE'
-    }
-    dependencies {// 配置此项目的依赖项
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        set('lombokVersion', "1.18.12")
     }
 }
 
-subprojects { //配置该项目的子项目
+subprojects { // 子模块的通用配置
     apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'eclipse-wtp'
     apply plugin: 'idea'
     apply plugin: 'jacoco'
 
-    repositories {//配置该项目的存储库
-        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
-    }
-
-    dependencyManagement {
-        imports {
-            // 这里可以配置版本信息
-            // 插件org.springframework.boot已经包含了版本管理功能,这个声明可以不要
-            // mavenBom "org.springframework.boot:spring-boot-starter-parent:2.0.4.RELEASE"
-            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-        }
+    repositories {
+//        mavenCentral()
+        maven { url "https://maven.aliyun.com/repository/public" }
     }
 
     dependencies {
-        compileOnly("org.springframework.boot:spring-boot-configuration-processor")
-        compileOnly("org.projectlombok:lombok")
-        testCompile("org.projectlombok:lombok")
-        testCompile "org.springframework.boot:spring-boot-starter-test"
+        implementation('org.springframework.boot:spring-boot-starter-web')
+//      需要使用传统yaml就需要打开   implementation("org.springframework.boot:spring-boot-configuration-processor")
+        implementation "org.projectlombok:lombok:${lombokVersion}"
+        testImplementation "org.springframework.boot:spring-boot-starter-test"
     }
+
+    test {
+        useJUnitPlatform()
+        ignoreFailures = true
+    }
+
+    jar {
+        enabled = true
+    }
+
+    /**
+     * clean 命令时删除 logs 目录
+     */
+    task cleanOutDir(type: Delete) {
+        delete "${projectDir}/logs"
+        delete "${rootDir}/logs"
+    }
+    tasks.clean.dependsOn(cleanOutDir)
+
 }
 
 group 'com.cas'

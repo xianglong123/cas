@@ -1,4 +1,4 @@
-package com.cas.netty.io.bio;
+package com.cas.io.bio;
 
 import java.io.IOException;
 import java.io.InputStream;

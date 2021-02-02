@@ -1,4 +1,4 @@
-package com.cas.netty.io.netty.heartbeat;
+package com.cas.io.netty.heartbeat;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

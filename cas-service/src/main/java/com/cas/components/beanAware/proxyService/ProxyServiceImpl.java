@@ -1,7 +1,6 @@
-package com.cas.components.beanAware.testService;
+package com.cas.components.beanAware.proxyService;
 
 import com.alibaba.druid.util.StringUtils;
-import com.cas.components.beanAware.proxyService.ProxyService;
 import org.springframework.stereotype.Service;
 
 /**

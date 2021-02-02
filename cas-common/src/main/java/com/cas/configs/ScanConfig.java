@@ -28,9 +28,6 @@ public class ScanConfig {
     // 有问题的类
     private static List<Class> errorList = new ArrayList<>();
 
-
-
-
     public void get2() throws ClassNotFoundException{
         //包名/Users/xianglong/IdeaProjects/cas/cas-web/out/strTest/classes/
         String basePack = "com.cas";
