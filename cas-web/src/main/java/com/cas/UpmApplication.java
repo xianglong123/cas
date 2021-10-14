@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Slf4j
 @SpringBootApplication(scanBasePackages = "com.cas")
-@MapperScan(basePackages = "com.cas.dao.mapper")
+//@MapperScan(basePackages = "com.cas.dao.mapper")
 //@EnableCaching
 //@EnableScheduling
 public class UpmApplication {

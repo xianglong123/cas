@@ -1,4 +1,4 @@
 dependencies {
-    compile project(":cas-dao")
-    compile project(":cas-common")
+    implementation project(":cas-dao")
+    implementation project(":cas-common")
 }

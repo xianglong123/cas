@@ -1,100 +1,100 @@
 dependencies {
-    compile "org.springframework.boot:spring-boot-starter-web"
+//    implementation "org.springframework.boot:spring-boot-starter-web"
     //mybatis
-    compile 'com.alibaba:druid-spring-boot-starter:1.1.10'
-    compile 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2'
-    compile 'mysql:mysql-connector-java:8.0.13'
+    implementation 'com.alibaba:druid-spring-boot-starter:1.1.10'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2'
+    implementation 'mysql:mysql-connector-java:8.0.13'
     //gson
-    compile "com.google.code.gson:gson:2.8.2"
+    implementation "com.google.code.gson:gson:2.8.2"
     /*http通信依赖*/
-    compile "org.apache.httpcomponents:httpclient"
-    compile 'commons-codec:commons-codec:1.11'
+    implementation "org.apache.httpcomponents:httpclient"
+    implementation 'commons-codec:commons-codec:1.11'
 //    /*对象池*/
-//    compile 'org.apache.commons:commons-pool2:2.5.0'
+//    implementation 'org.apache.commons:commons-pool2:2.5.0'
 
     /*fastJson*/
-    compile 'com.alibaba:fastjson:1.2.61'
+    implementation 'com.alibaba:fastjson:1.2.61'
 
     /*xml*/
-    compile 'dom4j:dom4j:1.6.1'
+    implementation 'dom4j:dom4j:1.6.1'
 
     /*ognl*/
-    compile 'ognl:ognl:3.0.8'
+    implementation 'ognl:ognl:3.0.8'
 
     //文件上传
-    compile("commons-fileupload:commons-fileupload:1.3.1"){
+    implementation("commons-fileupload:commons-fileupload:1.3.1"){
         transitive = false
     }
-    compile("commons-io:commons-io:2.4"){
+    implementation("commons-io:commons-io:2.4"){
         transitive = false
     }
     //commons 工具
-    compile("org.apache.commons:commons-lang3:3.6")
+    implementation("org.apache.commons:commons-lang3:3.6")
 
     //jsp 跳转
-    compile("org.springframework.boot:spring-boot-starter-tomcat")
-    compile 'org.apache.tomcat.embed:tomcat-embed-jasper:7.0.59'
-    compile 'javax.servlet:javax.servlet-api'
-    compile 'javax.servlet:jstl'
+    implementation("org.springframework.boot:spring-boot-starter-tomcat")
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:7.0.59'
+    implementation 'javax.servlet:javax.servlet-api'
+    implementation 'javax.servlet:jstl'
 
     //easyExcel
-    compile("com.alibaba:easyexcel:1.1.1")
+    implementation("com.alibaba:easyexcel:1.1.1")
 
     //沙箱
-    compile 'com.cloudbees.util:rhino-sandbox:1.0'
+    implementation 'com.cloudbees.util:rhino-sandbox:1.0'
 
     /*中文转拼音*/
-//    compile 'net.sourceforge:pinyin4j:2.5.0'
+//    implementation 'net.sourceforge:pinyin4j:2.5.0'
 
     //Aop
-    compile 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
 
     // pdf
-    compile 'org.xhtmlrenderer:core-renderer:R8'
-    compile 'com.itextpdf:itextpdf:5.5.12'
+    implementation 'org.xhtmlrenderer:core-renderer:R8'
+    implementation 'com.itextpdf:itextpdf:5.5.12'
 
     // swagger2
-    compile 'io.springfox:springfox-swagger2:2.7.0'
-    compile 'io.springfox:springfox-swagger-ui:2.7.0'
+    implementation 'io.springfox:springfox-swagger2:2.7.0'
+    implementation 'io.springfox:springfox-swagger-ui:2.7.0'
 
     // 查看java对象头
-    compile 'org.openjdk.jol:jol-core:0.9'
+    implementation 'org.openjdk.jol:jol-core:0.9'
 
     // zookeeper
-    compile ('org.apache.zookeeper:zookeeper:3.4.12') {
+    implementation ('org.apache.zookeeper:zookeeper:3.4.12') {
         exclude group:'org.slf4j'
         exclude group:'log4j'
     }
 
     // fabric8
-    compile 'io.fabric8:kubernetes-client:4.10.3'
+    implementation 'io.fabric8:kubernetes-client:4.10.3'
 
     // netty
-    compile 'io.netty:netty-all:4.1.20.Final'
+    implementation 'io.netty:netty-all:4.1.20.Final'
 
     // websocket
-    compile 'org.springframework:spring-websocket'
+    implementation 'org.springframework:spring-websocket'
 
     // ssh 连接远程客户端
-    compile 'ch.ethz.ganymed:ganymed-ssh2:262'
+    implementation 'ch.ethz.ganymed:ganymed-ssh2:262'
 
     // ssh
-    compile 'com.jcraft:jsch:0.1.54'
+    implementation 'com.jcraft:jsch:0.1.54'
 
     // 视频流解析
-//    compile 'xuggle:xuggle-xuggler:5.2'
+//    implementation 'xuggle:xuggle-xuggler:5.2'
 
     // mongodb 使用
-    //    compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    //    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
     // rabbitMq
-    //    compile 'org.springframework.boot:spring-boot-starter-amqp'
+    //    implementation 'org.springframework.boot:spring-boot-starter-amqp'
 
     // redis
-    //    compile 'org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE'
-    //    compile 'redis.clients:jedis'
+    //    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE'
+    //    implementation 'redis.clients:jedis'
 
     // redis 分布式
-    //    compile 'org.redisson:redisson:3.12.5'
+    //    implementation 'org.redisson:redisson:3.12.5'
 
 }

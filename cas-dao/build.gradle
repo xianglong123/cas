@@ -1,3 +1,3 @@
 dependencies {
-        compile project(":cas-common")
+        implementation project(":cas-common")
 }

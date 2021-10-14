@@ -2,7 +2,5 @@ rootProject.name = 'cas'
 include 'cas-web'
 include 'cas-dao'
 include 'cas-service'
-include 'cas-core'
-include 'cas-test'
 include 'cas-common'
 

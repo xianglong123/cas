@@ -1,21 +1,17 @@
 plugins {
     id 'org.springframework.boot' version '2.2.1.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.10.RELEASE' // 依赖管理
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'io.freefair.lombok' version '5.0.0-rc6' apply false
 }
 
-allprojects {
-    repositories {
-        maven {
-            url 'https://maven.aliyun.com/repository/public/'
-        }
-        mavenLocal()
-        mavenCentral()
-    }
+group 'com.cas'
+version '0.0.1-SNAPSHOT'
 
-    ext {
-        set('lombokVersion', "1.18.12")
-    }
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenLocal()
+    mavenCentral()
 }
 
 subprojects { // 子模块的通用配置
@@ -27,36 +23,19 @@ subprojects { // 子模块的通用配置
     apply plugin: 'jacoco'
 
     repositories {
-//        mavenCentral()
-        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
     }
 
+
     dependencies {
-        implementation('org.springframework.boot:spring-boot-starter-web')
-//      需要使用传统yaml就需要打开   implementation("org.springframework.boot:spring-boot-configuration-processor")
-        implementation "org.projectlombok:lombok:${lombokVersion}"
-        testImplementation "org.springframework.boot:spring-boot-starter-test"
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation "org.projectlombok:lombok:1.18.12"
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
     }
 
     test {
         useJUnitPlatform()
-        ignoreFailures = true
     }
-
-    jar {
-        enabled = true
-    }
-
-    /**
-     * clean 命令时删除 logs 目录
-     */
-    task cleanOutDir(type: Delete) {
-        delete "${projectDir}/logs"
-        delete "${rootDir}/logs"
-    }
-    tasks.clean.dependsOn(cleanOutDir)
 
 }
 
-group 'com.cas'
-version '0.0.1-SNAPSHOT'
